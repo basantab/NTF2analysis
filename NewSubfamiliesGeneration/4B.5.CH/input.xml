@@ -1,0 +1,818 @@
+<ROSETTASCRIPTS>
+  <!-- General score functions -->
+  <SCOREFXNS>
+    <ScoreFunction name="min_cart" weights="remodel_cen" >
+      <Reweight scoretype="hbond_sr_bb" weight="1.75" />
+      <Reweight scoretype="hbond_lr_bb" weight="1.75" />
+      <Reweight scoretype="rama" weight="1.15" />
+      <Reweight scoretype="omega" weight="1.5" />
+      <Reweight scoretype="atom_pair_constraint" weight="0.1" />
+      <Reweight scoretype="coordinate_constraint" weight="1.0" />
+      <Reweight scoretype="angle_constraint" weight="1.0" />
+      <Reweight scoretype="dihedral_constraint" weight="1.0" />
+      <Reweight scoretype="cart_bonded" weight="0.5"/>
+    </ScoreFunction>
+    <ScoreFunction name="remodel_cen" weights="remodel_cen"/>
+    <ScoreFunction name="scoring" weights="fldsgn_cen" >
+      <Reweight scoretype="hbond_sr_bb" weight="1.0" />
+      <Reweight scoretype="hbond_lr_bb" weight="1.0" />
+      <Reweight scoretype="rama" weight="1.0" />
+      <Reweight scoretype="omega" weight="1.0" />
+      <Reweight scoretype="cen_pair_motifs" weight="20.0"/>
+      <Reweight scoretype="cen_pair_motif_degree" weight="20.0"/>
+      <Reweight scoretype="atom_pair_constraint" weight="1.0" />
+      <Reweight scoretype="angle_constraint" weight="1.0" />
+      <Reweight scoretype="dihedral_constraint" weight="1.0" />
+    </ScoreFunction>
+    <ScoreFunction name="talaris" weights="talaris2014">
+      <Reweight scoretype="rama" weight="1.0" />
+      <Reweight scoretype="omega" weight="1.0" />
+      <Reweight scoretype="atom_pair_constraint" weight="1.0" />
+      <Reweight scoretype="angle_constraint" weight="1.0" />
+      <Reweight scoretype="dihedral_constraint" weight="1.0" />
+    </ScoreFunction>
+  </SCOREFXNS>
+  <!-- General residue selectors -->
+  <RESIDUE_SELECTORS>
+    <SecondaryStructure name="all_ss" ss="HEL" include_terminal_loops="True" use_dssp="True"/>
+    <SecondaryStructure name="strands" ss="E" include_terminal_loops="True" pose_secstruct="%%s6_SS%%"/>
+  </RESIDUE_SELECTORS>
+  <!-- General Task Operations -->
+  <TASKOPERATIONS>
+    <OperateOnResidueSubset name="all_ss_design" selector="all_ss" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+  </TASKOPERATIONS>
+  <!-- General Filters -->
+  <MOVERS>
+    <SwitchResidueTypeSetMover name="cent" set="centroid"/>
+  </MOVERS>
+  <FILTERS>
+    <AverageDegree name="avdeg" threshold="10.0" distance_threshold="8.0" confidence="1"/>
+    <ResidueCount name="res" confidence="0"/>
+    <ResidueCount name="strand_res" residue_selector="strands" />
+    <ScoreType name="strand_hb" scorefxn="talaris" score_type="hbond_lr_bb" threshold="1000" confidence="0"/>
+    <TaskAwareScoreType name="rama" scorefxn="talaris" score_type="rama" threshold="0.2" task_operations="all_ss_design" mode="individual" confidence="1"/>
+    <TaskAwareScoreType name="omega" scorefxn="talaris" score_type="omega" threshold="0.6" task_operations="all_ss_design" mode="individual" confidence="1"/>
+    <TaskAwareScoreType name="rama_test" scorefxn="talaris" score_type="rama" threshold="0.2" task_operations="all_ss_design" mode="individual" confidence="0"/>
+        <TaskAwareScoreType name="omega_test" scorefxn="talaris" score_type="omega" threshold="0.6" task_operations="all_ss_design" mode="individual" confidence="0"/>
+    <ScoreType name="cen_score_type" scorefxn="remodel_cen" score_type="total_score" threshold="1000" confidence="0"/>
+    <ScoreType name="cen_pair_motif_type" scorefxn="scoring" score_type="cen_pair_motifs" threshold="1000" confidence="0"/>
+    <MoveBeforeFilter name="cent_score" mover="cent" filter="cen_score_type"/>
+    <MoveBeforeFilter name="cent_pair_motifs" mover="cent" filter="cen_pair_motif_type"/>
+    <CalculatorFilter name="av_strand_hb" equation="SCO/RES" threshold="-0.8" confidence="1">
+      <VAR name="RES" filter="strand_res"/>
+      <VAR name="SCO" filter="strand_hb"/>
+    </CalculatorFilter>
+    <CalculatorFilter name="cen_score_res" equation="SCO/RES" threshold="-0.60" confidence="0">
+      <VAR name="RES" filter="res"/>
+      <VAR name="SCO" filter="cent_score"/>
+    </CalculatorFilter>
+  </FILTERS>
+  <!-- General Movers -->
+  <MOVERS>
+    <DumpPdb name="pdb1" fname="iter1.pdb" scorefxn="scoring" tag_time="1" />
+    <DumpPdb name="pdb2" fname="iter2.pdb" scorefxn="scoring" tag_time="1" />
+    <DumpPdb name="pdb2_cen" fname="iter2cen" scorefxn="scoring" tag_time="1" />
+    <DumpPdb name="pdb3" fname="iter3.pdb" scorefxn="scoring" tag_time="1" />
+    <DumpPdb name="pdb4" fname="iter4.pdb" tag_time="1" />
+    <DumpPdb name="pdb5" fname="iter5.pdb" tag_time="1" />
+    <DumpPdb name="testing" fname="test" tag_time="1" scorefxn="scoring" />
+    <DumpPdb name="testing_after_min" fname="test_after_min" tag_time="1" scorefxn="scoring" />
+    <Dssp name="dssp"/>
+    <ConstraintSetMover name="rmcst" add_constraints="0" cst_file="none"/>
+    <SwitchResidueTypeSetMover name="fullatom" set="fa_standard"/>
+    <!--PyMOLMover name="pmm" keep_history="0" /-->
+    <MakePolyX name="polyval" aa="VAL" keep_pro="1"  keep_gly="1" keep_disulfide_cys="1" />
+    <MakePolyX name="polyala" aa="ALA" keep_pro="1"  keep_gly="1" keep_disulfide_cys="1" />
+    <MinMover name="cart_min_mover" scorefxn="min_cart" type="lbfgs_armijo_nonmonotone" tolerance="0.00001" max_iter="10000" chi="0" bb="1" bondangle="0" bondlength="0" cartesian="1"/>
+  </MOVERS>
+  <!-- ########################################################### -->
+  <!-- STEP #1: Strands 4 and 5 ################################## -->
+  <!-- ########################################################### -->
+  <!-- Step 1 SCFXNS -->
+  <SCOREFXNS>
+    <ScoreFunction name="SFXN1" weights="fldsgn_cen" >
+      <Reweight scoretype="hbond_sr_bb" weight="1.0" />
+      <Reweight scoretype="hbond_lr_bb" weight="1.75" />
+      <Reweight scoretype="rama" weight="1.15" />
+      <Reweight scoretype="omega" weight="1.5" />
+      <Reweight scoretype="atom_pair_constraint" weight="1.0" />
+      <Reweight scoretype="angle_constraint" weight="1.0" />
+      <Reweight scoretype="dihedral_constraint" weight="1.0" />
+    </ScoreFunction>
+  </SCOREFXNS>
+  <!-- Step 1 RSs -->
+  <RESIDUE_SELECTORS>
+    <SecondaryStructure name="strands1" ss="E" include_terminal_loops="True" pose_secstruct="%%s1_SS%%"/>
+    <SecondaryStructure name="loops_s1" ss="L" include_terminal_loops="False"
+                        use_dssp="False" pose_secstruct="%%s1_SS%%" />
+    <PrimarySequenceNeighborhood name="flanking_s1" selector="loops_s1" lower="1" upper="1" />
+    <Or name="loops_or_flanking_s1" selectors="loops_s1,flanking_s1" />
+    <Not name="not_loops_or_flanking_s1" selector="loops_or_flanking_s1" />
+    <Index name="rebuild_s1" resnums="%%R_in_bp1%%"/>
+    <Not name="not_rebuild_s1" selector="rebuild_s1" />
+  </RESIDUE_SELECTORS>
+  <!-- Step 1 FILTERS -->
+  <FILTERS>
+    <SecondaryStructure name="ss1"  use_abego="1" blueprint="%%bp1.b%%" threshold="1.0" confidence="1" compute_pose_secstruct_by_dssp="1"/>
+    <SheetTopology name="st1" topology="1-2.A.99" blueprint="%%bp1.b%%" confidence="1"/>
+    <ResidueCount name="strand_res1" residue_selector="strands1" />
+    <CalculatorFilter name="strand_energy1" equation="LRH/STR" threshold="-0.5" confidence="1">
+      <Var name="LRH" filter="strand_hb"/>
+      <Var name="STR" filter="strand_res1"/>
+    </CalculatorFilter>
+    <CalculatorFilter name="strand_energy1_test" equation="LRH/STR" threshold="-0.5" confidence="0">
+	       <Var name="LRH" filter="strand_hb"/>
+	       <Var name="STR" filter="strand_res1"/>
+	</CalculatorFilter>
+    <!-- Persmisive curvature -->
+    <StrandCurvatureByLevels name="st1_curv" StrandID="1" concavity_reference_residue="last" concavity_direction="1" bend_level="2" min_bend="5" max_bend="180" twist_level="2" min_twist="0" max_twist="180" confidence="1" />
+    <StrandCurvatureByLevels name="st2_curv" StrandID="2" concavity_reference_residue="first" concavity_direction="1" bend_level="2" min_bend="5" max_bend="180" twist_level="2" min_twist="0" max_twist="180" confidence="1" />
+    <CompoundStatement name="secst1" >
+	    <AND filter_name="ss1" />    
+      <AND filter_name="strand_energy1"/>
+      <AND filter_name="omega"/>
+      <AND filter_name="rama"/>
+      <AND filter_name="st1" />
+      <AND filter_name="st1_curv" />
+      <AND filter_name="st2_curv" />
+    </CompoundStatement>
+  </FILTERS>
+  <!-- Step 1 TOs -->
+  <TASKOPERATIONS>
+    <ConsensusLoopDesign name="design_loops_and_flanking_s1" include_adjacent_residues="True" enrichment_threshold="0.5"
+                         secstruct="%%s1_SS%%" use_dssp="False" />
+  <OperateOnResidueSubset name="repack_s1" selector="not_loops_or_flanking_s1" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+  <!-- Step 1 MOVERS -->
+  </TASKOPERATIONS>
+  <MOVERS>
+    <AddConstraints name="curr_conf_s1" >
+        <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                       sidechain="false" ca_only="true"/>
+    </AddConstraints>
+    <RemoveConstraints name="rm_csts" constraint_generators="gen_my_csts" />
+    <!--
+	AddConstraintsToCurrentConformationMover name="curr_conf_s1" use_distance_cst="1" coord_dev="0.5" bound_width="0"
+                                              min_seq_sep="3" max_distance="10.0" cst_weight="1.0"
+                                              CA_only="1" residue_selector="not_rebuild_s1"/
+    -->
+    <SetSecStructEnergies name="set_ssene1" scorefxn="SFXN1" blueprint="%%bp1%%" />
+    <BluePrintBDR name="bdr1" scorefxn="SFXN1" use_abego_bias="1" blueprint="%%bp1%%" constraint_file="%%cst1%%" />
+    <ConstraintSetMover name="addcst1" add_constraints="1" cst_file="%%cst1_min%%"/>
+    <PackRotamersMover name="design_loops_s1" scorefxn="talaris" task_operations="repack_s1,design_loops_and_flanking_s1"/>
+    <ParsedProtocol name="cenmin1" >
+      <Add mover_name="cent" />
+      <Add mover_name="addcst1" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="curr_conf_s1" />
+      <Add mover_name="rmcst"/>
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts"/>
+	<!-- ADDED -->
+	<Add mover_name="curr_conf_s1" />
+	<Add mover_name="cart_min_mover" />
+	<Add mover_name="rm_csts"/>
+	<!-- -->
+      <Add mover_name="fullatom" />
+    </ParsedProtocol>
+    <ParsedProtocol name="bdr1ss" >
+      <Add mover_name="rmcst"/>
+      <Add mover_name="bdr1" />
+      <Add mover_name="design_loops_s1" />
+      <Add mover_name="polyval"/>
+      <Add mover_name="rmcst"/>
+      <Add mover_name="cenmin1" />
+      <Add mover_name="dssp" />
+    </ParsedProtocol>
+    <LoopOver name="loop1" mover_name="bdr1ss" filter_name="secst1" drift="0" iterations="10" ms_whenfail="FAIL_DO_NOT_RETRY"/>
+  </MOVERS>
+  <!-- ########################################################### -->
+  <!-- STEP #2: Strand 3 ######################################### -->
+  <!-- ########################################################### -->
+  <!-- Step 2 SCFXNS -->
+  <SCOREFXNS>
+    <ScoreFunction name="SFXN2" weights="fldsgn_cen" >
+      <Reweight scoretype="hbond_sr_bb" weight="1.0" />
+      <Reweight scoretype="hbond_lr_bb" weight="2.0" />
+      <Reweight scoretype="rama" weight="1.15" />
+      <Reweight scoretype="omega" weight="1.5" />
+      <Reweight scoretype="atom_pair_constraint" weight="1.0" />
+      <Reweight scoretype="angle_constraint" weight="1.0" />
+      <Reweight scoretype="dihedral_constraint" weight="1.0" />
+    </ScoreFunction>
+  </SCOREFXNS>
+  <!-- Step 2 RSs -->
+  <RESIDUE_SELECTORS>
+    <SecondaryStructure name="strands2" ss="E" include_terminal_loops="True" pose_secstruct="%%s2_SS%%"/>
+    <SecondaryStructure name="loops_s2" ss="L" include_terminal_loops="False"
+                        use_dssp="False" pose_secstruct="%%s2_SS%%" />    
+    <PrimarySequenceNeighborhood name="flanking_s2" selector="loops_s2" lower="1" upper="1" />
+    <Or name="loops_or_flanking_s2" selectors="loops_s2,flanking_s2" />
+    <Not name="not_loops_or_flanking_s2" selector="loops_or_flanking_s2" />
+    <Index name="rebuild_s2" resnums="%%R_in_bp2%%"/>
+    <Not name="not_rebuild_s2" selector="rebuild_s2" />
+  </RESIDUE_SELECTORS>
+  <!-- Step 2 FILTERS -->
+  <FILTERS>
+    <ResidueCount name="strand_res2" residue_selector="strands2" />
+    <CalculatorFilter name="strand_energy2" equation="LRH/STR" threshold="-0.7" confidence="1">
+      <Var name="LRH" filter="strand_hb"/>
+      <Var name="STR" filter="strand_res2"/>
+    </CalculatorFilter>
+    <SecondaryStructure name="ss2"  use_abego="1" blueprint="%%bp2%%" threshold="1.0" confidence="1" compute_pose_secstruct_by_dssp="1"/>
+    <SheetTopology name="st2" topology="1-2.A.99;2-3.A.99" blueprint="%%bp2%%" confidence="1" />
+    <CompoundStatement name="secst2" >
+      <AND filter_name="ss2" />
+      <AND filter_name="omega"/>
+      <AND filter_name="rama"/>
+      <AND filter_name="st2" />
+      <AND filter_name="strand_res2" />
+    </CompoundStatement>
+  </FILTERS>
+  <!-- Step 2 TOs -->
+  <TASKOPERATIONS>
+    <ConsensusLoopDesign name="design_loops_and_flanking_s2" include_adjacent_residues="True" enrichment_threshold="0.5"
+			 secstruct="%%s2_SS%%" use_dssp="False"/>
+    <OperateOnResidueSubset name="repack_s2" selector="not_loops_or_flanking_s2" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+  </TASKOPERATIONS>
+  <!-- Step 2 MOVERS -->
+  <MOVERS>
+    <AddConstraints name="curr_conf_s2_part" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true" residue_selector="not_rebuild_s2" />
+    </AddConstraints>
+    <AddConstraints name="curr_conf_s2" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true"/>
+    </AddConstraints>
+    <!-- 
+    AddConstraintsToCurrentConformationMover name="curr_conf_s2" use_distance_cst="1" coord_dev="0.5" bound_width="0"
+                                              min_seq_sep="3" max_distance="10.0" cst_weight="1.0"
+                                              CA_only="1" residue_selector="not_rebuild_s2"/
+    -->
+    <SetSecStructEnergies name="set_ssene2" scorefxn="SFXN2" blueprint="%%bp2.b%%" />
+    <BluePrintBDR name="bdr2" scorefxn="SFXN2" use_abego_bias="1" blueprint="%%bp2.b%%" constraint_file="%%cst2%%"/>
+    <ConstraintSetMover name="addcst2" add_constraints="1" cst_file="%%cst2%%"/>
+    <PackRotamersMover name="design_loops_s2" scorefxn="talaris" task_operations="repack_s2,design_loops_and_flanking_s2"/>
+    <ParsedProtocol name="cenmin2" >
+      <Add mover_name="cent" />
+      <Add mover_name="curr_conf_s2_part" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts"/>
+      <Add mover_name="curr_conf_s2" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts"/>
+      <Add mover_name="fullatom" />
+    </ParsedProtocol>
+    <ParsedProtocol name="bdr2ss" >
+      <Add mover_name="rmcst"/>
+      <Add mover_name="bdr2" />
+      <Add mover_name="rmcst"/>
+      <Add mover_name="design_loops_s2" />
+      <Add mover_name="polyval"/>
+      <Add mover_name="cenmin2" />
+      <Add mover_name="dssp" />
+    </ParsedProtocol>
+    <LoopOver name="loop2" mover_name="bdr2ss" filter_name="secst2" drift="0" iterations="10" ms_whenfail="FAIL_DO_NOT_RETRY"/>
+  </MOVERS>
+  <!-- ########################################################### -->
+  <!-- STEP #3: Strand 6 ######################################### -->
+  <!-- ########################################################### -->
+  <!-- Step 3 SCFXNS -->
+  <SCOREFXNS>
+    <ScoreFunction name="SFXN3" weights="fldsgn_cen" >
+      <Reweight scoretype="hbond_sr_bb" weight="1.0" />
+      <Reweight scoretype="hbond_lr_bb" weight="1.0" />
+      <Reweight scoretype="rama" weight="1.15" />
+      <Reweight scoretype="omega" weight="1.5" />
+      <Reweight scoretype="atom_pair_constraint" weight="1.0" />
+      <Reweight scoretype="angle_constraint" weight="1.0" />
+      <Reweight scoretype="dihedral_constraint" weight="1.0" />
+    </ScoreFunction>
+  </SCOREFXNS>
+  <!-- Step 3 RSs -->
+  <RESIDUE_SELECTORS>
+    <SecondaryStructure name="strands3" ss="E" include_terminal_loops="True" pose_secstruct="%%s3_SS%%"/>
+    <SecondaryStructure name="loops_s3" ss="L" include_terminal_loops="False"
+                        use_dssp="False" pose_secstruct="%%s3_SS%%" />
+    <PrimarySequenceNeighborhood name="flanking_s3" selector="loops_s3" lower="1" upper="1" />
+    <Or name="loops_or_flanking_s3" selectors="loops_s3,flanking_s3" />
+    <Not name="not_loops_or_flanking_s3" selector="loops_or_flanking_s3" />
+    <Index name="rebuild_s3" resnums="%%R_in_bp3%%"/>
+    <Not name="not_rebuild_s3" selector="rebuild_s3" />
+  </RESIDUE_SELECTORS>
+  <!-- Step 3 FILTERS -->
+  <FILTERS>
+    <ResidueCount name="strand_res3" residue_selector="strands3" />
+    <CalculatorFilter name="strand_energy3" equation="LRH/STR" threshold="-0.7" confidence="1">
+      <Var name="LRH" filter="strand_hb"/>
+      <Var name="STR" filter="strand_res3"/>
+    </CalculatorFilter>
+    <SecondaryStructure name="ss3"  use_abego="1" blueprint="%%bp3%%" threshold="1.0" confidence="1" compute_pose_secstruct_by_dssp="1" />
+    <SheetTopology name="st3" topology="1-2.A.99;2-3.A.99;3-4.A.99" blueprint="%%bp3%%" confidence="1" />
+    <CompoundStatement name="secst3" >
+      <AND filter_name="omega"/>
+      <AND filter_name="rama"/>
+      <AND filter_name="st3" />
+      <AND filter_name="ss3" />
+      <AND filter_name="strand_res3" />
+    </CompoundStatement>
+  </FILTERS>
+  <!-- Step 3 TOs -->
+  <TASKOPERATIONS>
+    <ConsensusLoopDesign name="design_loops_and_flanking_s3" include_adjacent_residues="True" enrichment_threshold="0.5"
+                         secstruct="%%s3_SS%%" use_dssp="False"/>
+    <OperateOnResidueSubset name="repack_s3" selector="not_loops_or_flanking_s3" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+  </TASKOPERATIONS>
+  <!-- Step 3 MOVERS -->
+  <MOVERS>
+    <AddConstraints name="curr_conf_s3_part" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true" residue_selector="not_rebuild_s3" />
+    </AddConstraints>
+    <AddConstraints name="curr_conf_s3" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true"/>
+    </AddConstraints>
+    <!--
+	AddConstraintsToCurrentConformationMover name="curr_conf_s3" use_distance_cst="1" coord_dev="0.5" bound_width="0"
+                                              min_seq_sep="3" max_distance="10.0" cst_weight="1.0"
+                                              CA_only="1" residue_selector="not_rebuild_s3"/
+    -->
+    <SetSecStructEnergies name="set_ssene3" scorefxn="SFXN3" blueprint="%%bp3.b%%" />
+    <BluePrintBDR name="bdr3" scorefxn="SFXN3" use_abego_bias="1" blueprint="%%bp3.b%%" constraint_file="%%cst3%%" />
+    <ConstraintSetMover name="addcst3" add_constraints="1" cst_file="%%cst3%%"/>
+    <PackRotamersMover name="design_loops_s3" scorefxn="talaris" task_operations="repack_s3,design_loops_and_flanking_s3"/>
+    <ParsedProtocol name="cenmin3" >
+      <Add mover_name="cent" />
+      <Add mover_name="curr_conf_s3_part" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts"/>
+      <Add mover_name="curr_conf_s3" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts"/>
+      <Add mover_name="fullatom" />
+    </ParsedProtocol>
+    <ParsedProtocol name="bdr3ss" >
+      <Add mover_name="rmcst"/>
+      <Add mover_name="bdr3" />
+      <Add mover_name="rmcst"/>
+      <Add mover_name="design_loops_s3" />
+      <Add mover_name="polyval"/>
+      <Add mover_name="cenmin3" />
+      <Add mover_name="dssp" />
+    </ParsedProtocol>
+    <LoopOver name="loop3" mover_name="bdr3ss" filter_name="secst3" drift="0" iterations="10" ms_whenfail="FAIL_DO_NOT_RETRY"/>
+  </MOVERS>
+  <!-- ########################################################### -->
+  <!-- STEP #4: H3 and frontal hairpin ########################### -->
+  <!-- ########################################################### -->
+  <!-- Step 4 SCFXNS -->
+  <SCOREFXNS>
+    <ScoreFunction name="SFXN4" weights="fldsgn_cen" >
+      <Reweight scoretype="hbond_sr_bb" weight="1.0" />
+      <Reweight scoretype="hbond_lr_bb" weight="1.0" />
+      <Reweight scoretype="rama" weight="1.15" />
+      <Reweight scoretype="omega" weight="1.5" />
+      <!-- Reweight scoretype="cen_pair_motifs" weight="20.0"/-->
+      <Reweight scoretype="atom_pair_constraint" weight="1.0" />
+      <Reweight scoretype="angle_constraint" weight="1.0" />
+      <Reweight scoretype="dihedral_constraint" weight="1.0" />
+    </ScoreFunction>
+  </SCOREFXNS>
+  <!-- Step 4 RSs -->
+  <RESIDUE_SELECTORS>
+    <SecondaryStructure name="strands4" ss="E" include_terminal_loops="True" pose_secstruct="%%s4_SS%%"/>
+    <SecondaryStructure name="loops_s4" ss="L" include_terminal_loops="False"
+                        use_dssp="False" pose_secstruct="%%s4_SS%%" />
+    <PrimarySequenceNeighborhood name="flanking_s4" selector="loops_s4" lower="1" upper="1" />
+    <Or name="loops_or_flanking_s4" selectors="loops_s4,flanking_s4" />
+    <Not name="not_loops_or_flanking_s4" selector="loops_or_flanking_s4" />
+    <Index name="rebuild_s4" resnums="%%R_in_bp4%%"/>
+    <Not name="not_rebuild_s4" selector="rebuild_s4" />
+  </RESIDUE_SELECTORS>
+  <!-- Step 4 TASKOPERATIONS -->
+  <TASKOPERATIONS>
+    <ConsensusLoopDesign name="design_loops_and_flanking_s4" include_adjacent_residues="True" enrichment_threshold="0.5"
+                         secstruct="%%s4_SS%%" use_dssp="False"/>
+    <OperateOnResidueSubset name="repack_s4" selector="not_loops_or_flanking_s4" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+  </TASKOPERATIONS>
+  <!-- Step 4 FILTERS -->
+  <MOVERS>
+    <ConstraintSetMover name="addcst4c" add_constraints="1" cst_file="%%cst4c%%"/>
+  </MOVERS>
+  <FILTERS>
+    <ResidueCount name="strand_res4" residue_selector="strands4" />
+    <CalculatorFilter name="strand_energy4" equation="LRH/STR" threshold="-0.8" confidence="1">
+      <Var name="LRH" filter="strand_hb"/>
+      <Var name="STR" filter="strand_res4"/>
+    </CalculatorFilter>
+    <ScoreType name="angle_cst_talaris_term" scorefxn="talaris" score_type="angle_constraint" threshold="0" confidence="1"/>
+    <ScoreType name="distance_cst_talaris_term" scorefxn="talaris" score_type="atom_pair_constraint" threshold="0" confidence="1"/>
+    <CalculatorFilter name="cst_score_filter" equation="DIS+ANG" threshold="0" >
+      <Var name="DIS" filter="distance_cst_talaris_term"/>
+      <Var name="ANG" filter="angle_cst_talaris_term"/>
+    </CalculatorFilter>
+    <MoveBeforeFilter name="H3_E4_angle" mover="addcst4c" filter="angle_cst_talaris_term"/>
+    <SheetTopology name="st4" topology="1-2.A.0;1-6.P.-5;3-4.A.99;4-5.A.99;5-6.A.99" blueprint="%%bp4.b%%" confidence="0"/> <!-- topology="1-2.A.0;1-6.P.-5;3-4.A.99;4-5.A.99;5-6.A.99" -->
+    <SecondaryStructure name="ss4" use_abego="1" blueprint="%%bp4.b%%" threshold="1.0" confidence="1" treat_L_as_D="1" />
+    <!-- Prevent H3x2 from going up too far -->
+    <AtomicDistance name="H34dist" residue1="%%H34dist_r1%%" atomname1="CA" residue2="%%H34dist_r2%%" atomname2="CA" distance="%%H34dist_dist%%" confidence="1" />
+    <!--
+    <AtomicDistance name="dist4a" residue1="14" atomname1="N" residue2="86" atomname2="O" distance="4.0" confidence="1" />
+    <AtomicDistance name="dist4b" residue1="85" atomname1="N" residue2="8" atomname2="O" distance="4.0" confidence="1" />
+    <AtomicDistance name="dist4c" residue1="10" atomname1="N" residue2="85" atomname2="O" distance="4.0" confidence="1" />
+    -->
+    <AtomicDistance name="dist4d" residue1="25" atomname1="N" residue2="11" atomname2="O" distance="3.8" confidence="1" />
+    <!--
+    <AtomicDistance name="dist4e" residue1="13" atomname1="N" residue2="10" atomname2="O" distance="4.0" confidence="1" />
+    <AtomicDistance name="dist4f" residue1="28" atomname1="N" residue2="24" atomname2="O" distance="4.0" confidence="0" />
+    <AtomicDistance name="dist4g" residue1="24" atomname1="N" residue2="13" atomname2="O" distance="4.0" confidence="0" />
+     #HSSTRIPLET 2,5-6;3,1-2;1,5-6
+    <StrandHelix name="st56hx1" StrandID1="5" StrandID2="6" HelixID="1" min_dist="15" max_dist="28" min_ortho_angle="100" max_ortho_angle="150"
+                 min_plane_angle="-55" max_plane_angle="0" blueprint="../bp5.b" output_type="dist" confidence="1"/>
+    <StrandHelix name="st12hx2" StrandID1="1" StrandID2="2" HelixID="2" min_dist="-14" max_dist="-8" min_ortho_angle="120" max_ortho_angle="180"
+                 min_plane_angle="-40" max_plane_angle="20" blueprint="../bp5.b" output_type="dist" confidence="1"/>
+    <StrandHelix name="st56hx3" StrandID1="5" StrandID2="6" HelixID="3" min_dist="15" max_dist="25" min_ortho_angle="40" max_ortho_angle="100"
+                 min_plane_angle="-180" max_plane_angle="-70" blueprint="../bp5.b" output_type="dist" confidence="0"/>
+
+    <CompoundStatement name="HSS_step4" >
+      <AND filter_name="st56hx1" />
+      <AND filter_name="st12hx2" />
+      <AND filter_name="st56hx3" />
+    </CompoundStatement>
+    -->
+    <StrandHelixGeometryFilter name="H3S1_2_angle" StrandID1="1" StrandID2="2" HelixID="2" min_dist="-14" max_dist="100" min_ortho_angle="110" max_ortho_angle="142"
+                               min_plane_angle="-35" max_plane_angle="3" blueprint="%%bp4.b%%" output_type="dist" confidence="1"/>
+    <HelixKink name="Hkink4" bend="20" blueprint="%%bp4.b%%"/>
+    <!--HelixBend name="hbend3" threshold="155.0" blueprint="%%bp4.b%%" HelixID="2" confidence="0" /-->
+    <HelixBendFilter name="hbend2" threshold="155.0" blueprint="%%bp4.b%%" HelixID="1" confidence="1" />
+    <CompoundStatement name="secst4" >
+      <AND filter_name="st4" />
+      <AND filter_name="ss4" />
+      <AND filter_name="strand_energy4"/>
+      <AND filter_name="dist4d" />
+      <!--
+      <AND filter_name="dist4a" />
+      <AND filter_name="dist4b" />
+      <AND filter_name="dist4c" />
+      <AND filter_name="dist4e" />
+      <AND filter_name="dist4f" />
+      <AND filter_name="dist4g" />
+      -->
+      <!--AND filter_name="H3_E4_angle"/-->
+      <AND filter_name="Hkink4" />
+      <AND filter_name="hbend2" />
+      <!--AND filter_name="hbend3" /-->
+      <AND filter_name="omega"/>
+      <AND filter_name="rama"/>
+    </CompoundStatement>
+  </FILTERS>
+  <!-- Step 4 MOVERS -->
+  <MOVERS>
+    <!--
+    <AddConstraintsToCurrentConformationMover name="curr_conf_s4" use_distance_cst="1" coord_dev="0.5" bound_width="0"
+                                              min_seq_sep="3" max_distance="10.0" cst_weight="1.0"
+                                              CA_only="1" residue_selector="not_rebuild_s4"/>
+    -->
+    <AddConstraints name="curr_conf_s4_part" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true" residue_selector="not_rebuild_s4" />
+    </AddConstraints>
+    <AddConstraints name="curr_conf_s4" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true"/>
+    </AddConstraints>
+    <SetSecStructEnergies name="set_ssene4" scorefxn="SFXN4" blueprint="%%bp4.b%%" hs_angle="180" hs_atr_dist="16.0" hs_atr_dist_wts="0.0" hs_angle_wts="0.0" natbias_ss="1.0" natbias_hs="0.0" />
+    <!--Unavailable options: hs_ortho_angle=65 hs_ortho_angle_wts=1.0 -->
+    <ConstraintSetMover name="addcst4" add_constraints="1" cst_file="%%cst4b%%"/>
+    <BluePrintBDR name="bdr4" scorefxn="SFXN4" use_abego_bias="1" blueprint="%%bp4.b%%" constraint_file="%%cst4%%"/>
+    <PackRotamersMover name="design_loops_s4" scorefxn="talaris" task_operations="repack_s4,design_loops_and_flanking_s4"/>
+    <ParsedProtocol name="cenmin4" >
+      <Add mover_name="cent" />
+      <Add mover_name="addcst4" />
+      <Add mover_name="curr_conf_s4_part" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rmcst"/>
+      <Add mover_name="rm_csts" />
+      <Add mover_name="curr_conf_s4" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts" />
+      <Add mover_name="fullatom" />
+    </ParsedProtocol>
+    <ParsedProtocol name="bdr4ss" >
+      <Add mover_name="rmcst" />
+      <Add mover_name="bdr4" />
+      <Add mover_name="rmcst" />
+      <Add mover_name="design_loops_s4" />
+      <Add mover_name="polyval"/>
+      <Add mover_name="cenmin4" />
+      <!-- Add mover_name="pmm"/ -->
+      <Add mover_name="dssp" />
+    </ParsedProtocol>
+    <LoopOver name="loop4" mover_name="bdr4ss" filter_name="secst4" drift="0" iterations="20" ms_whenfail="FAIL_DO_NOT_RETRY"/>
+  </MOVERS>
+ 	<!-- ########################################################### -->
+    	<!-- STEP #5: H5, C Helix ###################################### -->
+      	<!-- ########################################################### -->
+        <!-- Step 5 SCFXNS -->
+	<SCOREFXNS>
+		<ScoreFunction name="SFXN5" weights="fldsgn_cen" >
+			<Reweight scoretype="hbond_sr_bb" weight="1.0" />
+			<Reweight scoretype="hbond_lr_bb" weight="1.0" />
+			<Reweight scoretype="rama" weight="1.15" />
+			<Reweight scoretype="omega" weight="1.5" />
+			<!--Reweight scoretype="cen_pair_motifs" weight="20.0"/-->
+			<!--Reweight scoretype="cen_pair_motif_degree" weight="2.0"/-->
+			<Reweight scoretype="atom_pair_constraint" weight="1.00" />
+			<Reweight scoretype="angle_constraint" weight="1.00" />
+			<Reweight scoretype="dihedral_constraint" weight="1.00" />
+		</ScoreFunction>
+	</SCOREFXNS>
+	<!-- Step 5 RSs -->
+	<RESIDUE_SELECTORS>
+			  <SecondaryStructure name="loops_s5" ss="L" include_terminal_loops="False"
+				  use_dssp="False" pose_secstruct="%%s5_SS%%" />
+			  <PrimarySequenceNeighborhood name="flanking_s5" selector="loops_s5" lower="1" upper="1" />
+			  <Or name="loops_or_flanking_s5" selectors="loops_s5,flanking_s5" />
+			  <Not name="not_loops_or_flanking_s5" selector="loops_or_flanking_s5" />
+			  <Index name="rebuild_s5" resnums="%%R_in_bp5%%"/>
+			  <Not name="not_rebuild_s5" selector="rebuild_s5" />
+		  </RESIDUE_SELECTORS>
+		  <!-- Step 5 TASKOPERATIONS -->
+		  <TASKOPERATIONS>
+			  <ConsensusLoopDesign name="design_loops_and_flanking_s5" include_adjacent_residues="True" enrichment_threshold="0.5"
+				  secstruct="%%s5_SS%%" use_dssp="False"/>
+			  <OperateOnResidueSubset name="repack_s5" selector="not_loops_or_flanking_s5" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+			  <OperateOnResidueSubset name="not_des_cterm" selector="not_rebuild_s5" > <PreventRepackingRLT/> </OperateOnResidueSubset>
+		  </TASKOPERATIONS>
+
+		  <MOVERS>
+			  <ConstraintSetMover name="addcst5b" add_constraints="1" cst_file="%%cst5b%%"/>
+		  </MOVERS>
+		  <!-- Step 5 FILTERS -->
+		  <FILTERS>
+			  <StrandHelixGeometryFilter name="S45_H3_plane" min_dist="-100"
+				  max_dist="100" min_ortho_angle="-180.0"
+				  max_ortho_angle="180.0" min_plane_angle="-180.0"
+				  max_plane_angle="55.0" StrandID1="4"
+				  StrandID2="5" HelixID="3"
+				  output_type="plane_angle" blueprint="%%bp5.b%%"
+				  confidence="1.0" />
+
+			  <StrandHelixGeometryFilter name="S12_H3_dist" min_dist="-100"
+				  max_dist="-13.95" min_ortho_angle="-180.0"
+				  max_ortho_angle="180.0" min_plane_angle="-180.0"
+				  max_plane_angle="180.0" StrandID1="1"
+				  StrandID2="2" HelixID="3"
+				  output_type="dist" blueprint="%%bp5.b%%"
+				  confidence="1.0" />
+			  <MoveBeforeFilter name="H4_HP_dist" mover="addcst5b" filter="cst_score_filter"/>
+			  <AverageDegree name="avdeg_cterm" threshold="10.00" distance_threshold="10.0" task_operations="not_des_cterm" confidence="1"/>
+			  <SecondaryStructure name="ss5"  use_abego="1" blueprint="%%bp5.b%%" threshold="1.0" confidence="1" compute_pose_secstruct_by_dssp="1" treat_L_as_D="1" />
+			  <HelixKink name="Hkink5" bend="20" blueprint="%%bp5.b%%"/>
+			  <HelixBendFilter name="hbend5" threshold="155.0" blueprint="%%bp5.b%%" HelixID="3" confidence="1" />
+			  <AtomicDistance name="distH4Sheet" residue1="%%distH4Sheet_r1%%" atomname1="CA" residue2="%%distH4Sheet_r2%%" atomname2="CA" distance="%%distH4Sheet_dist%%" confidence="1" /> <!-- Activate with correct distance | Done! -->
+			  <CompoundStatement name="secst5" >
+				  <!--
+				  <AND filter_name="S12_H3_dist" />
+				  <AND filter_name="S45_H3_plane" />
+				-->
+				  <AND filter_name="H4_HP_dist" />
+				  <AND filter_name="ss5" />
+				  <AND filter_name="Hkink5" />
+				  <AND filter_name="hbend5" />
+				  <!--AND filter_name="distH4Sheet" /-->
+				  <AND filter_name="avdeg_cterm" />
+				  <AND filter_name="omega"/>
+				  <AND filter_name="rama"/>
+			  </CompoundStatement>
+		  </FILTERS>
+		  <!-- Step 5 MOVERS -->
+		  <MOVERS>
+			  <AddConstraints name="curr_conf_s5_part" >
+				  <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+					  sidechain="false" ca_only="true" residue_selector="not_rebuild_s5" />
+			  </AddConstraints>
+			  <AddConstraints name="curr_conf_s5" >
+				  <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+					  sidechain="false" ca_only="true"/>
+			  </AddConstraints>
+			  <!--
+																																																																								<AddConstraintsToCurrentConformationMover name="curr_conf_s5" use_distance_cst="1" coord_dev="0.5" bound_width="0"
+					      min_seq_sep="3" max_distance="10.0" cst_weight="1.0"
+					      CA_only="1" residue_selector="not_rebuild_s5"/>
+    -->
+    <PackRotamersMover name="design_loops_s5" scorefxn="talaris" task_operations="repack_s5,design_loops_and_flanking_s5"/>
+    <!--Unavailable options: hs_ortho_angle=65 hs_ortho_angle_wts=1.0 -->
+    <ConstraintSetMover name="addcst5" add_constraints="1" cst_file="%%cst5%%"/>
+    <BluePrintBDR name="bdr5" scorefxn="SFXN5" use_abego_bias="1" blueprint="%%bp5.b%%" constraint_file="%%cst5%%"/>
+    <ParsedProtocol name="cenmin5" >
+	    <Add mover_name="cent" />
+	    <Add mover_name="addcst5" />
+	    <Add mover_name="curr_conf_s5_part" />
+	    <Add mover_name="cart_min_mover" />
+	    <Add mover_name="rm_csts" />
+	    <Add mover_name="curr_conf_s5" />
+	    <Add mover_name="cart_min_mover" />
+	    <Add mover_name="rm_csts" />
+	    <Add mover_name="rmcst" />
+	    <Add mover_name="fullatom" />
+    </ParsedProtocol>
+    <ParsedProtocol name="bdr5ss" >
+	    <Add mover_name="rmcst" />
+	    <Add mover_name="bdr5" />
+	    <Add mover_name="design_loops_s5" />
+	    <Add mover_name="polyval"/>
+	    <Add mover_name="rmcst" />
+	    <Add mover_name="cenmin5" />
+	    <!-- Add mover_name="pmm"/-->
+	    <Add mover_name="dssp" />
+    </ParsedProtocol>
+    <LoopOver name="loop5" mover_name="bdr5ss" filter_name="secst5" drift="0" iterations="10" ms_whenfail="FAIL_DO_NOT_RETRY"/>
+	</MOVERS>
+																			  
+	<!-- ########################################################### -->
+	<!-- STEP #6: H1 and H2 ######################################## -->
+	<!-- ########################################################### -->
+
+  <!-- Step #6 SCFXNS -->
+  <SCOREFXNS>
+    <ScoreFunction name="SFXN6" weights="fldsgn_cen" >
+      <Reweight scoretype="hbond_sr_bb" weight="1.0" />
+      <Reweight scoretype="hbond_lr_bb" weight="1.0" />
+      <Reweight scoretype="rama" weight="1.15" />
+      <Reweight scoretype="omega" weight="1.5" />
+      <!-- Reweight scoretype="cen_pair_motifs" weight="20.0"/ -->
+      <!-- Reweight scoretype="cen_pair_motif_degree" weight="2.0"/-->
+      <Reweight scoretype="atom_pair_constraint" weight="1.00" />
+      <Reweight scoretype="angle_constraint" weight="1.00" />
+      <Reweight scoretype="dihedral_constraint" weight="0.50" />
+    </ScoreFunction>
+  </SCOREFXNS>
+  <!-- Step #6 RSs -->
+  <RESIDUE_SELECTORS>
+    <SecondaryStructure name="loops_s6" ss="L" include_terminal_loops="False"
+                        use_dssp="False" pose_secstruct="%%s6_SS%%" />
+    <PrimarySequenceNeighborhood name="flanking_s6" selector="loops_s6" lower="1" upper="1" />
+    <Or name="loops_or_flanking_s6" selectors="loops_s6,flanking_s6" />
+    <Not name="not_loops_or_flanking_s6" selector="loops_or_flanking_s6" />
+    <Index name="rebuild_s6" resnums="%%R_in_bp6%%"/>
+    <Not name="not_rebuild_s6" selector="rebuild_s6" />
+  </RESIDUE_SELECTORS>
+  <!-- Step #6 TASKOPERATIONS -->
+  <TASKOPERATIONS>
+    <ConsensusLoopDesign name="design_loops_and_flanking_s6" include_adjacent_residues="True" enrichment_threshold="0.5"
+                         secstruct="%%s6_SS%%" use_dssp="False"/>
+    <OperateOnResidueSubset name="repack_s6" selector="not_loops_or_flanking_s6" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="not_des_nterm" selector="not_rebuild_s6" > <PreventRepackingRLT/> </OperateOnResidueSubset>
+  </TASKOPERATIONS>  
+  <!-- Step #6 FILTERS -->
+  <MOVERS>
+    <ConstraintSetMover name="addcst6c" add_constraints="1" cst_file="%%cst6c%%"/>
+  </MOVERS>
+  <FILTERS>
+    <MoveBeforeFilter name="STEP6_csts" mover="addcst6c" filter="cst_score_filter" confidence="1"/>
+    <AverageDegree name="avdeg_nterm" threshold="16.00" distance_threshold="10.0" task_operations="not_des_nterm" confidence="1"/>
+    <SecondaryStructure name="ss6"  use_abego="1" blueprint="%%bp6.b%%" threshold="1.0" confidence="1" treat_L_as_D="1" />
+    <!--
+    <AtomicDistance name="dist6a" residue1="32" atomname1="N" residue2="104" atomname2="O" distance="4.0" confidence="1" />
+    <AtomicDistance name="dist6b" residue1="103" atomname1="N" residue2="26" atomname2="O" distance="4.0" confidence="1" />
+    <AtomicDistance name="dist6c" residue1="28" atomname1="N" residue2="103" atomname2="O" distance="4.0" confidence="1" />
+    <AtomicDistance name="dist6d" residue1="43" atomname1="N" residue2="29" atomname2="O" distance="4.0" confidence="0" />
+    <AtomicDistance name="dist6e" residue1="31" atomname1="N" residue2="28" atomname2="O" distance="4.0" confidence="1" />
+    -->
+    <HelixBendFilter name="hbend1" threshold="155.0" blueprint="%%bp6.b%%" HelixID="1" confidence="1" />
+    <HelixBendFilter name="hbend2_s6" threshold="155.0" blueprint="%%bp6.b%%" HelixID="2" confidence="1" />
+    <HelixKink name="hkink6" bend="20" blueprint="%%bp6.b%%"/>
+    <AverageDegree name="avdeg5" threshold="15.0" distance_threshold="10.0" confidence="0"/>
+    
+    <!--Prevent H2 from pointing downwards-->
+    <StrandHelixGeometryFilter name="H2S6_angle" StrandID1="5" StrandID2="6" HelixID="2" min_dist="14" max_dist="28" min_ortho_angle="120" max_ortho_angle="180"
+		 min_plane_angle="-180" max_plane_angle="180" blueprint="%%bp6.b%%" output_type="dist" confidence="0"/>
+    
+    <!--Prevent H1 from being too far or too close to sheet-->
+    <StrandHelixGeometryFilter name="H1S4_dist" StrandID1="4" StrandID2="5" HelixID="1" min_dist="-14.5" max_dist="-12" min_ortho_angle="95" max_ortho_angle="105"
+                 min_plane_angle="-10" max_plane_angle="10" blueprint="%%bp6.b%%" output_type="dist" confidence="0"/>
+
+    <StrandHelixGeometryFilter name="H1S4_ortho" StrandID1="4" StrandID2="5" HelixID="1" min_dist="-14.5" max_dist="-12" min_ortho_angle="95" max_ortho_angle="105"
+                 min_plane_angle="-10" max_plane_angle="10" blueprint="%%bp6.b%%" output_type="ortho_ngle" confidence="0"/>
+    
+    <StrandHelixGeometryFilter name="H1S4_plane" StrandID1="4" StrandID2="5" HelixID="1" min_dist="-14.5" max_dist="-12" min_ortho_angle="95" max_ortho_angle="105"
+                 min_plane_angle="-10" max_plane_angle="10" blueprint="%%bp6.b%%" output_type="plane_angle" confidence="0"/>
+
+    <!--Some distance constraints for proper H1 and H2 placement:-->
+    <AtomicDistance name="H1Na" residue1="%%H1Na_r1%%" atomname1="CA" residue2="%%H1Na_r2%%" atomname2="CA" distance="%%H1Na_dist%%" confidence="1" />
+    <AtomicDistance name="H1Nb" residue1="%%H1Nb_r1%%" atomname1="CA" residue2="%%H1Nb_r2%%" atomname2="CA" distance="%%H1Nb_dist%%" confidence="1" />
+    <AtomicDistance name="H2N" residue1="%%H2N_r1%%" atomname1="CA" residue2="%%H2N_r2%%" atomname2="CA" distance="%%H2N_dist%%" confidence="0" />
+    <AtomicDistance name="H1C" residue1="%%H1C_r1%%" atomname1="CA" residue2="%%H1C_r2%%" atomname2="CA" distance="%%H1C_dist%%" confidence="1" />
+    <AtomicDistance name="H1Cb" residue1="%%H1Cb_r1%%" atomname1="CA" residue2="%%H1Cb_r2%%" atomname2="CA" distance="%%H1Cb_dist%%" confidence="1" />
+
+    <CompoundStatement name="secst6" >
+      <AND filter_name="ss6" />
+      <!--AND filter_name="hbend1" /-->
+      <AND filter_name="hbend2_s6" />
+      <!--AND filter_name="dist6a" /-->
+      <!--AND filter_name="dist6b" /--> 
+      <!--AND filter_name="dist6c" /-->
+      <!--AND filter_name="dist6d" /-->
+      <!--AND filter_name="dist6e" /-->
+      <AND filter_name="hkink6" />
+      <!--AND filter_name="H2S6_angle" /-->
+      <AND filter_name="H1S4_dist" />
+      <AND filter_name="H1Na" />
+      <AND filter_name="H1Nb" />
+      <AND filter_name="H2N" />
+      <AND filter_name="H1C" />
+      <AND filter_name="H1Cb" />
+       <!--AND filter_name="STEP6_csts"/-->
+      <AND filter_name="omega"/>
+      <AND filter_name="rama"/>
+      <AND filter_name="avdeg"/>
+    </CompoundStatement>
+  </FILTERS>
+  <!-- Step #6 MOVERS -->
+  <MOVERS>
+    <AddConstraints name="curr_conf_s6_part" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true" residue_selector="not_rebuild_s6" />
+    </AddConstraints>
+    <AddConstraints name="curr_conf_s6" >
+      <CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="true" bounded_width="1.0"
+                                     sidechain="false" ca_only="true"/>
+    </AddConstraints>
+    <!--
+    <AddConstraintsToCurrentConformationMover name="curr_conf_s6" use_distance_cst="1" coord_dev="0.5" bound_width="0"
+                                              min_seq_sep="3" max_distance="10.0" cst_weight="1.0"
+                                              CA_only="1" residue_selector="not_rebuild_s6"/>
+    -->
+    <PackRotamersMover name="design_loops_s6" scorefxn="talaris" task_operations="repack_s6,design_loops_and_flanking_s6"/>
+    <BluePrintBDR name="bdr6" scorefxn="SFXN6" use_abego_bias="1" blueprint="%%bp6.b%%" constraint_file="%%cst6%%" />
+    <ConstraintSetMover name="addcst6" add_constraints="1" cst_file="%%cst6b%%"/>
+    <ParsedProtocol name="cenmin6" >
+      <Add mover_name="cent" />
+      <Add mover_name="addcst6"/>
+      <Add mover_name="curr_conf_s6_part" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts" />
+      <Add mover_name="rmcst" />
+      <Add mover_name="curr_conf_s6" />
+      <Add mover_name="cart_min_mover" />
+      <Add mover_name="rm_csts" />
+      <Add mover_name="fullatom" />
+    </ParsedProtocol>
+    <ParsedProtocol name="bdr6ss" >
+      <Add mover_name="rmcst" />
+      <Add mover_name="bdr6" />
+      <Add mover_name="design_loops_s6" />
+      <Add mover_name="polyval"/>
+      <Add mover_name="rmcst" />
+      <Add mover_name="cenmin6" />
+      <!--Add mover_name="pmm"/-->				               
+      <Add mover_name="dssp" />
+    </ParsedProtocol>
+    <LoopOver name="loop6" mover_name="bdr6ss" filter_name="secst6" drift="0" iterations="20" ms_whenfail="FAIL_DO_NOT_RETRY"/>	  
+  </MOVERS>
+  
+  <APPLY_TO_POSE>
+  </APPLY_TO_POSE>
+  
+  <PROTOCOLS>
+    <Add mover_name="polyval" />
+
+    <Add mover_name="set_ssene1" />
+    <Add mover_name="loop1" />
+    <Add mover_name="fullatom" />
+
+    <Add mover_name="set_ssene2" />
+    <Add mover_name="loop2" />
+    <Add mover_name="fullatom" />
+
+    <Add mover_name="set_ssene3" />
+    <Add mover_name="loop3" />
+    <Add mover_name="fullatom" />
+
+    <Add mover_name="set_ssene4" />
+    <Add mover_name="loop4" />
+    <Add mover_name="fullatom" />
+	
+     <Add mover_name="loop5" />
+     <Add mover_name="fullatom" />
+     <Add mover_name="polyala"/>
+     	<Add mover_name="pdb5"/>
+	<Add mover_name="polyval" />
+
+     <Add mover_name="loop6" />
+    <Add mover_name="fullatom" />
+    
+    <Add filter_name="avdeg"/>
+    <Add filter_name="cen_score_res"/>
+    <Add filter_name="cent_pair_motifs"/>
+
+    <Add filter_name="av_strand_hb"/>
+    <Add filter_name="omega"/>
+    <Add filter_name="rama"/>
+
+    <Add mover_name="polyala"/>
+  </PROTOCOLS>
+  <OUTPUT/>
+</ROSETTASCRIPTS>
