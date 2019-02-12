@@ -1,0 +1,311 @@
+<ROSETTASCRIPTS>
+  <SCOREFXNS>
+    <!-- Beta score function with constraints and cartesian -->
+    <ScoreFunction name="beta" weights="%%hard_fa%%">
+      <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+      <Reweight scoretype="coordinate_constraint" weight="1.0"/>
+      <Reweight scoretype="angle_constraint" weight="1.0"/>
+      <Reweight scoretype="dihedral_constraint" weight="1.0"/>
+      <Reweight scoretype="cart_bonded" weight="0.5"/>
+      <Reweight scoretype="pro_close" weight="0.0"/>
+    </ScoreFunction>
+    
+    <!-- Beta soft -->
+    <ScoreFunction name="soft_beta" weights="%%soft_fa%%">
+      <Reweight scoretype="aa_composition" weight="0.1" />
+      <Set aa_composition_setup_file="%%aa_comp%%" />
+    </ScoreFunction>
+    
+    <!-- Beta score function with constraints, cartesian and AA composiiton -->
+    <ScoreFunction name="beta_aa_comp" weights="%%hard_fa%%">
+      <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+      <Reweight scoretype="coordinate_constraint" weight="1.0"/>
+      <Reweight scoretype="angle_constraint" weight="1.0"/>
+      <Reweight scoretype="cart_bonded" weight="0.5"/>
+      <Reweight scoretype="pro_close" weight="0.0"/>
+      <Reweight scoretype="aa_composition" weight="0.1" />
+      <Set aa_composition_setup_file="%%aa_comp%%" />
+    </ScoreFunction>
+    
+    <ScoreFunction name="fullatom" weights="%%hard_fa%%">
+      <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+      <Reweight scoretype="coordinate_constraint" weight="1.0"/>
+      <Reweight scoretype="angle_constraint" weight="1.0"/>
+      <Reweight scoretype="cart_bonded" weight="0.5"/>
+      <Reweight scoretype="pro_close" weight="0.0"/>
+    </ScoreFunction>
+    
+    <ScoreFunction name="standardfxn" weights="%%hard_fa%%"/>
+    
+  </SCOREFXNS>
+  
+  <TASKOPERATIONS>
+    <ReadResfile name="resfile" filename="%%resfile%%"/>
+    <ReadResfile name="dummy_resfile_TO" filename="%%dummy_resfile%%"/>
+    <LimitAromaChi2 name="limitchi"/>
+    <IncludeCurrent name="ic" />
+  </TASKOPERATIONS>
+ 
+  <RESIDUE_SELECTORS>
+	<SecondaryStructure name="helices" ss="H" pose_secstruct="%%SS%%" />
+	<SecondaryStructure name="not_loops" ss="EH" pose_secstruct="%%SS%%" />
+  </RESIDUE_SELECTORS>
+
+  <RESIDUE_SELECTORS>
+    <ResiduePDBInfoHasLabel name="disulfide" property="DISULFIDIZE"/>
+    <SecondaryStructure name="secstruct" ss="L" pose_secstruct="%%SS%%" />
+    <SecondaryStructure name="elems" ss="HE" pose_secstruct="%%SS%%" />
+    <SecondaryStructure name="strands" ss="E" pose_secstruct="%%SS%%" />
+    <ResidueName name="polarAA" residue_name3="ASP,GLU,ASN,GLN,LYS,ARG,SER,HIS,THR"/>
+    <ResidueName name="non_polarAA" residue_name3="ALA,VAL,ILE,LEU,MET,PHE,TYR,TRP"/>
+    <Layer name="core" select_core="True" use_sidechain_neighbors="False"
+	   core_cutoff="20" surface_cutoff="40" />
+    <Layer name="boundary" select_boundary="True" use_sidechain_neighbors="False"
+	   core_cutoff="20" surface_cutoff="40" />
+    <Layer name="surface" select_surface="True" use_sidechain_neighbors="False"
+	   core_cutoff="20" surface_cutoff="40" />
+    <Not name="not_surface" selector="surface"/>
+    <Not name="not_polarAA" selector="polarAA"/>
+    <And name="surface_polars" selectors="surface,polarAA"/>
+    <And name="surface_no_polars" selectors="surface,not_polarAA"/>
+  </RESIDUE_SELECTORS>
+  
+  <TASKOPERATIONS>
+    <OperateOnResidueSubset name="repack_boundary" selector="boundary"> <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="fix_core" selector="core"> <PreventRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="repack_surface_no_polars" selector="surface_no_polars"> <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="HandE" selector="secstruct"> <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <!-- SASA for exposed hydrophobics -->
+    <SelectBySASA name="surface_TO" mode="sc" state="bound" surface="1"/> <!-- turned to default -->
+    <!-- SASA for exposed TYR -->
+    <SelectBySASA name="surface_TYR_TO" mode="sc" state="bound" surface="1"/> <!-- turned to default -->
+    <!-- SASA for boundary -->
+    <SelectBySASA name="boundary_TO" mode="sc" state="bound" boundary="1"/> <!-- turned to default -->
+    <!-- SASA for buried hydrophilics -->
+    <SelectBySASA name="core_TO" mode="sc" state="bound" core="1"/> <!-- turned to default -->
+  </TASKOPERATIONS>
+  
+  <!-- Replacement for Layer design TOs -->
+  <!-- layer_all -->
+  <RESIDUE_SELECTORS>
+    <Task name="dummy_resfile" fixed="True" packable="False" designable="False" task_operations="dummy_resfile_TO" />
+    <!-- side-chains neighbours -->
+    <Layer name="core_SCN" select_core="True" use_sidechain_neighbors="True" /> <!-- surface_cutoff="1.8" -->
+    <Layer name="boundary_SCN" select_boundary="True" use_sidechain_neighbors="True"/> <!-- surface_cutoff="1.8" --> <!-- core_cutoff="4.0" surface_cutoff="2.0"  -->
+    <Layer name="surface_SCN" select_surface="True" use_sidechain_neighbors="True"/> <!-- surface_cutoff="1.8" -->
+    <!-- SASA -->
+    <Task name="core_SASA" fixed="False" packable="False" designable="True" task_operations="core_TO"/>
+    <Task name="tyr_surface_SASA" fixed="False" packable="False" designable="True" task_operations="surface_TYR_TO"/>
+    <Task name="boundary_SASA" fixed="False" packable="False" designable="True" task_operations="boundary_TO"/>
+    <Task name="surface_SASA" fixed="False" packable="False" designable="True" task_operations="surface_TO"/>
+    <!-- side-chains neighbours combination with resfile-->
+    <And name="core_SCN_not_resfile" selectors="dummy_resfile,core_SCN"/>
+    <And name="boundary_SCN_not_resfile" selectors="dummy_resfile,boundary_SCN"/>
+    <And name="surface_SCN_not_resfile" selectors="dummy_resfile,surface_SCN"/>
+    <!-- SASA combinations with resfile -->
+    <And name="core_SASA_not_resfile" selectors="dummy_resfile,core_SASA"/>
+    <And name="boundary_SASA_not_resfile" selectors="dummy_resfile,boundary_SASA"/>
+    <And name="surface_SASA_not_resfile" selectors="dummy_resfile,surface_SASA"/>
+    <!-- SASA combinations for layer patching polarAA non_polarAA -->
+    <ResidueName name="non_polarAA_minus_tyr" residue_name3="ALA,VAL,ILE,LEU,MET,PHE,TRP"/>
+    <And name="exposed_hydrophobic" selectors="dummy_resfile,non_polarAA_minus_tyr,surface_SASA"/>
+    <And name="buried_hydrophilic" selectors="dummy_resfile,polarAA,core_SASA"/>
+    <ResidueName name="tyr" residue_name3="TYR"/>
+    <And name="exposed_tyrosine" selectors="dummy_resfile,tyr,tyr_surface_SASA"/>
+    <!-- restrict all else to repacking -->
+    <Not name="not_exposed_hydrophobic" selector="exposed_hydrophobic" />
+    <Not name="not_buried_hydrophilic" selector="buried_hydrophilic" />
+    <Not name="not_exposed_tyrosine" selector="exposed_tyrosine" />
+    <And name="strands_pos" selectors="strands,dummy_resfile"/>
+  </RESIDUE_SELECTORS>
+  
+  <TASKOPERATIONS>
+    <!-- design_core,repack_surface,repack_boundary -->
+    <OperateOnResidueSubset name="STRANDS" selector="strands_pos"> <RestrictAbsentCanonicalAASRLT aas="ADEFHIKLMNQRSTVWY"/> </OperateOnResidueSubset>
+    <!-- TOs for initial design -->
+    <OperateOnResidueSubset name="design_core" selector="core_SCN_not_resfile" > <RestrictAbsentCanonicalAASRLT aas="AFILMVPG"/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="repack_core" selector="core_SCN" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="design_boundary" selector="boundary_SCN_not_resfile" > <RestrictAbsentCanonicalAASRLT aas="FILMVWYDEHNQKRMPG"/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="design_surface" selector="surface_SCN_not_resfile" > <RestrictAbsentCanonicalAASRLT aas="EDHKRQNSTPG"/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="repack_surface" selector="surface_SCN" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <!-- TOs for initial design SASA based -->
+    <OperateOnResidueSubset name="design_core_SASA" selector="core_SASA_not_resfile" > <RestrictAbsentCanonicalAASRLT aas="AFILMVPG"/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="repack_core_SASA" selector="core_SASA" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="design_boundary_SASA" selector="boundary_SASA_not_resfile" > <RestrictAbsentCanonicalAASRLT aas="FILMVWYDEHNQKRMPG"/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="design_surface_SASA" selector="surface_SASA_not_resfile" > <RestrictAbsentCanonicalAASRLT aas="EDHKRQNSTPG"/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="repack_surface_SASA" selector="surface_SASA" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+  </TASKOPERATIONS>
+  
+  <RESIDUE_SELECTORS> <!-- ROs for sspred optimization random -->
+    <And name="choose_from" selectors="surface_SASA,polarAA,elems"/>
+    <RandomResidue name="random_residue" num_residues="1" selector="choose_from" /> <!-- Random polar surface residue that is not on loops -->
+    <StoredResidueSubset name="stored_random" subset_name="random" />
+    <Not name="not_random" selector="stored_random" />
+    <Neighborhood name="around_random" distance="8.0" selector="stored_random" />
+    <Not name="far_from_random" selector="around_random" />
+  </RESIDUE_SELECTORS>
+  
+  <TASKOPERATIONS>
+    <OperateOnResidueSubset name="repack_disulf" selector="disulfide" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="freeze_far_from_random" selector="far_from_random" > <PreventRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="repack_random" selector="stored_random" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="repack_around_random" selector="around_random" > <RestrictToRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="freeze_all_but_random" selector="not_random" > <PreventRepackingRLT/> </OperateOnResidueSubset>
+    <OperateOnResidueSubset name="design_random" selector="stored_random" > <RestrictAbsentCanonicalAASRLT aas="EDHKRQNST"/> </OperateOnResidueSubset>
+  </TASKOPERATIONS> 
+  
+  <TASKOPERATIONS>
+    <DsspDesign name="SS" blueprint="%%bp%%">
+      <Helix aa="ADEFHIKLMNQRSTVWY"/>
+      <Strand aa="ADEFHIKLMNQRSTVWYPG"/>
+      <Loop aa="ADEFHIKLMNQRSTVWYPG"/>
+      <HelixStart aa="ADEFHIKLMNQRSTVWYP"/>
+      <HelixCapping aa="ADEFHIKLMNQRSTVWYPG" />
+      <Nterm aa="ADEGHIKLNPQRSTV" />
+      <Cterm aa="ADEGHIKLNPQRSTV" />
+    </DsspDesign>
+    <ExtraRotamersGeneric name="ex" ex1="True" ex2="True" ex1_sample_level="1" ex2_sample_level="1" extrachi_cutoff="18"/>
+    <ConsensusLoopDesign name="consensus_loop" include_adjacent_residues="True"
+                         enrichment_threshold="0.43" blueprint="%%bp%%" />
+    <ConsensusLoopDesign name="consensus_loop_soft" include_adjacent_residues="True"
+                         enrichment_threshold="0.2" blueprint="%%bp%%" />
+  </TASKOPERATIONS>
+  
+  <FILTERS>
+    <ResidueCount name="exp_hyphob" confidence="0" residue_selector="exposed_hydrophobic"/>
+    <ResidueCount name="bur_hyphil" confidence="0" residue_selector="buried_hydrophilic"/>
+    <ResidueCount name="exp_tyr" confidence="0" residue_selector="exposed_tyrosine"/>
+    <SSPrediction name="sspred" confidence="0"
+		  cmd="%%sspredexec%%" use_probability="True" mismatch_probability="True" use_svm="0" threshold="0.25" blueprint="%%bp%%"/>
+    <ScoreType name="score" scorefxn="beta_aa_comp" score_type="total_score"
+	       threshold="0.0" confidence="0" />
+    <ResidueCount name="nres" confidence="0" />
+    <CalculatorFilter name="score_res" confidence="0" equation="SCORE/NRES" threshold="-2.10">
+      <Var name="SCORE" filter_name="score" />
+      <Var name="NRES" filter_name="nres" />
+    </CalculatorFilter>
+    <ScoreType name="score_fullatom" scorefxn="standardfxn" score_type="total_score"
+	       threshold="0.0" confidence="0" />
+    <CalculatorFilter name="score_res_final" confidence="0" equation="SCORE/NRES" threshold="-2.10">
+      <Var name="SCORE" filter_name="score_fullatom" />
+      <Var name="NRES" filter_name="nres" />
+    </CalculatorFilter>
+    <Geometry name="geom" count_bad_residues="true" />
+    <TaskAwareScoreType name="rama_random" task_operations="freeze_all_but_random" scorefxn="fullatom" score_type="rama_prepro" mode="average" threshold="100000" />
+    <TaskAwareScoreType name="rama_res" scorefxn="fullatom" score_type="rama_prepro" mode="individual" confidence="0" threshold="2.0" />
+    <TaskAwareScoreType name="disulf_score" scorefxn="fullatom" score_type="dslf_fa13" mode="individual" confidence="0" threshold="0.0" />
+    <CalculatorFilter name="rama_random_cap" confidence="0" equation="MAX(2.0,RAMA)" threshold="-2.10">
+      <Var name="RAMA" filter_name="rama_random" />
+    </CalculatorFilter>
+    <SSShapeComplementarity name="hx_sc" helices="1" loops="0" confidence="0" min_sc="0.75" verbose="0" />
+  </FILTERS>
+  
+  <MOVERS>
+    <!-- Pack core soft -->
+    <PackRotamersMover name="PackRot_init" scorefxn="beta" task_operations="resfile,design_core,design_boundary,design_surface,SS,STRANDS,limitchi,repack_disulf,consensus_loop"/>
+    <TaskAwareMinMover name="min_sc" scorefxn="beta" bb="0" chi="1" jump="0" cartesian="True" type="lbfgs_armijo_nonmonotone" tolerance="0.0001" max_iter="2000"/>
+    <!-- Focused design on core and boundary -->
+    <FastDesign name="fdesign_core_boundary"
+                task_operations="SS,STRANDS,ic,limitchi,resfile,design_core_SASA,design_boundary_SASA,repack_surface_SASA,repack_disulf,consensus_loop"
+		scorefxn="beta_aa_comp"  repeats="1" cartesian="True" bondangle="False" bondlength="False"
+		min_type="lbfgs_armijo_nonmonotone"
+                clear_designable_residues="0" />
+    
+    <!-- Focused design on boundary -->
+    <FastDesign name="fdesign_boundary_surface"
+                task_operations="SS,STRANDS,ic,limitchi,resfile,repack_core_SASA,design_boundary_SASA,design_surface_SASA,repack_disulf,consensus_loop"
+                scorefxn="beta_aa_comp"  repeats="1" cartesian="True" bondangle="False" bondlength="False"
+                min_type="lbfgs_armijo_nonmonotone"
+                clear_designable_residues="0"/>
+	
+	<AddConstraints name="add_cst" >
+		<CoordinateConstraintGenerator name="gen_my_csts" sd="1.0" bounded="false" sidechain="false" ca_only="true" />
+	</AddConstraints>
+	<RemoveConstraints name="rm_cst" constraint_generators="gen_my_csts" />
+    
+    <DumpPdb name="dumpGM" fname="dump_GM_" scorefxn="standardfxn" tag_time="true"/>
+    <FastRelax name="Relax" scorefxn="beta" task_operations="ic"
+	       cartesian="True" bondangle="False" bondlength="False"
+	       min_type="lbfgs_armijo_nonmonotone"/>
+
+       <FastRelax name="Relax_one" scorefxn="beta" task_operations="ic"
+	       cartesian="True" bondangle="False" bondlength="False"
+	       min_type="lbfgs_armijo_nonmonotone" repeats="1"/>
+
+       <DumpPdb name="dump_des" fname="dump_des_" scorefxn="standardfxn" tag_time="true"/>
+       <Disulfidize name="disulfidize" scorefxn="standardfxn" set1="helices" set2="not_loops" max_disulf_score="0.0" min_loop="8" max_disulfides="1"/>
+       
+    <ParsedProtocol name="Design" >
+      <Add mover_name="add_cst"/>
+      <Add mover_name="PackRot_init"/>
+      <Add mover_name="min_sc"/>
+      <Add mover_name="fdesign_core_boundary" />
+      <Add mover_name="fdesign_boundary_surface" />
+      <Add mover_name="rm_cst"/>
+      <Add mover_name="Relax_one" />
+      <Add mover_name="add_cst"/>
+      <Add mover_name="fdesign_core_boundary" />
+      <Add mover_name="fdesign_boundary_surface" />
+      <Add mover_name="rm_cst"/>
+      <Add mover_name="Relax_one" />
+      <Add mover_name="add_cst"/>
+      <Add mover_name="fdesign_core_boundary" />
+      <Add mover_name="fdesign_boundary_surface" />
+      <Add mover_name="rm_cst"/>
+      <Add mover_name="Relax_one" />
+      <!--Add mover_name="disulfidize"/-->
+    </ParsedProtocol>
+
+	<GenericMonteCarlo name="GM_Design"
+		mover_name="Design" trials="4"
+		bolz_rank="True"
+		recover_low="1" preapply="0" drift="0"
+		filter_name="sspred" sample_type="low" temperature="0.2">
+		<Filters>
+			<AND filter_name="score_res" sample_type="low" temperature="0.05"/>
+			<AND filter_name="hx_sc" sample_type="high" temperature="0.2"/>
+			<!--AND filter_name="HbondstoAtoms" sample_type="high" temperature="0.0"/-->
+		</Filters>
+	</GenericMonteCarlo>
+
+    <DumpPdb name="dump" fname="dump_" scorefxn="standardfxn" tag_time="true"/>
+    
+    <TaskAwareMinMover name="min_all" scorefxn="beta" bb="1" chi="1" jump="1" cartesian="True" type="lbfgs_armijo_nonmonotone" tolerance="0.0001" max_iter="2000" />
+    <StoreResidueSubset name="store_random_residue" subset_name="random" residue_selector="random_residue" overwrite="1" />
+    <RandomMutation name="random_mutation" task_operations="freeze_all_but_random,SS,STRANDS,design_random" />
+    <PackRotamersMover name="repack_around" scorefxn="beta_aa_comp"
+		       task_operations="freeze_far_from_random,repack_random,repack_around_random,repack_surface_no_polars,repack_boundary,ic" />
+    <ParsedProtocol name="mutate_repack" >
+      <Add mover_name="random_mutation" />
+      <Add mover_name="repack_around" />
+      <Add mover_name="min_all" />
+    </ParsedProtocol>
+    
+    <GenericSimulatedAnnealer name="GM_sspred"
+			      mover_name="mutate_repack" trials="100"
+			      bolz_rank="True" history="101"
+			      eval_period="1" periodic_mover="store_random_residue"
+			      recover_low="0" preapply="0" drift="1"
+			      filter_name="sspred" sample_type="low" temperature="0.01">
+      <Filters>
+	<AND filter_name="rama_random_cap" sample_type="low" temperature="0.01"/>
+        <AND filter_name="score_res" sample_type="low" temperature="0.01"/>
+        <AND filter_name="hx_sc" sample_type="high" temperature="0.005"/>
+      </Filters>
+    </GenericSimulatedAnnealer>
+    
+  </MOVERS>
+  <PROTOCOLS>
+	  <Add mover_name="GM_Design"/>
+	  <Add mover_name="Relax"/>
+    <Add mover_name="store_random_residue" />
+    <Add mover_name="GM_sspred" />
+    <Add mover_name="Relax"/>    
+    <Add filter_name="rama_res"/>
+    <Add filter_name="geom"/>
+    <Add filter_name="sspred"/>
+    <Add filter_name="score_res_final"/>
+    <Add filter_name="hx_sc"/>
+  </PROTOCOLS>
+</ROSETTASCRIPTS>
+

@@ -1,0 +1,15 @@
+-nstruct 1
+-parser:protocol ../../design_files/design.xml
+-run::preserve_header
+-packing::use_input_sc
+-beta
+-parser:script_vars relax_script=../../design_files/cart2.script
+-parser:script_vars aa_comp=../../design_files/ala_trp_met.comp
+-parser:script_vars hard_fa=beta_nov16
+-parser:script_vars soft_fa=beta_nov16_soft
+-parser:script_vars resfile=../../design_files/resfile
+-parser:script_vars dummy_resfile=../../design_files/dummy_resfile
+#REPLACE THESE FRAGS WITH YOUR PSIPRED EXECUTABLE, SS STRING AND BLUEPRINT
+#-parser:script_vars sspredexec=/gscratch/baker/brunette/src/psipred3.21/runpsipred_csbuild_single
+#-parser:script_vars SS=LHHHHHHHHHHHHHLLHHHHHHHLLLLLEEEELLEEEELHHHHHHHHHHHHHHLLEEEEEEEEEELLEEEEEEEEEELLEEEEEEEEEEEELLEEEEEEEEELLHHHHHHHHHHHLL
+#-parser:script_vars bp=../../design_files/blueprint
