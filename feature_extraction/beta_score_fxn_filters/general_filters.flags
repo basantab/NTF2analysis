@@ -1,0 +1,7 @@
+-ignore_unrecognized_res 1
+#-parser:script_vars psipred=/home/basantab/scripts/psipred/runpsipred_csbuild_single
+-load_PDB_components false
+-beta
+-parser:protocol ../general_filters.xml
+-out:file:score_only general_filters.sc
+#-holes:dalphaball /home/sheffler/bin/DAlphaBall.gcc

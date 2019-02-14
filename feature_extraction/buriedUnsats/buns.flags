@@ -1,0 +1,4 @@
+-ignore_unrecognized_res 1
+-parser:protocol ../buns.xml
+-out:file:score_only buns.sc
+-beta

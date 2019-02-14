@@ -1,0 +1,213 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+	<ScoreFunction name="beta" weights="ref2015"/>
+    </SCOREFXNS>
+    <RESIDUE_SELECTORS>
+	<Chain name="ChainA" chains="A"/>
+        <SecondaryStructure name="Helices" overlap="0" ss="H" />
+        <SecondaryStructure name="Strands" overlap="0" ss="E" />
+        <SecondaryStructure name="Loops" overlap="0" ss="L" />
+	<SecondaryStructure name="Loops_flank" overlap="1" ss="L" />
+	<Not name="not_Loops_flank" selector="Loops_flank"/>
+	<Layer name="core_SASA" select_core="True" use_sidechain_neighbors="False"/>
+	<Layer name="core_SCN" select_core="True" use_sidechain_neighbors="True"/>
+	<Or name="SS" selectors="Helices,Strands"/>
+	<ResidueName name="Aroms" residue_name3="TRP,TYR,PHE" />
+	<ResidueName name="Hydrophobes" residue_name3="TRP,TYR,PHE,ALA,ILE,LEU,MET,VAL" />
+	<And name="arom_in_core_SS_SCN" selectors="SS,Aroms,core_SCN"/>
+	<And name="arom_in_core_SS_SASA" selectors="SS,Aroms,core_SASA"/>
+	<And name="hyphob_in_core_SS_SCN" selectors="SS,Hydrophobes,core_SCN"/>
+        <And name="hyphob_in_core_SS_SASA" selectors="SS,Hydrophobes,core_SASA"/>
+	<And name="core_SS_SCN" selectors="SS,core_SCN"/>
+        <And name="core_SS_SASA" selectors="SS,core_SASA"/>
+    </RESIDUE_SELECTORS>
+    <TASKOPERATIONS>
+	<OperateOnResidueSubset name="loops_and_flank" selector="not_Loops_flank" ><PreventRepackingRLT/></OperateOnResidueSubset>
+    </TASKOPERATIONS>
+    <FILTERS>
+	<ResidueCount name="arom_in_core_SS_SCN" confidence="0.0" residue_types="TRP,PHE,TYR" residue_selector="core_SS_SCN"/>
+	<ResidueCount name="arom_in_core_SS_SASA" confidence="0.0" residue_types="TRP,PHE,TYR" residue_selector="core_SS_SASA"/>
+	<ResidueCount name="hyphob_in_core_SS_SCN" confidence="0.0"
+	residue_types="TRP,TYR,PHE,ALA,ILE,LEU,MET,VAL" residue_selector="core_SS_SCN"/>
+        <ResidueCount name="hyphob_in_core_SS_SASA" confidence="0.0"
+	residue_types="TRP,TYR,PHE,ALA,ILE,LEU,MET,VAL" residue_selector="core_SS_SASA"/>
+	<ResidueCount name="core_SCN" confidence="0.0" residue_selector="core_SCN"/>
+        <ResidueCount name="core_SASA" confidence="0.0" residue_selector="core_SASA"/>
+	<Geometry name="geom_res" count_bad_residues="True" confidence="0.0"/>
+	<ResidueCount name="nres_monomer" count_as_percentage="False" confidence="0.0" residue_selector="ChainA" />
+	<ResidueCount name="nres" count_as_percentage="False" confidence="0.0" />
+	<BuriedSurfaceArea name="BuriedHyphobSA" select_only_FAMILYVW="True" confidence="0.0" />
+	<CalculatorFilter name="BuriedHyphobSAperRes" equation="HSA/RES" threshold="0" confidence="0.0">
+		<Var name="HSA" filter="BuriedHyphobSA" />
+		<Var name="RES" filter="nres"/>
+	</CalculatorFilter>
+	<BuriedSurfaceArea name="BuriedHyphobSA_H" select_only_FAMILYVW="True" confidence="0.0" residue_selector="Helices"/>
+	<BuriedSurfaceArea name="BuriedHyphobSA_E" select_only_FAMILYVW="True" confidence="0.0" residue_selector="Strands"/>
+	<BuriedSurfaceArea name="BuriedHyphobSA_L" select_only_FAMILYVW="True" confidence="0.0" residue_selector="Loops"/>
+	<BuriedSurfaceArea name="BuriedHyphobSA2_H" select_only_FAMILYVW="False" confidence="0.0" residue_selector="Helices" atom_mode="hydrophobic_atoms" />
+	<BuriedSurfaceArea name="BuriedHyphobSA2_E" select_only_FAMILYVW="False" confidence="0.0" residue_selector="Strands" atom_mode="hydrophobic_atoms" />
+	<BuriedSurfaceArea name="BuriedHyphobSA2_L" select_only_FAMILYVW="False" confidence="0.0" residue_selector="Loops" atom_mode="hydrophobic_atoms" />
+	<ResidueCount name="nres_aro" count_as_percentage="False" confidence="0.0" residue_types="TRP,PHE,TYR" />
+	<ResidueCount name="nres_aro_H" count_as_percentage="False" confidence="0.0" residue_types="TRP,PHE,TYR" residue_selector="Helices"/>
+	<ResidueCount name="nres_aro_E" count_as_percentage="False" confidence="0.0" residue_types="TRP,PHE,TYR" residue_selector="Strands"/>
+	<ResidueCount name="nres_aro_L" count_as_percentage="False" confidence="0.0" residue_types="TRP,PHE,TYR" residue_selector="Loops"/>
+	<CalculatorFilter name="nres_aro_per_res" equation="SCO/RES" threshold="0" confidence="0.0">
+                <Var name="SCO" filter="nres_aro" />
+                <Var name="RES" filter="nres"/>
+        </CalculatorFilter>
+	<ResidueCount name="nres_H" count_as_percentage="False" confidence="0.0" residue_selector="Helices" />
+	<ResidueCount name="nres_E" count_as_percentage="False" confidence="0.0" residue_selector="Strands" />
+	<ResidueCount name="nres_L" count_as_percentage="False" confidence="0.0" residue_selector="Loops" />
+	<ResidueCount name="nres_charge" count_as_percentage="False" confidence="0.0" residue_types="GLU,ASP,LYS,ARG,HIS" />
+	<ResidueCount name="nres_hydrophob" count_as_percentage="False" confidence="0.0" residue_types="ALA,PHE,ILE,LEU,MET,VAL,TRP,TYR" />
+	<ResidueCount name="nres_hydrophob_noA" count_as_percentage="False" confidence="0.0" residue_types="PHE,ILE,LEU,MET,VAL,TRP,TYR" />
+	<ResidueCount name="nAla" count_as_percentage="False" confidence="0.0" residue_types="ALA" />
+	<ResidueCount name="nres_H_per" count_as_percentage="True" confidence="0.0" residue_selector="Helices" />
+        <ResidueCount name="nres_E_per" count_as_percentage="True" confidence="0.0" residue_selector="Strands" />
+        <ResidueCount name="nres_L_per" count_as_percentage="True" confidence="0.0" residue_selector="Loops" />
+        <ResidueCount name="nres_charge_per" count_as_percentage="True" confidence="0.0" residue_types="GLU,ASP,LYS,ARG,HIS" />
+        <ResidueCount name="nres_hydrophob_per" count_as_percentage="True" confidence="0.0" residue_types="ALA,PHE,ILE,LEU,MET,VAL,TRP,TYR" />
+        <ResidueCount name="nres_hydrophob_noA_per" count_as_percentage="True" confidence="0.0" residue_types="PHE,ILE,LEU,MET,VAL,TRP,TYR" />
+	<ResidueCount name="nAla_per" count_as_percentage="True" confidence="0.0" residue_types="ALA" />
+	<Foldability name="foldability" tries="50" selector="Loops_flank" ignore_pose_abego="False" use_sequence="True"
+                     output_poses="False" distance_threshold="2.0" confidence="0.0" />
+	<TaskAwareScoreType name="av_loop_rama_prepro" score_type="rama_prepro" mode="average" task_operations="loops_and_flank" scorefxn="beta" confidence="0.0" />
+	<TaskAwareScoreType name="av_loop_p_aa_pp" score_type="p_aa_pp" mode="average" task_operations="loops_and_flank" scorefxn="beta" confidence="0.0" />
+	<CalculatorFilter name="av_rama_pp_loop" equation="rama+pp" threshold="0" confidence="0.0">
+                <Var name="rama" filter="av_loop_rama_prepro" />
+                <Var name="pp" filter="av_loop_p_aa_pp"/>
+        </CalculatorFilter>
+	<ScoreType name="total_score" scorefxn="beta" score_type="total_score" confidence="0.0" threshold="0"/>
+	<CalculatorFilter name="scoreRes" equation="SCO/RES" threshold="0" confidence="0.0">
+                <Var name="SCO" filter="total_score" />
+                <Var name="RES" filter="nres"/>
+        </CalculatorFilter>
+	<ScoreType name="rama" scorefxn="beta" score_type="rama_prepro" confidence="0.0" threshold="0"/>
+	<CalculatorFilter name="ramaRes" equation="RAM/RES" threshold="0" confidence="0.0">
+                <Var name="RAM" filter="rama" />
+                <Var name="RES" filter="nres"/>
+        </CalculatorFilter>
+	<ScoreType name="fa_atr" scorefxn="beta" score_type="fa_atr" confidence="0.0" threshold="0"/>
+        <CalculatorFilter name="fa_atrRes" equation="FAA/RES" threshold="0" confidence="0.0">
+                <Var name="FAA" filter="fa_atr" />
+                <Var name="RES" filter="nres"/>
+        </CalculatorFilter>
+	<ScoreType name="fa_rep" scorefxn="beta" score_type="fa_rep" confidence="0.0" threshold="0"/>
+        <CalculatorFilter name="fa_repRes" equation="FAA/RES" threshold="0" confidence="0.0">
+                <Var name="FAA" filter="fa_rep" />
+                <Var name="RES" filter="nres"/>
+        </CalculatorFilter>
+	<ScoreType name="hb_lr_bb" scorefxn="beta" score_type="hbond_lr_bb" confidence="0.0" threshold="0"/>
+        <CalculatorFilter name="hb_lr_bb_per_res" equation="FAA/RES" threshold="0" confidence="0.0">
+                <Var name="FAA" filter="hb_lr_bb" />
+                <Var name="RES" filter="nres"/>
+        </CalculatorFilter>
+	<CalculatorFilter name="hb_lr_bb_per_sheet" equation="FAA/RES" threshold="0" confidence="0.0">
+                <Var name="FAA" filter="hb_lr_bb" />
+                <Var name="RES" filter="nres_E"/>
+        </CalculatorFilter>
+	<ScoreType name="hb_sr_bb" scorefxn="beta" score_type="hbond_sr_bb" confidence="0.0" threshold="0"/>
+        <CalculatorFilter name="hb_sr_bb_per_helix" equation="FAA/RES" threshold="0" confidence="0.0">
+                <Var name="FAA" filter="hb_sr_bb" />
+                <Var name="RES" filter="nres_H"/>
+        </CalculatorFilter>
+	<CalculatorFilter name="Subunits" equation="nres/nres_mon" threshold="0" confidence="0.0">
+                <Var name="nres" filter="nres" />
+                <Var name="nres_mon" filter="nres_monomer"/>
+        </CalculatorFilter>
+	<NetCharge name="charge" confidence="0.0"/>
+	<SSShapeComplementarity name="hx_sc" loops="False" helices="True" confidence="0.0"/>
+	<LongestContinuousPolarSegment name="longestPS" confidence="0.0"/>
+	<LongestContinuousPolarSegment name="longestPS_H" residue_selector="Helices" confidence="0.0"/>
+	<LongestContinuousPolarSegment name="longestPS_E" residue_selector="Strands" confidence="0.0"/>
+	<LongestContinuousPolarSegment name="longestPS_L" residue_selector="Loops" confidence="0.0"/>
+	<ExposedHydrophobics name="exposedHyphob" sasa_cutoff="0" threshold="10000.0" confidence="0.0" />
+	<SSPrediction name="SSmismatch" threshold="0.0" use_probability="True" mismatch_probability="True" cmd="%%psipred%%" use_svm="False" confidence="0.0"/>
+	<CavityVolume name="cavity_vol"/>
+	<AverageDegree name="AvDeg" confidence="0.0"/>
+	<Holes name="Holes" threshold="99" normalize_per_atom="true" normalize_per_residue="false"
+	exclude_bb_atoms="false" confidence="0.0"/>
+	<Holes name="HolesCorSCN" threshold="99" normalize_per_atom="true" residue_selector="core_SCN"
+	normalize_per_residue="false" exclude_bb_atoms="false" confidence="0.0"/>
+	<Holes name="HolesCorSCNnBB" threshold="99" normalize_per_atom="true" residue_selector="core_SCN"
+	normalize_per_residue="false" exclude_bb_atoms="true" confidence="0.0"/>
+	<Holes name="HolesCorSAS" threshold="99" normalize_per_atom="true" residue_selector="core_SASA"
+        normalize_per_residue="false" exclude_bb_atoms="false" confidence="0.0"/>
+        <Holes name="HolesCorSASnBB" threshold="99" normalize_per_atom="true" residue_selector="core_SASA"
+        normalize_per_residue="false" exclude_bb_atoms="true" confidence="0.0"/>
+    </FILTERS>
+    <MOVERS>
+	<Dssp name="DSSP" />
+    </MOVERS>
+    <APPLY_TO_POSE>
+    </APPLY_TO_POSE>
+    <PROTOCOLS>
+	<Add filter_name="Holes"/>
+	<Add filter_name="HolesCorSCN"/>
+	<Add filter_name="HolesCorSCNnBB"/>
+	<Add filter_name="HolesCorSAS"/>
+	<Add filter_name="HolesCorSASnBB"/>
+	<Add filter_name="nres_monomer"/>
+	<Add filter_name="nres"/>
+	<Add filter_name="cavity_vol"/>
+	<Add filter_name="BuriedHyphobSA"/>
+	<Add filter_name="BuriedHyphobSA_H"/>
+	<Add filter_name="BuriedHyphobSA_E"/>
+	<Add filter_name="BuriedHyphobSA_L"/>
+        <Add filter_name="BuriedHyphobSA2_H"/>
+        <Add filter_name="BuriedHyphobSA2_E"/>
+        <Add filter_name="BuriedHyphobSA2_L"/>
+	<Add filter_name="nres_aro"/>
+	<Add filter_name="nres_aro_E"/>
+	<Add filter_name="nres_aro_H"/>
+	<Add filter_name="nres_aro_L"/>
+	<Add filter_name="nres_H"/>
+	<Add filter_name="nres_E"/>
+	<Add filter_name="nres_L"/>
+	<Add filter_name="nres_aro_per_res"/>
+	<Add filter_name="nres_charge" />
+        <Add filter_name="nres_hydrophob"/>
+        <Add filter_name="nres_hydrophob_noA" />
+	<Add filter_name="nAla"/>
+        <Add filter_name="nres_H_per" />
+        <Add filter_name="nres_E_per" />
+        <Add filter_name="nres_L_per" />
+        <Add filter_name="nres_charge_per" />
+        <Add filter_name="nres_hydrophob_per" />
+        <Add filter_name="nres_hydrophob_noA_per" />
+	<Add filter_name="nAla_per"/>
+	<Add filter_name="BuriedHyphobSAperRes"/>
+	<Add filter_name="total_score"/>
+	<Add filter_name="scoreRes"/>
+	<Add filter_name="ramaRes"/>
+	<Add filter_name="fa_atr"/>
+	<Add filter_name="fa_atrRes"/>
+	<Add filter_name="fa_repRes"/>
+	<Add filter_name="charge"/>
+	<Add filter_name="hx_sc"/>	
+	<Add filter_name="longestPS"/>
+	<Add filter_name="longestPS_H"/>
+	<Add filter_name="longestPS_E"/>
+	<Add filter_name="longestPS_L"/>
+	<Add filter_name="exposedHyphob"/>
+	<Add filter_name="SSmismatch"/>
+	<Add filter_name="Subunits"/>
+	<Add filter_name="hb_lr_bb_per_res"/>
+	<Add filter_name="hb_lr_bb_per_sheet"/>
+	<Add filter_name="hb_sr_bb_per_helix"/>
+	<Add filter_name="av_loop_rama_prepro"/>
+	<Add filter_name="av_loop_p_aa_pp"/>
+	<Add filter_name="av_rama_pp_loop"/>
+	<Add filter_name="geom_res"/>
+	<Add filter_name="AvDeg"/>
+	<Add filter_name="arom_in_core_SS_SCN"/>
+        <Add filter_name="arom_in_core_SS_SASA"/>
+        <Add filter_name="hyphob_in_core_SS_SCN"/>
+        <Add filter_name="hyphob_in_core_SS_SASA"/>
+	<Add filter_name="core_SCN"/>
+	<Add filter_name="core_SASA"/>
+	<!--Add mover_name="DSSP"/-->
+	<!--Add filter_name="foldability"/-->
+    </PROTOCOLS>
+    <OUTPUT />
+</ROSETTASCRIPTS>

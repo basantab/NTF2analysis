@@ -1,0 +1,95 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+	<ScoreFunction name="beta" weights="beta_nov16.wts">
+           <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+           <Reweight scoretype="coordinate_constraint" weight="1.0"/>
+           <Reweight scoretype="angle_constraint" weight="1.0"/>
+           <Reweight scoretype="dihedral_constraint" weight="1.0"/>
+        </ScoreFunction>
+        <ScoreFunction name="beta_cart" weights="beta_nov16_cart.wts">
+           <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
+           <Reweight scoretype="coordinate_constraint" weight="1.0"/>
+           <Reweight scoretype="angle_constraint" weight="1.0"/>
+           <Reweight scoretype="dihedral_constraint" weight="1.0"/>
+        </ScoreFunction>
+    </SCOREFXNS>
+    <RESIDUE_SELECTORS>
+	<ResidueName name="hyphob" residue_name3="ALA,PHE,GLY,ILE,LEU,MET,PRO,VAL,TRP,TYR" />
+        <ResidueName name="nala_hyphob" residue_name3="PHE,GLY,ILE,LEU,MET,PRO,VAL,TRP,TYR" />
+	<ResidueName name="Aro" residue_name3="PHE,TRP,TYR" />
+	<Not name="not_hyphob" selector="hyphob"/>
+        <Not name="not_nala_hyphob" selector="nala_hyphob" />
+	<Not name="not_Aro" selector="Aro"/>
+    </RESIDUE_SELECTORS>
+    <TASKOPERATIONS>
+	<OperateOnResidueSubset name="repack_hyphob" selector="hyphob" >
+		<RestrictToRepackingRLT/>
+	</OperateOnResidueSubset>
+	<OperateOnResidueSubset name="fix_not_hyphob" selector="not_hyphob" >
+		<PreventRepackingRLT/>
+	</OperateOnResidueSubset>
+        <OperateOnResidueSubset name="repack_nala_hyphob" selector="nala_hyphob" >
+                <RestrictToRepackingRLT/>
+        </OperateOnResidueSubset>
+        <OperateOnResidueSubset name="fix_not_nala_hyphob" selector="not_nala_hyphob" >
+                <PreventRepackingRLT/>
+        </OperateOnResidueSubset>
+	<OperateOnResidueSubset name="repack_Aro" selector="Aro" >
+                <RestrictToRepackingRLT/>
+        </OperateOnResidueSubset>
+        <OperateOnResidueSubset name="fix_not_Aro" selector="not_Aro" >
+                <PreventRepackingRLT/>
+        </OperateOnResidueSubset>
+    </TASKOPERATIONS>
+    <FILTERS>
+	
+	<ScoreType name="score" scorefxn="beta" score_type="total_score"
+               threshold="0.0" confidence="0" />
+        <ScoreType name="score_beta_cart" scorefxn="beta_cart" score_type="total_score"
+               threshold="0.0" confidence="0" />
+         <ResidueCount name="nres" confidence="0" />
+    	<CalculatorFilter name="score_res" confidence="0" equation="SCORE/NRES" threshold="-2.10">
+      		<Var name="SCORE" filter_name="score" />
+      		<Var name="NRES" filter_name="nres" />
+    	</CalculatorFilter>
+    	<CalculatorFilter name="score_res_betacart" confidence="0" equation="SCORE/NRES" threshold="-2.10">
+      		<Var name="SCORE" filter_name="score_beta_cart" />
+      		<Var name="NRES" filter_name="nres" />
+    	</CalculatorFilter>
+	<AtomicContactCount name="hyphob_contact" partition="none" task_operations="repack_hyphob,fix_not_hyphob" />
+        <AtomicContactCount name="hphob_sc_contacts" partition="none" distance="4.3" task_operations="repack_nala_hyphob,fix_not_nala_hyphob" />
+	<AtomicContactCount name="hyphob_Aro_contact" partition="none" task_operations="repack_Aro,fix_not_Aro" />
+	<ResidueCount name="nAro" residue_selector="Aro"  min_residue_count="1" confidence="1"/>
+	<ResidueCount name="nhyphob" min_residue_count="1" confidence="1" residue_selector="hyphob"/>
+	<CalculatorFilter name="hyphob_contact_norm_true" confidence="0" equation="SCORE/NRES" threshold="-2.10">
+                <Var name="SCORE" filter_name="hyphob_contact" />
+                <Var name="NRES" filter_name="nhyphob" />
+        </CalculatorFilter>
+	<CalculatorFilter name="hyphob_Aro_contact_norm_true" confidence="0" equation="SCORE/NRES" threshold="-2.10">
+                <Var name="SCORE" filter_name="hyphob_Aro_contact" />
+                <Var name="NRES" filter_name="nAro" />
+        </CalculatorFilter>
+	<IfThenFilter name="hyphob_Aro_contact_norm" threshold="0" lower_threshold="True" confidence="0">
+    		<IF testfilter="nAro" inverttest="False" valuefilter="hyphob_Aro_contact_norm_true" weight="1"/>
+    		<ELSE value="0" weight="1"/>
+	</IfThenFilter>
+	<IfThenFilter name="hyphob_contact_norm" threshold="0" lower_threshold="True" confidence="0">
+                <IF testfilter="nhyphob" inverttest="False" valuefilter="hyphob_contact_norm_true" weight="1"/>
+                <ELSE value="0" weight="1"/>
+        </IfThenFilter>
+    </FILTERS>
+    <MOVERS>
+    </MOVERS>
+    <APPLY_TO_POSE>
+    </APPLY_TO_POSE>
+    <PROTOCOLS>
+	<Add filter="score_res"/>
+	<Add filter="score_res_betacart"/>
+	<Add filter="hyphob_contact"/>
+        <Add filter="hphob_sc_contacts"/>
+	<Add filter="hyphob_Aro_contact"/>
+	<Add filter="hyphob_contact_norm"/>
+        <Add filter="hyphob_Aro_contact_norm"/>
+    </PROTOCOLS>
+    <OUTPUT />
+</ROSETTASCRIPTS>

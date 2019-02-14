@@ -1,0 +1,34 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+	<ScoreFunction name="beta" weights="beta_nov16"/>
+    </SCOREFXNS>
+    <RESIDUE_SELECTORS>
+    </RESIDUE_SELECTORS>
+    <TASKOPERATIONS>
+    </TASKOPERATIONS>
+    <FILTERS>
+	<BuriedUnsatHbonds name="buns_nosurf_all" scorefxn="beta" cutoff="10" print_out_info_to_pdb="False" use_hbnet_behavior="False"
+	ignore_surface_res="True" confidence="0" only_interface="False" use_reporter_behavior="False"/>
+	<BuriedUnsatHbonds name="buns_nosurf_bb" scorefxn="beta" cutoff="10" print_out_info_to_pdb="False" use_hbnet_behavior="False"
+        ignore_surface_res="True" confidence="0" only_interface="False" report_bb_heavy_atom_unsats="True" use_reporter_behavior="True"/>
+	<BuriedUnsatHbonds name="buns_all" scorefxn="beta" cutoff="10" print_out_info_to_pdb="true" use_hbnet_behavior="False"
+	ignore_surface_res="False" confidence="0" only_interface="False" use_reporter_behavior="False"/>
+	<BuriedUnsatHbonds name="buns_interf" scorefxn="beta" cutoff="10" print_out_info_to_pdb="true" use_hbnet_behavior="False"
+	ignore_surface_res="True" only_interface="True" confidence="0" use_reporter_behavior="False" />
+	<BuriedUnsatHbonds name="buns_nosurf_sc" scorefxn="beta" cutoff="99" print_out_info_to_pdb="True" use_hbnet_behavior="False" ignore_surface_res="True"
+	ignore_bb_heavy_unsats="True"  only_interface="False" confidence="0" use_reporter_behavior="True" report_sc_heavy_atom_unsats="True"/>
+    </FILTERS>
+    <MOVERS>
+    </MOVERS>
+    <APPLY_TO_POSE>
+    </APPLY_TO_POSE>
+    <PROTOCOLS>
+	<Add filter_name="buns_all"/>
+	<Add filter_name="buns_nosurf_all"/>
+	<Add filter_name="buns_nosurf_sc"/>
+	<Add filter_name="buns_nosurf_bb"/>
+	<Add filter_name="buns_interf"/>
+    </PROTOCOLS>
+    <OUTPUT />
+</ROSETTASCRIPTS>
+
