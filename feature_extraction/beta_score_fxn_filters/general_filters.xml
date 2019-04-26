@@ -86,7 +86,7 @@
 	<Add filter="score_res"/>
 	<Add filter="score_res_betacart"/>
 	<Add filter="hyphob_contact"/>
-        <Add filter="hphob_sc_contacts"/>
+        <Add filter="hphob_sc_contacts_rta"/>
 	<Add filter="hyphob_Aro_contact"/>
 	<Add filter="hyphob_contact_norm"/>
         <Add filter="hyphob_Aro_contact_norm"/>
