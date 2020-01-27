@@ -2,6 +2,7 @@
 
 import numpy as np
 import pandas as pnd
+import argparse
 
 def ProcessSS(input_ss):
 	'''
@@ -28,6 +29,7 @@ def ProcessSS(input_ss):
 	return container_dict
 
 def get_des_metrics(folder,ss):
+	print(folder)
 	frag_qual_handle = open('%s/frag_qual.dat'%folder,'r')
 	frag_qual_lines = [ i[:-1] for i in frag_qual_handle.readlines() ]
 	frag_qual_handle.close()
@@ -77,9 +79,15 @@ def get_des_metrics(folder,ss):
 	
 	return metrics
 
-ss_handle = open('./NTF2_chip2.dssp','r')
-folders_handle = open('./all_fragment_metrics_correct.tab','r')
-desname_handle = open('./mapped_all_fragment_metrics_correct.list','r')
+argparser = argparse.ArgumentParser(description='Extract non-local features of de novo NTF2-like proteins')
+argparser.add_argument('-dssp', type=str,help='Space separated table of designs and DSSP string. Design name must be basename without *.pdb extension')
+argparser.add_argument('-frag_folders', type=str,help='Aggregated output of fragment picking')
+argparser.add_argument('-mapped_folders', type=str,help='Aggregated output of fragment picking, with folder field replace by full PDB path')
+args = argparser.parse_args()
+
+ss_handle = open(args.dssp,'r')
+folders_handle = open(args.frag_folders,'r')
+desname_handle = open(args.mapped_folders,'r')
 
 ss_lines = [ i[:-1] for i in ss_handle.readlines() ]
 folders_lines = [ i[:-1] for i in folders_handle.readlines() ]
@@ -101,12 +109,14 @@ design_ss_dict = { line.split()[0]:line.split()[1] for line in ss_lines }
 print( "Done creating dictionary from design name to SS")
 # Now get the fragment quality at each ss element:
 keys = [des for des in design_folder_dict.keys()]
+print( "Getting metrics...")
 des_metrics_storage_dict = { des:get_des_metrics(design_folder_dict[des],design_ss_dict[des]) for des in keys }
-
+print( "Done!" )
 keys = sorted([ i for i in des_metrics_storage_dict[designs[0]].keys()])
 
 output = open('SS_fragment_metrics.csv','w')
 output.write(','+','.join(keys)+'\n')
+
 for des in designs :
 	metrics = des_metrics_storage_dict[des]
 	str_ready = [ '%0.3f'%(metrics[key]) for key in keys]
