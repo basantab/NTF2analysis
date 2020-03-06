@@ -1,0 +1,82 @@
+##############################################################################################################
+#
+# Rosetta crash log. 
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2019.44.post.dev+12.master.00b2ddab2d4
+[COMMIT_DATE]: 2019-11-02T16:45:46
+[APPLICATION]: /home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.4.0"
+[STDLIB]: libstdc++ version 20181206
+[START_OPTIONS]
+ -in:file:s=LA3_0001.pdb -in:file:extra_res_fa=LA3.params -in:file:load_PDB_components=false -out:overwrite -out:suffix=_min -parser:protocol=../minimize_ligand.xml
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7ffff51411c6]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7ffff51407f3]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x10f) [0x7ffff51f195f]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x36) [0x7ffff51f1716]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libprotocols.1.so(protocols::jd2::JobDistributor::run_one_job(std::shared_ptr<protocols::moves::Mover>&, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, unsigned long&, unsigned long&, bool)+0x273e) [0x7ffff6507f3e]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libprotocols.1.so(protocols::jd2::JobDistributor::go_main(std::shared_ptr<protocols::moves::Mover>)+0x1bb) [0x7ffff650813b]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libprotocols.1.so(protocols::jd2::FileSystemJobDistributor::go(std::shared_ptr<protocols::moves::Mover>)+0x56) [0x7ffff64eec66]
+/home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease(+0x1eee) [0x555555555eee]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7ffff4552b97]
+/home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease(+0x221a) [0x55555555621a]
+
+[END_BACKTRACE]
+
+[FILE]: src/protocols/jd2/JobDistributor.cc
+[LINE]: 621
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Attempting to initiate job distribution for input job 'LA3_0001.pdb', but the generated pose has no residues.make sure you specified a valid input PDB, silent file or database.
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. 
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2019.44.post.dev+12.master.00b2ddab2d4
+[COMMIT_DATE]: 2019-11-02T16:45:46
+[APPLICATION]: /home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "7.4.0"
+[STDLIB]: libstdc++ version 20181206
+[START_OPTIONS]
+ -in:file:s=LA3_0001.pdb -in:file:extra_res_fa=LA3.params -in:file:load_PDB_components=false -out:overwrite -out:suffix=_min -parser:protocol=../minimize_ligand.xml
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libutility.so(backtrace_string[abi:cxx11](int)+0x56) [0x7ffff51411c6]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe3) [0x7ffff51407f3]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libprotocols.1.so(protocols::jd2::JobDistributor::go_main(std::shared_ptr<protocols::moves::Mover>)+0x800) [0x7ffff6508780]
+/mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/libprotocols.1.so(protocols::jd2::FileSystemJobDistributor::go(std::shared_ptr<protocols::moves::Mover>)+0x56) [0x7ffff64eec66]
+/home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease(+0x1eee) [0x555555555eee]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7ffff4552b97]
+/home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease(+0x221a) [0x55555555621a]
+
+[END_BACKTRACE]
+
+[FILE]: src/protocols/jd2/JobDistributor.cc
+[LINE]: 327
+[START_MESSAGE]
+1 jobs failed; check output for error messages
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+

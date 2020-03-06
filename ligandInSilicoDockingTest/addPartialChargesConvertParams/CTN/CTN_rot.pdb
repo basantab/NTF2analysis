@@ -1,0 +1,47 @@
+HETATM    1  C3  CTN X   1      -0.167  -0.895  -0.038  1.00 20.00           C  
+HETATM    2  O2  CTN X   1      -0.899  -0.772  -1.265  1.00 20.00           O  
+HETATM    3  C2  CTN X   1      -2.313  -0.868  -0.945  1.00 20.00           C  
+HETATM    4  C1  CTN X   1      -3.016   0.405  -1.426  1.00 20.00           C  
+HETATM    5  O1  CTN X   1      -2.716   1.530  -0.608  1.00 20.00           O  
+HETATM    6  C9  CTN X   1      -2.423  -1.093   0.567  1.00 20.00           C  
+HETATM    7  C8  CTN X   1      -1.122  -0.517   1.102  1.00 20.00           C  
+HETATM    8  O4  CTN X   1      -0.774  -1.116   2.356  1.00 20.00           O  
+HETATM    9  O5  CTN X   1      -2.453  -2.505   0.847  1.00 20.00           O  
+HETATM   10  N1  CTN X   1       1.067  -0.116  -0.110  1.00 20.00           N  
+HETATM   11  C4  CTN X   1       2.278  -0.764   0.003  1.00 20.00           C  
+HETATM   12  C5  CTN X   1       3.428  -0.097  -0.072  1.00 20.00           C  
+HETATM   13  C6  CTN X   1       3.313   1.359  -0.277  1.00 20.00           C  
+HETATM   14  N2  CTN X   1       2.178   1.972  -0.389  1.00 20.00           N  
+HETATM   15  C7  CTN X   1       1.003   1.261  -0.336  1.00 20.00           C  
+HETATM   16  O3  CTN X   1      -0.074   1.842  -0.461  1.00 20.00           O  
+HETATM   17  N3  CTN X   1       4.443   2.124  -0.348  1.00 20.00           N  
+HETATM   18  H5  CTN X   1       0.102  -1.955   0.061  1.00 20.00           H  
+HETATM   19  H4  CTN X   1      -2.702  -1.724  -1.507  1.00 20.00           H  
+HETATM   20  H2  CTN X   1      -4.101   0.263  -1.391  1.00 20.00           H  
+HETATM   21  H3  CTN X   1      -2.731   0.648  -2.454  1.00 20.00           H  
+HETATM   22  H1  CTN X   1      -1.771   1.763  -0.768  1.00 20.00           H  
+HETATM   23  H12 CTN X   1      -3.318  -0.659   1.022  1.00 20.00           H  
+HETATM   24  H10 CTN X   1      -1.217   0.561   1.252  1.00 20.00           H  
+HETATM   25  H11 CTN X   1      -0.006  -0.618   2.693  1.00 20.00           H  
+HETATM   26  H13 CTN X   1      -2.151  -2.581   1.777  1.00 20.00           H  
+HETATM   27  H6  CTN X   1       2.269  -1.841   0.143  1.00 20.00           H  
+HETATM   28  H7  CTN X   1       4.399  -0.565  -0.007  1.00 20.00           H  
+HETATM   29  H8  CTN X   1       5.236   1.839   0.213  1.00 20.00           H  
+HETATM   30  H9  CTN X   1       4.238   3.117  -0.276  1.00 20.00           H  
+CONECT    1    2    7   10   18
+CONECT    2    3
+CONECT    3    4    6   19
+CONECT    4    5   20   21
+CONECT    5   22
+CONECT    6    7    9   23
+CONECT    7    8   24
+CONECT    8   25
+CONECT    9   26
+CONECT   10   11   15
+CONECT   11   12   12   27
+CONECT   12   13   28
+CONECT   13   14   14   17
+CONECT   14   15
+CONECT   15   16   16
+CONECT   17   29   30
+END

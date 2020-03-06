@@ -1,0 +1,47 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: 2019.44.post.dev+12.master.00b2ddab2d4 00b2ddab2d4f71f2161245c98cbaa3e8e5fd19dc git@github.com:RosettaCommons/main.git 2019-11-02T16:45:46
+core.init: command: /home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease -s B30_0001.pdb -extra_res_fa B30.params @../rosetta_flags.txt
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-240032578 seed_offset=0 real_seed=-240032578
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-240032578 RG_type=mt19937
+core.init: Resolved executable path: /mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/rosetta_scripts.default.linuxgccrelease
+core.init: Looking for database based on location of executable: /mnt/home/basantab/Rosetta/main/database/
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed B30_0001.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB B30_0001.pdb
+core.chemical.ResidueTypeSetCache: [ ERROR ] Residue type B30 is already in the ResidueTypeSetCache!
+
+ERROR: Error in core::chemical::ResidueTypeSetCache::add_residue_type(): Attempting to add a new residue type, but residue type 'B30' already exists in the cache.  (Did you load a .params file with the -extra_res_fa commandline option that was already listed in residue_types.txt, perhaps?)
+ERROR:: Exit from: src/core/chemical/ResidueTypeSetCache.cc line: 106
+Error: [ ERROR ] ERROR: Exception caught by JobDistributor while trying to get pose from job 'B30_0001_min_0001'
+Error: [ ERROR ] Treating failure as bad input; canceling similar jobs
+
+[ ERROR ]: Caught exception:
+
+
+File: src/core/chemical/ResidueTypeSetCache.cc:106
+[ ERROR ] UtilityExitException
+ERROR: Error in core::chemical::ResidueTypeSetCache::add_residue_type(): Attempting to add a new residue type, but residue type 'B30' already exists in the cache.  (Did you load a .params file with the -extra_res_fa commandline option that was already listed in residue_types.txt, perhaps?)
+
+
+
+
+AN INTERNAL ERROR HAS OCCURED. PLEASE SEE THE CONTENTS OF ROSETTA_CRASH.log FOR DETAILS.
+
+
+protocols.jd2.FileSystemJobDistributor: job failed, reporting bad input; other jobs of same input will be canceled: B30_0001_min_0001
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 1 seconds
+
+[ ERROR ]: Caught exception:
+
+
+File: src/protocols/jd2/JobDistributor.cc:327
+1 jobs failed; check output for error messages
+
+
+AN INTERNAL ERROR HAS OCCURED. PLEASE SEE THE CONTENTS OF ROSETTA_CRASH.log FOR DETAILS.
+
+

@@ -1,0 +1,80 @@
+HETATM    1  C17 AKV X   1      -0.298   0.007   0.461  1.00 20.00           C  
+HETATM    2  C3  AKV X   1       0.928  -0.683   0.582  1.00 20.00           C  
+HETATM    3  C2  AKV X   1       2.129  -0.150   0.079  1.00 20.00           C  
+HETATM    4  C1  AKV X   1       3.407  -0.876   0.227  1.00 20.00           C  
+HETATM    5  O1  AKV X   1       3.424  -1.977   0.777  1.00 20.00           O  
+HETATM    6  C4  AKV X   1       4.660  -0.289  -0.280  1.00 20.00           C  
+HETATM    7  C5  AKV X   1       5.883  -0.956  -0.127  1.00 20.00           C  
+HETATM    8  O3  AKV X   1       6.003  -2.171   0.491  1.00 20.00           O  
+HETATM    9  C6  AKV X   1       7.063  -0.393  -0.610  1.00 20.00           C  
+HETATM   10  C7  AKV X   1       7.032   0.843  -1.255  1.00 20.00           C  
+HETATM   11  C8  AKV X   1       5.819   1.513  -1.414  1.00 20.00           C  
+HETATM   12  C9  AKV X   1       4.633   0.946  -0.926  1.00 20.00           C  
+HETATM   13  C10 AKV X   1       3.358   1.666  -1.107  1.00 20.00           C  
+HETATM   14  O4  AKV X   1       3.330   2.735  -1.704  1.00 20.00           O  
+HETATM   15  C11 AKV X   1       2.114   1.080  -0.566  1.00 20.00           C  
+HETATM   16  C12 AKV X   1       0.909   1.773  -0.719  1.00 20.00           C  
+HETATM   17  C13 AKV X   1      -0.302   1.249  -0.225  1.00 20.00           C  
+HETATM   18  C14 AKV X   1      -1.561   2.077  -0.435  1.00 20.00           C  
+HETATM   19  C15 AKV X   1      -1.892   2.990   0.727  1.00 20.00           C  
+HETATM   20  O5  AKV X   1      -3.090   3.601   0.495  1.00 20.00           O  
+HETATM   21  C16 AKV X   1      -3.503   4.485   1.538  1.00 20.00           C  
+HETATM   22  O6  AKV X   1      -1.194   3.176   1.715  1.00 20.00           O  
+HETATM   23  O2  AKV X   1       0.902  -1.904   1.218  1.00 20.00           O  
+HETATM   24  C18 AKV X   1      -1.599  -0.584   1.008  1.00 20.00           C  
+HETATM   25  O7  AKV X   1      -1.419  -1.253   2.260  1.00 20.00           O  
+HETATM   26  C19 AKV X   1      -2.215  -1.571   0.004  1.00 20.00           C  
+HETATM   27  C20 AKV X   1      -3.670  -1.898   0.360  1.00 20.00           C  
+HETATM   28  O8  AKV X   1      -4.448  -0.716   0.162  1.00 20.00           O  
+HETATM   29  C21 AKV X   1      -4.210  -3.018  -0.539  1.00 20.00           C  
+HETATM   30  C22 AKV X   1      -5.627  -3.437  -0.169  1.00 20.00           C  
+HETATM   31  H2  AKV X   1       5.111  -2.461   0.783  1.00 20.00           H  
+HETATM   32  H3  AKV X   1       8.006  -0.920  -0.484  1.00 20.00           H  
+HETATM   33  H4  AKV X   1       7.952   1.282  -1.632  1.00 20.00           H  
+HETATM   34  H5  AKV X   1       5.802   2.478  -1.919  1.00 20.00           H  
+HETATM   35  H6  AKV X   1       0.913   2.739  -1.226  1.00 20.00           H  
+HETATM   36  H7  AKV X   1      -2.412   1.419  -0.638  1.00 20.00           H  
+HETATM   37  H8  AKV X   1      -1.436   2.705  -1.326  1.00 20.00           H  
+HETATM   38  H9  AKV X   1      -4.465   4.919   1.253  1.00 20.00           H  
+HETATM   39  H10 AKV X   1      -3.634   3.935   2.475  1.00 20.00           H  
+HETATM   40  H11 AKV X   1      -2.779   5.297   1.661  1.00 20.00           H  
+HETATM   41  H1  AKV X   1       1.815  -2.275   1.225  1.00 20.00           H  
+HETATM   42  H12 AKV X   1      -2.300   0.224   1.230  1.00 20.00           H  
+HETATM   43  H13 AKV X   1      -0.547  -1.691   2.213  1.00 20.00           H  
+HETATM   44  H14 AKV X   1      -2.183  -1.140  -1.005  1.00 20.00           H  
+HETATM   45  H15 AKV X   1      -1.628  -2.498  -0.007  1.00 20.00           H  
+HETATM   46  H16 AKV X   1      -3.747  -2.191   1.413  1.00 20.00           H  
+HETATM   47  H17 AKV X   1      -5.299  -0.853   0.614  1.00 20.00           H  
+HETATM   48  H18 AKV X   1      -3.557  -3.895  -0.470  1.00 20.00           H  
+HETATM   49  H19 AKV X   1      -4.212  -2.687  -1.585  1.00 20.00           H  
+HETATM   50  H20 AKV X   1      -5.681  -3.755   0.876  1.00 20.00           H  
+HETATM   51  H21 AKV X   1      -6.339  -2.619  -0.320  1.00 20.00           H  
+HETATM   52  H22 AKV X   1      -5.946  -4.275  -0.797  1.00 20.00           H  
+CONECT    1    2    2   17   24
+CONECT    2    3   23
+CONECT    3    4   15   15
+CONECT    4    5    5    6
+CONECT    6    7    7   12
+CONECT    7    8    9
+CONECT    8   31
+CONECT    9   10   10   32
+CONECT   10   11   33
+CONECT   11   12   12   34
+CONECT   12   13
+CONECT   13   14   14   15
+CONECT   15   16
+CONECT   16   17   17   35
+CONECT   17   18
+CONECT   18   19   36   37
+CONECT   19   20   22   22
+CONECT   20   21
+CONECT   21   38   39   40
+CONECT   23   41
+CONECT   24   25   26   42
+CONECT   25   43
+CONECT   26   27   44   45
+CONECT   27   28   29   46
+CONECT   28   47
+CONECT   29   30   48   49
+CONECT   30   50   51   52
+END

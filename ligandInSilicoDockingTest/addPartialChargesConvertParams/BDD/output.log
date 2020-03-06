@@ -1,0 +1,1143 @@
+core.init: Rosetta version: 2018.04.post.dev+441.bcov.fordas.structurestore2gridsilent.7b5a6c4943d 7b5a6c4943df59375999d8119244b5c68d8ccc53 git@github.com:RosettaCommons/main.git 2019-04-03T11:06:48
+core.init: command: /home/bcov/rifdock/latest/rifgen -rifgen:target BDD_rot_min_0001.pdb -extra_res_fa BDD.params -rifgen:outdir ./rifgen_init -rifgen:data_cache_dir ./rifgen_init -rifgen:outfile rifgen_init.rif.gz -rifgen:apores PHE ILE LEU VAL MET -rifgen:donres THR TYR TRP GLN ASN SER LYS ARG BDD -rifgen:accres THR TYR SER GLN ASN ASP GLU BDD @/net/scratch/basantab/NTF2_project/20191216_deNovoNTF2DockingBenchmark_RIFDOCK/RIFGEN/template_flags
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=2133386091 seed_offset=0 real_seed=2133386091
+core.init.random: RandomGenerator:init: Normal mode, seed=2133386091 RG_type=mt19937
+Rifdock thinks there are 32 threads.
+rif_type: RotScoreSat
+does not exist, attempting to create:
+    ./rifgen_init
+
+=================================================== preparing target ===================================================
+
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 601 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 1.13679 seconds.
+core.import_pose.import_pose: File 'BDD_rot_min_0001.pdb' automatically determined to be of type PDB
+target nres: 1
+target_res_file: ''
+target_res: [1]
+centering target from      0.2157857142857145     0.05614285714285711     0.05914285714285716 to ( 0, 0, 0 )
+Preparing rotamer index spec...
+get_rotamer_index
+core.pack.task: Packer task: initialize from command line() 
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /home/bcov/rifdock/latest/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/bcov/rifdock/latest/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.299753 seconds to load from binary
+core.pack.task: Packer task: initialize from command line() 
+core.pack.task: Packer task: initialize from command line() 
+core.pack.task: Packer task: initialize from command line() 
+finish builidng rotamer_index now try fill rotamer index ... 
+start building rotamer index from fill rotamers
+n_p_rots: 388
+n_rots: 1654
+n_par_rots: 1654
+total num protonchi_parent_of_ 1501
+total num structural_parents_ 62
+finish build_index...
+======================================================================================
+RotamerIndex:
+    ALA 1 0-0 0 0
+    CYS 9 2-10 2 1
+    ASP 7 11-17 2 0
+    GLU 27 18-44 3 0
+    PHE 15 45-59 2 0
+    GLY 1 1-1 0 0
+    HIS 14 60-73 2 0
+    ILE 7 88-94 2 0
+    LYS 31 95-125 4 0
+    LEU 9 126-134 2 0
+    MET 19 135-153 3 0
+    ASN 13 154-166 2 0
+    PRO 2 167-168 3 0
+    GLN 25 169-193 3 0
+    ARG 42 194-235 4 0
+    SER 54 236-289 2 1
+    THR 54 290-343 2 1
+    VAL 3 344-346 1 0
+    TRP 19 347-365 2 0
+    TYR 22 366-387 3 1
+    DAL 0 0--1 0 0
+    DCS 0 0--1 0 0
+    DAS 0 0--1 0 0
+    DGU 0 0--1 0 0
+    DPH 0 0--1 0 0
+    DHI 0 0--1 0 0
+    DIL 0 0--1 0 0
+    DLY 0 0--1 0 0
+    DLE 0 0--1 0 0
+    DME 0 0--1 0 0
+    DAN 0 0--1 0 0
+    DPR 0 0--1 0 0
+    DGN 0 0--1 0 0
+    DAR 0 0--1 0 0
+    DSE 0 0--1 0 0
+    DTH 0 0--1 0 0
+    DVA 0 0--1 0 0
+    DTR 0 0--1 0 0
+    DTY 0 0--1 0 0
+
+======================================================================================
+WARNING: heavy atom type 36 > N_ATYPE: 12345 BDD  B1  will treat as carbon for sterics!
+WARNING: heavy atom type36 > N_ATYPE: 12345 BDD  B1  will treat as carbon for sterics!
+rosetta_field lb: -7.50379 -0.974143 -1.13414  ub: 7.98821 1.71886 1.80786  size(A): 15.492 2.693 2.942 
+thread   1 init  rosetta_field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype11.rosetta_field.gz
+thread   6 init  rosetta_field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype12.rosetta_field.gz
+thread  13 init  rosetta_field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype6.rosetta_field.gz
+thread  14 init  rosetta_field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype4.rosetta_field.gz
+thread   7 init  rosetta_field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype7.rosetta_field.gz
+thread  31 init  rosetta_field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype13.rosetta_field.gz
+thread  29 init  rosetta_field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype3.rosetta_field.gz
+thread   8 init  rosetta_field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype8.rosetta_field.gz
+thread  16 init  rosetta_field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype19.rosetta_field.gz
+thread  11 init  rosetta_field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype18.rosetta_field.gz
+thread  10 init  rosetta_field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype17.rosetta_field.gz
+thread   2 init  rosetta_field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype14.rosetta_field.gz
+thread  32 init  rosetta_field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype21.rosetta_field.gz
+thread  15 init  rosetta_field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype16.rosetta_field.gz
+thread  27 init  rosetta_field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype5.rosetta_field.gz
+thread   3 init  rosetta_field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype9.rosetta_field.gz
+thread   9 init  rosetta_field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype2.rosetta_field.gz
+thread   4 init  rosetta_field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype10.rosetta_field.gz
+thread   5 init  rosetta_field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype1.rosetta_field.gz
+thread  24 init  rosetta_field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype20.rosetta_field.gz
+thread  23 init  rosetta_field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype15.rosetta_field.gz
+thread  32 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype18.rf.gz
+thread   7 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype6.rf.gz
+thread  10 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype16.rf.gz
+thread  12 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype14.rf.gz
+thread   8 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype1.rf.gz
+thread  16 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype1.rf.gz
+thread  31 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype4.rf.gz
+thread   4 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype15.rf.gz
+thread  13 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype10.rf.gz
+thread  23 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype2.rf.gz
+thread   6 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype21.rf.gz
+thread  27 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype13.rf.gz
+thread  15 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype10.rf.gz
+thread   3 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype7.rf.gz
+thread   5 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype12.rf.gz
+thread   9 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype19.rf.gz
+thread  11 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype4.rf.gz
+thread  26 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype5.rf.gz
+thread  18 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype11.rf.gz
+thread  21 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype8.rf.gz
+thread  20 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype7.rf.gz
+thread  19 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype8.rf.gz
+thread  28 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype5.rf.gz
+thread  22 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype9.rf.gz
+thread  24 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype6.rf.gz
+thread  29 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype3.rf.gz
+thread  17 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype11.rf.gz
+thread  14 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype17.rf.gz
+thread   2 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype3.rf.gz
+thread   1 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype20.rf.gz
+thread  25 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype2.rf.gz
+thread  30 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype9.rf.gz
+thread  21 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype12.rf.gz
+thread   3 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype13.rf.gz
+thread  17 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype14.rf.gz
+thread  29 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype15.rf.gz
+thread  28 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype16.rf.gz
+thread  20 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype17.rf.gz
+thread  31 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype18.rf.gz
+thread  15 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype19.rf.gz
+thread  22 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype20.rf.gz
+thread   6 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype21.rf.gz
+thread  10 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype1.rf.gz
+thread  12 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype2.rf.gz
+thread   4 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype3.rf.gz
+thread  16 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype4.rf.gz
+thread  23 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype5.rf.gz
+thread  27 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype6.rf.gz
+thread   9 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype7.rf.gz
+thread   1 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype8.rf.gz
+thread   5 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype9.rf.gz
+thread  14 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype10.rf.gz
+thread   8 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype11.rf.gz
+thread  13 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype12.rf.gz
+thread  11 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype13.rf.gz
+thread  18 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype14.rf.gz
+thread  26 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype15.rf.gz
+thread  19 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype16.rf.gz
+thread   2 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype17.rf.gz
+thread  25 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype18.rf.gz
+thread  30 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype19.rf.gz
+thread  32 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype20.rf.gz
+thread   7 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype21.rf.gz
+done with rifgen grids, not make target ones for docking
+thread   9 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype1.rf.gz
+thread   5 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype4.rf.gz
+thread   7 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype3.rf.gz
+thread  24 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype7.rf.gz
+thread   6 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype6.rf.gz
+thread  31 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype13.rf.gz
+thread  12 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype2.rf.gz
+thread   4 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype14.rf.gz
+thread  17 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype4.rf.gz
+thread   8 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype12.rf.gz
+thread  10 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype7.rf.gz
+thread  19 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype10.rf.gz
+thread  26 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype8.rf.gz
+thread  20 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype1.rf.gz
+thread   1 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype6.rf.gz
+thread  29 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype15.rf.gz
+thread  16 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype16.rf.gz
+thread  25 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype5.rf.gz
+thread  15 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype9.rf.gz
+thread   3 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype18.rf.gz
+thread  22 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype17.rf.gz
+thread  30 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype19.rf.gz
+thread  14 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype20.rf.gz
+thread  27 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype21.rf.gz
+thread  11 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype11.rf.gz
+thread   2 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype2.rf.gz
+thread  18 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype3.rf.gz
+thread  23 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype10.rf.gz
+thread  13 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype5.rf.gz
+thread  28 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype8.rf.gz
+thread  32 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype9.rf.gz
+thread  21 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype11.rf.gz
+thread  26 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype12.rf.gz
+thread   6 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype13.rf.gz
+thread  32 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype14.rf.gz
+thread  25 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype15.rf.gz
+thread   3 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype16.rf.gz
+thread  16 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype17.rf.gz
+thread  23 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype18.rf.gz
+thread  11 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype19.rf.gz
+thread  22 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype20.rf.gz
+thread  30 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype1.rf.gz
+thread  29 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype21.rf.gz
+thread   1 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype2.rf.gz
+thread  13 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype3.rf.gz
+thread  24 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype4.rf.gz
+thread  21 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype5.rf.gz
+thread  17 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype6.rf.gz
+thread  10 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype7.rf.gz
+thread   8 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype8.rf.gz
+thread  20 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype9.rf.gz
+thread  27 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype10.rf.gz
+thread  28 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype11.rf.gz
+thread   7 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype13.rf.gz
+thread   9 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype12.rf.gz
+thread  31 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype14.rf.gz
+thread   5 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype15.rf.gz
+thread  14 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype16.rf.gz
+thread   4 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype17.rf.gz
+thread  15 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype18.rf.gz
+thread  18 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype19.rf.gz
+thread  12 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype20.rf.gz
+thread  19 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype21.rf.gz
+thread   2 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype1.rf.gz
+thread  28 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype2.rf.gz
+thread  26 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype3.rf.gz
+thread   3 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype4.rf.gz
+thread  23 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype5.rf.gz
+thread  25 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype6.rf.gz
+thread  11 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype7.rf.gz
+thread  32 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype8.rf.gz
+thread  10 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype9.rf.gz
+thread   1 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype10.rf.gz
+thread   6 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype11.rf.gz
+thread  22 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype12.rf.gz
+thread  21 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype13.rf.gz
+thread  13 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype14.rf.gz
+thread  30 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype15.rf.gz
+thread  31 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype16.rf.gz
+thread  27 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype17.rf.gz
+thread   9 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype18.rf.gz
+thread  24 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype19.rf.gz
+thread  20 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype20.rf.gz
+thread  29 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype21.rf.gz
+thread   7 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype1.rf.gz
+thread  17 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype2.rf.gz
+thread  16 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype3.rf.gz
+thread  15 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype4.rf.gz
+thread   8 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype5.rf.gz
+thread  19 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype6.rf.gz
+thread  14 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype7.rf.gz
+thread   2 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype8.rf.gz
+thread   5 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype9.rf.gz
+thread  12 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype10.rf.gz
+thread   4 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype11.rf.gz
+thread  18 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype12.rf.gz
+thread   3 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype13.rf.gz
+thread  28 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype14.rf.gz
+thread  23 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype15.rf.gz
+thread  26 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype16.rf.gz
+thread  10 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype17.rf.gz
+thread  15 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype18.rf.gz
+thread  11 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype19.rf.gz
+thread  21 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype20.rf.gz
+thread   6 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype21.rf.gz
+thread  32 init bounding field  1 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype1.rf.gz
+thread  13 init bounding field  2 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype2.rf.gz
+thread   9 init bounding field  3 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype3.rf.gz
+thread  25 init bounding field  4 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype4.rf.gz
+thread  20 init bounding field  5 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype5.rf.gz
+thread   1 init bounding field  6 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype6.rf.gz
+thread  17 init bounding field  7 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype7.rf.gz
+thread  19 init bounding field  8 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype8.rf.gz
+thread   8 init bounding field  9 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype9.rf.gz
+thread  30 init bounding field 10 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype10.rf.gz
+thread  24 init bounding field 11 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype11.rf.gz
+thread  27 init bounding field 12 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype12.rf.gz
+thread  22 init bounding field 13 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype13.rf.gz
+thread  18 init bounding field 14 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype14.rf.gz
+thread   7 init bounding field 15 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype15.rf.gz
+thread  31 init bounding field 16 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype16.rf.gz
+thread  14 init bounding field 17 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype17.rf.gz
+thread  16 init bounding field 18 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype18.rf.gz
+thread   4 init bounding field 19 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype19.rf.gz
+thread  29 init bounding field 20 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype20.rf.gz
+thread  12 init bounding field 21 CACHE TO ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype21.rf.gz
+target_donors.size() 1 target_acceptors.size() 2
+Building DonorAcceptorCache with 0.1 safe distance
+Donors: Preparing DonorAcceptorCache with interaction range 3.3...
+Max sats at one voxel: 1
+Acceptors: Preparing DonorAcceptorCache with interaction range 3.3...
+Max sats at one voxel: 2
+Tested 0 hbonds without errors
+RifGeneratorSimpleHbonds, cache data path: ./rifgen_init
+========================== DO HBOND ==================================
+adding don res BDD to std set
+adding acc res BDD to std set
+n_sat_groups = 3
+RifGenSimpleHbonds checking res BDD
+not putting BDD into rif, no N,CA,C
+not putting BDD into rif, no N,CA,C
+preloading / generating hbond_geometry files
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add add BDD to hbgeom_exemplars_rtype_override
+add add BDD to hbgeom_exemplars_rtype_override
+BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+add BDD to hbgeom_exemplars_rtype_override
+BDD to hbgeom_exemplars_rtype_override
+GENERATING HBOND GEOMETRIES pair 3 of 15 : THR/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 32 HBondedPairGenerator THR BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 8 of 15 : BDD/GLN -- FIX_DON_
+==================================================================================================================
+===================== Thread 8 HBondedPairGenerator BDD GLN ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 13 of 15 : BDD/ASN -- FIX_DON_
+==================================================================================================================
+===================== Thread 20 HBondedPairGenerator BDD ASN ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 15 of 15 : BDD/ASP -- FIX_DON_
+==================================================================================================================
+===================== Thread 22 HBondedPairGenerator BDD ASP ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 12 of 15 : TRP/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 6 HBondedPairGenerator TRP BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 4 of 15 : SER/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 26 HBondedPairGenerator SER BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 11 of 15 : TYR/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 10 HBondedPairGenerator TYR BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 1 of 15 : BDD/THR -- FIX_DON_
+==================================================================================================================
+===================== Thread 3 HBondedPairGenerator BDD THR ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 6 of 15 : LYS/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 30 HBondedPairGenerator LYS BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 10 of 15 : BDD/TYR -- FIX_DON_
+==================================================================================================================
+===================== Thread 28 HBondedPairGenerator BDD TYR ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 5 of 15 : ARG/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 4 HBondedPairGenerator ARG BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   GENERATING HBOND GEOMETRIES pair 0.0698132
+7 of 15 : BDD/GLU -- FIX_DON_
+==================================================================================================================
+===================== Thread 23 HBondedPairGenerator BDD GLU ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 14 of 15 : ASN/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 9 HBondedPairGenerator ASN BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 9 of 15 : GLN/BDD -- FIX_ACC_
+==================================================================================================================
+===================== Thread 31 HBondedPairGenerator GLN BDD ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+GENERATING HBOND GEOMETRIES pair 2 of 15 : BDD/SER -- FIX_DON_
+==================================================================================================================
+===================== Thread 19 HBondedPairGenerator BDD SER ================================================
+==================================================================================================================
+alignment atomnos BDD 12 13 14
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+-----BDD-----GLN
+-----BDD-----GLU
+-----ASN-----BDD
+-----TRP-----BDD
+-----BDD-----TYR
+-----BDD-----ASP
+-----GLN-----BDD
+-----THR-----BDD
+-----BDD-----THR
+-----BDD-----ASN
+-----SER-----BDD
+-----ARG-----BDD
+-----LYS-----BDD
+-----TYR-----BDD
+-----BDD-----SER
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+found BDD in exemplars
+----done-----
+found BDD in exemplars
+found BDD in exemplars
+found found BDDBDDfound  in exemplars in exemplars
+found BDD in exemplars
+found BDD in exemplars
+found BDD in exemplars
+
+found BDD in exemplarsfound BDD in exemplars
+
+found BDD in exemplars
+----done-----
+BDD in exemplars
+----done-----
+no rotamers for res1 BDD
+adding rotamers res1 adding rotamers res1 ASN THR 154-166290adding rotamers res1  -343 290154TRP adding rotamers res1 no rotamers for res1 no rotamers for res1 BDDBDD347
+-365 347
+adding rotamers res1 found GLNBDD SER in exemplars
+ 169no rotamers for res1 no rotamers for res1 BDD
+-BDDadding rotamers res2 SER 236-289 236
+----done-----
+236 291adding rotamers res2 adding rotamers res2 -ASP 289 19311-236 17no rotamers for res1 adding rotamers res2 BDD
+GLU 18- 44 18 155 ASN11 169292154no rotamers for res1 -166 154BDD
+ 156 293found BDD in exemplars
+ 237 237  238  238adding rotamers res2 157   239 239TYR348   adding rotamers res2 12366240GLN - 38713 366169 155 -156193 169 157 158adding rotamers res1 TYR 366-387 366294found BDD in exemplars
+adding rotamers res2   240THR  290-343295170 14 171 15  170 349 15829019 241  16172 296 297 241 350 171 159 160  172159 160  20 242 21 17 22173  173161 162 298  291351 242 292  243243 293 294
+  352  367295 296 297 298  161  162HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25   299299
+    174 23  353368163 16324174  36725  244164 368 26adding rotamers res1 ARG  194-235175300consider orbitals for atom 244 3001  OD1
+  17527 354 164 165adding rotamers res1 LYS 95-125 95 194 355 28 166   301 35629consider orbitals for atom 2369 165    176245166245
+  302no rotamers for res2 BDD
+    246 301 370369303  37030  371 371176 17731  OD2 
+177 
+ 247 357246acceptor orbitals, index:  1  372372   302   96304247373 178  179 atom: 248373 OD1 orbitals: [HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25   3743
+374 32178,   358consider orbitals for atom 1  OD1
+   179  1803034 375HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25   248acceptor orbitals, index: 1181 304 305]
+   359  249360
+ 375  376consider orbitals for atom 180 181acceptor orbitals, index: 2 atom:   OD2 orbitals: [3053065  atom: , 61]
+ 33 34  O1 
+ OD1249  orbitals: 30697donor atoms: acceptor orbitals, index:  98 99 100 361 1 101 atom: [ 3 O1 376, 4]
+  H1 , 
+195 donor atoms:  36218235182 183  37736102   H1 183, 250
+donor nchi:   184 orbitals: 12donor nchi:   
+   377103251184  3737812 185     donor num rots: 363378185307252   3072501  186[
+
+ 308186379 308  379acceptor num rots: 7
+364  251365
+ N hbond geom samples: 25219638no rotamers for res2 BDD
+ 11076 
+39 1 donor num rots:  401, 253
+   total raw samples: 309 10441 310acceptor num rots: 31012838013 187
+  
+ 3092 N hbond geom samples: ]
+  42254 donor atoms: 1HD2 , 2HD2, 11076188255 
+43 105 253
+donor nchi: 3113102380 187 256
+  donor num rots: 13
+HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  188  18944  
+  381312254 311257 258 259106 260  261313consider orbitals for atom  3141 262  acceptor num rots:  315 316 1255
+total raw samples: 
+ O1 197N hbond geom samples: 11076
+ 381
+   317 total raw samples: 575952
+190 191382 107acceptor orbitals, index:  192382 1931 atom:  O1   287976312108 109 110 111HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  256    112 
+ 
+ 313 orbitals:  
+314189consider orbitals for atom 198257 1113   190315 191 [ 318383192 193 263
+ 114 115  116no rotamers for res2  BDDHBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  2641 117265
+
+,   2316 OE1]
+ 383donor atoms:  HE1, 
+258
+ donor nchi:  2 259118 384 119266 consider orbitals for atom 2  OE2 
+384
+317HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  199 385  260
+ 319120 320 267   consider orbitals for atom acceptor orbitals, index:  1211318  268385 3211 atom: 386  387donor num rots:   O1 
+  OE1319 orbitals:  acceptor orbitals, index: 200 
+ 269[19 386
+1223, 1 acceptor num rots: 322 atom:  O1  orbitals: [123270 1  , 2]
+1387 261
+consider orbitals for atom 323HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  1no rotamers for res2  donor atoms: 4201
+ 1HE2, 2HE2
+ 271N hbond geom samples: BDD 202,  OE1
+
+320
+11076 321
+] acceptor orbitals, index:  324donor nchi: 2032723   1204total raw samples: 420888 322
+273 atom: 
+
+  OE1 orbitals: [3, 4]
+acceptor orbitals, index: donor atoms:  H1 , 
+ donor nchi: 12
+323 donor num rots: 1
+2262HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  
+124 atom:  donor num rots: consider orbitals for atom 1  125 OE2325263
+ O1   acceptor num rots: 
+ consider orbitals for atom  25 264 orbitals: 205 [32625274 
+1
+no rotamers for res2 2065acceptor orbitals, index: N hbond geom samples: BDD 207 ,  327265
+  275110766
+] OH 324
+total raw samples:  325 553800 1acceptor orbitals, index: 1 atom:  OH  orbitals: [20813
+ 328 , 14]
+
+ atom:  O1  orbitals: [1, 2762209donor atoms:  H1 , 
+266  HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  326
+ 327consider orbitals for atom 1   O1  328 277donor nchi:  329210donor atoms:  H1 , 
+acceptor num rots: 329
+ ]12 
+ donor num rots: 1 330donor nchi: 1211
+12
+
+ donor num rots:  1
+331267212  278 acceptor num rots:  acceptor num rots: acceptor orbitals, index: N hbond geom samples: 
+ 33222 
+279donor atoms: 26811076333213330 26927 270 271 N hbond geom samples:   
+
+111076280  atom: 
+ O1  HH  N hbond geom samples: total raw samples: 1107600
+281334  282  orbitals: total raw samples: 214, [11076487344
+
+donor nchi: 3331
+ 332 2151
+ 333 334 335 336 337,   2total raw samples: 338283 339]272 216donor num rots:  22217
+ 273 1196208 274 275
+335 340  284  285 286 336287 337acceptor num rots:    1341
+
+ 342 343N hbond geom samples: ==================================================================================================================338==================================================================================================================11076
+donor atoms: 
+
+276 218 219total raw samples: 487344
+288 ============ Thread no rotamers for res2 1HZ 277339 ,   ================================================================================================================== 340
+ 
+============ Thread 9 generating hotspot geometries ASN BDD =======================================220============ Thread 
+==================================================================================================================
+==================================================================================================================
+============ Thread 8 generating hotspot geometries BDD GLN =======================================
+==================================================================================================================
+278 279 280 281289 282 283 284 285 286 287 288 289
+
+20 generating hotspot geometries 2HZ no rotamers for res2 BDD
+BDD , BDD3HZ 221, 
+6donor nchi: 4 generating hotspot geometries 
+
+ TRP222 BDD =======================================
+donor num rots: 31
+acceptor num rots: HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  1HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  
+==================================================================================================================
+
+341 
+ consider orbitals for atom N hbond geom samples: 11076
+ consider orbitals for atom 223HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  
+ASN =======================================1consider orbitals for atom total raw samples: ============ Thread 31 generating hotspot geometries 1
+GLN==================================================================================================================  BDD 224 O1 
+ =======================================
+ ==================================================================================================================
+ O1 
+342
+acceptor orbitals, index:  acceptor orbitals, index: 1 atom: 1225 O1  orbitals: [1, 2]
+2060136donor atoms:  HG1, 
+
+  226 OG 1
+================================================================================================================== 343acceptor orbitals, index: 
+ atom:  227 228 O1  orbitals: [ 1donor nchi: ==================================================================================================================2, 
+2292
+1]
+ donor atoms:  HG , 
+230donor nchi: 2
+donor num rots: 54
+donor num rots: 
+54HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25   ==================================================================================================================231============ Thread 22 generating hotspot geometries BDD ASP =======================================
+
+
+
+acceptor num rots: 1
+==================================================================================================================
+consider orbitals for atom ============ Thread 23 generating hotspot geometries BDD  GLU232  =======================================233
+==================================================================================================================
+ atom: N hbond geom samples:  OG  orbitals: [3, 4]
+1donor atoms:  H1 ,  
+acceptor num rots:  OG11
+
+ N hbond geom samples: 11076
+234donor nchi:  23512total raw samples: 
+acceptor orbitals, index: 1 atom: 
+ OG1no rotamers for res2 BDD
+11076
+ orbitals: total raw samples: 1196208
+[3, 4]donor num rots: 1
+acceptor num rots: 
+54
+N hbond geom samples: 11076
+1196208
+total raw samples: 1196208
+==================================================================================================================donor atoms:  H1 , 
+
+donor nchi: 12
+donor num rots: 1
+acceptor num rots: 54
+N hbond geom samples: 11076
+total raw samples: 1196208
+==================================================================================================================
+============ Thread HBondedPairGenerator: align atoms:  C11  C12  B1 
+1  C6   2  C5   3  C4   4  C3   5  C2   6  C1   7  O1   8  C7   9  C8   10  C9   11  C10  12  C11  13  C12  14  B1   15  H12  16  H13  17  H10  18  H11  19  H8   20  H9   21  H6   22  H7   23  H4   24  H5   25  H2   26  H3   27  H1   28  H14  29  H15  30  H16  31  H17  32  H18  33  H19  34  H20  35  H21  36  H22  37  H23  38  H24  39  H25  
+============ Thread consider orbitals for atom 1  O1 
+acceptor orbitals, index: 281==================================================================================================================
+ atom:  O1  orbitals: ============ Thread 30 generating hotspot geometries LYS BDD =======================================
+==================================================================================================================
+ generating hotspot geometries BDD TYR =======================================
+==================================================================================================================
+[1, 2]
+donor atoms:  HE , 1HH1, 2HH1, 1HH2, 2HH2, 
+donor nchi: 4
+donor num rots: 42
+10acceptor num rots: 1
+N hbond geom samples: 11076
+total raw samples: 4651920
+ generating hotspot geometries TYR BDD =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 26 generating hotspot geometries SER BDD =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 32 generating hotspot geometries THR BDD =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 19 generating hotspot geometries BDD SER =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 3 generating hotspot geometries BDD THR =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 4 generating hotspot geometries ARG BDD =======================================
+==================================================================================================================
+Thread 19 Samples BDD -> SER fix_donor 100.000K of at most   1.196M progress:  8.35967%
+Thread 26 Samples SER -> BDD fix_acceptor 100.000K of at most   1.196M progress:  8.35967%
+Thread 32 Samples THR -> BDD fix_acceptor 100.000K of at most   1.196M progress:  8.35967%
+Thread 9 Samples ASN -> BDD fix_acceptor 100.000K of at most 575.952K progress:  17.3624%
+Thread 22 Samples BDD -> ASP fix_donor 100.000K of at most 310.128K progress:  32.2444%
+Thread 3 Samples BDD -> THR fix_donor 100.000K of at most   1.196M progress:  8.35967%
+Thread 20 Samples BDD -> ASN fix_donor 100.000K of at most 287.976K progress:  34.7248%
+Thread 31 Samples GLN -> BDD fix_acceptor 100.000K of at most   1.108M progress:  9.02844%
+Thread 23 Samples BDD -> GLU fix_donor 100.000K of at most   1.196M progress:  8.35967%
+Thread 8 Samples BDD -> GLN fix_donor 100.000K of at most 553.800K progress:  18.0569%
+Thread 6 Samples TRP -> BDD fix_acceptor 100.000K of at most 420.888K progress:  23.7591%
+Thread 19 Samples BDD -> SER fix_donor 200.000K of at most   1.196M progress:  16.7194%
+Thread 30 Samples LYS -> BDD fix_acceptor 100.000K of at most   2.060M progress:  4.854%
+Thread 26 Samples SER -> BDD fix_acceptor 200.000K of at most   1.196M progress:  16.7194%
+Thread 32 Samples THR -> BDD fix_acceptor 200.000K of at most   1.196M progress:  16.7194%
+Thread 9 Samples ASN -> BDD fix_acceptor 200.000K of at most 575.952K progress:  34.7249%
+Thread 22 Samples BDD -> ASP fix_donor 200.000K of at most 310.128K progress:  64.4892%
+Thread 3 Samples BDD -> THR fix_donor 200.000K of at most   1.196M progress:  16.7194%
+Thread 20 Samples BDD -> ASN fix_donor 200.000K of at most 287.976K progress:  69.4499%
+Thread 31 Samples GLN -> BDD fix_acceptor 200.000K of at most   1.108M progress:  18.057%
+total BDD ASN 218.898K
+SAVING 218.898K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots13__DON_BDD-ASN__BDD_rot_min_0001.rel_rot_pos.gz
+218898
+Thread 23 Samples BDD -> GLU fix_donor 200.000K of at most   1.196M progress:  16.7194%
+total BDD ASP 238.450K
+SAVING 238.450K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots7__DON_BDD-ASP__BDD_rot_min_0001.rel_rot_pos.gz
+238450
+Thread 10 Samples TYR -> BDD fix_acceptor 100.000K of at most 487.344K progress:  20.5192%
+Thread 28 Samples BDD -> TYR fix_donor 100.000K of at most 487.344K progress:  20.5192%
+Thread 8 Samples BDD -> GLN fix_donor 200.000K of at most 553.800K progress:  36.1139%
+Thread 19 Samples BDD -> SER fix_donor 300.000K of at most   1.196M progress:  25.0792%
+Thread 26 Samples SER -> BDD fix_acceptor 300.000K of at most   1.196M progress:  25.0792%
+Thread 4 Samples ARG -> BDD fix_acceptor 100.000K of at most   4.652M progress:  2.14963%
+Thread 32 Samples THR -> BDD fix_acceptor 300.000K of at most   1.196M progress:  25.0792%
+Thread 3 Samples BDD -> THR fix_donor 300.000K of at most   1.196M progress:  25.0792%
+Thread 9 Samples ASN -> BDD fix_acceptor 300.000K of at most 575.952K progress:  52.0875%
+Thread 30 Samples LYS -> BDD fix_acceptor 200.000K of at most   2.060M progress:  9.70805%
+Thread 6 Samples TRP -> BDD fix_acceptor 200.000K of at most 420.888K progress:  47.5183%
+Thread 31 Samples GLN -> BDD fix_acceptor 300.000K of at most   1.108M progress:  27.0855%
+Thread 19 Samples BDD -> SER fix_donor 400.000K of at most   1.196M progress:  33.4389%
+Thread 26 Samples SER -> BDD fix_acceptor 400.000K of at most   1.196M progress:  33.4389%
+Thread 23 Samples BDD -> GLU fix_donor 300.000K of at most   1.196M progress:  25.0792%
+Thread 8 Samples BDD -> GLN fix_donor 300.000K of at most 553.800K progress:  54.171%
+Thread 32 Samples THR -> BDD fix_acceptor 400.000K of at most   1.196M progress:  33.4389%
+Thread 3 Samples BDD -> THR fix_donor 400.000K of at most   1.196M progress:  33.4389%
+Thread 9 Samples ASN -> BDD fix_acceptor 400.000K of at most 575.952K progress:  69.4501%
+Thread 10 Samples TYR -> BDD fix_acceptor 200.000K of at most 487.344K progress:  41.0386%
+Thread 30 Samples LYS -> BDD fix_acceptor 300.000K of at most   2.060M progress:  14.5621%
+Thread 26 Samples SER -> BDD fix_acceptor 500.000K of at most   1.196M progress:  41.7987%
+Thread 19 Samples BDD -> SER fix_donor 500.000K of at most   1.196M progress:  41.7987%
+Thread 28 Samples BDD -> TYR fix_donor 200.000K of at most 487.344K progress:  41.0386%
+Thread 31 Samples GLN -> BDD fix_acceptor 400.000K of at most   1.108M progress:  36.114%
+Thread 23 Samples BDD -> GLU fix_donor 400.000K of at most   1.196M progress:  33.4389%
+Thread 3 Samples BDD -> THR fix_donor 500.000K of at most   1.196M progress:  41.7987%
+Thread 32 Samples THR -> BDD fix_acceptor 500.000K of at most   1.196M progress:  41.7987%
+Thread 4 Samples ARG -> BDD fix_acceptor 200.000K of at most   4.652M progress:  4.29928%
+total BDD GLN 391.671K
+SAVING 391.671K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots25__DON_BDD-GLN__BDD_rot_min_0001.rel_rot_pos.gz
+391671
+Thread 6 Samples TRP -> BDD fix_acceptor 300.000K of at most 420.888K progress:  71.2776%
+total ASN BDD 489.884K
+SAVING 489.884K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots13__ACC_ASN-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+489884
+Thread 19 Samples BDD -> SER fix_donor 600.000K of at most   1.196M progress:  50.1584%
+Thread 26 Samples SER -> BDD fix_acceptor 600.000K of at most   1.196M progress:  50.1584%
+Thread 30 Samples LYS -> BDD fix_acceptor 400.000K of at most   2.060M progress:  19.4161%
+Thread 31 Samples GLN -> BDD fix_acceptor 500.000K of at most   1.108M progress:  45.1426%
+Thread 3 Samples BDD -> THR fix_donor 600.000K of at most   1.196M progress:  50.1584%
+Thread 32 Samples THR -> BDD fix_acceptor 600.000K of at most   1.196M progress:  50.1584%
+Thread 23 Samples BDD -> GLU fix_donor 500.000K of at most   1.196M progress:  41.7987%
+Thread 19 Samples BDD -> SER fix_donor 700.000K of at most   1.196M progress:  58.5182%
+Thread 10 Samples TYR -> BDD fix_acceptor 300.000K of at most 487.344K progress:  61.558%
+Thread 28 Samples BDD -> TYR fix_donor 300.000K of at most 487.344K progress:  61.558%
+Thread 26 Samples SER -> BDD fix_acceptor 700.000K of at most   1.196M progress:  58.5182%
+Thread 6 Samples TRP -> BDD fix_acceptor 400.000K of at most 420.888K progress:  95.0369%
+total TRP BDD 402.412K
+SAVING 402.412K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots19__ACC_TRP-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+402412
+Thread 30 Samples LYS -> BDD fix_acceptor 500.000K of at most   2.060M progress:  24.2702%
+Thread 3 Samples BDD -> THR fix_donor 700.000K of at most   1.196M progress:  58.5182%
+Thread 31 Samples GLN -> BDD fix_acceptor 600.000K of at most   1.108M progress:  54.1711%
+Thread 32 Samples THR -> BDD fix_acceptor 700.000K of at most   1.196M progress:  58.5182%
+Thread 23 Samples BDD -> GLU fix_donor 600.000K of at most   1.196M progress:  50.1584%
+Thread 19 Samples BDD -> SER fix_donor 800.000K of at most   1.196M progress:  66.8779%
+Thread 4 Samples ARG -> BDD fix_acceptor 300.000K of at most   4.652M progress:  6.44893%
+Thread 26 Samples SER -> BDD fix_acceptor 800.000K of at most   1.196M progress:  66.8779%
+Thread 3 Samples BDD -> THR fix_donor 800.000K of at most   1.196M progress:  66.8779%
+Thread 32 Samples THR -> BDD fix_acceptor 800.000K of at most   1.196M progress:  66.8779%
+Thread 30 Samples LYS -> BDD fix_acceptor 600.000K of at most   2.060M progress:  29.1242%
+Thread 31 Samples GLN -> BDD fix_acceptor 700.000K of at most   1.108M progress:  63.1996%
+Thread 19 Samples BDD -> SER fix_donor 900.000K of at most   1.196M progress:  75.2377%
+Thread 10 Samples TYR -> BDD fix_acceptor 400.000K of at most 487.344K progress:  82.0773%
+total BDD THR 837.243K
+SAVING 837.243K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__DON_BDD-THR__BDD_rot_min_0001.rel_rot_pos.gz
+837243
+total SER BDD 896.617K
+SAVING 896.617K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__ACC_SER-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+896617
+Thread 28 Samples BDD -> TYR fix_donor 400.000K of at most 487.344K progress:  82.0773%
+Thread 23 Samples BDD -> GLU fix_donor 700.000K of at most   1.196M progress:  58.5182%
+total THR BDD 843.778K
+SAVING 843.778K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__ACC_THR-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+843778
+total BDD TYR 408.331K
+SAVING 408.331K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots22__DON_BDD-TYR__BDD_rot_min_0001.rel_rot_pos.gz
+408331
+total BDD SER 935.582K
+SAVING 935.582K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__DON_BDD-SER__BDD_rot_min_0001.rel_rot_pos.gz
+935582
+total TYR BDD 416.998K
+SAVING 416.998K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots22__ACC_TYR-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+416998
+Thread 31 Samples GLN -> BDD fix_acceptor 800.000K of at most   1.108M progress:  72.2282%
+Thread 30 Samples LYS -> BDD fix_acceptor 700.000K of at most   2.060M progress:  33.9783%
+Thread 4 Samples ARG -> BDD fix_acceptor 400.000K of at most   4.652M progress:  8.59858%
+Thread 23 Samples BDD -> GLU fix_donor 800.000K of at most   1.196M progress:  66.8779%
+Thread 31 Samples GLN -> BDD fix_acceptor 900.000K of at most   1.108M progress:  81.2567%
+Thread 30 Samples LYS -> BDD fix_acceptor 800.000K of at most   2.060M progress:  38.8323%
+Thread 23 Samples BDD -> GLU fix_donor 900.000K of at most   1.196M progress:  75.2377%
+total BDD GLU 901.611K
+SAVING 901.611K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots27__DON_BDD-GLU__BDD_rot_min_0001.rel_rot_pos.gz
+901611
+total GLN BDD 945.526K
+SAVING 945.526K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots25__ACC_GLN-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+945526
+Thread 4 Samples ARG -> BDD fix_acceptor 500.000K of at most   4.652M progress:  10.7482%
+Thread 30 Samples LYS -> BDD fix_acceptor 900.000K of at most   2.060M progress:  43.6864%
+Thread 30 Samples LYS -> BDD fix_acceptor   1.000M of at most   2.060M progress:  48.5404%
+Thread 4 Samples ARG -> BDD fix_acceptor 600.000K of at most   4.652M progress:  12.8979%
+Thread 30 Samples LYS -> BDD fix_acceptor   1.100M of at most   2.060M progress:  53.3945%
+Thread 30 Samples LYS -> BDD fix_acceptor   1.200M of at most   2.060M progress:  58.2485%
+Thread 4 Samples ARG -> BDD fix_acceptor 700.000K of at most   4.652M progress:  15.0475%
+Thread 30 Samples LYS -> BDD fix_acceptor   1.300M of at most   2.060M progress:  63.1026%
+Thread 30 Samples LYS -> BDD fix_acceptor   1.400M of at most   2.060M progress:  67.9566%
+Thread 4 Samples ARG -> BDD fix_acceptor 800.000K of at most   4.652M progress:  17.1972%
+Thread 30 Samples LYS -> BDD fix_acceptor   1.500M of at most   2.060M progress:  72.8107%
+Thread 30 Samples LYS -> BDD fix_acceptor   1.600M of at most   2.060M progress:  77.6647%
+Thread 4 Samples ARG -> BDD fix_acceptor 900.000K of at most   4.652M progress:  19.3468%
+total LYS BDD   1.617M
+SAVING   1.617M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots31__ACC_LYS-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+1616985
+Thread 4 Samples ARG -> BDD fix_acceptor   1.000M of at most   4.652M progress:  21.4965%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.100M of at most   4.652M progress:  23.6461%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.200M of at most   4.652M progress:  25.7958%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.300M of at most   4.652M progress:  27.9454%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.400M of at most   4.652M progress:  30.0951%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.500M of at most   4.652M progress:  32.2447%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.600M of at most   4.652M progress:  34.3944%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.700M of at most   4.652M progress:  36.544%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.800M of at most   4.652M progress:  38.6937%
+Thread 4 Samples ARG -> BDD fix_acceptor   1.900M of at most   4.652M progress:  40.8433%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.000M of at most   4.652M progress:  42.993%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.100M of at most   4.652M progress:  45.1426%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.200M of at most   4.652M progress:  47.2923%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.300M of at most   4.652M progress:  49.4419%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.400M of at most   4.652M progress:  51.5916%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.500M of at most   4.652M progress:  53.7412%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.600M of at most   4.652M progress:  55.8909%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.700M of at most   4.652M progress:  58.0405%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.800M of at most   4.652M progress:  60.1902%
+Thread 4 Samples ARG -> BDD fix_acceptor   2.900M of at most   4.652M progress:  62.3398%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.000M of at most   4.652M progress:  64.4895%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.100M of at most   4.652M progress:  66.6391%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.200M of at most   4.652M progress:  68.7888%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.300M of at most   4.652M progress:  70.9384%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.400M of at most   4.652M progress:  73.0881%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.500M of at most   4.652M progress:  75.2377%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.600M of at most   4.652M progress:  77.3874%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.700M of at most   4.652M progress:  79.537%
+Thread 4 Samples ARG -> BDD fix_acceptor   3.800M of at most   4.652M progress:  81.6867%
+total ARG BDD   3.846M
+SAVING   3.846M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots42__ACC_ARG-BDD__BDD_rot_min_0001.rel_rot_pos.gz
+3846022
+
+RifGenSimpHB:    1 DON_BDD-THR__BDD_rot_min_0001 done, ngeom: 837.243K job    0 of 15  <>RIFAccum nrots:  21.617M mem:  65.536K rif_mem:  67.109M
+RifGenSimpHB:    1 DON_BDD-SER__BDD_rot_min_0001 done, ngeom: 935.582K job    1 of 15  <>RIFAccum nrots:  53.678M mem:  65.536K rif_mem:  67.109M
+RifGenSimpHB:    1 ACC_THR-BDD__BDD_rot_min_0001 done, ngeom: 843.778K job    2 of 15  <>RIFAccum nrots:  86.450M mem:  65.536K rif_mem: 268.435M
+RifGenSimpHB:    1 ACC_SER-BDD__BDD_rot_min_0001 done, ngeom: 896.617K job    3 of 15  <>RIFAccum nrots: 128.594M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 ACC_ARG-BDD__BDD_rot_min_0001 done, ngeom:   3.846M job    4 of 15  <>RIFAccum nrots: 130.571M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 ACC_LYS-BDD__BDD_rot_min_0001 done, ngeom:   1.617M job    5 of 15  <>RIFAccum nrots: 130.961M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 DON_BDD-GLU__BDD_rot_min_0001 done, ngeom: 901.611K job    6 of 15  <>RIFAccum nrots: 142.001M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 DON_BDD-GLN__BDD_rot_min_0001 done, ngeom: 391.671K job    7 of 15  <>RIFAccum nrots: 146.735M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 ACC_GLN-BDD__BDD_rot_min_0001 done, ngeom: 945.526K job    8 of 15  <>RIFAccum nrots: 164.390M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 DON_BDD-TYR__BDD_rot_min_0001 done, ngeom: 408.331K job    9 of 15  <>RIFAccum nrots: 185.009M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 ACC_TYR-BDD__BDD_rot_min_0001 done, ngeom: 416.998K job   10 of 15  <>RIFAccum nrots: 209.716M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 ACC_TRP-BDD__BDD_rot_min_0001 done, ngeom: 402.412K job   11 of 15  <>RIFAccum nrots: 235.367M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 DON_BDD-ASN__BDD_rot_min_0001 done, ngeom: 218.898K job   12 of 15  <>RIFAccum nrots: 240.707M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 ACC_ASN-BDD__BDD_rot_min_0001 done, ngeom: 489.884K job   13 of 15  <>RIFAccum nrots: 262.501M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 DON_BDD-ASP__BDD_rot_min_0001 done, ngeom: 238.450K job   14 of 15  <>RIFAccum nrots: 269.053M mem:  65.536K rif_mem:   2.147G
+================== ApoHSearch rotamer 45 PHE chis:  62 79 ================== Progress: 1 of 13 0% ==================
+RifGeneratorApoHSearch: add child rotamers: PHE45 PHE46 PHE47 PHE48 PHE49 PHE50 PHE51 PHE52 PHE53 PHE54 PHE55 PHE56 PHE57 PHE58 PHE59
+NEST info base resl: 1.73205 1.73205 1.73205  19.6933
+Hstage: 0 resl: 3.00 nsamp:   9.360M ************************************************** branching: -3.624412 to -1.400000
+Hstage: 1 resl: 1.50 nsamp: 116.425M *************************************************** branching: -3.618267 to -1.400000
+Hstage: 2 resl: 0.75 nsamp:   3.378G ***<>***<>*<>*<>*<>***<>*<>**<>**<>**<><>*****<><>**<>*<>****<>**<>*<>**<>*<>*<>****<>*<>*<>******
+SCOREINFO PHE min:  -3.528 cut: -1. avg:  -1.447 nsamp   2.853G
+<>RIFAccum nrots:  17.716G mem:  65.536K rif_mem:  17.180G
+================== ApoHSearch rotamer 88 ILE chis:  62 100 ================== Progress: 2 of 13 7.69231% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE88 ILE92
+NEST info base resl: 1.73205 1.73205 1.73205  29.7177
+Hstage: 0 resl: 3.00 nsamp:   2.022M *************************************************** branching: -2.321066 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  27.500M *************************************************** branching: -2.311099 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 784.308M ***************************<>***********************
+SCOREINFO ILE min:  -2.278 cut: -.9 avg:  -0.915 nsamp 678.977M
+<>RIFAccum nrots:  18.244G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 89 ILE chis:  62 170 ================== Progress: 3 of 13 15.3846% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE89 ILE93
+NEST info base resl: 1.73205 1.73205 1.73205  27.1425
+Hstage: 0 resl: 3.00 nsamp:   2.022M *************************************************** branching: -2.321066 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  27.271M *************************************************** branching: -2.319120 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 794.898M ***************************<>************************
+SCOREINFO ILE min:  -2.288 cut: -.9 avg:  -0.919 nsamp 692.938M
+<>RIFAccum nrots:  18.801G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 90 ILE chis:  -177 66 ================== Progress: 4 of 13 23.0769% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE90
+NEST info base resl: 1.73205 1.73205 1.73205  27.4555
+Hstage: 0 resl: 3.00 nsamp:   2.022M *************************************************** branching: -2.321066 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  27.247M *************************************************** branching: -2.311099 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 784.161M **************************************************
+SCOREINFO ILE min:  -2.273 cut: -.9 avg:  -0.914 nsamp 678.433M
+<>RIFAccum nrots:  19.063G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 91 ILE chis:  -177 165 ================== Progress: 5 of 13 30.7692% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE91
+NEST info base resl: 1.73205 1.73205 1.73205  25.3094
+Hstage: 0 resl: 3.00 nsamp:   4.792M *************************************************** branching: -2.321066 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  63.963M ************************************************** branching: -2.319120 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   1.886G *****************************<>*********************
+SCOREINFO ILE min:  -2.303 cut: -.9 avg:  -0.917 nsamp   1.643G
+<>RIFAccum nrots:  19.725G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 94 ILE chis:  -57 -60 ================== Progress: 6 of 13 38.4615% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE94
+NEST info base resl: 1.73205 1.73205 1.73205  26.7486
+Hstage: 0 resl: 3.00 nsamp:   2.022M *************************************************** branching: -2.321066 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  27.216M *************************************************** branching: -2.321066 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 796.599M **************************************************
+SCOREINFO ILE min:  -2.283 cut: -.9 avg:  -0.919 nsamp 694.824M
+<>RIFAccum nrots:  20.004G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 126 LEU chis:  62 80 ================== Progress: 7 of 13 46.1538% ==================
+RifGeneratorApoHSearch: add child rotamers: LEU126 LEU127 LEU128 LEU129 LEU130 LEU131 LEU132 LEU133 LEU134
+NEST info base resl: 1.73205 1.73205 1.73205  24.7122
+Hstage: 0 resl: 3.00 nsamp:   4.792M *************************************************** branching: -2.321066 to -0.750000
+Hstage: 1 resl: 1.50 nsamp:  67.306M *************************************************** branching: -2.321066 to -0.750000
+Hstage: 2 resl: 0.75 nsamp:   2.085G ******<>****<>**<>**<>***<>****<>**<>*****<>***<>***<>****<>**<>**<>****<>****
+SCOREINFO LEU min:  -2.278 cut: -.8 avg:  -0.872 nsamp   1.826G
+<>RIFAccum nrots:  27.336G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 344 VAL chis:  63 ================== Progress: 8 of 13 53.8462% ==================
+RifGeneratorApoHSearch: add child rotamers: VAL344 VAL345 VAL346
+NEST info base resl: 1.73205 1.73205 1.73205  35.0055
+Hstage: 0 resl: 3.00 nsamp:   2.022M *************************************************** branching: -2.332041 to -0.500000
+Hstage: 1 resl: 1.50 nsamp:  35.905M *************************************************** branching: -2.332041 to -0.500000
+Hstage: 2 resl: 0.75 nsamp:   1.170G **********<>********<>********<>*********<>*******<>********
+SCOREINFO VAL min:  -2.306 cut: -.5 avg:  -0.741 nsamp   1.038G
+<>RIFAccum nrots:  29.095G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 135 MET chis:  62 180 75 ================== Progress: 9 of 13 61.5385% ==================
+RifGeneratorApoHSearch: add child rotamers: MET135 MET137 MET139 MET148 MET149 MET150
+NEST info base resl: 1.73205 1.73205 1.73205  22.1823
+Hstage: 0 resl: 3.00 nsamp:   4.792M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  64.552M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   1.959G *******<>****<>***<>****<>*****<>******<>***<>*****<>****<>******<>***
+SCOREINFO MET min:  -2.398 cut: -.9 avg:  -0.945 nsamp   1.696G
+<>RIFAccum nrots:  33.644G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 136 MET chis:  62 180 -75 ================== Progress: 10 of 13 69.2308% ==================
+RifGeneratorApoHSearch: add child rotamers: MET136 MET141 MET145 MET146 MET147
+NEST info base resl: 1.73205 1.73205 1.73205  22.3394
+Hstage: 0 resl: 3.00 nsamp:   4.792M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  64.695M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   1.961G *******<>*****<>*****<>*****<>*******<>****<>******<>****<>*******
+SCOREINFO MET min:  -2.388 cut: -.9 avg:  -0.944 nsamp   1.698G
+<>RIFAccum nrots:  37.443G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 138 MET chis:  -177 65 180 ================== Progress: 11 of 13 76.9231% ==================
+RifGeneratorApoHSearch: add child rotamers: MET138 MET140 MET142 MET144
+NEST info base resl: 1.73205 1.73205 1.73205  20.7186
+Hstage: 0 resl: 3.00 nsamp:   4.792M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  62.929M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   1.925G ********<>****<>******<>*******<>*******<>*****<>******<>*******
+SCOREINFO MET min:  -2.378 cut: -.9 avg:  -0.949 nsamp   1.657G
+<>RIFAccum nrots:  40.430G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 143 MET chis:  -65 -65 103 ================== Progress: 12 of 13 84.6154% ==================
+RifGeneratorApoHSearch: add child rotamers: MET143
+NEST info base resl: 1.73205 1.73205 1.73205  22.7034
+Hstage: 0 resl: 3.00 nsamp:   4.792M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  64.886M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   1.959G ************************<>**************************
+SCOREINFO MET min:  -2.376 cut: -.9 avg:  -0.942 nsamp   1.692G
+<>RIFAccum nrots:  41.164G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 151 MET chis:  -65 -80 -70 ================== Progress: 13 of 13 92.3077% ==================
+RifGeneratorApoHSearch: add child rotamers: MET151 MET152 MET153
+NEST info base resl: 1.73205 1.73205 1.73205  22.0299
+Hstage: 0 resl: 3.00 nsamp:   4.792M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  64.434M *************************************************** branching: -2.410629 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   1.959G ***********<>********<>************<>*********<>**********
+SCOREINFO MET min:  -2.394 cut: -.9 avg:  -0.945 nsamp   1.696G
+<>RIFAccum nrots:  43.392G mem:  65.536K rif_mem:  34.360G
+RifGenerators done
+RIFAccumulator building rif....
+RIF:  non0 in RIF: 172.007M N_motifs_found:  43.392G coverage: 252.272, mem_use:  34.360G
+RIF size:  34.360G load: 0.320388, sizeof(value_type) 64
+sorting rotamers in each hash entry
+RIF  non0 in RIF: 172.007M N_motifs_found:  43.392G coverage: 252.272
+======================= frac collisions in map =======================
+======================= cart: 0.6, ori: 12 =======================
+======================================================================
+   Nrots   1 1.00000  -1.634 172006768
+   Nrots   2 0.90246  -1.652 155229563
+   Nrots   3 0.84108  -1.643 144670972
+   Nrots   4 0.76347  -1.471 131322547
+   Nrots   5 0.71574  -1.442 123112574
+   Nrots   6 0.67619  -1.417 116309145
+   Nrots   7 0.63998  -1.373 110080301
+   Nrots   8 0.60931  -1.353 104805268
+   Nrots   9 0.58242  -1.333 100180456
+   Nrots  10 0.55827  -1.273 96025611
+   Nrots  11 0.53341  -1.253 91749922
+   Nrots  12 0.51017  -1.236 87751892
+   Nrots  13 0.48887  -1.214 84089122
+   Nrots  14 0.46915  -1.200 80696993
+E(collisions) = 9.29051
+======================================================================
+XformHash_bt24_BCC6
+before resize, RIF size:  34.360G load: 0.320388, sizeof(value_type) 64
+NOT RESIZING RIF
+dumping rif to: ./rifgen_init/rifgen_init.rif.gz
+===================================== rif description ======================================
+from Will's rifgen app
+rotamer set size : 1654
+rotamer nprimary : 388
+          target : BDD_rot_min_0001.pdb
+      target_res : 1 
+          apores : PHE ILE LEU VAL MET 
+          donres : THR TYR TRP GLN ASN SER LYS ARG BDD 
+          accres : THR TYR SER GLN ASN ASP GLU BDD 
+       beam_size :  10.000G
+    value stored : RotamerScores< N=14, RotamerScoreSat< dsize=2, rbit=9, div=-4, nsat=2 > >
+apo_search_resls : 3 1.5 0.75 
+ score_cut_adjust...............0.5
+ score_threshold................-0.5
+ hbond_weight...................2
+ upweight_multi_hbond...........1
+ tip_tol_deg....................40
+ rot_samp_range.................360
+ rot_samp_resl..................4
+ hbond_cart_sample_hack_range...0.59999999999999998
+ hbond_cart_sample_hack_resl....0.29999999999999999
+ rosetta_field_resl.............0.125
+ max_rf_bounding_ratio..........4
+ rf_oversample..................2
+ hash_cart_resl.................0.59999999999999998
+ hash_angle_resl................12
+       RIF cells : 172.007M
+  Nrots inserted :  43.392G
+        coverage : 252.271973
+
+============================================================================================
+writing rif file ./rifgen_init/rifgen_init.rif.gz
+make_bounding_gird: cart 8 / 8, ang: 24.4 / 24.4
+    new map size 100.255K ratio: 0.000582855
+    mem:  16.777M load: 0.382442, sizeof(value_type) 64
+make_bounding_gird: cart 4 / 4, ang: 17.2 / 17.2
+    new map size 678.333K ratio: 0.00394364
+    mem: 134.218M load: 0.323454, sizeof(value_type) 64
+make_bounding_gird: cart 16 / 16, ang: 38.8446 / 38.8
+    new map size   6.697K ratio: 3.89345e-05
+    mem:   1.049M load: 0.408752, sizeof(value_type) 64
+make_bounding_gird: cart 2 / 2, ang: 13.6 / 13.6
+    new map size   5.621M ratio: 0.0326781
+    mem:   1.074G load: 0.335029, sizeof(value_type) 64
+make_bounding_gird: cart 1 / 1, ang: 11.8 / 11.8
+    new map size  40.884M ratio: 0.237686
+    mem:   8.590G load: 0.304607, sizeof(value_type) 64
+done writing
+NOT DELETING VoxelArrayPtr's, should use smart ptrs!
+rif_hier_DONE
+########################################### what you need for docking ###########################################
+-rif_dock:target_pdb            ./rifgen_init/rifgen_init.rif.gz_target.pdb.gz
+-in:file:extra_res_fa           BDD.params
+-rif_dock:target_rf_resl        0.125
+-rif_dock:target_rf_cache       ./rifgen_init/__RF_BDD_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_16.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_08.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_04.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_02.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_01.xmap.gz
+-rif_dock:target_rif            ./rifgen_init/rifgen_init.rif.gz
+-rif_dock:target_donors         ./rifgen_init/rifgen_init.rif.gz_donors.pdb.gz
+-rif_dock:target_acceptors      ./rifgen_init/rifgen_init.rif.gz_acceptors.pdb.gz
+-rif_dock:extra_rotamers        1
+-rif_dock:extra_rif_rotamers    1
+-rif_dock:rot_spec_fname        ./rifgen_init/rotamer_index_spec.txt
+#################################################################################################################

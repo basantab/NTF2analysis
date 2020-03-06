@@ -1,0 +1,712 @@
+id	count	name	formula	Cn_OK	bin
+DOG	5	DIGOXIGENIN	C23 H34 O5	True	0
+AKV	1	{3-[(1R,3S)-1,3-DIHYDROXYPENTYL]-4,5,9,10-TETRAHYDROXY-2-ANTHRYL}ACETATE	C22 H22 O8	True	-1
+CRP	2	((1RS,3SR)-2,2-DICHLORO-N-[(R)-1-(4-CHLOROPHENYL)ETHYL]-1-ETHYL-3-METHYLCYCLOPROPANECARBOXAMIDE	C15 H18 Cl3 N O	True	0
+OFM	2	[(4Z)-2-{(2R,5R)-2-[(1S)-1-amino-2-phenylethyl]-2-hydroxy-5-methyl-2,5-dihydro-1,3-oxazol-4-yl}-4-(4-hydroxybenzylidene)-5-oxo-4,5-dihydro-1H-imidazol-1-yl]acetic acid	C24 H24 N4 O6	True	0
+2J8	2	(4S,11S,18S)-4,11,18-tri(propan-2-yl)-6,13,20-triselena-3,10,17,22,23,24-hexaazatetracyclo[17.2.1.1~5,8~.1~12,15~]tetracosa-1(21),5(24),7,12(23),14,19(22)-hexaene-2,9,16-trione	C24 H30 N6 O3 Se3	True	0
+7MX	3	ethyl 4-chloranyl-1-methyl-6-oxidanylidene-pyridine-3-carboxylate	C9 H10 Cl N O3	True	0
+EEE	11	ETHYL ACETATE	C4 H8 O2	True	0
+C2G	4	[CYTIDINE-5'-PHOSPHATE] GLYCERYLPHOSPHORIC ACID ESTER	C12 H21 N3 O13 P2	True	0
+YDP	2	(3S,4S),-3,4-Bis-[(4-carbamoyl-benzensulfonyl)-(3-methyl-but-2-enyl)-amino]-pyrrolidine	C28 H37 N5 O6 S2	True	0
+GGL	19	GAMMA-L-GLUTAMIC ACID	C5 H9 N O4	True	0
+P65	2	2,4-diamino-6-methyl-5-[3-(2,4,5-trichlorophenoxy)propyloxy]pyrimidine	C14 H15 Cl3 N4 O2	True	0
+UN1	13	2-AMINOHEXANEDIOIC ACID	C6 H11 N O4	True	0
+7OJ	2	(3-bromo-4-fluorophenyl)[(5S)-3,3-difluoro-5-(5-methyl[1,2,4]triazolo[1,5-a]pyrimidin-7-yl)piperidin-1-yl]methanone	C18 H15 Br F3 N5 O	True	0
+TAK	5	6-[4-(2-piperidin-1-ylethoxy)phenyl]-3-pyridin-4-ylpyrazolo[1,5-a]pyrimidine	C24 H25 N5 O	True	0
+SGM	34	MONOTHIOGLYCEROL	C3 H8 O2 S	True	0
+A6A	2	2-(6-amino-9H-purin-9-yl)-1,5-anhydro-2-deoxy-6-O-phosphono-D-altritol	C11 H16 N5 O7 P	True	0
+4MU	6	7-hydroxy-4-methyl-2H-chromen-2-one	C10 H8 O3	True	0
+MYI	2	(5-methoxy-1H-indol-3-yl)acetic acid	C11 H11 N O3	True	0
+AZQ	3	AZAPROPAZONE	C16 H20 N4 O2	True	0
+DYK	2	N-{2-methoxy-4-[(1-methylpiperidin-4-yl)oxy]phenyl}-4-(1H-pyrrolo[2,3-c]pyridin-3-yl)pyrimidin-2-amine	C24 H26 N6 O2	True	0
+L8P	2	({[(2S)-1-(4-amino-2-oxopyrimidin-1(2H)-yl)-3-hydroxypropan-2-yl]oxy}methyl)phosphonic acid	C8 H14 N3 O6 P	True	0
+XUL	9	D-XYLULOSE	C5 H10 O5	True	0
+BB4	2	2-(5-bromo-1H-indol-3-yl)-N-hydroxyacetamide	C10 H9 Br N2 O2	True	0
+TRT	12	FRAGMENT OF TRITON X-100	C21 H36 O4	True	0
+MPT	24	BETA-MERCAPTOPROPIONIC ACID	C3 H6 O2 S	True	0
+ZEC	2	6-HYDROXY-1,3-BENZOTHIAZOLE-2-SULFONAMIDE	C7 H6 N2 O3 S2	True	0
+2HO	2	3,4-difluorobenzamide	C7 H5 F2 N O	True	0
+DR0	2	N-(HYDROXYMETHYL)-N,N-DIMETHYLHEXAN-1-AMINIUM	C9 H22 N O 1	True	0
+MTW	2	HYDROXY(OXO)(3-{[(2Z)-4-[3-(1H-1,2,4-TRIAZOL-1-YLMETHYL)PHENYL]PYRIMIDIN-2(5H)-YLIDENE]AMINO}PHENYL)AMMONIUM	C19 H15 N7 O2	True	0
+BH3	2	hydrogen [(1R)-2-(3-pentadecyl-1H-imidazol-3-ium-1-yl)-1-phosphonoethyl]phosphonate	C20 H40 N2 O6 P2	True	0
+FHP	4	1-HYDROXY-3,7,11-TRIMETHYLDODECA-2,6,10-TRIENE PHOSPHONIC ACID	C15 H27 O4 P	True	0
+OTZ	3	2-[2-(aminomethyl)-1,3-oxazol-4-yl]-1,3-thiazole-4-carboxylic acid	C8 H7 N3 O3 S	True	0
+KU0	2	2-[(2S)-1-(3,5-dichloropyridine-4-carbonyl)pyrrolidin-2-yl]-5-hydroxy-6-oxo-N-[2-(phenylsulfonyl)ethyl]-1,6-dihydropyrimidine-4-carboxamide	C23 H21 Cl2 N5 O6 S	True	0
+393	8	(5-CHLORO-2-{[(3-NITROBENZYL)AMINO]CARBONYL}PHENOXY)ACETIC ACID	C16 H13 Cl N2 O6	True	0
+5LD	6	[(2R)-2-hydroxy-3-(1H-1,2,4-triazol-1-yl)propyl]phosphonic acid	C5 H10 N3 O4 P	True	0
+US5	2	1-(5-O-phosphono-beta-D-ribofuranosyl)-4-selanylpyrimidin-2(1H)-one	C9 H13 N2 O8 P Se	True	0
+5UF	2	(3~{S})-3-oxidanyldecanoic acid	C10 H20 O3	True	0
+LPM	2	6,8-DIMERCAPTO-OCTANOIC ACID AMIDE	C8 H17 N O S2	True	0
+I6G	2	8-methoxy-2,3-dimethylquinoxalin-5-ol	C11 H12 N2 O2	True	0
+QUE	29	3,5,7,3',4'-PENTAHYDROXYFLAVONE	C15 H10 O7	True	0
+PIO	33	[(2R)-2-octanoyloxy-3-[oxidanyl-[(1R,2R,3S,4R,5R,6S)-2,3,6-tris(oxidanyl)-4,5-diphosphonooxy-cyclohexyl]oxy-phosphoryl]oxy-propyl] octanoate	C25 H49 O19 P3	True	0
+0FV	4	(2Z)-2-fluoro-3,7-dimethylocta-2,6-dien-1-yl trihydrogen diphosphate	C10 H19 F O7 P2	True	0
+P0G	5	8-[(1R)-2-{[1,1-dimethyl-2-(2-methylphenyl)ethyl]amino}-1-hydroxyethyl]-5-hydroxy-2H-1,4-benzoxazin-3(4H)-one	C21 H26 N2 O4	True	0
+H35	7	N-(FURAN-2-YLMETHYL)-7H-PURIN-6-AMINE	C10 H9 N5 O	True	0
+CKI	4	N-(2-AMINOETHYL)-5-CHLOROISOQUINOLINE-8-SULFONAMIDE	C11 H12 Cl N3 O2 S	True	0
+MRK	3	2-AMINO-4-FLUORO-5-[(1-METHYL-1H-IMIDAZOL-2-YL)SULFANYL]-N-(1,3-THIAZOL-2-YL)BENZAMIDE	C14 H12 F N5 O S2	True	0
+5EJ	3	1-(2-deoxy-5-O-phosphono-beta-D-erythro-pentofuranosyl)-4-ethoxy-5-methylpyrimidin-2(1H)-one	C12 H19 N2 O8 P	True	0
+ALS	4	(3S)-3-(sulfooxy)-L-serine	C3 H7 N O7 S	True	0
+GXE	2	benzeneselenol	C6 H6 Se	True	0
+PIN	16	PIPERAZINE-N,N'-BIS(2-ETHANESULFONIC ACID)	C8 H18 N2 O6 S2	True	0
+OM3	2	(R)-(4-CARBOXY-1,3-BENZODIOXOL-5-YL)METHYL-[[2-(CYCLOHEXYLMETHYLCARBAMOYL)PHENYL]METHYL]-METHYL-AZANIUM	C25 H31 N2 O5 1	True	0
+6T0	2	1-(2-methylpropyl)imidazo[4,5-c]quinolin-4-amine	C14 H16 N4	True	0
+SLT	7	5-(ACETYLAMINO)-3,5-DIDEOXYNON-2-ULOPYRANONOSYL-(2->3)-BETA-D-LYXO-HEXOPYRANOSYL-(1->4)HEXOPYRANOSE	C23 H39 N O19	True	0
+LSN	3	[2-butyl-5-chloranyl-3-[[4-[2-(2H-1,2,3,4-tetrazol-5-yl)phenyl]phenyl]methyl]imidazol-4-yl]methanol	C22 H23 Cl N6 O	True	0
+C1E	2	(2Z,4E)-3-chloro-2-hydroxy-6-oxo-6-phenylhexa-2,4-dienoic acid	C12 H9 Cl O4	True	0
+MSP	2	5'-O-[(L-METHIONYL)-SULPHAMOYL]ADENOSINE	C15 H25 N7 O7 S2	True	0
+MSO	8	SELENOMETHIONINE SELENOXIDE	C5 H11 N O3 Se	True	0
+5HN	3	5-hydroxypyridine-3-carboxylic acid	C6 H5 N O3	True	0
+BCA	3	4-HYDROXYBENZOYL COENZYME A	C28 H40 N7 O18 P3 S	True	0
+PQR	2	4-[methyl(nitroso)amino]benzene-1,2-diol	C7 H8 N2 O3	True	0
+GHP	39	(2R)-amino(4-hydroxyphenyl)ethanoic acid	C8 H9 N O3	True	0
+CUB	2	CU(I)-S-MO(IV)(=O)O-NBIC CLUSTER	C5 H9 Cu Mo N O2 S 5	True	0
+3RX	2	N-[(2E)-3,7-dimethylocta-2,6-dien-1-yl]-N'-[(1R,3S,5R,7R)-tricyclo[3.3.1.1~3,7~]dec-2-yl]ethane-1,2-diamine	C22 H38 N2	True	0
+TWN	3	(3S)-3-[(2S,3S,4R)-3,4-DIMETHYLTETRAHYDROFURAN-2-YL]BUTYL LAURATE	C22 H42 O3	True	0
+PRK	6	N~6~-propanoyl-L-lysine	C9 H18 N2 O3	True	0
+UFG	3	URIDINE-5'-DIPHOSPHATE-4-DEOXY-4-FLUORO-ALPHA-D-GALACTOSE	C15 H23 F N2 O16 P2	True	0
+D6K	3	(4~{S},6~{R})-2,2,6-trimethyl-1,3-dioxan-4-ol	C7 H14 O3	True	0
+PPQ	4	PHOSPHINOTHRICIN	C5 H12 N O4 P	True	0
+CS2	9	D-MANNONIC ACID	C6 H12 O7	True	0
+MBF	2	2-DEOXY-2-FLUORO-BETA-D-MANNOSE	C6 H11 F O5	True	0
+FVX	3	Fluvoxamine	C15 H21 F3 N2 O2	True	0
+36X	2	4-methyl-2,3,4,5,6,7-hexahydrodicyclopenta[b,e]pyridin-8(1H)-imine	C12 H16 N2	True	0
+77X	2	1-(3-phenyl-1,4,6,7-tetrahydropyrazolo[4,3-c]pyridin-5-yl)propan-1-one	C15 H17 N3 O	True	0
+MNT	2	2'(3')-O-N-METHYLANTHRANILOYL-ADENOSINE-5'-DIPHOSPHATE	C18 H22 N6 O10 P2	True	0
+NSS	2	5'-O-[N-(L-ASPARAGINYL)SULFAMOYL]ADENOSINE	C14 H21 N8 O8 S 1	True	0
+PBD	10	1-(3,4-dimethoxyphenyl)-3-[3-(1H-imidazol-1-yl)propyl]thiourea	C15 H20 N4 O2 S	True	0
+3J4	2	(6S)-2,6-anhydro-6-{[(3R)-3-(sulfamoyloxy)pyrrolidin-1-yl]sulfonyl}-D-glucitol	C10 H20 N2 O10 S2	True	0
+1TW	2	2-amino-9-(2-Se-methyl-5-O-phosphono-2-seleno-beta-D-arabinofuranosyl)-1,9-dihydro-6H-purin-6-one	C11 H16 N5 O7 P Se	True	0
+EJ2	4	NI-FE REDUCED ACTIVE CENTER	C3 H Fe N2 Ni O 1	True	0
+P5A	2	'5'-O-(N-(L-PROLYL)-SULFAMOYL)ADENOSINE	C15 H21 N7 O7 S	True	0
+04X	2	(2S)-5-(morpholin-4-ylmethyl)-1,2,3,6-tetrahydropyridine-2-carboxylic acid	C11 H18 N2 O3	True	0
+YJX	2	1-(3H-imidazo[4,5-c]pyridin-2-yl)-3,4-dihydropyrido[2,1-a]isoindol-6(2H)-one	C18 H14 N4 O	True	0
+SAZ	5	(1S)-N,4-DIMETHYL-N-(4-METHYLPENT-3-ENYL)CYCLOHEX-3-ENAMINIUM	C14 H26 N 1	True	0
+PGI	2	(5R,6R,7S,8S)-5-(HYDROXYMETHYL)-2-(2-PHENYLETHYL)-1,5,6,7,8,8A-HEXAHYDROIMIDAZO[1,2-A]PYRIDINE-6,7,8-TRIOL	C16 H21 N2 O4 1	True	0
+EMF	2	ethyl (1S,2S)-2-(4-hydroxy-3-methoxyphenyl)cyclopropanecarboxylate	C13 H16 O4	True	0
+6M4	2	1,1-dihydroxy-1,3-dihydro-2,1-benzoxaborol-1-ium	C7 H8 B O3 -1	True	0
+ZBR	6	1,3,5-tris(bromomethyl)benzene	C9 H9 Br3	True	0
+UDH	9	6-AMINOHEXYL-URIDINE-C1,5'-DIPHOSPHATE	C15 H27 N3 O12 P2	True	0
+5PX	2	4-Cyclopropyl-3,4-dihydro-7-hydroxy-2H-1,2,4-benzothiadiazine 1,1-dioxide	C10 H12 N2 O3 S	True	0
+48Z	3	2-deoxy-2-fluoro-5-O-thiophosphono-alpha-D-arabinofuranose	C5 H10 F O6 P S	True	0
+78P	3	(2R)-2-(7-carbamoyl-1H-benzimidazol-2-yl)-2-methylpyrrolidinium	C13 H16 N4 O	True	0
+SCS	5	3-(ethyldisulfanyl)-L-alanine	C5 H11 N O2 S2	True	0
+HR7	5	(3S)-3-amino-6-[(diaminomethylidene)amino]hexanoic acid	C7 H16 N4 O2	True	0
+XFM	3	6-(2-{6-[2-(2-amino-6-methylpyridin-4-yl)ethyl]pyridin-2-yl}ethyl)-4-methylpyridin-2-amine	C21 H25 N5	True	0
+LYK	2	(2S)-2,6-diaminohexane-1,1-diol	C6 H16 N2 O2	True	0
+ITE	2	2-(methylamino)-1,7-dihydro-8H-imidazo[4,5-g]quinazolin-8-one	C10 H9 N5 O	True	0
+9PL	4	(3S,4R)-3-ethyl-4-[(1-methyl-1H-imidazol-5-yl)methyl]dihydrofuran-2(3H)-one	C11 H16 N2 O2	True	0
+08M	2	N~5~-(pyrazin-2-ylcarbonyl)-L-ornithine	C10 H14 N4 O3	True	0
+IZP	4	(2R)-2-[4-(2-methylpropyl)phenyl]propanoic acid	C13 H18 O2	True	0
+9AR	2	9-HYDROXY ARISTOLOCHIC ACID	C17 H11 N O8	True	0
+AUB	2	4-[(trans-4-{[(3s,5s,7s)-tricyclo[3.3.1.1~3,7~]dec-1-ylcarbamoyl]amino}cyclohexyl)oxy]benzoic acid	C24 H32 N2 O4	True	0
+6BN	2	5,8-dichloro-2-[(4-ethyl-6-methyl-2-oxo-1,2-dihydropyridin-3-yl)methyl]-7-({1-[(2R)-2-hydroxypropanoyl]piperidin-4-yl}oxy)-3,4-dihydroisoquinolin-1(2H)-one	C26 H31 Cl2 N3 O5	True	0
+2G6	2	P-((((benzyloxy)carbonyl)amino)methyl)-N-((S)-1-((3,3-dimethylbutyl)amino)-4-methyl-1-oxopentan-2-yl)phosphonamidic acid	C21 H36 N3 O5 P	True	0
+SGD	2	6-thio-alpha-D-glucopyranose	C6 H12 O5 S	True	0
+MTH	4	2-(4-AMINO-PYRROLO[2,3-D]PYRIMIDIN-7-YL)-5-METHYLSULFANYLMETHYL-TETRAHYDRO-FURAN-3,4-DIOL	C12 H16 N4 O3 S	True	0
+E89	2	6-AMINO-4-[2-(4-METHOXYPHENYL)ETHYL]-1,7-DIHYDRO-8H-IMIDAZO[4,5-G]QUINAZOLIN-8-ONE	C18 H17 N5 O2	True	0
+CEG	2	4,6-O-(1-CARBOXYETHYLIDENE)-BETA-D-GLUCOSE	C9 H14 O8	True	0
+CE9	2	DODECYL NONA ETHYLENE GLYCOL ETHER	C30 H62 O10	True	0
+AT2	4	ETHYL 4-[(4-METHYLPYRIDIN-2-YL)AMINO]PIPERIDINE-1-CARBOXYLATE	C14 H21 N3 O2	True	0
+XFK	5	6-(2-{5-[2-(2-amino-6-methylpyridin-4-yl)ethyl]pyridin-3-yl}ethyl)-4-methylpyridin-2-amine	C21 H25 N5	True	0
+SWE	5	alpha-D-fructofuranosyl alpha-D-glucopyranoside	C12 H22 O11	True	0
+AMR	2	3,5-DIAMINO-N-(AMINOIMINOMETHYL)-6-CHLOROPYRAZINECARBOXAMIDE	C6 H8 Cl N7 O	True	0
+4U3	3	5-chloro-2'-deoxycytidine 5'-(dihydrogen phosphate)	C9 H13 Cl N3 O7 P	True	0
+AGI	9	5,7-dihydroxy-2-(4-hydroxyphenyl)-4H-chromen-4-one	C15 H10 O5	True	0
+PJE	9	(E,4S)-4-azanyl-5-[(3S)-2-oxidanylidenepyrrolidin-3-yl]pent-2-enoic acid	C9 H14 N2 O3	True	0
+1W6	2	ethyl ({2-[(1,3-benzothiazol-2-ylcarbonyl)amino]thiophen-3-yl}carbonyl)carbamate	C16 H13 N3 O4 S2	True	0
+4D4	9	(2S,3R)-2-azanyl-5-carbamimidamido-3-oxidanyl-pentanoic acid	C6 H14 N4 O3	True	0
+AD0	2	DIGALACTURONIC ACID	C12 H18 O13	True	0
+4FC	2	4'-FLUORO-1,1'-BIPHENYL-4-CARBOXYLIC ACID	C13 H9 F O2	True	0
+N1C	3	N1-CYCLIC INOSINE 5'-DIPHOSPHORIBOSE	C15 H20 N4 O14 P2	True	0
+DPV	12	dodecyl 2-(trimethylammonio)ethyl phosphate	C17 H38 N O4 P	True	0
+PZI	3	2-(2-oxopyrrolidin-1-yl)acetamide	C6 H10 N2 O2	True	0
+RDA	2	METHYL 3-CHLORO-2-{3-[(2,5-DIHYDROXY-4-METHOXYPHENYL)AMINO]-3-OXOPROPYL}-4,6-DIHYDROXYBENZOATE	C18 H18 Cl N O8	True	0
+VGG	2	1-tert-butyl-3-(3-methylbenzyl)-1H-pyrazolo[3,4-d]pyrimidin-4-amine	C17 H21 N5	True	0
+3PL	6	3-PHENYLPROPANAL	C9 H10 O	True	0
+KKN	2	3-methyl-2H-furo[2,3-c]pyran-2-one	C8 H6 O3	True	0
+3C4	5	(3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID	C8 H7 Cl O3	True	0
+8H6	2	S-[2-[3-[[(2R)-3,3-dimethyl-2,4-bis(oxidanyl)butanoyl]amino]propanoylamino]ethyl] (2R)-2-methyl-3-oxidanylidene-pentanethioate	C17 H30 N2 O6 S	True	0
+NIM	6	4-NITRO-2-PHENOXYMETHANESULFONANILIDE	C13 H12 N2 O5 S	True	0
+16W	2	3-[(3-chlorophenoxy)methyl]-1-(tetrahydro-2H-pyran-4-yl)-1H-pyrazolo[3,4-d]pyrimidin-4-amine	C17 H18 Cl N5 O2	True	0
+RWZ	3	N-[(2Z)-3,7-dimethylocta-2,6-dien-1-yl]-N'-[(1R,3S,5R,7R)-tricyclo[3.3.1.1~3,7~]dec-2-yl]ethane-1,2-diamine	C22 H38 N2	True	0
+GUA	14	GLUTARIC ACID	C5 H8 O4	True	0
+6BX	2	(2S)-2-hydroxy-3-(morpholin-4-yl)propane-1-sulfonic acid	C7 H15 N O5 S	True	0
+6YP	2	4-butylbenzenesulfonamide	C10 H15 N O2 S	True	0
+TWB	2	[(6,7-dimethyl-2-oxo-2H-1-benzopyran-4-yl)methyl]phosphonic acid	C12 H13 O5 P	True	0
+GRE	2	2,6-DIHYDROXYBENZOIC ACID	C7 H6 O4	True	0
+FGP	4	2-AMINO-3-HYDROXY-3-PHOSPHONOOXY-PROPIONIC ACID	C3 H8 N O7 P	True	0
+V50	3	4-[(4,6-dimethylpyrimidin-2-yl)thio]-2,3,5,6-tetrafluorobenzenesulfonamide	C12 H9 F4 N3 O2 S2	True	0
+1TY	2	3-{(3E)-4-HYDROXY-6-OXO-3-[(2-PHENYLETHYL)IMINO]CYCLOHEXA-1,4-DIEN-1-YL}ALANINE	C17 H18 N2 O4	True	0
+NCY	14	N-METHYLCYSTEINE	C4 H9 N O2 S	True	0
+EVT	2	(2~{S})-2-[[(4~{S})-4-(hexadecanoylamino)-5-oxidanyl-5-oxidanylidene-pentanoyl]amino]pentanedioic acid	C26 H46 N2 O8	True	0
+GCX	4	3-O-alpha-D-xylopyranosyl-beta-D-glucopyranose	C11 H20 O10	True	0
+19W	3	5-(aminooxy)-L-norvaline	C5 H12 N2 O3	True	0
+CSF	12	CYTIDINE-5'-MONOPHOSPHATE-3-FLUORO-N-ACETYL-NEURAMINIC ACID	C20 H30 F N4 O16 P	True	0
+M7M	4	N,N,7-trimethylguanosine 5'-(trihydrogen diphosphate)	C13 H23 N5 O11 P2	True	0
+5BS	2	4-[(5,10-dimethyl-6-oxo-6,10-dihydro-5H-pyrimido[5,4-b]thieno[3,2-e][1,4]diazepin-2-yl)amino]benzenesulfonamide	C17 H16 N6 O3 S2	True	0
+MKU	2	5,9-dihydroxy-8-methoxy-2,2-dimethyl-7-(3-methylbut-2-en-1-yl)-3,4-dihydro-2H,6H-pyrano[3,2-b]xanthen-6-one	C24 H26 O6	True	0
+NHT	5	(3AR,5R,6S,7R,7AR)-2-(ETHYLAMINO)-5-(HYDROXYMETHYL)-5,6,7,7A-TETRAHYDRO-3AH-PYRANO[3,2-D][1,3]THIAZOLE-6,7-DIOL	C9 H16 N2 O4 S	True	0
+LDT	18	IDD594	C16 H12 Br F2 N O3 S	True	0
+END	4	1,6:5,9:8,12:11,16-TETRAANHYDRO-2,3,4,10,13,14-HEXADEOXY-D-GLYCERO-D-ALLO-D-GULO-HEPTADECA-2,13-DIENITOL	C17 H24 O7	True	0
+K5A	4	4-[(4-{[4-(4-cyano-2,6-dimethylphenoxy)thieno[3,2-d]pyrimidin-2-yl]amino}piperidin-1-yl)methyl]benzene-1-sulfonamide	C27 H28 N6 O3 S2	True	0
+PNT	7	1,5-BIS(4-AMIDINOPHENOXY)PENTANE	C19 H24 N4 O2	True	0
+ADI	2	2',3'-DIDEOXYADENOSINE-5'-DIPHOSPHATE	C10 H15 N5 O8 P2	True	0
+LNL	3	ALPHA-LINOLENIC ACID	C18 H30 O2	True	0
+PRL	9	PROFLAVIN	C13 H11 N3	True	0
+3HP	2	3-HYDROXYPHENYLACETATE	C8 H8 O3	True	0
+97N	2	(2S)-2,3-dihydroxypropyl (9Z)-hexadec-9-enoate	C19 H36 O4	True	0
+OSE	9	O-SULFO-L-SERINE	C3 H7 N O6 S	True	0
+ANC	2	ANTHRACEN-1-YLAMINE	C14 H11 N	True	0
+3VY	2	(1-methyl-1H-indol-3-yl)acetic acid	C11 H11 N O2	True	0
+MP8	22	(4R)-4-methyl-L-proline	C6 H11 N O2	True	0
+HYN	3	imidazolidine-2,4-dione	C3 H4 N2 O2	True	0
+KSA	5	K-252A	C27 H21 N3 O5	True	0
+FON	22	N-{[4-({[(6R)-2-amino-5-formyl-4-oxo-1,4,5,6,7,8-hexahydropteridin-6-yl]methyl}amino)phenyl]carbonyl}-L-glutamic acid	C20 H23 N7 O7	True	0
+4JC	2	4-ethylbenzenesulfonamide	C8 H11 N O2 S	True	0
+GSN	3	2-AMINO-5-[1-(CARBOXYLATOMETHYLCARBAMOYL)-2-NITROSOSULFANYL-ETHYL]AMINO-5-OXO-PENTANOATE	C10 H14 N4 O7 S -2	True	0
+TRA	2	ACONITATE ION	C6 H3 O6 -3	True	0
+F18	4	4-[(E)-(3,5-DIAMINO-1H-PYRAZOL-4-YL)DIAZENYL]PHENOL	C9 H10 N6 O	True	0
+SN0	6	N-(3-CARBOXYPROPANOYL)-L-NORVALINE	C9 H15 N O5	True	0
+200	3	4-CHLORO-L-PHENYLALANINE	C9 H10 Cl N O2	True	0
+RNB	2	3-chloro-5-[(2E)-3,7-dimethylocta-2,6-dien-1-yl]-4,6-dihydroxy-2-methylbenzaldehyde	C18 H23 Cl O3	True	0
+OXG	2	8-OXOGUANINE	C5 H3 N5 O2	True	0
+29Q	2	(5R)-5-(4-chlorophenyl)-2,5-dihydro-3H-imidazo[2,1-a]isoindol-5-ol	C16 H13 Cl N2 O	True	0
+FPF	4	(2Z,6E)-2-fluoro-3,7,11-trimethyldodeca-2,6,10-trien-1-yl trihydrogen diphosphate	C15 H27 F O7 P2	True	0
+YPP	2	Hydrolyzed piperacillin	C23 H29 N5 O8 S	True	0
+BHD	8	(3S)-3-hydroxy-L-aspartic acid	C4 H7 N O5	True	0
+HZ7	2	(1R,2S,3S,4R,5S,6R)-5-{[(R)-[(2R)-2,3-bis{[(1S)-1-hydroxyoctyl]oxy}propoxy](hydroxy)phosphoryl]oxy}-2,4,6-trihydroxycyclohexane-1,3-diyl bis[dihydrogen (phosphate)]	C25 H53 O19 P3	True	0
+MS0	2	(6-methoxy-1-benzofuran-3-yl)acetic acid	C11 H10 O4	True	0
+TZP	4	4-METHYL-5-HYDROXYETHYLTHIAZOLE PHOSPHATE	C6 H10 N O4 P S	True	0
+ANN	11	4-METHOXYBENZOIC ACID	C8 H8 O3	True	0
+4AP	2	4-AMINOPYRIDINE	C5 H7 N2 1	True	0
+0QZ	5	D-Isoserine	C3 H7 N O3	True	0
+05N	2	(3R,4R)-4-hydroxy-3-methyl-L-proline	C6 H11 N O3	True	0
+BDD	2	BROMO-DODECANOL	C12 H25 Br O	True	0
+5X8	2	S-adenosyl-L-cysteine	C13 H18 N6 O5 S	True	0
+4DX	2	(1S,2S)-2-methylcyclohexanol	C7 H14 O	True	0
+BHZ	3	2-[2-[carboxymethyl(phenylmethyl)amino]ethyl-[(2-hydroxyphenyl)methyl]amino]ethanoic acid	C20 H24 N2 O5	True	0
+MLG	3	N-[3-(2,4-DICHLOROPHENOXY)PROPYL]-N-METHYL-N-PROP-2-YNYLAMINE	C13 H15 Cl2 N O	True	0
+DSU	3	((2R,3S,4S,5S)-3,4-DIHYDROXY-5-(HYDROXYMETHYL)-5-((2R,3S,4S,5S,6R)-3,4,5-TRIHYDROXY-6-METHOXY-TETRAHYDRO-2H-PYRAN-2-YLOXY)-TETRAHYDROFURAN-2-YL)METHYL NONANOATE	C22 H40 O12	True	0
+2ML	3	2-METHYLLEUCINE	C7 H15 N O2	True	0
+FIP	3	5-FLUOROINDOLE PROPANOL PHOSPHATE	C11 H13 F N O4 P	True	0
+HAI	9	CYCLOHEXYLAMMONIUM ION	C6 H14 N 1	True	0
+CQG	6	pyridin-4-ol	C5 H5 N O	True	0
+3QZ	5	(9beta)-17-hydroxypregn-4-ene-3,20-dione	C21 H30 O3	True	0
+WTF	2	[2-(ethylsulfonyl)phenyl][(2S)-4-(6-fluoro-1,3-benzothiazol-2-yl)-2-methylpiperazin-1-yl]methanone	C21 H22 F N3 O3 S2	True	0
+BMF	10	Bromosporine	C17 H20 N6 O4 S	True	0
+GVG	2	3-METHYL-4-PHENYL-1H-PYRAZOLE	C10 H10 N2	True	0
+ORD	5	D-ORNITHINE	C5 H12 N2 O2	True	0
+GYP	8	METHYL-ALPHA-D-GLUCOPYRANOSIDE	C7 H14 O6	True	0
+PAZ	5	N-[(2R)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butanoyl]-beta-alanine	C9 H18 N O8 P	True	0
+TBA	10	TETRABUTYLAMMONIUM ION	C16 H36 N 1	True	0
+RS7	2	(2E)-3-(2-OCT-1-YN-1-YLPHENYL)ACRYLIC ACID	C17 H20 O2	True	0
+1W8	2	Ceftaroline	C22 H21 N8 O5 S4 1	True	0
+LPC	2	[1-MYRISTOYL-GLYCEROL-3-YL]PHOSPHONYLCHOLINE	C22 H47 N O7 P 1	True	0
+H5A	2	3,4,5-trimethoxybenzoic acid	C10 H12 O5	True	0
+DEB	7	6-DEOXYERYTHRONOLIDE B	C21 H38 O6	True	0
+SRL	4	[2-(3,5-DI-TERT-BUTYL-4-HYDROXY-PHENYL)-1-(DIETHOXY-PHOSPHORYL)-VINYL]-PHOSPHONIC ACID DIETHLYL ESTER	C24 H42 O7 P2	True	0
+7IG	2	5-{4-[(3,5-DIFLUOROBENZYL)AMINO]PHENYL}-6-ETHYLPYRIMIDINE-2,4-DIAMINE	C19 H19 F2 N5	True	0
+BTK	9	N~6~-butanoyl-L-lysine	C10 H20 N2 O3	True	0
+E4P	8	ERYTHOSE-4-PHOSPHATE	C4 H9 O7 P	True	0
+60M	2	6-(phosphonomethyl)pyridine-2-carboxylic acid	C7 H8 N O5 P	True	0
+TGP	4	5'-THIO-2'-DEOXY-GUANOSINE PHOSPHONIC ACID	C10 H14 N5 O6 P S	True	0
+PNU	2	6-CHLORO-2-(1-FURO[2,3-C]PYRIDIN-5-YL-ETHYLSULFANYL)-PYRIMIDIN-4-YLAMINE	C13 H11 Cl N4 O S	True	0
+ARM	3	DEOXY-METHYL-ARGININE	C7 H16 N4 O	True	0
+RAS	3	(1R)-N-(prop-2-en-1-yl)-2,3-dihydro-1H-inden-1-amine	C12 H15 N	True	0
+ZZE	2	5-{[3,5-diethyl-1-(2-hydroxyethyl)-1H-pyrazol-4-yl]oxy}benzene-1,3-dicarbonitrile	C17 H18 N4 O2	True	0
+57D	2	chrysin	C15 H10 O4	True	0
+F6A	2	N-biphenyl-3-yl-2-(trifluoromethyl)benzamide	C20 H14 F3 N O	True	0
+MHU	7	4-N,N-(DIMETHYLAMINO)-L-PHENYLALANINE	C12 H18 N2 O2	True	0
+J1V	2	N-[(1R)-2-(hydroxyamino)-2-oxo-1-(3',4',5'-trifluoro[1,1'-biphenyl]-4-yl)ethyl]cyclohexanecarboxamide	C21 H21 F3 N2 O3	True	0
+LCI	3	[4-[[4-[5-(cyclopropylmethyl)-1-methyl-pyrazol-4-yl]-5-fluoranyl-pyrimidin-2-yl]amino]cyclohexyl]azanium	C18 H26 F N6 1	True	0
+DBB	34	D-ALPHA-AMINOBUTYRIC ACID	C4 H9 N O2	True	0
+IFL	5	(3S,4R,5R)-3,4-DIHYDROXY-5-(HYDROXYMETHYL)PIPERIDIN-2-ONE	C6 H11 N O4	True	0
+AAR	9	ARGININEAMIDE	C6 H16 N5 O 1	True	0
+T6P	3	Trehalose-6-phosphate	C12 H23 O14 P	True	0
+NE6	2	methyl [(1E,5R)-5-{(3S)-3-[(2E,4E)-2,5-dimethylocta-2,4-dienoyl]-2,4-dioxo-3,4-dihydro-2H-pyran-6-yl}hexylidene]carbamate	C23 H31 N O6	True	0
+3TD	54	(1S)-1,4-anhydro-1-(3-methyl-2,4-dioxo-1,2,3,4-tetrahydropyrimidin-5-yl)-5-O-phosphono-D-ribitol	C10 H15 N2 O9 P	True	0
+T3Q	9	[(3R,4S,5S,6R)-4-amino-3,5-dihydroxy-6-methyloxan-2-yl][hydroxy-[[(2R,3S,5R)-3-hydroxy-5-(5-methyl-2,4-dioxopyrimidin-1-yl)oxolan-2-yl]methoxy]phosphoryl] hydrogen phosphate	C16 H27 N3 O14 P2	True	0
+JD5	3	[({5-[4-(cyclopropyloxy)phenyl]pyridin-3-yl}amino)methanediyl]bis(phosphonic acid)	C15 H18 N2 O7 P2	True	0
+BB7	5	(2Z)-2-amino-4-methoxy-3-sulfanylbut-2-enoic acid	C5 H9 N O3 S	True	0
+PFQ	2	2-[(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)AMINO]ETHANOL	C20 H17 N3 O2	True	0
+G3P	40	SN-GLYCEROL-3-PHOSPHATE	C3 H9 O6 P	True	0
+L0B	9	Alpha-Lobeline	C22 H27 N O2	True	0
+MIA	66	2-METHYLTHIO-N6-ISOPENTENYL-ADENOSINE-5'-MONOPHOSPHATE	C16 H24 N5 O7 P S	True	0
+CRA	2	1-DEOXY-1-METHOXYCARBAMIDO-BETA-D-GLUCO-2-HEPTULOPYRANOSONAMIDE	C9 H16 N2 O8	True	0
+PHL	24	L-PHENYLALANINOL	C9 H13 N O	True	0
+FBF	2	4-(trifluoromethyl)benzenecarboximidamide	C8 H7 F3 N2	True	0
+9YK	2	2-[2-[[2,3-bis(oxidanyl)phenyl]methyl-(2-hydroxy-2-oxoethyl)amino]ethyl-[(2-methylsulfanylphenyl)methyl]amino]ethanoic acid	C21 H26 N2 O6 S	True	0
+9DG	5	9-DEAZAGUANINE	C6 H6 N4 O	True	0
+R1T	3	2-{4-[(4-AMINO-2-METHYLPYRIMIDIN-5-YL)METHYL]-5-[(1R)-1-HYDROXYETHYL]-3-METHYL-2-THIENYL}ETHYL TRIHYDROGEN DIPHOSPHATE	C15 H23 N3 O8 P2 S	True	0
+1RG	6	(4R,5S)-3-({(3S,5S)-5-[(3-carboxyphenyl)carbamoyl]pyrrolidin-3-yl}sulfanyl)-5-[(1S,2R)-1-formyl-2-hydroxypropyl]-4-methyl-4,5-dihydro-1H-pyrrole-2-carboxylic acid	C22 H27 N3 O7 S	True	0
+AN3	2	ANTHRACENE	C14 H10	True	0
+THU	4	TETRAHYDRODEOXYURIDINE	C9 H14 N2 O5	True	0
+3GQ	2	benzene-1,2,3-tricarboxylic acid	C9 H6 O6	True	0
+HXC	10	HEXANOYL-COENZYME A	C27 H46 N7 O17 P3 S	True	0
+CH6	16	{(4Z)-2-[(1S)-1-amino-3-(methylsulfanyl)propyl]-4-[(4-hydroxyphenyl)methylidene]-5-oxo-4,5-dihydro-1H-imidazol-1-yl}acetic acid	C16 H19 N3 O4 S	True	0
+RWY	2	2-(4-phenoxyphenoxy)ethyl thiocyanate	C15 H13 N O2 S	True	0
+HF2	10	(2R)-2-hydroxy-3-phenylpropanoic acid	C9 H10 O3	True	0
+CR9	5	2-{5-[AMINO(IMINIO)METHYL]-6-FLUORO-1H-BENZIMIDAZOL-2-YL}-6-[(2-METHYLCYCLOHEXYL)OXY]BENZENOLATE	C21 H23 F N4 O2	True	0
+RPN	3	(R)-1-PARA-NITRO-PHENYL-2-AZIDO-ETHANOL	C8 H8 N4 O3	True	0
+TLZ	2	D-altritol	C6 H14 O6	True	0
+Z6J	3	alpha-L-ribofuranose	C5 H10 O5	True	0
+M7B	2	7-O-phosphono-D-glycero-beta-D-manno-heptopyranose	C7 H15 O10 P	True	0
+8YB	2	~{N}-[4-(3-chlorophenyl)-5-(2-chlorophenyl)carbonyl-1,3-thiazol-2-yl]-2-(4-ethylsulfonylphenyl)ethanamide	C26 H20 Cl2 N2 O4 S2	True	0
+RPB	2	Rucaparib	C19 H18 F N3 O	True	0
+EQU	21	EQUILENIN	C18 H18 O2	True	0
+BNL	5	BIPHENYL	C12 H10	True	0
+A8K	2	4-(4-hydroxyphenyl)sulfanylphenol	C12 H10 O2 S	True	0
+282	2	3-methoxypyridine	C6 H7 N O	True	0
+CTX	2	(Z)-2-[4-(1,2)-DIPHENYL-1-BUTENYL)-PHENOXY]-N,N-DIMETHYLETHANAMINE	C26 H29 N O	True	0
+ISE	2	(2R,3S,4s,5R,6S)-2,3,4,5,6-pentahydroxycyclohexanone	C6 H10 O6	True	0
+DKA	30	DECANOIC ACID	C10 H20 O2	True	0
+STP	7	2'-DEOXYADENOSINE 5'-O-(1-THIOTRIPHOSPHATE)	C10 H16 N5 O11 P3 S	True	0
+NG6	5	N-ACETYL-D-GALACTOSAMINE 6-SULFATE	C8 H15 N O9 S	True	0
+M40	2	(1R,2S)-2-({N-[(benzyloxy)carbonyl]-3-cyclohexyl-L-alanyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid	C24 H35 N3 O8 S	True	0
+G27	2	(3R,4R,5R)-5-(HYDROXYMETHYL)-1-(3-PHENYLPROPYL)PIPERIDINE-3,4-DIOL	C15 H23 N O3	True	0
+CFF	32	CAFFEINE	C8 H10 N4 O2	True	0
+PEM	3	2-[P-[2-P-CHLOROBENZAMIDO)ETHYL]PHENOXY]-2-METHYLPROPIONIC ACID	C19 H20 Cl N O4	True	0
+BBA	3	2,7-BIS-(4-AMIDINOBENZYLIDENE)-CYCLOHEPTAN-1-ONE	C23 H28 N4 O	True	0
+SXO	2	S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butanoyl]-beta-alanyl}amino)ethyl] octanethioate	C19 H37 N2 O8 P S	True	0
+HB1	2	RUTHENIUM-PYRIDOCARBAZOLE-1	C23 H13 N3 O3 Ru	True	0
+SMC	51	S-METHYLCYSTEINE	C4 H9 N O2 S	True	0
+16D	10	HEXANE-1,6-DIAMINE	C6 H16 N2	True	0
+B3L	22	(3S)-3-amino-5-methylhexanoic acid	C7 H15 N O2	True	0
+C57	2	4-(DIMETHYLAMINO)-N-{[(2S)-1-ETHYLPYRROLIDIN-2-YL]METHYL}-2-METHOXY-5-NITROBENZAMIDE	C17 H26 N4 O4	True	0
+JLE	4	(2~{R})-2-[[6-ethyl-5-(1~{H}-indol-4-yl)thieno[2,3-d]pyrimidin-4-yl]amino]-3-phenyl-propanoic acid	C25 H22 N4 O2 S	True	0
+1KX	4	{(1S,4R)-4-[2-amino-6-(cyclopropylamino)-9H-purin-9-yl]cyclopent-2-en-1-yl}methanol	C14 H18 N6 O	True	0
+ITQ	3	1,2,3,4-Tetrahydrogen Staurosporine	C28 H28 N4 O3	True	0
+DMY	13	DISTAMYCIN A	C22 H27 N9 O4	True	0
+B55	2	2-amino-8-sulfanyl-1,9-dihydro-6H-purin-6-one	C5 H5 N5 O S	True	0
+02J	10	5-methyl-1,2-oxazole-3-carboxylic acid	C5 H5 N O3	True	0
+3D1	9	(2R,3S,5R)-5-(6-amino-9H-purin-9-yl)-tetrahydro-2-(hydroxymethyl)furan-3-ol	C10 H13 N5 O3	True	0
+EK6	2	ethyl N-{2-chloro-4-[5-(5-{[(1S)-1-(3-chloro-4-fluorophenyl)-2-hydroxyethyl]carbamoyl}-1H-pyrrol-3-yl)-1H-pyrazol-4-yl]benzyl}glycinate	C27 H26 Cl2 F N5 O4	True	0
+MF7	3	N-{2-amino-5-[formyl(methyl)amino]-6-hydroxypyrimidin-4-yl}-2-deoxy-5-O-phosphono-beta-D-erythro-pentofuranosylamine	C11 H18 N5 O8 P	True	0
+25U	2	6-ethyl-5-{3-[3-(pyrimidin-5-yl)phenyl]prop-1-yn-1-yl}pyrimidine-2,4-diamine	C19 H18 N6	True	0
+BXN	2	4-[3-[(8~{a}~{R})-3,4,6,7,8,8~{a}-hexahydro-1~{H}-pyrrolo[1,2-a]pyrazin-2-yl]propyl]-2,6-bis(chloranyl)-~{N}-methyl-~{N}-(1,3,5-trimethylpyrazol-4-yl)benzenesulfonamide	C23 H33 Cl2 N5 O2 S	True	0
+GDS	21	OXIDIZED GLUTATHIONE DISULFIDE	C20 H32 N6 O12 S2	True	0
+2CQ	2	4-chloro-5-methylbenzene-1,2-diamine	C7 H9 Cl N2	True	0
+324	2	N-{3-[(5-chloro-1H-pyrrolo[2,3-b]pyridin-3-yl)carbonyl]-2,4-difluorophenyl}propane-1-sulfonamide	C17 H14 Cl F2 N3 O3 S	True	0
+8N1	2	N-{2-chloro-5-[({2-[3-(prop-1-en-2-yl)phenyl]propan-2-yl}carbamoyl)amino]phenyl}-beta-D-xylofuranosylamine	C24 H30 Cl N3 O5	True	0
+5XU	4	(2~{S})-2-azanylpropanal	C3 H7 N O	True	0
+660	2	[[(2~{R},3~{S},4~{R},5~{R})-5-[2,4-bis(oxidanylidene)pyrimidin-1-yl]-3,4-bis(oxidanyl)oxolan-2-yl]methoxy-oxidanyl-phosphoryl]oxy-[[(2~{S},3~{R},4~{S},5~{S},6~{R})-6-(hydroxymethyl)-3,4,5-tris(oxidanyl)oxan-2-yl]methyl]phosphinic acid	C16 H26 N2 O16 P2	True	0
+H53	2	2-(2,5-DIHYDROXYPHENYL)-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL	C12 H16 O7	True	0
+D3N	2	1-(2-deoxy-5-O-phosphono-beta-D-erythro-pentofuranosyl)-1H-perimidin-2(3H)-one	C16 H17 N2 O7 P	True	0
+CMX	2	CARBOXYMETHYLDETHIA COENZYME *A	C23 H38 N7 O18 P3	True	0
+DMF	50	DIMETHYLFORMAMIDE	C3 H7 N O	True	0
+25L	2	[[(2R,3R,4R,5R)-5-(6-aminopurin-9-yl)-4-[[(2R,3R,4R,5R)-5-(6-aminopurin-9-yl)-4-[[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-dihydroxy-oxolan-2-yl]methoxy-hydroxy-phosphoryl]oxy-3-hydroxy-oxolan-2-yl]methoxy-hydroxy-phosphoryl]oxy-3-hydroxy-oxolan-2-yl]methoxy-hydroxy-phosphoryl] phosphono hydrogen phosphate	C30 H40 N15 O25 P5	True	0
+BES	28	2-(3-AMINO-2-HYDROXY-4-PHENYL-BUTYRYLAMINO)-4-METHYL-PENTANOIC ACID	C16 H24 N2 O4	True	0
+TCH	10	TAUROCHOLIC ACID	C26 H45 N O7 S	True	0
+TAC	14	TETRACYCLINE	C22 H24 N2 O8	True	0
+YPG	3	[3-[(3~{R},4~{R})-3-(2-azanyl-6-oxidanylidene-1~{H}-purin-9-yl)-4-[(2~{S})-2-oxidanyl-2-phosphono-ethoxy]pyrrolidin-1-yl]-3-oxidanylidene-propyl]phosphonic acid	C14 H22 N6 O10 P2	True	0
+F9N	2	3-[[6-(cyclohexylmethoxy)-7~{H}-purin-2-yl]amino]-~{N}-[3-(dimethylamino)propyl]benzenesulfonamide	C23 H33 N7 O3 S	True	0
+1QK	5	3-[({3-ethyl-5-[(2S)-2-(2-hydroxyethyl)piperidin-1-yl]pyrazolo[1,5-a]pyrimidin-7-yl}amino)methyl]-1-hydroxypyridinium	C21 H29 N6 O2 1	True	0
+4BZ	2	4-(HYDROXYMETHYL)BENZAMIDINE	C8 H10 N2 O	True	0
+SAF	2	3-[(1S)-1-(DIMETHYLAMINO)ETHYL]PHENOL	C10 H15 N O	True	0
+35G	6	GUANOSINE-3',5'-MONOPHOSPHATE	C10 H12 N5 O7 P	True	0
+AC2	5	9-HYROXYETHOXYMETHYLGUANINE	C8 H11 N5 O3	True	0
+FA1	4	2,3 -ANHYDRO-QUINIC ACID	C7 H10 O5	True	0
+653	2	5-(2-AMINOETHYL)-3-{5-[AMINO(IMINIO)METHYL]-1H-BENZIMIDAZOL-2-YL}-1,1'-BIPHENYL-2-OLATE	C22 H22 N5 O 1	True	0
+KNV	3	6-[2-(2,3-difluoro-5-{2-[(2S)-1-methylazetidin-2-yl]ethyl}phenyl)ethyl]-4-methylpyridin-2-amine	C20 H25 F2 N3	True	0
+T87	3	[(1-{2[(4-CARBAMIMIDOYL-PHENYLAMINO)-METHYL]-1-METHYL-1H-BENZOIMIDAZOL-5-YL}-CYCLOPROPYL)-PYRIDIN-2-YL-METHYLENEAMINOOXY]-ACETIC ACID ETHYL ESTER	C29 H31 N7 O3	True	0
+D3Y	2	3'-deoxy-3'-(D-tyrosylamino)adenosine	C19 H23 N7 O5	True	0
+CNU	2	5-CYANO-URIDINE-5'-MONOPHOSPHATE	C10 H12 N3 O9 P	True	0
+12U	3	N-cycloheptylglycyl-N-(4-carbamimidoylbenzyl)-L-prolinamide	C22 H33 N5 O2	True	0
+DAP	5	6-AMIDINE-2-(4-AMIDINO-PHENYL)INDOLE	C16 H15 N5	True	0
+DJN	2	N-[(3S,4R,5S,6R)-4,5-dihydroxy-6-(hydroxymethyl)piperidin-3-yl]acetamide	C8 H16 N2 O4	True	0
+MGD	46	2-AMINO-5,6-DIMERCAPTO-7-METHYL-3,7,8A,9-TETRAHYDRO-8-OXA-1,3,9,10-TETRAAZA-ANTHRACEN-4-ONE GUANOSINE DINUCLEOTIDE	C20 H26 N10 O13 P2 S2	True	0
+ARR	2	N-(4-{2-[(3-CHLOROBENZYL)AMINO]ETHYL}PHENYL)THIOPHENE-2-CARBOXIMIDAMIDE	C20 H20 Cl N3 S	True	0
+1FB	2	1-tert-butyl-3-(3-chlorophenoxy)-1H-pyrazolo[3,4-d]pyrimidin-4-amine	C15 H16 Cl N5 O	True	0
+FQN	2	8-[4-(1-cyclopentylpiperidin-4-yl)pyrazol-1-yl]-3~{H}-pyrido[3,4-d]pyrimidin-4-one	C20 H24 N6 O	True	0
+5N5	3	5'-amino-5'-deoxyadenosine	C10 H14 N6 O3	True	0
+D15	3	N-(5-{[(2S)-4-amino-2-(3-chlorophenyl)butanoyl]amino}-1H-indazol-3-yl)benzamide	C24 H22 Cl N5 O2	True	0
+PEA	11	2-PHENYLETHYLAMINE	C8 H12 N 1	True	0
+1C1	2	amino({[(1R,2R)-1-({[(4-chloro-3-fluorophenyl)amino](oxo)acetyl}amino)-2,3-dihydro-1H-inden-2-yl]methyl}amino)methaniminium	C19 H20 Cl F N5 O2 1	True	0
+AO8	3	[2-[[2-(isoquinolin-5-ylsulfonylamino)ethylamino]methyl]phenyl]boronic acid	C18 H20 B N3 O4 S	True	0
+PZZ	3	3-{3-[(DIMETHYLAMINO)METHYL]-1H-INDOL-7-YL}PROPAN-1-OL	C14 H20 N2 O	True	0
+CDI	5	2C-METHYL-D-ERYTHRITOL 2,4-CYCLODIPHOSPHATE	C5 H12 O9 P2	True	0
+26J	2	2-(4-(cyclohexylmethyl)piperazin-1-yl)-8-nitro-6-(trifluoromethyl)-4H-benzo[e][1,3]thiazin-4-one, bound form	C20 H25 F3 N4 O2 S	True	0
+71N	2	2-(trifluoromethyl)-1H-benzimidazol-5-amine	C8 H6 F3 N3	True	0
+09L	4	4-(3-{[4-(cyclopropylcarbonyl)piperazin-1-yl]carbonyl}-4-fluorobenzyl)phthalazin-1(2H)-one	C24 H23 F N4 O3	True	0
+XDX	2	(2R)-2-(alpha-D-glucopyranosyloxy)-3-(phosphonooxy)propanoic acid	C9 H17 O12 P	True	0
+FSB	2	N-(2-FLUORO-BENZYL)-4-SULFAMOYL-BENZAMIDE	C14 H13 F N2 O3 S	True	0
+FM0	4	(3R)-3-(fluoromethyl)-3-hydroxy-5-{[(S)-hydroxy(phosphonooxy)phosphoryl]oxy}pentanoic acid	C6 H13 F O10 P2	True	0
+BZG	6	6-(BENZYLOXY)-9-(2-DEOXY-5-O-PHOSPHONO-BETA-D-ERYTHRO-PENTOFURANOSYL)-9H-PURIN-2-AMINE	C17 H20 N5 O7 P	True	0
+AQV	2	2-{2-oxo-2-[(4S)-2,2,4-trimethyl-3,4-dihydroquinolin-1(2H)-yl]ethyl}-1H-isoindole-1,3(2H)-dione	C22 H22 N2 O3	True	0
+DDZ	17	3,3-DIHYDROXY L-ALANINE	C3 H7 N O4	True	0
+AMI	9	ALLOSAMIZOLINE	C9 H16 N2 O4	True	0
+60K	2	(3Z)-2-oxo-3-[2-(4-sulfamoylphenyl)hydrazinylidene]-2,3-dihydro-1H-indole-5-carboxylic acid	C15 H12 N4 O5 S	True	0
+3NG	12	5-[(3-chlorophenyl)amino]benzo[c][2,6]naphthyridine-8-carboxylic acid	C19 H12 Cl N3 O2	True	0
+PTH	2	CE1-METHYLENE-HYDROXY-PHOSPHOTYROSINE	C10 H14 N O7 P	True	0
+2ZV	2	4-methyl-3-nitropyridin-2-amine	C6 H7 N3 O2	True	0
+RO7	2	(2S)-2-methoxy-3-{4-[2-(5-methyl-2-phenyl-1,3-oxazol-4-yl)ethoxy]-1-benzothiophen-7-yl}propanoic acid	C24 H23 N O5 S	True	0
+H1L	2	(2R)-2-(4-{[3-chloro-5-(trifluoromethyl)pyridin-2-yl]oxy}phenoxy)propanoic acid	C15 H11 Cl F3 N O4	True	0
+164	3	2-(3-CARBOXYPROPIONYL)-6-HYDROXY-CYCLOHEXA-2,4-DIENE CARBOXYLIC ACID	C11 H12 O6	True	0
+IL0	3	(2S,3S)-2-amino-3-methylpentane-1,1-diol	C6 H15 N O2	True	0
+MB5	3	(5aS,12aS,13aS)-9-chloro-12,12-dimethyl-2,3,11,12,12a,13-hexahydro-1H,5H,6H-5a,13a-(epiminomethano)indolizino[7,6-b]carbazol-14-one	C21 H24 Cl N3 O	True	0
+SDS	10	DODECYL SULFATE	C12 H26 O4 S	True	0
+IDY	7	methyl 2-O-sulfo-alpha-L-idopyranosiduronic acid	C7 H12 O10 S	True	0
+AQD	2	Nemonapride	C21 H26 Cl N3 O2	True	0
+60H	3	(2~{S})-2-(diphenylmethyl)pyrrolidine	C17 H19 N	True	0
+D8W	3	5-[(phenylsulfonyl)amino]-1,3,4-thiadiazole-2-sulfonamide	C8 H8 N4 O4 S3	True	0
+DHY	11	2-(3,4-DIHYDROXYPHENYL)ACETIC ACID	C8 H8 O4	True	0
+SLB	35	5-N-ACETYL-BETA-D-NEURAMINIC ACID	C11 H19 N O9	True	0
+CTN	24	4-AMINO-1-BETA-D-RIBOFURANOSYL-2(1H)-PYRIMIDINONE	C9 H13 N3 O5	True	0
+263	2	1-(azidomethyl)-3-methylbenzene	C8 H9 N3	True	0
+BEA	2	5-METHYL-1,2,4-TRIAZOLO[3,4-B]BENZOTHIAZOLE	C9 H8 N3 S 1	True	0
+SMB	2	2-METHYLBUTANOIC ACID	C5 H10 O2	True	0
+FUX	2	5-HYDROXYMETHYL-FURFURAL	C6 H6 O3	True	0
+CEL	5	4-[5-(4-METHYLPHENYL)-3-(TRIFLUOROMETHYL)-1H-PYRAZOL-1-YL]BENZENESULFONAMIDE	C17 H14 F3 N3 O2 S	True	0
+FID	11	(2S,4S)-2-AMINOFORMYL-6-FLUORO-SPIRO[CHROMAN-4,4'-IMIDAZOLIDINE]-2',5'-DIONE	C12 H10 F N3 O4	True	0
+LOV	4	5-AMINO-4-HYDROXY-2-ISOPROPYL-7-METHYL-OCTANOIC ACID	C12 H25 N O3	True	0
+KN3	2	4-[1-(3-methylbut-2-en-1-yl)-7-(trifluoromethyl)-1H-indazol-3-yl]benzene-1,3-diol	C19 H17 F3 N2 O2	True	0
+LDO	2	6-HYDROXY-L-NORLEUCINE	C6 H13 N O3	True	0
+NPA	2	2-(4-HYDROXY-3-NITROPHENYL)ACETIC ACID	C8 H7 N O5	True	0
+0SK	2	8-(hydroxyamino)-2-[(2S)-2-methyl-1,4-dioxa-8-azaspiro[4.5]dec-8-yl]-6-(trifluoromethyl)-4H-1,3-benzothiazin-4-one	C17 H18 F3 N3 O4 S	True	0
+SUP	2	SUCROSE-6-PHOSHPATE	C12 H23 O14 P	True	0
+PH6	3	(4S)-4-cyclohexyl-L-proline	C11 H19 N O2	True	0
+IDG	3	O-2,6-DIAMINO-2,6-DIDEOXY-BETA-L-IDOPYRANOSE	C6 H14 N2 O4	True	0
+HTL	11	2-ACETYL-THIAMINE DIPHOSPHATE	C14 H21 N4 O8 P2 S 1	True	0
+PHZ	2	1-PHENYLHYDRAZINE	C6 H8 N2	True	0
+TTC	3	(S)-10-[(DIMETHYLAMINO)METHYL]-4-ETHYL-4,9-DIHYDROXY-1H-PYRANO[3',4':6,7]INOLIZINO[1,2-B]-QUINOLINE-3,14(4H,12H)-DIONE	C23 H23 N3 O5	True	0
+E3C	9	3-ethyl, cytidine-5'-monophosphate	C11 H20 N3 O8 P	True	0
+L66	2	7-(5-hydroxy-2-methylphenyl)-8-(2-methoxyphenyl)-1-methyl-1H-imidazo[2,1-f]purine-2,4(3H,8H)-dione	C22 H19 N5 O4	True	0
+SR1	4	5-S-METHYL-5-THIO-ALPHA-D-RIBOFURANOSE	C6 H12 O4 S	True	0
+TOD	2	(2S)-({(2R)-2-[(1S)-1-hydroxy-2-(hydroxyamino)-2-oxoethyl]-4-methylpentanoyl}amino)(phenyl)ethanoic acid	C16 H22 N2 O6	True	0
+PIF	2	(2R)-3-{[(S)-hydroxy{[(1R,2R,3R,4R,5S,6R)-2,3,5,6-tetrahydroxy-4-(phosphonooxy)cyclohexyl]oxy}phosphoryl]oxy}propane-1,2-diyl dioctanoate	C25 H48 O16 P2	True	0
+HND	4	(4S)-nonane-1,4-diol	C9 H20 O2	True	0
+44V	2	(6S)-2-amino-6-methyl-5,6,7,8-tetrahydropteridin-4(3H)-one	C7 H11 N5 O	True	0
+NG1	2	N-ACETYL-ALPHA-D-GALACTOSAMINE 1-PHOSPHATE	C8 H16 N O9 P	True	0
+GPJ	9	GLYPHOSATE	C3 H9 N O5 P 1	True	0
+2QZ	3	N,N-dimethyl-L-threonine	C6 H13 N O3	True	0
+GMC	3	(2R,3R,4S,5S)-4-AMINO-2-[6-(DIMETHYLAMINO)-9H-PURIN-9-YL]-5-(HYDROXYMETHYL)TETRAHYDRO-3-FURANOL	C12 H18 N6 O3	True	0
+GTG	20	7-METHYL-GUANOSINE-5'-TRIPHOSPHATE-5'-GUANOSINE	C21 H30 N10 O18 P3 1	True	0
+DR4	2	METHYL 9-(BETA-D-TALOPYRANOSYLOXY)NONANOATE	C16 H30 O8	True	0
+ACA	52	6-AMINOHEXANOIC ACID	C6 H13 N O2	True	0
+F6R	20	FRUCTOSE -6-PHOSPHATE	C6 H13 O9 P	True	0
+FCD	2	5-(2-CHLOROPHENYL)FURAN-2-CARBOXYLIC ACID	C11 H7 Cl O3	True	0
+5OC	4	2'-deoxy-5-hydroxycytidine 5'-(dihydrogen phosphate)	C9 H14 N3 O8 P	True	0
+AT3	3	ACETYLTHIOCHOLINE	C7 H16 N O S 1	True	0
+QUO	10	2-AMINO-7-DEAZA-(2'',3''-DIHYDROXY-CYCLOPENTYLAMINO)-GUANOSINE-5'-MONOPHOSPHATE	C17 H26 N5 O10 P	True	0
+6V9	3	2-methyl-1,3-thiazole-5-carboxylic acid	C5 H5 N O2 S	True	0
+SUV	2	[(7R)-4-(5-chloro-1,3-benzoxazol-2-yl)-7-methyl-1,4-diazepan-1-yl][5-methyl-2-(2H-1,2,3-triazol-2-yl)phenyl]methanone	C23 H23 Cl N6 O2	True	0
+YRR	2	3-HYDROXY-PYRROLIDIN-2-YLMETHYL-MONOPHOSPHATE GROUP	C5 H12 N O5 P	True	0
+TTG	3	2-(1-DIMETHYLAMINOMETHYL-2-HYDROXY-8-HYDROXYMETHYL-9-OXO-9,11-DIHYDRO-INDOLIZINO[1,2-B]QUINOLIN-7-YL)-2-HYDROXY-BUTYRIC ACID	C23 H25 N3 O6	True	0
+B3T	6	3-amino-2,3,5-trideoxy-D-threo-pentonic acid	C5 H11 N O3	True	0
+L5P	3	(2S)-2-azanyl-6-[[(3R,4R)-3,4-bis(oxidanyl)-2-oxidanylidene-5-phosphonooxy-pentyl]amino]hexanoic acid	C11 H23 N2 O9 P	True	0
+097	3	(2S,3R)-N~4~-[(1S)-2,2-dimethyl-1-(methylcarbamoyl)propyl]-N~1~,2-dihydroxy-3-(2-methylpropyl)butanediamide	C15 H29 N3 O5	True	0
+9BF	2	4-(1~{H}-indol-3-yl)butan-2-one	C12 H13 N O	True	0
+47V	3	2,5-dimethyl-N-(pyridin-4-yl)furan-3-carboxamide	C12 H12 N2 O2	True	0
+HE2	3	HEXAN-1-OL	C6 H14 O	True	0
+O7E	2	6-(ethoxycarbonyl)uridine 5'-(dihydrogen phosphate)	C12 H17 N2 O11 P	True	0
+EH9	2	(2S,3R)-3-(6-amino-9H-purin-9-yl)nonan-2-ol	C14 H23 N5 O	True	0
+BOD	2	5-{4-[3-(2-methoxypyrimidin-5-yl)phenyl]piperazin-1-yl}pyrimidine-2,4-diamine	C19 H22 N8 O	True	0
+TDO	2	DTDP-4-KETO-L-RHAMNOSE	C16 H24 N2 O15 P2	True	0
+D9G	2	N-DODECYL-N,N-DIMETHYLGLYCINATE	C16 H33 N O2	True	0
+ILV	2	(2S,5S)-5-(hydroxymethyl)-1-methyl-2-(propan-2-yl)-1,2,4,5,6,8-hexahydro-3H-[1,4]diazonino[7,6,5-cd]indol-3-one	C17 H23 N3 O2	True	0
+DHA	33	2-AMINO-ACRYLIC ACID	C3 H5 N O2	True	0
+LHV	2	(2S)-2-hydroxy-3-methylbutanoic acid	C5 H10 O3	True	0
+1FO	2	6-[4-(3-fluorobenzoyl)-1H-pyrrol-2-yl]-2-hydroxy-4-oxohexa-2,5-dienoic acid	C17 H12 F N O5	True	0
+LIZ	3	N-{(1S,2S)-2-[bis(carboxymethyl)amino]cyclohexyl}-N-{(2R)-2-[bis(carboxymethyl)amino]-3-[4-({[2-hydroxy-1,1-bis(hydroxymethyl)ethyl]carbamothioyl}amino)phenyl]propyl}glycine	C30 H45 N5 O13 S	True	0
+USM	4	2'-S-methyl-2'-thiouridine 5'-(dihydrogen phosphate)	C10 H15 N2 O8 P S	True	0
+DA8	15	octyl 3-deoxy-2-O-(6-deoxy-alpha-L-galactopyranosyl)-beta-D-xylo-hexopyranoside	C20 H38 O9	True	0
+DBY	3	3,5 DIBROMOTYROSINE	C9 H9 Br2 N O3	True	0
+3AD	6	3'-DEOXYADENOSINE	C10 H13 N5 O3	True	0
+EAM	3	2-[(4S)-6-(4-chlorophenyl)-8-methoxy-1-methyl-4H-[1,2,4]triazolo[4,3-a][1,4]benzodiazepin-4-yl]-N-ethylacetamide	C22 H22 Cl N5 O2	True	0
+TCP	3	5'-METHYLTHYMIDINE	C11 H16 N2 O5	True	0
+ID1	4	Imipenem	C12 H19 N3 O4 S	True	0
+KDO	59	3-DEOXY-D-MANNO-OCT-2-ULOSONIC ACID	C8 H14 O8	True	0
+0OD	2	trichloro{(1,2,3,4,5-eta)-1,2,3,4-tetramethyl-5-[2-({5-[(3aS,4S,6aR)-2-oxohexahydro-1H-thieno[3,4-d]imidazol-4-yl]pentanoyl}amino)ethyl]cyclopentadienyl}rhodium(1+)	C21 H32 Cl3 N3 O2 Rh S 1	True	0
+H24	2	(6S)-2-amino-6-(3'-methoxybiphenyl-3-yl)-3,6-dimethyl-5,6-dihydropyrimidin-4(3H)-one	C19 H21 N3 O2	True	0
+XYG	5	[(4Z)-2-[(1Z)-ETHANIMIDOYL]-4-(4-HYDROXYBENZYLIDENE)-5-OXO-4,5-DIHYDRO-1H-IMIDAZOL-1-YL]ACETIC ACID	C14 H13 N3 O4	True	0
+SM5	2	(1E)-5-(1-piperidin-4-yl-3-pyridin-4-yl-1H-pyrazol-4-yl)-2,3-dihydro-1H-inden-1-one oxime	C22 H23 N5 O	True	0
+SMY	2	(2R)-3-(1H-indol-3-yl)-1-{4-[(5S)-5-methyl-5,7-dihydrothieno[3,4-d]pyrimidin-4-yl]piperazin-1-yl}-1-oxopropan-2-amine	C22 H26 N6 O S	True	0
+JJJ	2	S-(pyridin-3-ylcarbonyl)-L-cysteine	C9 H10 N2 O3 S	True	0
+H1S	7	HEPARIN DISACCHARIDE I-S	C12 H15 N O19 S3 -4	True	0
+TBG	8	3-methyl-L-valine	C6 H13 N O2	True	0
+SAU	5	13-methyl[1,3]benzodioxolo[5,6-c][1,3]dioxolo[4,5-i]phenanthridin-13-ium	C20 H14 N O4 1	True	0
+IFP	3	2-TRIFLUOROMETHYL-5-METHYLENE-5H-PYRIMIDIN-4-YLIDENEAMINE	C6 H4 F3 N3	True	0
+DQH	3	(2R,3R)-2-(3,4-DIHYDROXYPHENYL)-3,5,7-TRIHYDROXY-2,3-DIHYDRO-4H-CHROMEN-4-ONE	C15 H12 O7	True	0
+8MX	2	1-cyclopropyl-6-fluoro-8-methyl-7-[(4aS,7aS)-octahydro-6H-pyrrolo[3,4-b]pyridin-6-yl]-4-oxo-1,4-dihydroquinoline-3-carboxylic acid	C21 H24 F N3 O3	True	0
+OPR	2	(5S)-5-amino-8-carbamimidamido-4-oxooctanoic acid	C9 H18 N4 O3	True	0
+GAR	19	GLYCINAMIDE RIBONUCLEOTIDE	C7 H13 N2 O8 P -2	True	0
+8JS	2	4-{[(4-fluorophenyl)carbamothioyl]amino}benzene-1-sulfonamide	C13 H12 F N3 O2 S2	True	0
+42F	2	methyl (1R,2S,3S,5S)-3-(4-iodophenyl)-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylate	C16 H20 I N O2	True	0
+0X5	2	2,6-dichloro-N-{2-[(cyclopropylcarbonyl)amino]pyridin-4-yl}benzamide	C16 H13 Cl2 N3 O2	True	0
+I3C	22	5-amino-2,4,6-triiodobenzene-1,3-dicarboxylic acid	C8 H4 I3 N O4	True	0
+TZ2	2	~{N}-(2-azidoethyl)-1,2,3,4-tetrahydroacridin-9-amine	C15 H17 N5	True	0
+SOE	3	alpha-L-sorbopyranose	C6 H12 O6	True	0
+SHH	10	OCTANEDIOIC ACID HYDROXYAMIDE PHENYLAMIDE	C14 H20 N2 O3	True	0
+DEX	9	DEXAMETHASONE	C22 H29 F O5	True	0
+DJD	5	4-(6-methyl-1,2,4,5-tetrazin-3-yl)-L-phenylalanine	C12 H13 N5 O2	True	0
+HLW	2	3-(3-chlorophenyl)-N-{2-[2-(1H-imidazol-1-yl)pyrimidin-4-yl]ethyl}propan-1-amine	C18 H20 Cl N5	True	0
+SEE	3	trihydroxy(L-serinato-kappaO~3~)borate(1-)	C3 H9 B N O6 -1	True	0
+ECQ	2	(3S)-3-[(2S)-2-AMINO-3-HYDROXYBUTYL]PYRROLIDIN-2-ONE	C8 H16 N2 O2	True	0
+KH2	4	3-(1-methylpiperidinium-1-yl)propane-1-sulfonate	C9 H19 N O3 S	True	0
+A3S	13	SERINE-3'-AMINOADENOSINE	C13 H19 N7 O5	True	0
+HQY	3	quinolin-8-ol	C9 H7 N O	True	0
+FFA	3	(10ALPHA,13ALPHA,14BETA,17ALPHA)-17-HYDROXYANDROST-4-EN-3-ONE	C19 H28 O2	True	0
+1B2	2	N-{[3-(2H-indazol-5-yl)phenyl]sulfonyl}-L-threoninamide	C17 H18 N4 O4 S	True	0
+CRM	3	3-[8-((2S,3S,4R)-2,3,4,5-TETRAHYDROXYPENTYL)-2,4,7-TRIOXO-1,3,8-TRIHYDROPTERIDIN-6-YL]PROPANOIC ACID	C14 H18 N4 O9	True	0
+SGP	7	GUANOSINE-2',3'-CYCLOPHOSPHOROTHIOATE	C10 H12 N5 O6 P S	True	0
+ATF	3	PHOSPHODIFLUOROMETHYLPHOSPHONIC ACID-ADENYLATE ESTER	C11 H16 F2 N5 O12 P3	True	0
+5NI	3	5-NITROINDAZOLE	C7 H5 N3 O2	True	0
+8EL	3	2-[3-[(4-azanyl-2-methyl-pyrimidin-5-yl)methyl]-4-methyl-2H-1,3-thiazol-5-yl]ethyl phosphono hydrogen phosphate	C12 H20 N4 O7 P2 S	True	0
+GT5	3	~{N}-[(2~{S})-1-[[(2~{S})-1-[[(2~{S})-1-[4-(aminomethyl)phenyl]-4-methylsulfonyl-butan-2-yl]amino]-3-methoxy-1-oxidanylidene-propan-2-yl]amino]-4-methyl-1-oxidanylidene-pentan-2-yl]-2-methyl-1,3-thiazole-5-carboxamide	C27 H41 N5 O6 S2	True	0
+AEE	4	6-{4-[(4-ETHYLPIPERAZIN-1-YL)METHYL]PHENYL}-N-[(1R)-1-PHENYLETHYL]-7H-PYRROLO[2,3-D]PYRIMIDIN-4-AMINE	C27 H32 N6	True	0
+655	2	2-{5-[AMINO(IMINIO)METHYL]-1H-BENZIMIDAZOL-2-YL}-6-(CYCLOPENTYLOXY)BENZENOLATE	C19 H20 N4 O2	True	0
+TBS	2	4,5,6,7-TETRABROMOBENZOTRIAZOLE	C6 H Br4 N3	True	0
+1Y8	2	2-(trimethyl-lambda~5~-arsanyl)ethanol	C5 H14 As O	True	0
+GTV	2	[(5,7-dimethyl-2-oxo-2H-1-benzopyran-4-yl)methyl]phosphonic acid	C12 H13 O5 P	True	0
+F91	3	N-(pyridin-4-ylmethyl)-2,3-dihydro-1,4-benzodioxin-6-amine	C14 H14 N2 O2	True	0
+LWM	3	[(1R,2S,4R)-4-{[2-amino-5-(formylamino)-6-oxo-1,6-dihydropyrimidin-4-yl]amino}-2-hydroxycyclopentyl]methyl dihydrogen phosphate	C11 H18 N5 O7 P	True	0
+8XQ	7	8-hydroxyquinoline-5-carboxylic acid	C10 H7 N O3	True	0
+LA3	2	(2R)-2-[4-(1,3-benzodioxol-5-yl)benzyl]-N~4~-hydroxy-N~1~-[(1S,2R)-2-hydroxy-2,3-dihydro-1H-inden-1-yl]butanediamide	C27 H26 N2 O6	True	0
+C11	2	UNDECYL-PHOSPHINIC ACID BUTYL ESTER	C15 H33 O2 P	True	0
+0T1	3	[[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-4-oxidanyl-3-phosphonooxy-oxolan-2-yl]methoxy-oxidanyl-phosphoryl] [(3R)-2,2-dimethyl-3-oxidanyl-4-oxidanylidene-4-[[3-oxidanylidene-3-(propylamino)propyl]amino]butyl] hydrogen phosphate	C22 H38 N7 O16 P3	True	0
+0XL	2	2-amino-2-ethylbutanoic acid	C6 H13 N O2	True	0
+GAB	7	3-AMINOBENZOIC ACID	C7 H7 N O2	True	0
+N6G	4	((2R,3S,4R,5S)-5-(2,6-DIAMINO-9H-PURIN-9-YL)-3,4-DIHYDROXY-TETRAHYDROFURAN-2-YL)METHYL DIHYDROGEN PHOSPHATE	C10 H15 N6 O7 P	True	0
+DCZ	23	2'-DEOXYCYTIDINE	C9 H13 N3 O4	True	0
+NTB	3	TERTIARY-BUTYLAMINE	C4 H11 N	True	0
+2TN	3	2-(4-(2-HYDROXY-3-(ISOPROPYLAMINO)PROPOXY)PHENYL)ETHANAMIDE	C14 H22 N2 O3	True	0
+C38	10	5-IODO-2'-DEOXY-CYTIDINE-5'-MONOPHOSPHATE	C9 H13 I N3 O7 P	True	0
+HNM	3	1-(6-hydroxypyridin-3-yl)-4-(methylamino)butan-1-one	C10 H14 N2 O2	True	0
+3XQ	2	(2S)-2,3-dihydroxypropyl octadecanoate	C21 H42 O4	True	0
+JMM	4	[4-(cyclopropanecarbonyl)piperazin-1-yl](furan-2-yl)methanone	C13 H16 N2 O3	True	0
+EWS	2	(2R,4S)-4-[(5-bromo-1H-indole-3-carbonyl)amino]-2-[(4-chlorophenyl)methyl]piperidin-1-ium	C21 H22 Br Cl N3 O 1	True	0
+T3E	2	3-[[5-cyano-4-[4-methyl-2-(methylamino)-1,3-thiazol-5-yl]pyrimidin-2-yl]amino]benzenesulfonamide	C16 H15 N7 O2 S2	True	0
+B72	5	{4-[4-hydroxy-3-(1-methylethyl)benzyl]-3,5-dimethylphenoxy}acetic acid	C20 H24 O4	True	0
+0HG	2	N-[(4S)-4-ammonio-4-carboxybutanoyl]-S-(4-bromobenzyl)-L-cysteinylglycine	C17 H23 Br N3 O6 S 1	True	0
+F4W	2	3-(12-oxidanylidene-7-thia-9,11-diazatricyclo[6.4.0.0^{2,6}]dodeca-1(8),2(6),9-trien-10-yl)propanoic acid	C12 H12 N2 O3 S	True	0
+G9J	2	(2S)-3-(3-hydroxyphenyl)-2-(4-iodophenyl)-4-methyl-2H-1-benzopyran-6-ol	C22 H17 I O3	True	0
+KYN	16	(2S)-2-amino-4-(2-aminophenyl)-4-oxobutanoic acid	C10 H12 N2 O3	True	0
+GPA	2	2-AMINO-3-GUANIDINO-PROPIONIC ACID	C4 H10 N4 O2	True	0
+SU6	2	3-{2,4-dimethyl-5-[(Z)-(2-oxo-1,2-dihydro-3H-indol-3-ylidene)methyl]-1H-pyrrol-3-yl}propanoic acid	C18 H18 N2 O3	True	0
+DYH	3	(2R,3aR,6S,7R,7aR)-2-[(2S)-2-amino-2-carboxyethyl]-6-hydroxy-7-(methylamino)hexahydro-2H-furo[3,2-b]pyran-2-carboxylic acid	C12 H20 N2 O7	True	0
+4U6	2	N-{(1R)-2-(hydroxyamino)-1-[3'-(N'-hydroxycarbamimidoyl)biphenyl-4-yl]-2-oxoethyl}-2,2-dimethylpropanamide	C20 H24 N4 O4	True	0
+S3C	5	(2Z)-2-sulfanyl-3-(2,3,6-trichlorophenyl)prop-2-enoic acid	C9 H5 Cl3 O2 S	True	0
+HGA	2	GLUTAMINE HYDROXAMATE	C5 H10 N2 O4	True	0
+N79	2	[(1S,5R,6R,8R)-6-(6-aminopurin-9-yl)spiro[2,4,7-trioxa-3-boranuidabicyclo[3.3.0]octane-3,9'-8-oxa-9-boranuidabicyclo[4.3.0]nona-1(6),2,4-triene]-8-yl]methyl dihydrogen phosphate	C17 H18 B N5 O8 P -1	True	0
+B98	2	(3R)-3-(aminomethyl)-9-methoxy-1,2,3,4-tetrahydro-5H-[1]benzothieno[3,2-e][1,4]diazepin-5-one	C13 H15 N3 O2 S	True	0
+OBN	5	OUABAIN	C29 H44 O12	True	0
+FYA	2	ADENOSINE-5'-[PHENYLALANINOL-PHOSPHATE]	C19 H25 N6 O7 P	True	0
+ZOF	3	6-({5-[(2E,3aS,4S,6aR)-2-iminohexahydro-1H-thieno[3,4-d]imidazol-4-yl]pentanoyl}amino)hexanoic acid	C16 H28 N4 O3 S	True	0
+DIV	17	D-ISOVALINE	C5 H11 N O2	True	0
+B30	2	{2,2'-[(2-{[4-(AMINOSULFONYL)BENZOYL]AMINO}ETHYL)IMINO]DIACETATO(2-)-KAPPAO}COPPER	C13 H15 Cu N3 O7 S	True	0
+FXP	3	2-deoxy-2-fluoro-4-O-beta-D-xylopyranosyl-alpha-D-xylopyranose	C10 H17 F O8	True	0
+J4Q	2	4-[(2-methylsulfonylimidazol-1-yl)methyl]-1,3-thiazole	C8 H9 N3 O2 S2	True	0
+PT3	2	N-PROPYL-TARTRAMIC ACID	C7 H13 N O5	True	0
+3PT	2	(2R)-3-{[(S)-hydroxy{[(1S,2R,3R,4S,5S,6S)-2,3,6-trihydroxy-4,5-bis(phosphonooxy)cyclohexyl]oxy}phosphoryl]oxy}propane-1,2-diyl dibutanoate	C17 H33 O19 P3	True	0
+HBY	4	(S)-4-ISOPROPOXYCARBONYL-6-METHOXY-3-METHYLTHIOMETHYL-3,4-DIHYDROQUINOXALIN-2(1H)-THIONE	C15 H20 N2 O3 S2	True	0
+C7C	2	5-[(4-chlorophenyl)sulfanyl]-1,2,3-thiadiazole-4-carboxylate	C9 H4 Cl N2 O2 S2 -1	True	0
+MTT	29	MALTOTETRAOSE	C24 H42 O21	True	0
+2RA	8	3-amino-D-alanine	C3 H8 N2 O2	True	0
+IBM	19	3-ISOBUTYL-1-METHYLXANTHINE	C10 H14 N4 O2	True	0
+B7C	6	3-(2-deoxy-5-O-phosphono-beta-D-erythro-pentofuranosyl)-7,8-dihydropyrido[2,3-d]pyrimidin-2(3H)-one	C12 H16 N3 O7 P	True	0
+NKO	2	(2R)-2-hydroxy-3-(phosphonooxy)propyl hexadecanoate	C19 H39 O7 P	True	0
+NZQ	2	5,6-DIHYDROXY-NADP	C21 H32 N7 O19 P3	True	0
+P2H	2	1-(2-hydroxy-2,2-diphosphonoethyl)-3-phenylpyridinium	C13 H16 N O7 P2 1	True	0
+KD0	2	3-deoxy-8-O-phosphono-D-manno-oct-2-ulosonic acid	C8 H15 O11 P	True	0
+G3A	6	GUANOSINE-P3-ADENOSINE-5',5'-TRIPHOSPHATE	C20 H27 N10 O17 P3	True	0
+PQ0	6	2-AMINO-4-OXO-4,7-DIHYDRO-3H-PYRROLO[2,3-D]PYRIMIDINE-5-CARBONITRILE	C7 H5 N5 O	True	0
+ALL	4	D-ALLOPYRANOSE	C6 H12 O6	True	0
+30U	2	4-{[(2,4-diaminoquinazolin-5-yl)oxy]methyl}benzenesulfonic acid	C15 H14 N4 O4 S	True	0
+DQX	2	8-[3,5-difluoro-4-(morpholin-4-ylmethyl)phenyl]-2-(1-piperidin-4-yl-1H-pyrazol-4-yl)quinoxaline	C27 H28 F2 N6 O	True	0
+68P	3	(1S)-1-[3-(dimethylamino)propyl]-1-(4-fluorophenyl)-1,3-dihydro-2-benzofuran-5-carbonitrile	C20 H21 F N2 O	True	0
+JKK	2	2-[(3-chlorobenzyl)amino]ethanesulfonic acid	C9 H12 Cl N O3 S	True	0
+BDM	2	BRODIMOPRIM-4,6-DICARBOXYLATE	C20 H24 Br N4 O6 -1	True	0
+94T	2	[[(2~{R},3~{S},4~{R},5~{R})-5-[2,4-bis(oxidanylidene)pyrimidin-1-yl]-3,4-bis(oxidanyl)oxolan-2-yl]methoxy-oxidanyl-phosphoryl] propyl hydrogen phosphate	C12 H20 N2 O12 P2	True	0
+12M	2	(2-ETHYLPHENYL)METHANOL	C9 H12 O	True	0
+3LM	3	(2E)-2-[({3-hydroxy-2-methyl-5-[(phosphonooxy)methyl]pyridin-4-yl}methyl)amino]-4-(methylsulfanyl)but-2-enoic acid	C13 H19 N2 O7 P S	True	0
+DPM	12	3-[5-{[3-(2-carboxyethyl)-4-(carboxymethyl)-5-methyl-1H-pyrrol-2-yl]methyl}-4-(carboxymethyl)-1H-pyrrol-3-yl]propanoic acid	C20 H24 N2 O8	True	0
+PDG	4	N-({3-HYDROXY-2-METHYL-5-[(PHOSPHONOOXY)METHYL]PYRIDIN-4-YL}METHYL)-D-GLUTAMIC ACID	C13 H19 N2 O9 P	True	0
+9PY	2	(2R)-2-METHYL-3-DEHYDROQUINIC ACID	C8 H12 O6	True	0
+OCZ	6	(1S)-6-chloro-2,3,4,9-tetrahydro-1H-carbazole-1- carboxamide	C13 H13 Cl N2 O	True	0
+ZAL	4	3-cyclohexyl-D-alanine	C9 H17 N O2	True	0
+WZB	2	(9BETA,13ALPHA,14BETA,17ALPHA)-2-ETHYLESTRA-1(10),2,4-TRIENE-3,17-DIYL DISULFAMATE	C20 H30 N2 O6 S2	True	0
+DBX	2	2,5-dihydroxybenzenesulfonic acid	C6 H6 O5 S	True	0
+ACB	26	3-METHYL-BETA-D-ASPARTIC ACID	C5 H9 N O4	True	0
+HFA	6	ALPHA-HYDROXY-BETA-PHENYL-PROPIONIC ACID	C9 H10 O3	True	0
+FTY	6	DEOXY-DIFLUOROMETHELENE-PHOSPHOTYROSINE	C10 H12 F2 N O5 P	True	0
+2NE	2	Salicylyl CoA	C28 H40 N7 O18 P3 S	True	0
+KTL	2	(1S,2R,3R,4S)-1-{(1S)-2-[(2R,3S,4S)-3,4-dihydroxy-2-(hydroxymethyl)tetrahydrothiophenium-1-yl]-1-hydroxyethyl}-2,3,4,5-tetrahydroxypentyl sulfate	C12 H24 O12 S2	True	0
+LBY	2	N~6~-(tert-butoxycarbonyl)-L-lysine	C11 H22 N2 O4	True	0
+W06	2	(2~{S})-3-(1~{H}-indol-3-yl)-2-[2,2,3,3,4,4,5,5,6,6,6-undecakis(fluoranyl)hexanoylamino]propanoic acid	C17 H11 F11 N2 O3	True	0
+0GY	2	(1E,3Z)-4-hydroxybuta-1,3-diene-1,2,4-tricarboxylic acid	C7 H6 O7	True	0
+KMV	2	6-(2-{2,3-difluoro-5-[3-(methylamino)prop-1-yn-1-yl]phenyl}ethyl)-4-methylpyridin-2-amine	C18 H19 F2 N3	True	0
+W2R	2	1-{3-[2-chloro-4-({5-[2-(2-hydroxyethoxy)ethyl]-5H-pyrrolo[3,2-d]pyrimidin-4-yl}amino)phenoxy]phenyl}-3-cyclohexylurea	C29 H33 Cl N6 O4	True	0
+SDP	5	2-AMINO-3-(DIETHOXY-PHOSPHORYLOXY)-PROPIONIC ACID	C7 H16 N O6 P	True	0
+TCF	2	3-(4-BROMOPHENYL)PROPANAMIDE	C9 H10 Br N O	True	0
+DNW	2	3-[(2,4-dinitrophenyl)amino]-L-alanine	C9 H10 N4 O6	True	0
+B2G	4	GALACTOBIOSE	C12 H22 O11	True	0
+Y27	5	(R)-TRANS-4-(1-AMINOETHYL)-N-(4-PYRIDYL) CYCLOHEXANECARBOXAMIDE	C14 H21 N3 O	True	0
+FGY	2	N-(2,2-dimethylpropyl)-N~2~-[4-(hydroxycarbamoyl)benzene-1-carbonyl]-L-asparaginyl-N-benzyl-L-alaninamide	C27 H35 N5 O6	True	0
+444	9	N-(2,2,2-TRIFLUOROETHYL)-N-{4-[2,2,2-TRIFLUORO-1-HYDROXY-1-(TRIFLUOROMETHYL)ETHYL]PHENYL}BENZENESULFONAMIDE	C17 H12 F9 N O3 S	True	0
+EXQ	2	[9-ethyl-7-(4-methylthiophen-2-yl)carbazol-3-yl]methyl-methyl-azanium	C21 H23 N2 S 1	True	0
+ASX	6	ASP/ASN AMBIGUOUS	C4 H6 N O2 X2	True	0
+C7B	4	2-(4-chloranylphenoxy)-~{N}-[4-[2-(4-chloranylphenoxy)ethanoylamino]cyclohexyl]ethanamide	C22 H24 Cl2 N2 O4	True	0
+29F	2	2-(4-tert-butylphenyl)-1,4-dihydroquinazolin-4-one	C18 H18 N2 O	True	0
+LCA	7	[(1R,3R,4R,7S)-7-HYDROXY-3-(ADENIN-9-YL)-2,5-DIOXABICYCLO[2.2.1]HEPT-1-YL]METHYL DIHYDROGEN PHOSPHATE	C11 H14 N5 O7 P	True	0
+2BG	2	1-(1,3-benzothiazol-2-yl)methanamine	C8 H8 N2 S	True	0
+LOC	16	N-[(7S)-1,2,3,10-tetramethoxy-9-oxo-6,7-dihydro-5H-benzo[d]heptalen-7-yl]ethanamide	C22 H25 N O6	True	0
+CA0	3	5'-O-[(S)-(carbamoyloxy)(hydroxy)phosphoryl]adenosine	C11 H15 N6 O8 P	True	0
+UNU	6	BENZAMIDE	C7 H7 N O	True	0
+I2C	3	5'-O-[(S)-hydroxy{[2-hydroxy-3,5-dimethyl-6-(2-oxoethyl)pyridin-4-yl]oxy}phosphoryl]guanosine	C19 H23 N6 O10 P	True	0
+MCS	2	MALONYL CYSTEINE	C6 H9 N O5 S	True	0
+IGU	10	2'-DEOXYISOGUANINE-5'-MONOPHOSPHATE	C10 H14 N5 O7 P	True	0
+ONA	2	3'-O-[2-(METHYLAMINO)BENZOYL]ADENOSINE 5'-(TETRAHYDROGEN TRIPHOSPHATE)	C18 H23 N6 O14 P3	True	0
+O44	2	4-[(4-{4-[(3-cyclopropyl-1H-pyrazol-5-yl)amino]-6-[(prop-2-yn-1-yl)carbamoyl]pyrimidin-2-yl}piperazin-1-yl)methyl]benzene-1-sulfonyl fluoride	C25 H27 F N8 O3 S	True	0
+9HY	2	N-(6-cyano-3-{2-[2-(2,4-dioxo-3,4-dihydropyrimidin-1(2H)-yl)ethoxy]phenoxy}-4-methylnaphthalen-1-yl)-N-methylacetamide	C27 H24 N4 O5	True	0
+XNW	2	(1R,2R,4S,5R)-1,4,5-TRIHYDROXY-2-(4-METHOXYBENZYL)-3-OXOCYCLOHEXANECARBOXYLIC ACID	C15 H18 O7	True	0
+5RW	2	2-azanyl-8-[(4-fluorophenyl)methylsulfanyl]-1,7-dihydropurin-6-one	C12 H10 F N5 O S	True	0
+CPD	2	[1-(3-DIMETHYLAMINO-PROPYL)-3-ETHYL-UREIDO]-[4-(2,2,2-TRIFLUORO-ACETYLAMINO)-BENZYL]PHOSPHINIC ACID-2-(2,2-DIHYDRO-ACETYLAMINO)-3-HYDROXY-1-(4-NITROPHENYL)-PROPYL ESTER	C28 H36 Cl2 F3 N6 O8 P	True	0
+TPF	17	2-(2,4-DIFLUOROPHENYL)-1,3-DI(1H-1,2,4-TRIAZOL-1-YL)PROPAN-2-OL	C13 H12 F2 N6 O	True	0
+RAL	5	RALOXIFENE	C28 H27 N O4 S	True	0
+INS	35	1,2,3,4,5,6-HEXAHYDROXY-CYCLOHEXANE	C6 H12 O6	True	0
+B29	5	[2-(3-DIBENZOFURAN-4-YL-PHENYL)-1-HYDROXY-1-PHOSPHONO-ETHYL]-PHOSPHONIC ACID	C20 H18 O8 P2	True	0
+SPL	3	OCTANOIC ACID (2-HYDROXY-1-HYDROXYMETHYL-HEPTADEC-3-ENYL)-AMIDE	C26 H51 N O3	True	0
+QI9	4	Quinine	C20 H24 N2 O2	True	0
+CMC	11	CARBOXYMETHYL COENZYME *A	C23 H38 N7 O18 P3 S	True	0
+V3L	4	2'-O-(5-O-phosphono-alpha-D-ribofuranosyl)adenosine 5'-(dihydrogen phosphate)	C15 H23 N5 O14 P2	True	0
+C2N	2	3-chloro-D-alanine	C3 H6 Cl N O2	True	0
+JG3	4	1-[(2S,3S)-3-amino-2-hydroxy-4-phenylbutyl]-L-proline	C15 H22 N2 O3	True	0
+PLU	5	LEUCINE PHOSPHONIC ACID	C5 H14 N O3 P	True	0
+GDV	2	(5R,6R,7R,8S)-8-(ACETYLAMINO)-6,7-DIHYDROXY-5-(HYDROXYMETHYL)-N-PHENYL-1,5,6,7,8,8A-HEXAHYDROIMIDAZO[1,2-A]PYRIDINE-2-CARBOXAMIDE	C17 H21 N4 O5 1	True	0
+SEB	22	O-BENZYLSULFONYL-SERINE	C10 H13 N O5 S	True	0
+BXY	4	alpha-D-arabinofuranose	C5 H10 O5	True	0
+66N	3	L-alaninamide	C3 H8 N2 O	True	0
+CVI	5	CRYSTAL VIOLET	C25 H30 N3 1	True	0
+HLX	3	5-methyl-L-norleucine	C7 H15 N O2	True	0
+S9L	22	2-[2-(2-HYDROXYETHOXY)ETHOXY]ETHYL DIHYDROGEN PHOSPHATE	C6 H15 O7 P	True	0
+03M	2	(5Z)-5-[(6-chloro-7-methyl-1H-indol-3-yl)methylidene]-3-(3,4-difluorobenzyl)imidazolidine-2,4-dione	C20 H14 Cl F2 N3 O2	True	0
+LBT	37	ALPHA-LACTOSE	C12 H22 O11	True	0
+PYJ	8	PHENYLETHANE	C8 H10	True	0
+FAS	2	ARABINO-FLAVIN-ADENINE DINUCLEOTIDE	C27 H33 N9 O15 P2	True	0
+EU7	2	(1S)-1-[(3R,5R,7R)-tricyclo[3.3.1.1~3,7~]decan-1-yl]ethan-1-amine	C12 H21 N	True	0
+0JO	17	2-{[(E)-{3-hydroxy-2-methyl-5-[(phosphonooxy)methyl]pyridin-4-yl}methylidene]amino}prop-2-enoic acid	C11 H13 N2 O7 P	True	0
+C21	2	THIOPHENE-2-CARBOXYLIC ACID	C5 H4 O2 S	True	0
+10Y	2	(9Z)-11-{(2R,3S)-3-[(2Z)-pent-2-en-1-yl]oxiran-2-yl}undec-9-enoic acid	C18 H30 O3	True	0
+OAG	3	6-{[(2,5-dichlorophenyl)amino]methyl}pyrido[2,3-d]pyrimidine-2,4-diamine	C14 H12 Cl2 N6	True	0
+9U4	2	3-[7-(difluoromethyl)-6-(1-methyl-1H-pyrazol-4-yl)-3,4-dihydroquinolin-1(2H)-yl]-N-methyl-1-(oxan-4-yl)-1,4,6,7-tetrahydro-5H-pyrazolo[4,3-c]pyridine-5-carboxamide	C27 H33 F2 N7 O2	True	0
+DBS	7	2-(2,3-DIHYDROXY-BENZOYLAMINO)-3-HYDROXY-PROPIONIC ACID	C10 H11 N O6	True	0
+VIB	12	3-(4-AMINO-2-METHYL-PYRIMIDIN-5-YLMETHYL)-5-(2-HYDROXY-ETHYL)-4-METHYL-THIAZOL-3-IUM	C12 H17 N4 O S 1	True	0
+T6Q	2	2-[[3-(4-ethanoyl-1,4-diazepan-1-yl)phenyl]amino]-4-[4-methyl-2-(methylamino)-1,3-thiazol-5-yl]pyrimidine-5-carbonitrile	C23 H26 N8 O S	True	0
+G4J	2	[(1S)-2,2-difluorocyclopropyl][(1R,5S)-3-{2-[(1-methyl-1H-pyrazol-4-yl)amino]pyrimidin-4-yl}-3,8-diazabicyclo[3.2.1]octan-8-yl]methanone	C18 H21 F2 N7 O	True	0
+MPH	2	(1-AMINO-3-METHYLSULFANYL-PROPYL)-PHOSPHONIC ACID	C4 H12 N O3 P S	True	0
+AKU	2	(1S)-1-[2-(1H-indol-3-yl)ethyl]-6,7-dimethoxy-3,4-dihydroisoquinoline-2(1H)-carbaldehyde	C22 H24 N2 O3	True	0
+GCO	10	GLUCONIC ACID	C6 H12 O7	True	0
+52E	2	4-{[(2-chloro-3-fluorobenzyl)carbamoyl](methyl)amino}-3,4-dideoxy-5-O-(isoquinolin-3-ylcarbamoyl)-D-erythro-pentitol	C24 H26 Cl F N4 O5	True	0
+C6P	8	N-({3-HYDROXY-2-METHYL-5-[(PHOSPHONOOXY)METHYL]PYRIDIN-4-YL}METHYL)-L-CYSTEINE	C11 H17 N2 O7 P S	True	0
+4E9	2	2'-deoxy-8-[(7-oxo-7H-benzo[de]anthracen-3-yl)amino]guanosine 5'-(dihydrogen phosphate)	C27 H23 N6 O8 P	True	0
+PTG	4	(5E,14E)-11-oxoprosta-5,9,12,14-tetraen-1-oic acid	C20 H28 O3	True	0
+PGU	7	N-({3-hydroxy-2-methyl-5-[(phosphonooxy)methyl]pyridin-4-yl}methyl)-L-glutamic acid	C13 H19 N2 O9 P	True	0
+07V	4	(5R)-2-methyl-5-(prop-1-en-2-yl)cyclohex-2-en-1-one	C10 H14 O	True	0
+4MF	2	1-(2-DEOXY-5-O-PHOSPHONO-BETA-D-ERYTHRO-PENTOFURANOSYL)-4-METHYL-1H-INDOLE	C14 H18 N O6 P	True	0
+5H4	3	N-[3-({ethyl[2-(3-fluorophenyl)ethyl]amino}methyl)phenyl]thiophene-2-carboximidamide	C22 H24 F N3 S	True	0
+G9L	2	8-fluoro-2-(3-piperidin-1-ylpropanoyl)-1,3,4,5-tetrahydrobenzo[c][1,6]naphthyridin-6(2H)-one	C20 H24 F N3 O2	True	0
+MWB	2	N1-(4,5-dihydro-1H-imidazol-2-yl)-N4-(4-((4,5-dihydro-1H-imidazol-2-yl)amino)phenyl)benzene-1,4-diamine	C18 H21 N7	True	0
+ZPN	3	(2Z,4E)-N-[(S)-[(1S,2E,5S,8E,10Z,17S)-3,11-dimethyl-19-methylidene-7,13-dioxo-6,21-dioxabicyclo[15.3.1]henicosa-2,8,10-trien-5-yl](hydroxy)methyl]hexa-2,4-dienamide	C29 H39 N O6	True	0
+IKX	2	4-(4-(2-hydroxyethyl)-1H-1,2,3-triazol-1-yl)pyridine-2,6-dicarboxylic acid	C11 H12 N4 O5	True	0
+AO3	3	ALLOSAMIDIN	C25 H42 N4 O14	True	0
+5XE	2	4-bromanyl-~{N}-(6-methoxy-1,3-dimethyl-2-oxidanylidene-benzimidazol-5-yl)-2-methyl-benzenesulfonamide	C17 H18 Br N3 O4 S	True	0
+D3T	17	2',3'-DIDEOXY-THYMIDINE-5'-TRIPHOSPHATE	C10 H17 N2 O13 P3	True	0
+7XO	2	N2-[4-(4-methylpiperazin-1-yl)phenyl]-N8-phenyl-9-propan-2-yl-purine-2,8-diamine	C25 H30 N8	True	0
+CAF	31	S-DIMETHYLARSINOYL-CYSTEINE	C5 H12 As N O3 S	True	0
+NFX	2	7-[(3R)-3-aminopyrrolidin-1-yl]-8-chloro-1-cyclopropyl-6-fluoro-4-oxo-1,4-dihydroquinoline-3-carboxylic acid	C17 H17 Cl F N3 O3	True	0
+CTZ	2	C2-HYDROXY-COELENTERAZINE	C26 H21 N3 O4	True	0
+JKJ	2	(1R,3R,4S)-3-(methoxymethyl)-2-(methylsulfonyl)-2-azabicyclo[2.2.2]octan-4-ol	C10 H19 N O4 S	True	0
+5CU	2	2,4-dioxo-1,2,3,4-tetrahydropyrimidine-5-carboxylic acid	C5 H4 N2 O4	True	0
+ASL	2	ASPARTIC ACID-4-CARBOXYETHYL ESTER	C7 H11 N O6	True	0
+SKD	4	2-ACETYLAMINO-7-(1,2-DIHYDROXY-ETHYL)-3-HYDROXY-6,8-DIOXA-BICYCLO[3.2.1]OCTANE-5-CARBOXYLIC ACID	C11 H17 N O8	True	0
+PFB	16	2,3,4,5,6-PENTAFLUOROBENZYL ALCOHOL	C7 H3 F5 O	True	0
+CAU	8	(2S)-1-(9H-Carbazol-4-yloxy)-3-(isopropylamino)propan-2-ol	C18 H22 N2 O2	True	0
+GU1	2	2,3-DI-O-METHYL-BETA-D-GLUCOPYRANURONIC ACID	C8 H14 O7	True	0
+ZI6	2	3-[[5-bromanyl-4-[4-(trifluoromethyl)phenyl]-1,3-oxazol-2-yl]methoxy]-2,6-bis(fluoranyl)benzamide	C18 H10 Br F5 N2 O3	True	0
+CSN	4	N,4-DIHYDROXY-N-OXO-3-(SULFOOXY)BENZENAMINIUM	C6 H5 N O7 S	True	0
+ASO	8	1,5-ANHYDROSORBITOL	C6 H12 O5	True	0
+0A1	6	O-methyl-L-tyrosine	C10 H13 N O3	True	0
+ZD9	2	2,7-dimethyl-6-[(prop-1-yn-1-ylamino)methyl]quinazolin-4(3H)-one	C14 H15 N3 O	True	0
+T3F	5	(3R,4S,5R,6R)-4-amino-3,5-dihydroxy-6-methyloxan-2-yl][hydroxy-[[(2R,3S,5R)-3-hydroxy-5-(5-methyl-2,4-dioxopyrimidin-1-yl)oxolan-2-yl]methoxy]phosphoryl] hydrogen phosphate	C16 H27 N3 O14 P2	True	0
+T4A	2	3,3',5,5'-TETRAIODOTHYROACETIC ACID	C14 H8 I4 O4	True	0
+OCP	2	OCTYL-PHOSPHINIC ACID 1,2-BIS-OCTYLCARBAMOYLOXY-ETHYL ESTER	C29 H59 N2 O7 P	True	0
+EVJ	2	thiophene-2-sulfonamide	C4 H5 N O2 S2	True	0
+51G	3	gentamicin C1	C21 H43 N5 O7	True	0
+SFR	3	(2R)-2-[(1S,2R)-1-carboxy-2-hydroxypropyl]-5-[(2R)-tetrahydrofuran-2-yl]-2,3-dihydro-1,3-thiazole-4-carboxylic acid	C12 H17 N O6 S	True	0
+GRO	3	R-2-PHENYL-PROPRIONIC ACID	C9 H10 O2	True	0
+ZZX	4	(6S)-2-(3-chloro-4-fluorobenzyl)-8-ethyl-10-hydroxy-N,6-dimethyl-1,9-dioxo-1,2,6,7,8,9-hexahydropyrazino[1',2':1,5]pyrrolo[2,3-d]pyridazine-4-carboxamide	C21 H21 Cl F N5 O4	True	0
+NBO	2	nabumetone	C15 H16 O2	True	0
+SE7	8	2-AMINO-3-SELENINO-PROPIONIC ACID	C3 H7 N O4 Se	True	0
+MTY	5	META-TYROSINE	C9 H11 N O3	True	0
+PFT	2	4-(1,3-dihydro-2H-isoindol-2-ylcarbonyl)benzene-1,3-diol	C15 H13 N O3	True	0
+KAP	5	7-KETO-8-AMINOPELARGONIC ACID	C9 H17 N O3	True	0
+243	3	(9Z,11E,13S)-13-hydroxyoctadeca-9,11-dienoic acid	C18 H32 O3	True	0
+PM6	2	9H-purine-6-thiol	C5 H4 N4 S	True	0
+IDU	3	2-O-sulfo-beta-L-altropyranuronic acid	C6 H10 O10 S	True	0
+H64	2	8-(6-BROMO-BENZO[1,3]DIOXOL-5-YLSULFANYL)-9-(3-ISOPROPYLAMINO-PROPYL)-ADENINE	C18 H21 Br N6 O2 S	True	0
+DXH	2	4-methyl-3-[(1-methyl-6-pyridin-3-yl-pyrazolo[3,4-d]pyrimidin-4-yl)amino]-~{N}-[3-(trifluoromethyl)phenyl]benzamide	C26 H20 F3 N7 O	True	0
+TSA	12	8-HYDROXY-2-OXA-BICYCLO[3.3.1]NON-6-ENE-3,5-DICARBOXYLIC ACID	C10 H12 O6	True	0
+BA1	3	BALANOL	C28 H26 N2 O10	True	0
+TMH	3	(+)-alpha-Pinene	C10 H16	True	0
+PPU	37	PUROMYCIN-5'-MONOPHOSPHATE	C22 H30 N7 O8 P	True	0
+MCT	8	4-METHYLCATECHOL	C7 H8 O2	True	0
+CRN	3	N-[(E)-AMINO(IMINO)METHYL]-N-METHYLGLYCINE	C4 H9 N3 O2	True	0
+1WA	10	2-amino-8-(2-deoxy-5-O-phosphono-beta-D-erythro-pentofuranosyl)-4-hydroxy-1H-imidazo[1,2-a][1,3,5]triazine-5,8-diium	C10 H16 N5 O7 P 2	True	0
+4M5	2	(4~{Z},7~{Z},10~{Z},13~{Z},19~{Z})-17-oxidanylidenedocosa-4,7,10,13,19-pentaenoic acid	C22 H32 O3	True	0
+SPE	4	THERMINE	C9 H24 N4	True	0
+DNX	4	3,4-dinitrophenol	C6 H4 N2 O5	True	0
+PCI	7	PENTACHLOROPHENOL	C6 H Cl5 O	True	0
+VT1	3	(R)-2-(2,4-Difluorophenyl)-1,1-difluoro-3-(1H-tetrazol-1-yl)-1-(5-(4-(2,2,2-trifluoroethoxy)phenyl)pyridin-2-yl)propan-2-ol	C23 H16 F7 N5 O2	True	0
+0P6	2	2-aminoquinolin-8-ol	C9 H8 N2 O	True	0
+3SY	2	2,2-bis(hydroxymethyl)propane-1,3-diol	C5 H12 O4	True	0
+MK7	7	(2S,5R)-1-formyl-N-(piperidin-4-yl)-5-[(sulfooxy)amino]piperidine-2-carboxamide	C12 H22 N4 O6 S	True	0
+9DI	2	9-DEAZAINOSINE	C11 H13 N3 O5	True	0
+9YE	3	4-(3-methylbut-2-enoxy)-5-propan-2-yl-7,8-dihydro-6~{H}-indeno[1,2-b]indole-9,10-dione	C23 H25 N O3	True	0
+XYQ	2	(2R,3R,4S,5R)-5-({[(R)-{[(R)-{[(2R,3S,4R,5R)-5-(6-AMINO-9H-PURIN-9-YL)-3,4-DIHYDROXYTETRAHYDROFURAN-2-YL]METHOXY}(HYDROXY)PHOSPHORYL]OXY}(HYDROXY)PHOSPHORYL]OXY}METHYL)-3,4-DIHYDROXYTETRAHYDROFURAN-2-YL ACETATE	C17 H25 N5 O15 P2	True	0
+7A2	2	3-C-carboxy-2-deoxy-L-threo-pentaric acid	C6 H8 O8	True	0
+CBU	2	(1R,2R,3S,4S,5S,6S)-CYCLOHEXANE-1,2,3,4,5,6-HEXOL	C6 H12 O6	True	0
+FNS	2	N-SULFO-FLAVIN MONONUCLEOTIDE	C17 H21 N4 O12 P S	True	0
+G7M	69	N7-METHYL-GUANOSINE-5'-MONOPHOSPHATE	C11 H17 N5 O8 P 1	True	1
+CCC	70	CYTIDINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE	C9 H13 N3 O10 P2	True	1
+PRP	75	ALPHA-PHOSPHORIBOSYLPYROPHOSPHORIC ACID	C5 H13 O14 P3	True	1
+1PG	76	2-(2-{2-[2-(2-METHOXY-ETHOXY)-ETHOXY]-ETHOXY}-ETHOXY)-ETHANOL	C11 H24 O6	True	1
+GSP	94	5'-GUANOSINE-DIPHOSPHATE-MONOTHIOPHOSPHATE	C10 H16 N5 O13 P3 S	True	1
+STU	84	STAUROSPORINE	C28 H26 N4 O3	True	1
+IHP	78	INOSITOL HEXAKISPHOSPHATE	C6 H18 O24 P6	True	1
+CMP	110	ADENOSINE-3',5'-CYCLIC-MONOPHOSPHATE	C10 H12 N5 O6 P	True	1
+BTN	107	BIOTIN	C10 H16 N2 O3 S	True	1
+FDA	86	DIHYDROFLAVINE-ADENINE DINUCLEOTIDE	C27 H35 N9 O15 P2	True	1
+5CM	188	5-METHYL-2'-DEOXY-CYTIDINE-5'-MONOPHOSPHATE	C10 H16 N3 O7 P	True	2
+C8E	172	(HYDROXYETHYLOXY)TRI(ETHYLOXY)OCTANE	C16 H34 O5	True	2
+MA6	169	6N-DIMETHYLADENOSINE-5'-MONOPHOSHATE	C12 H18 N5 O7 P	True	2
+BEN	224	BENZAMIDINE	C7 H8 N2	True	3
+MYR	229	MYRISTIC ACID	C14 H28 O2	True	3
+OLC	262	(2R)-2,3-dihydroxypropyl (9Z)-octadec-9-enoate	C21 H40 O4	True	3
+5MC	238	5-METHYLCYTIDINE-5'-MONOPHOSPHATE	C10 H16 N3 O8 P	True	3
+DAL	296	D-ALANINE	C3 H7 N O2	True	4
+AKG	293	2-OXOGLUTARIC ACID	C5 H6 O5	True	4
+MLY	285	N-DIMETHYL-LYSINE	C8 H18 N2 O2	True	4
+MAL	276	MALTOSE	C12 H22 O11	True	4
+ACP	275	PHOSPHOMETHYLPHOSPHONIC ACID ADENYLATE ESTER	C11 H18 N5 O12 P3	True	4
+GSH	397	GLUTATHIONE	C10 H17 N3 O6 S	True	5
+PSU	392	PSEUDOURIDINE-5'-MONOPHOSPHATE	C9 H13 N2 O9 P	True	5
+P6G	374	HEXAETHYLENE GLYCOL	C12 H26 O7	True	5
+OGA	363	N-OXALYLGLYCINE	C4 H5 N O5	True	5
+PLM	344	PALMITIC ACID	C16 H32 O2	True	5
+RET	341	RETINAL	C20 H28 O	True	5
+GNP	462	PHOSPHOAMINOPHOSPHONIC ACID-GUANYLATE ESTER	C10 H17 N6 O13 P3	True	6
+CME	461	S,S-(2-HYDROXYETHYL)THIOCYSTEINE	C5 H11 N O3 S2	True	6
+BOG	444	B-OCTYLGLUCOSIDE	C14 H28 O6	True	6
+LLP	440	(2S)-2-amino-6-[[3-hydroxy-2-methyl-5-(phosphonooxymethyl)pyridin-4-yl]methylideneamino]hexanoic acid	C14 H22 N3 O7 P	True	6
+SIA	436	O-SIALIC ACID	C11 H19 N O9	True	6
+UDP	430	URIDINE-5'-DIPHOSPHATE	C9 H14 N2 O12 P2	True	6
+TLA	428	L(+)-TARTARIC ACID	C4 H6 O6	True	6
+CSD	424	3-SULFINOALANINE	C3 H7 N O4 S	True	6
+SAM	490	S-ADENOSYLMETHIONINE	C15 H22 N6 O5 S	True	7
+FLC	482	CITRATE ANION	C6 H5 O7 -3	True	7
+NDG	480	2-(ACETYLAMINO)-2-DEOXY-A-D-GLUCOPYRANOSE	C8 H15 N O6	True	7
+MRD	471	(4R)-2-METHYLPENTANE-2,4-DIOL	C6 H14 O2	True	7
+KCX	553	LYSINE NZ-CARBOXYLIC ACID	C7 H14 N2 O4	True	8
+H4B	538	5,6,7,8-TETRAHYDROBIOPTERIN	C9 H15 N5 O3	True	8
+COA	536	COENZYME A	C21 H36 N7 O16 P3 S	True	8

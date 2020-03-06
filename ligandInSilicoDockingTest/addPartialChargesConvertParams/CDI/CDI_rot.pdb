@@ -1,0 +1,39 @@
+HETATM    1  C2  CDI X   1      -0.787   0.180   0.434  1.00 20.00           C  
+HETATM    2  C1  CDI X   1      -1.112   0.931  -0.882  1.00 20.00           C  
+HETATM    3  O8  CDI X   1      -2.285   0.390  -1.520  1.00 20.00           O  
+HETATM    4  O1  CDI X   1       0.357   0.618   1.164  1.00 20.00           O  
+HETATM    5  P1  CDI X   1       1.402   1.740   0.648  1.00 20.00           P1+
+HETATM    6  O2  CDI X   1       2.416   1.945   1.744  1.00 20.00           O1-
+HETATM    7  O3  CDI X   1       0.574   2.935   0.213  1.00 20.00           O1-
+HETATM    8  O9  CDI X   1       2.013   1.036  -0.646  1.00 20.00           O  
+HETATM    9  P2  CDI X   1       2.771  -0.344  -0.911  1.00 20.00           P1+
+HETATM   10  O4  CDI X   1       1.786  -1.394  -0.156  1.00 20.00           O  
+HETATM   11  C3  CDI X   1       0.545  -1.701  -0.770  1.00 20.00           C  
+HETATM   12  C4  CDI X   1      -0.615  -1.344   0.167  1.00 20.00           C  
+HETATM   13  O7  CDI X   1      -0.390  -2.033   1.419  1.00 20.00           O  
+HETATM   14  O5  CDI X   1       2.687  -0.656  -2.395  1.00 20.00           O1-
+HETATM   15  O6  CDI X   1       4.121  -0.406  -0.241  1.00 20.00           O1-
+HETATM   16  C5  CDI X   1      -1.964   0.384   1.412  1.00 20.00           C  
+HETATM   17  H1  CDI X   1      -0.295   0.882  -1.604  1.00 20.00           H  
+HETATM   18  H2  CDI X   1      -1.320   1.990  -0.705  1.00 20.00           H  
+HETATM   19  H10 CDI X   1      -3.026   0.913  -1.170  1.00 20.00           H  
+HETATM   20  H3  CDI X   1       0.426  -1.224  -1.745  1.00 20.00           H  
+HETATM   21  H4  CDI X   1       0.548  -2.784  -0.937  1.00 20.00           H  
+HETATM   22  H5  CDI X   1      -1.540  -1.755  -0.252  1.00 20.00           H  
+HETATM   23  H6  CDI X   1       0.466  -1.646   1.716  1.00 20.00           H  
+HETATM   24  H7  CDI X   1      -2.128   1.452   1.594  1.00 20.00           H  
+HETATM   25  H8  CDI X   1      -1.753  -0.060   2.392  1.00 20.00           H  
+HETATM   26  H9  CDI X   1      -2.896  -0.048   1.033  1.00 20.00           H  
+CONECT    1    2    4   12   16
+CONECT    2    3   17   18
+CONECT    3   19
+CONECT    4    5
+CONECT    5    6    7    8
+CONECT    8    9
+CONECT    9   10   14   15
+CONECT   10   11
+CONECT   11   12   20   21
+CONECT   12   13   22
+CONECT   13   23
+CONECT   16   24   25   26
+END

@@ -1,0 +1,1273 @@
+core.init: Rosetta version: 2018.04.post.dev+441.bcov.fordas.structurestore2gridsilent.7b5a6c4943d 7b5a6c4943df59375999d8119244b5c68d8ccc53 git@github.com:RosettaCommons/main.git 2019-04-03T11:06:48
+core.init: command: /home/bcov/rifdock/latest/rifgen -rifgen:target AEE_rot_min_0001.pdb -extra_res_fa AEE.params -rifgen:outdir ./rifgen_init -rifgen:data_cache_dir ./rifgen_init -rifgen:outfile rifgen_init.rif.gz -rifgen:apores PHE ILE LEU VAL MET -rifgen:donres THR TYR TRP GLN ASN SER LYS ARG AEE -rifgen:accres THR TYR SER GLN ASN ASP GLU AEE @/net/scratch/basantab/NTF2_project/20191216_deNovoNTF2DockingBenchmark_RIFDOCK/RIFGEN/template_flags
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-1517576461 seed_offset=0 real_seed=-1517576461
+core.init.random: RandomGenerator:init: Normal mode, seed=-1517576461 RG_type=mt19937
+Rifdock thinks there are 32 threads.
+rif_type: RotScoreSat
+does not exist, attempting to create:
+    ./rifgen_init
+
+=================================================== preparing target ===================================================
+
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 601 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.9319 seconds.
+core.import_pose.import_pose: File 'AEE_rot_min_0001.pdb' automatically determined to be of type PDB
+target nres: 1
+target_res_file: ''
+target_res: [1]
+centering target from     -0.9108787878787876      0.1705757575757577     -0.4025151515151517 to ( 0, 0, 0 )
+Preparing rotamer index spec...
+get_rotamer_index
+core.pack.task: Packer task: initialize from command line() 
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /home/bcov/rifdock/latest/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/bcov/rifdock/latest/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.27328 seconds to load from binary
+core.pack.task: Packer task: initialize from command line() 
+core.pack.task: Packer task: initialize from command line() 
+core.pack.task: Packer task: initialize from command line() 
+finish builidng rotamer_index now try fill rotamer index ... 
+start building rotamer index from fill rotamers
+n_p_rots: 388
+n_rots: 1654
+n_par_rots: 1654
+total num protonchi_parent_of_ 1501
+total num structural_parents_ 62
+finish build_index...
+======================================================================================
+RotamerIndex:
+    ALA 1 0-0 0 0
+    CYS 9 2-10 2 1
+    ASP 7 11-17 2 0
+    GLU 27 18-44 3 0
+    PHE 15 45-59 2 0
+    GLY 1 1-1 0 0
+    HIS 14 60-73 2 0
+    ILE 7 88-94 2 0
+    LYS 31 95-125 4 0
+    LEU 9 126-134 2 0
+    MET 19 135-153 3 0
+    ASN 13 154-166 2 0
+    PRO 2 167-168 3 0
+    GLN 25 169-193 3 0
+    ARG 42 194-235 4 0
+    SER 54 236-289 2 1
+    THR 54 290-343 2 1
+    VAL 3 344-346 1 0
+    TRP 19 347-365 2 0
+    TYR 22 366-387 3 1
+    DAL 0 0--1 0 0
+    DCS 0 0--1 0 0
+    DAS 0 0--1 0 0
+    DGU 0 0--1 0 0
+    DPH 0 0--1 0 0
+    DHI 0 0--1 0 0
+    DIL 0 0--1 0 0
+    DLY 0 0--1 0 0
+    DLE 0 0--1 0 0
+    DME 0 0--1 0 0
+    DAN 0 0--1 0 0
+    DPR 0 0--1 0 0
+    DGN 0 0--1 0 0
+    DAR 0 0--1 0 0
+    DSE 0 0--1 0 0
+    DTH 0 0--1 0 0
+    DVA 0 0--1 0 0
+    DTR 0 0--1 0 0
+    DTY 0 0--1 0 0
+
+======================================================================================
+rosetta_field lb: -6.40512 -2.47758 -3.91648  ub: 9.13688 2.33542 3.21652  size(A): 15.542 4.813 7.133 
+thread   1 init  rosetta_field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype13.rosetta_field.gz
+thread  15 init  rosetta_field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype4.rosetta_field.gz
+thread   8 init  rosetta_field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype12.rosetta_field.gz
+thread  32 init  rosetta_field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype7.rosetta_field.gz
+thread   7 init  rosetta_field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype3.rosetta_field.gz
+thread   6 init  rosetta_field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype11.rosetta_field.gz
+thread   9 init  rosetta_field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype10.rosetta_field.gz
+thread  20 init  rosetta_field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype1.rosetta_field.gz
+thread  25 init  rosetta_field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype2.rosetta_field.gz
+thread  18 init  rosetta_field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype5.rosetta_field.gz
+thread  14 init  rosetta_field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype9.rosetta_field.gz
+thread  26 init  rosetta_field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype19.rosetta_field.gz
+thread  21 init  rosetta_field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype21.rosetta_field.gz
+thread  29 init  rosetta_field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype15.rosetta_field.gz
+thread   3 init  rosetta_field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype14.rosetta_field.gz
+thread   4 init  rosetta_field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype16.rosetta_field.gz
+thread  17 init  rosetta_field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype20.rosetta_field.gz
+thread  13 init  rosetta_field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype6.rosetta_field.gz
+thread  19 init  rosetta_field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype17.rosetta_field.gz
+thread  16 init  rosetta_field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype18.rosetta_field.gz
+thread  28 init  rosetta_field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype8.rosetta_field.gz
+thread  32 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype9.rf.gz
+thread  15 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype5.rf.gz
+thread  16 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype12.rf.gz
+thread   8 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype1.rf.gz
+thread  17 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype3.rf.gz
+thread  13 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype9.rf.gz
+thread  18 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype20.rf.gz
+thread   6 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype14.rf.gz
+thread   7 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype7.rf.gz
+thread  29 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype2.rf.gz
+thread   9 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype3.rf.gz
+thread  20 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype21.rf.gz
+thread   1 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype10.rf.gz
+thread  25 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype8.rf.gz
+thread  21 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype16.rf.gz
+thread  22 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype8.rf.gz
+thread   4 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype15.rf.gz
+thread  12 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype2.rf.gz
+thread  28 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype7.rf.gz
+thread  11 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype13.rf.gz
+thread  14 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype5.rf.gz
+thread   3 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype10.rf.gz
+thread  31 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype11.rf.gz
+thread   5 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype19.rf.gz
+thread  24 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype17.rf.gz
+thread   2 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype6.rf.gz
+thread  23 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype11.rf.gz
+thread  30 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype4.rf.gz
+thread  19 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype6.rf.gz
+thread  10 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype18.rf.gz
+thread  26 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype4.rf.gz
+thread  27 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype1.rf.gz
+thread  25 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype12.rf.gz
+thread  13 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype13.rf.gz
+thread  14 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype14.rf.gz
+thread   4 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype15.rf.gz
+thread  26 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype16.rf.gz
+thread   6 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype17.rf.gz
+thread   1 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype18.rf.gz
+thread  17 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype19.rf.gz
+thread   8 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype20.rf.gz
+thread  22 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype21.rf.gz
+thread  23 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype1.rf.gz
+thread  32 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype2.rf.gz
+thread  15 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype3.rf.gz
+thread   7 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype4.rf.gz
+thread  20 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype5.rf.gz
+thread  29 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype6.rf.gz
+thread  18 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype7.rf.gz
+thread  27 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype8.rf.gz
+thread   9 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype9.rf.gz
+thread  28 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype10.rf.gz
+thread   3 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype11.rf.gz
+thread   5 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype12.rf.gz
+thread  19 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype13.rf.gz
+thread  12 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype14.rf.gz
+thread  11 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype15.rf.gz
+thread   2 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype16.rf.gz
+thread  21 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype17.rf.gz
+thread  16 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype18.rf.gz
+thread  31 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype19.rf.gz
+thread  30 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype20.rf.gz
+thread  10 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype21.rf.gz
+done with rifgen grids, not make target ones for docking
+thread  32 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype11.rf.gz
+thread   8 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype16.rf.gz
+thread  17 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype19.rf.gz
+thread  11 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype15.rf.gz
+thread  13 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype6.rf.gz
+thread  30 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype20.rf.gz
+thread  15 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype3.rf.gz
+thread  25 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype18.rf.gz
+thread  19 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype12.rf.gz
+thread   2 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype2.rf.gz
+thread  10 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype1.rf.gz
+thread  18 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype14.rf.gz
+thread   9 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype10.rf.gz
+thread  31 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype4.rf.gz
+thread   5 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype4.rf.gz
+thread   7 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype3.rf.gz
+thread  28 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype21.rf.gz
+thread  14 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype7.rf.gz
+thread  21 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype1.rf.gz
+thread   6 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype2.rf.gz
+thread  22 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype5.rf.gz
+thread  27 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype8.rf.gz
+thread   4 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype9.rf.gz
+thread  29 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype13.rf.gz
+thread  26 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype5.rf.gz
+thread  16 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype6.rf.gz
+thread   1 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype8.rf.gz
+thread  24 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype7.rf.gz
+thread  12 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype17.rf.gz
+thread   3 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype9.rf.gz
+thread  23 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype11.rf.gz
+thread  20 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype10.rf.gz
+thread  13 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype12.rf.gz
+thread   8 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype13.rf.gz
+thread  31 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype14.rf.gz
+thread   5 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype15.rf.gz
+thread  16 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype16.rf.gz
+thread  29 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype17.rf.gz
+thread   6 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype18.rf.gz
+thread  19 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype19.rf.gz
+thread   7 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype20.rf.gz
+thread  28 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype21.rf.gz
+thread  17 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype1.rf.gz
+thread   3 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype2.rf.gz
+thread  10 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype3.rf.gz
+thread  14 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype4.rf.gz
+thread  12 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype5.rf.gz
+thread  25 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype6.rf.gz
+thread  24 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype7.rf.gz
+thread  11 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype8.rf.gz
+thread  20 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype9.rf.gz
+thread  18 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype10.rf.gz
+thread  23 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype11.rf.gz
+thread  22 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype12.rf.gz
+thread  27 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype13.rf.gz
+thread  32 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype14.rf.gz
+thread   1 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype15.rf.gz
+thread   9 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype16.rf.gz
+thread  26 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype17.rf.gz
+thread  30 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype18.rf.gz
+thread  15 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype19.rf.gz
+thread   4 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype20.rf.gz
+thread  21 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype21.rf.gz
+thread   2 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype1.rf.gz
+thread  13 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype2.rf.gz
+thread  29 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype3.rf.gz
+thread  19 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype4.rf.gz
+thread  31 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype5.rf.gz
+thread   7 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype6.rf.gz
+thread   5 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype7.rf.gz
+thread   3 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype8.rf.gz
+thread  12 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype9.rf.gz
+thread  10 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype10.rf.gz
+thread  20 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype11.rf.gz
+thread  23 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype12.rf.gz
+thread  26 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype13.rf.gz
+thread  22 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype14.rf.gz
+thread   1 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype15.rf.gz
+thread  17 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype16.rf.gz
+thread  30 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype17.rf.gz
+thread  14 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype18.rf.gz
+thread   9 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype19.rf.gz
+thread  24 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype20.rf.gz
+thread   2 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype21.rf.gz
+thread  28 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype1.rf.gz
+thread   4 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype2.rf.gz
+thread   8 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype3.rf.gz
+thread  21 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype4.rf.gz
+thread  11 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype5.rf.gz
+thread  27 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype6.rf.gz
+thread  32 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype7.rf.gz
+thread   6 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype8.rf.gz
+thread  15 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype9.rf.gz
+thread  13 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype10.rf.gz
+thread  16 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype11.rf.gz
+thread  31 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype12.rf.gz
+thread  25 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype13.rf.gz
+thread  19 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype14.rf.gz
+thread  18 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype15.rf.gz
+thread   5 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype16.rf.gz
+thread  12 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype17.rf.gz
+thread   7 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype18.rf.gz
+thread  29 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype19.rf.gz
+thread   9 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype20.rf.gz
+thread   1 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype21.rf.gz
+thread  30 init bounding field  1 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype1.rf.gz
+thread  13 init bounding field  2 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype2.rf.gz
+thread  24 init bounding field  3 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype3.rf.gz
+thread  20 init bounding field  4 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype4.rf.gz
+thread  22 init bounding field  5 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype5.rf.gz
+thread  10 init bounding field  6 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype6.rf.gz
+thread  14 init bounding field  7 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype7.rf.gz
+thread  21 init bounding field  8 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype8.rf.gz
+thread  23 init bounding field  9 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype9.rf.gz
+thread  28 init bounding field 10 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype10.rf.gz
+thread  17 init bounding field 11 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype11.rf.gz
+thread   3 init bounding field 12 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype12.rf.gz
+thread  32 init bounding field 13 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype13.rf.gz
+thread   4 init bounding field 14 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype14.rf.gz
+thread  26 init bounding field 15 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype15.rf.gz
+thread   2 init bounding field 16 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype16.rf.gz
+thread  15 init bounding field 17 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype17.rf.gz
+thread   8 init bounding field 18 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype18.rf.gz
+thread  16 init bounding field 19 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype19.rf.gz
+thread   6 init bounding field 20 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype20.rf.gz
+thread  25 init bounding field 21 CACHE TO ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype21.rf.gz
+target_donors.size() 4 target_acceptors.size() 2
+Building DonorAcceptorCache with 0.1 safe distance
+Donors: Preparing DonorAcceptorCache with interaction range 3.3...
+Max sats at one voxel: 2
+Acceptors: Preparing DonorAcceptorCache with interaction range 3.3...
+Max sats at one voxel: 2
+Tested 1000 hbonds without errors
+RifGeneratorSimpleHbonds, cache data path: ./rifgen_init
+========================== DO HBOND ==================================
+adding don res AEE to std set
+adding acc res AEE to std set
+n_sat_groups = 6
+RifGenSimpleHbonds checking res AEE
+not putting AEE into rif, no N,CA,C
+not putting AEE into rif, no N,CA,C
+preloading / generating hbond_geometry files
+add AEE to hbgeom_exemplars_rtype_overrideadd add 
+add add add add add add AEE to hbgeom_exemplars_rtype_overrideAEE to hbgeom_exemplars_rtype_overrideAEE
+ to hbgeom_exemplars_rtype_overrideAEEadd add add add 
+AEEAEE to hbgeom_exemplars_rtype_override
+add  to hbgeom_exemplars_rtype_overrideAEE to hbgeom_exemplars_rtype_override
+AEE to hbgeom_exemplars_rtype_overrideAEE
+AEE to hbgeom_exemplars_rtype_override
+ to hbgeom_exemplars_rtype_override
+add AEE to hbgeom_exemplars_rtype_override
+
+
+AEE to hbgeom_exemplars_rtype_override
+AEEGENERATING HBOND GEOMETRIES pair  to hbgeom_exemplars_rtype_override
+6 of 15 : LYS/AEE -- FIX_ACC_
+GENERATING HBOND GEOMETRIES pair 1 of 15 : AEE/THR -- FIX_DON_
+==================================================================================================================
+===================== Thread 9 HBondedPairGenerator AEE THR ================================================
+==================================================================================================================
+==================================================================================================================
+===================== Thread 1 HBondedPairGenerator LYS AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing gen_hbond_rotations: spacing 0.12083 n1 52 n2 0.120836 n1 
+52 n2    short_tol 0.698132
+6   long_tol  
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 12 of 15 : TRP/AEE -- FIX_ACC_
+==================================================================================================================
+===================== Thread 18 HBondedPairGenerator TRP AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 9 of 15 : GLN/AEE -- FIX_ACC_
+==================================================================================================================
+===================== Thread 21 HBondedPairGenerator GLN AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+AEE to hbgeom_exemplars_rtype_override
+ to hbgeom_exemplars_rtype_override
+GENERATING HBOND GEOMETRIES pair 3 of 15 : THR/AEE -- FIX_ACC_
+==================================================================================================================
+===================== Thread 20 HBondedPairGenerator THR AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 15 of 15 : AEE/ASP -- FIX_DON_
+==================================================================================================================
+===================== Thread 3 HBondedPairGenerator AEE ASP ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 2 of 15 : AEE/SER -- FIX_DON_
+==================================================================================================================
+===================== Thread 6 HBondedPairGenerator AEE SER ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 7 of 15 : AEE/GLU -- FIX_DON_
+==================================================================================================================
+===================== Thread 30 HBondedPairGenerator AEE GLU ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 4 of 15 : SER/AEE -- FIX_ACC_
+==================================================================================================================
+===================== Thread 5 HBondedPairGenerator SER AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 8 of 15 : AEE/GLN -- FIX_DON_
+==================================================================================================================
+===================== Thread 12 HBondedPairGenerator AEE GLN ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 5 of 15 : ARG/AEE -- FIX_ACC_
+==================================================================================================================
+===================== Thread 22 HBondedPairGenerator ARG AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+GENERATING HBOND GEOMETRIES pair 14 of 15 : ASN/AEE -- FIX_ACC_
+==================================================================================================================
+===================== Thread 14 HBondedPairGenerator ASN AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 11 of 15 : TYR/AEE -- FIX_ACC_
+==================================================================================================================
+===================== Thread 7 HBondedPairGenerator TYR AEE ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 10 of 15 : AEE/TYR -- FIX_DON_
+==================================================================================================================
+===================== Thread 23 HBondedPairGenerator AEE TYR ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 13 of 15 : AEE/ASN -- FIX_DON_
+==================================================================================================================
+===================== Thread 19 HBondedPairGenerator AEE ASN ================================================
+==================================================================================================================
+alignment atomnos AEE 31 32 33
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+-----LYS-----AEE
+-----ASN-----AEE
+-----AEE-----ASN
+-----SER-----AEE
+-----TYR-----AEE
+-----AEE-----THR
+-----THR-----AEE
+-----TRP-----AEE
+-----ARG-----AEE
+-----AEE-----ASP
+-----AEE-----GLN
+-----AEE-----TYR
+-----AEE-----GLU
+-----AEE-----SER
+-----GLN-----AEE
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+----done-----
+found AEE in exemplars
+----done-----
+found AEE in exemplars
+----done-----
+found AEE in exemplars
+----done-----
+----done-----
+found AEE in exemplars
+----done-----
+found found AEE in exemplarsAEE
+adding rotamers res1 LYS 95-125 95 in exemplars
+no rotamers for res1 no rotamers for res1 AEE
+no rotamers for res1 AEE
+AEE
+ 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 adding rotamers res2 117SER  118236-289  119236 120 121 122 123 124 125
+no rotamers for res2 AEE
+adding rotamers res2 ASN 154-166 154adding rotamers res2 TYR 366-387 366adding rotamers res1 TRP 347-365 347found AEE in exemplars
+ 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  
+ 155 156  258157 158 259 260 159 261 160 262 263 264 161 162consider orbitals for atom   1631265  164 N5  266
+ 267 268 269 270 271  272 165273 274 275 166
+found AEE in exemplars
+ 276 277 278 279consider orbitals for atom  2802  N4 
+acceptor orbitals, index: 1 atom:  N5  orbitals: [25 ]281
+ 282acceptor orbitals, index: 2 atom:  N4 found  283HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34   orbitals:  [30]
+
+ 284 285 286 287 288donor atoms:  1HZ consider orbitals for atom , 2891  OD13672HZ , 
+AEE 368 369
+acceptor orbitals, index:  1 atom: 3703HZ  in exemplars
+ 348 349HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  ,  
+ OD1 orbitals: [3, 4]
+371donor atoms:  H15,  H5 ,  H22,  H25, 
+ 372  373
+donor nchi: donor nchi: 4
+donor num rots: 31
+7
+consider orbitals for atom 3501  OG 
+found  AEE 351acceptor num rots: donor num rots: 1
+374acceptor orbitals, index: acceptor num rots: 113
+   in exemplars375
+1
+N hbond geom samples: 11076
+N hbond geom samples: adding rotamers res1 ARGno rotamers for res1 total raw samples: 2060136
+11076352
+  353 354total raw samples: 1151904
+ atom:  OG   orbitals: 355[3, 4]
+ AEE
+194-235 194 donor atoms: 356 H15376 357,  358  377 H5 359  360, 378 H22,  H25 , 
+donor nchi: 7
+donor num rots: 1
+acceptor num rots: 54
+ 361N hbond geom samples: 11076 
+362 363total raw samples: 4784832
+379 380 381  382364 365
+adding rotamers res1 no rotamers for res2 AEE
+THR 290-343  383290 384 385 386 387
+found AEE in exemplars
+HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  found 
+adding rotamers res2 GLN 169-consider orbitals for atom AEE1  OH 193
+acceptor orbitals, index: 1 atom:  in exemplars OH  orbitals: [13, 14]
+ donor atoms:  H15
+, 195 H5 ,   H22,  H25, 
+ 196 197 198donor nchi: 7
+169donor num rots: 1
+acceptor num rots: 22
+N hbond geom samples: 11076
+HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34   199 200 201 202 
+203found  291 292AEEconsider orbitals for atom  1total raw samples:  in exemplars  N5 
+consider orbitals for atom 2  N4 
+
+1949376
+ 293acceptor orbitals, index: 1 atom:  N5  orbitals: [25]
+acceptor orbitals, index: 2 atom:  N4  orbitals: [30]
+donor atoms:   HE1no rotamers for res1 AEE, 
+204 205 206 207donor nchi:  2082
+
+donor num rots: 19
+ no rotamers for res1 AEE209294
+ acceptor num rots: 1
+295 296 297 298N hbond geom samples: 11076
+  210170 211 212total raw samples:   171found 420888213
+  214 215172 216 217  299 218 173adding rotamers res1 TYR219 174  366-387AEE   in exemplars220 300
+175adding rotamers res1 GLN 169-193 169   176301  302221177 222 303 304366 223   305178224 179  180306  225181no rotamers for res1 AEE  182  307183 184 308 309 310 185 311 312 313 314 226 315186
+ 187  227 228 229 230 231 232 233  234 235
+found AEEno rotamers for res2  in exemplars
+adding rotamers res2 GLU 18-44 18316 170 171 172 173 174 175 176  AEE177 178 179317 180188
+ adding rotamers res2   189ASP318 319181   320182 11  183 190184  191185 192-17  18611321 187 188 189 190 191 192 193
+no rotamers for res2 AEE 
+322adding rotamers res2 THR  367290-343 290 368 369 370 371   372 373 374 375 376 377 378 379 380193 
+381323 324 325  326382adding rotamers res1 SER  327236-289  236383 384  385328 386 387
+no rotamers for res2 AEE
+ 329 330 331 332HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34   333
+ 19 20 21 22 23 24 25 26  consider orbitals for atom 334 335271  336 OE1 
+ 28337  29291  30HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  292 
+31acceptor orbitals, index: 1 atom:  OE1 orbitals: [3, 4]
+donor atoms:  H15,  H5 ,  H22,  H25, 
+donor nchi:  338 339 340 341 7
+ adding rotamers res1 342 343293 294
+ HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  
+ consider orbitals for atom 1  N5 
+32 no rotamers for res2 consider orbitals for atom 332  N4 
+donor num rots: 12ASN acceptor orbitals, index: 154-166 1consider orbitals for atom 1AEE  237
+
+ atom:  N5  orbitals: [25]
+ 113154   N5 
+acceptor num rots: ====================================================================================================================================================================================================================================34acceptor orbitals, index: 2 atom:  N4  orbitals: [30]25
+
+295 HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  N hbond geom samples: 11076
+  total raw samples: 2215200donor atoms: 
+ HE , 35
+141HH1296consider orbitals for atom  15
+ 16
+ 17,   2HH1, 1HH2, 2HH2, 
+consider orbitals for atom 12382 36  N5 
+============ Thread 
+1 generating hotspot geometries  LYS AEE =======================================
+297  ==================================================================================================================
+ 298donor nchi: 4============ Thread consider orbitals for atom 37239 N4 
+  donor num rots: 42
+2acceptor num rots: 1
+299HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  
+N hbond geom samples: 11076
+ 6consider orbitals for atom 300  N4  generating hotspot geometries total raw samples: 1  AEE 240 OD1
+ 38
+ 
+465192039consider orbitals for atom  155 HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  
+40
+SER =======================================
+==================================================================================================================
+2  OD2
+ 301acceptor orbitals, index: 41 1 acceptor orbitals, index: 1 atom:  N5  orbitals: consider orbitals for atom [ atom: 142 OD1302  acceptor orbitals, index: 303  304  1  orbitals:  N5 [3, 2543]
+4
+ consider orbitals for atom 44
+241 242 243 244 245 246 HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  247]
+156 
+305consider orbitals for atom 1 atom:  N5  orbitals: acceptor orbitals, index: [  25]
+22248 atom:   249306 250 OD2acceptor orbitals, index:  orbitals:  157acceptor orbitals, index:  OE1 [ 158
+ N4  1595
+2 atom:  , 6]
+acceptor orbitals, index: 1================================================================================================================== atom: donor atoms:  H15, 251 H5 consider orbitals for atom , 160 N5  orbitals: [25]
+ 2================================================================================================================== 252307 N4 
+ orbitals: [30]
+ H22 ,   H25161============ Thread 308  
+, 16218 2donor atoms:  generating hotspot geometries TRP OE2============ Thread  atom:  N4 1HE2 orbitals:  acceptor orbitals, index: [AEE
+ 3092 atom:  N4  orbitals: 163[ ,  =======================================
+
+302HE2 ==================================================================================================================
+acceptor orbitals, index: 1 atom:  OE1 orbitals: [3, 4]
+]acceptor orbitals, index: 2
+ atom: ,  2330310253164donor atoms:  HG1  ]
+254 donor atoms: 255 ,  HH , 
+ generating hotspot geometries 311
+
+donor nchi: AEE donor nchi: 3 OE2165 donor nchi: 3
+TYRdonor nchi: 72562  donor num rots: 22
+
+ 257 258 259 ======================================= donor num rots: 
+acceptor num rots: 25260 261166 262 263 
+donor num rots: 1264
+312donor num rots: 1acceptor num rots: 7 
+265
+
+
+ 
+  orbitals: 54313acceptor num rots: [1 314N hbond geom samples: 26611076
+
+ 315 316 317 318
+total raw samples: 487344
+ 3195N hbond geom samples: 11076
+==================================================================================================================
+N hbond geom samples:   , no rotamers for res2 AEE
+2676 268]acceptor num rots:  
+132011076total raw samples: 
+N hbond geom samples: donor atoms: 11076 H15269
+ 321 322,  H5 ,  H22 270 
+1107600
+323 324,  325 total raw samples:  H25, 
+1196208
+ 271 272donor nchi: 7 
+273326donor num rots: 1
+ total raw samples: 1240512274
+ 327 328 329 330 331 332 acceptor num rots: 27527 
+N hbond geom samples: 11076
+333 334 335 336 337 338 339 340 341 total raw samples: 3424784832
+ 343
+HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  
+ 276consider orbitals for atom  1277  278 N5  HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  279
+
+consider orbitals for atom 2  N4 
+acceptor orbitals, index: 1 atom:  N5  orbitals: [25]
+ 280 281 282acceptor orbitals, index: 2  atom:  N4  orbitals: [30]
+donor atoms: 1HD2, 2HD2, 
+donor nchi: 2consider orbitals for atom 
+1  OG1
+acceptor orbitals, index: 1 atom:  OG1 orbitals: [3, 4]donor num rots: 13
+acceptor num rots: 1
+N hbond geom samples: 11076
+total raw samples: 575952
+
+donor atoms:  H15,  H5 ,  H22,  H25, 
+donor nchi: 7
+donor num rots: 1
+283acceptor num rots: 54
+==================================================================================================================
+============ Thread 12 generating hotspot geometries AEE GLN =======================================
+==================================================================================================================
+ 284 285 286 287 N hbond geom samples: 288 11076289
+total raw samples: 4784832
+
+no rotamers for res2 AEE
+HBondedPairGenerator: align atoms:  C25  C26  C27
+1  C13  2  C10  3  C9   4  C8   5  C7   6  N2   7  C1   8  C2   9  N1   10  C3   11  C4   12  C5   13  C6   14  C11  15  C12  16  C14  17  N3   18  C17  19  C16  20  C15  21  C19  22  N5   23  C18  24  N4   25  N6   26  C20  27  C21  28  C22  29  C23  30  C24  31  C25  32  C26  33  C27  34  H19  35  H18  36  H16  37  H17  38  H15  39  H1   40  H2   41  H3   42  H4   43  H5   44  H6   45  H7   46  H8   47  H9   48  H10  49  H11  50  H12  51  H13  52  H14  53  H20  54  H21  55  H22  56  H23  57  H24  58  H25  59  H26  60  H27  61  H28  62  H29  63  H30  64  H31  65  H32  66  H33  67  H34  
+consider orbitals for atom 1  N5 
+consider orbitals for atom 2  N4 
+acceptor orbitals, index: 1 atom:  N5  orbitals: [25]
+acceptor orbitals, index: 2 atom:  N4  orbitals: [30]
+donor atoms:  HG , 
+donor nchi: 2
+donor num rots: 54
+acceptor num rots: 1
+N hbond geom samples: 11076
+total raw samples: 1196208
+==================================================================================================================
+============ Thread 21 generating hotspot geometries GLN AEE =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 22 generating hotspot geometries ARG AEE =======================================
+==================================================================================================================
+====================================================================================================================================================================================================================================
+============ Thread 9 generating hotspot geometries AEE THR =======================================
+==================================================================================================================
+
+============ Thread 14 generating hotspot geometries ASN AEE =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 7 generating hotspot geometries TYR AEE =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 20 generating hotspot geometries THR AEE =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 5 generating hotspot geometries SER AEE =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 30 generating hotspot geometries AEE GLU =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 19 generating hotspot geometries AEE ASN =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 3 generating hotspot geometries AEE ASP =======================================
+==================================================================================================================
+Thread 5 Samples SER -> AEE fix_acceptor 100.000K of at most   1.196M progress:  8.35967%
+Thread 6 Samples AEE -> SER fix_donor 100.000K of at most   4.785M progress:  2.08992%
+Thread 21 Samples GLN -> AEE fix_acceptor 100.000K of at most   1.108M progress:  9.02844%
+Thread 1 Samples LYS -> AEE fix_acceptor 100.000K of at most   2.060M progress:  4.854%
+Thread 19 Samples AEE -> ASN fix_donor 100.000K of at most   1.152M progress:  8.68119%
+Thread 14 Samples ASN -> AEE fix_acceptor 100.000K of at most 575.952K progress:  17.3624%
+Thread 20 Samples THR -> AEE fix_acceptor 100.000K of at most   1.196M progress:  8.35967%
+Thread 9 Samples AEE -> THR fix_donor 100.000K of at most   4.785M progress:  2.08992%
+Thread 3 Samples AEE -> ASP fix_donor 100.000K of at most   1.241M progress:  8.06111%
+Thread 18 Samples TRP -> AEE fix_acceptor 100.000K of at most 420.888K progress:  23.7591%
+Thread 30 Samples AEE -> GLU fix_donor 100.000K of at most   4.785M progress:  2.08992%
+Thread 7 Samples TYR -> AEE fix_acceptor 100.000K of at most 487.344K progress:  20.5192%
+Thread 12 Samples AEE -> GLN fix_donor 100.000K of at most   2.215M progress:  4.51422%
+Thread 5 Samples SER -> AEE fix_acceptor 200.000K of at most   1.196M progress:  16.7194%
+Thread 22 Samples ARG -> AEE fix_acceptor 100.000K of at most   4.652M progress:  2.14963%
+Thread 23 Samples AEE -> TYR fix_donor 100.000K of at most   1.949M progress:  5.1298%
+Thread 6 Samples AEE -> SER fix_donor 200.000K of at most   4.785M progress:  4.17985%
+Thread 21 Samples GLN -> AEE fix_acceptor 200.000K of at most   1.108M progress:  18.057%
+Thread 1 Samples LYS -> AEE fix_acceptor 200.000K of at most   2.060M progress:  9.70805%
+Thread 14 Samples ASN -> AEE fix_acceptor 200.000K of at most 575.952K progress:  34.7249%
+Thread 20 Samples THR -> AEE fix_acceptor 200.000K of at most   1.196M progress:  16.7194%
+Thread 19 Samples AEE -> ASN fix_donor 200.000K of at most   1.152M progress:  17.3625%
+Thread 5 Samples SER -> AEE fix_acceptor 300.000K of at most   1.196M progress:  25.0792%
+Thread 18 Samples TRP -> AEE fix_acceptor 200.000K of at most 420.888K progress:  47.5183%
+Thread 6 Samples AEE -> SER fix_donor 300.000K of at most   4.785M progress:  6.26979%
+Thread 9 Samples AEE -> THR fix_donor 200.000K of at most   4.785M progress:  4.17985%
+Thread 3 Samples AEE -> ASP fix_donor 200.000K of at most   1.241M progress:  16.1223%
+Thread 21 Samples GLN -> AEE fix_acceptor 300.000K of at most   1.108M progress:  27.0855%
+Thread 1 Samples LYS -> AEE fix_acceptor 300.000K of at most   2.060M progress:  14.5621%
+Thread 30 Samples AEE -> GLU fix_donor 200.000K of at most   4.785M progress:  4.17985%
+Thread 7 Samples TYR -> AEE fix_acceptor 200.000K of at most 487.344K progress:  41.0386%
+Thread 12 Samples AEE -> GLN fix_donor 200.000K of at most   2.215M progress:  9.02849%
+Thread 5 Samples SER -> AEE fix_acceptor 400.000K of at most   1.196M progress:  33.4389%
+Thread 22 Samples ARG -> AEE fix_acceptor 200.000K of at most   4.652M progress:  4.29928%
+Thread 23 Samples AEE -> TYR fix_donor 200.000K of at most   1.949M progress:  10.2596%
+Thread 14 Samples ASN -> AEE fix_acceptor 300.000K of at most 575.952K progress:  52.0875%
+Thread 6 Samples AEE -> SER fix_donor 400.000K of at most   4.785M progress:  8.35973%
+Thread 20 Samples THR -> AEE fix_acceptor 300.000K of at most   1.196M progress:  25.0792%
+Thread 18 Samples TRP -> AEE fix_acceptor 300.000K of at most 420.888K progress:  71.2776%
+Thread 21 Samples GLN -> AEE fix_acceptor 400.000K of at most   1.108M progress:  36.114%
+Thread 1 Samples LYS -> AEE fix_acceptor 400.000K of at most   2.060M progress:  19.4161%
+Thread 9 Samples AEE -> THR fix_donor 300.000K of at most   4.785M progress:  6.26979%
+Thread 5 Samples SER -> AEE fix_acceptor 500.000K of at most   1.196M progress:  41.7987%
+Thread 19 Samples AEE -> ASN fix_donor 300.000K of at most   1.152M progress:  26.0438%
+Thread 3 Samples AEE -> ASP fix_donor 300.000K of at most   1.241M progress:  24.1835%
+Thread 30 Samples AEE -> GLU fix_donor 300.000K of at most   4.785M progress:  6.26979%
+Thread 7 Samples TYR -> AEE fix_acceptor 300.000K of at most 487.344K progress:  61.558%
+Thread 6 Samples AEE -> SER fix_donor 500.000K of at most   4.785M progress:  10.4497%
+total TRP AEE 383.882K
+SAVING 383.882K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots19__ACC_TRP-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+383882
+Thread 14 Samples ASN -> AEE fix_acceptor 400.000K of at most 575.952K progress:  69.4501%
+Thread 21 Samples GLN -> AEE fix_acceptor 500.000K of at most   1.108M progress:  45.1426%
+Thread 12 Samples AEE -> GLN fix_donor 300.000K of at most   2.215M progress:  13.5428%
+Thread 20 Samples THR -> AEE fix_acceptor 400.000K of at most   1.196M progress:  33.4389%
+Thread 1 Samples LYS -> AEE fix_acceptor 500.000K of at most   2.060M progress:  24.2702%
+Thread 5 Samples SER -> AEE fix_acceptor 600.000K of at most   1.196M progress:  50.1584%
+Thread 22 Samples ARG -> AEE fix_acceptor 300.000K of at most   4.652M progress:  6.44893%
+Thread 23 Samples AEE -> TYR fix_donor 300.000K of at most   1.949M progress:  15.3895%
+Thread 9 Samples AEE -> THR fix_donor 400.000K of at most   4.785M progress:  8.35973%
+Thread 19 Samples AEE -> ASN fix_donor 400.000K of at most   1.152M progress:  34.725%
+Thread 6 Samples AEE -> SER fix_donor 600.000K of at most   4.785M progress:  12.5396%
+Thread 21 Samples GLN -> AEE fix_acceptor 600.000K of at most   1.108M progress:  54.1711%
+Thread 7 Samples TYR -> AEE fix_acceptor 400.000K of at most 487.344K progress:  82.0773%
+Thread 3 Samples AEE -> ASP fix_donor 400.000K of at most   1.241M progress:  32.2447%
+Thread 1 Samples LYS -> AEE fix_acceptor 600.000K of at most   2.060M progress:  29.1242%
+Thread 30 Samples AEE -> GLU fix_donor 400.000K of at most   4.785M progress:  8.35973%
+Thread 20 Samples THR -> AEE fix_acceptor 500.000K of at most   1.196M progress:  41.7987%
+Thread 5 Samples SER -> AEE fix_acceptor 700.000K of at most   1.196M progress:  58.5182%
+Thread 14 Samples ASN -> AEE fix_acceptor 500.000K of at most 575.952K progress:  86.8126%
+total ASN AEE 502.139K
+SAVING 502.139K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots13__ACC_ASN-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+502139
+total TYR AEE 431.036K
+SAVING 431.036K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots22__ACC_TYR-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+431036
+Thread 6 Samples AEE -> SER fix_donor 700.000K of at most   4.785M progress:  14.6295%
+Thread 19 Samples AEE -> ASN fix_donor 500.000K of at most   1.152M progress:  43.4063%
+Thread 21 Samples GLN -> AEE fix_acceptor 700.000K of at most   1.108M progress:  63.1996%
+Thread 9 Samples AEE -> THR fix_donor 500.000K of at most   4.785M progress:  10.4497%
+Thread 12 Samples AEE -> GLN fix_donor 400.000K of at most   2.215M progress:  18.057%
+Thread 3 Samples AEE -> ASP fix_donor 500.000K of at most   1.241M progress:  40.3059%
+Thread 1 Samples LYS -> AEE fix_acceptor 700.000K of at most   2.060M progress:  33.9783%
+Thread 5 Samples SER -> AEE fix_acceptor 800.000K of at most   1.196M progress:  66.8779%
+Thread 23 Samples AEE -> TYR fix_donor 400.000K of at most   1.949M progress:  20.5193%
+Thread 22 Samples ARG -> AEE fix_acceptor 400.000K of at most   4.652M progress:  8.59858%
+Thread 20 Samples THR -> AEE fix_acceptor 600.000K of at most   1.196M progress:  50.1584%
+Thread 30 Samples AEE -> GLU fix_donor 500.000K of at most   4.785M progress:  10.4497%
+Thread 3 Samples AEE -> ASP fix_donor 600.000K of at most   1.241M progress:  48.367%
+Thread 21 Samples GLN -> AEE fix_acceptor 800.000K of at most   1.108M progress:  72.2282%
+Thread 6 Samples AEE -> SER fix_donor 800.000K of at most   4.785M progress:  16.7195%
+Thread 5 Samples SER -> AEE fix_acceptor 900.000K of at most   1.196M progress:  75.2377%
+Thread 19 Samples AEE -> ASN fix_donor 600.000K of at most   1.152M progress:  52.0876%
+Thread 1 Samples LYS -> AEE fix_acceptor 800.000K of at most   2.060M progress:  38.8323%
+Thread 20 Samples THR -> AEE fix_acceptor 700.000K of at most   1.196M progress:  58.5182%
+Thread 9 Samples AEE -> THR fix_donor 600.000K of at most   4.785M progress:  12.5396%
+Thread 3 Samples AEE -> ASP fix_donor 700.000K of at most   1.241M progress:  56.4282%
+Thread 23 Samples AEE -> TYR fix_donor 500.000K of at most   1.949M progress:  25.6492%
+Thread 5 Samples SER -> AEE fix_acceptor   1.000M of at most   1.196M progress:  83.5974%
+Thread 21 Samples GLN -> AEE fix_acceptor 900.000K of at most   1.108M progress:  81.2567%
+Thread 22 Samples ARG -> AEE fix_acceptor 500.000K of at most   4.652M progress:  10.7482%
+total SER AEE   1.013M
+SAVING   1.013M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__ACC_SER-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+1013328
+Thread 30 Samples AEE -> GLU fix_donor 600.000K of at most   4.785M progress:  12.5396%
+Thread 20 Samples THR -> AEE fix_acceptor 800.000K of at most   1.196M progress:  66.8779%
+Thread 6 Samples AEE -> SER fix_donor 900.000K of at most   4.785M progress:  18.8094%
+Thread 1 Samples LYS -> AEE fix_acceptor 900.000K of at most   2.060M progress:  43.6864%
+Thread 12 Samples AEE -> GLN fix_donor 500.000K of at most   2.215M progress:  22.5713%
+Thread 19 Samples AEE -> ASN fix_donor 700.000K of at most   1.152M progress:  60.7689%
+total GLN AEE 962.186K
+SAVING 962.186K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots25__ACC_GLN-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+962186
+Thread 3 Samples AEE -> ASP fix_donor 800.000K of at most   1.241M progress:  64.4894%
+Thread 20 Samples THR -> AEE fix_acceptor 900.000K of at most   1.196M progress:  75.2377%
+Thread 1 Samples LYS -> AEE fix_acceptor   1.000M of at most   2.060M progress:  48.5404%
+Thread 30 Samples AEE -> GLU fix_donor 700.000K of at most   4.785M progress:  14.6295%
+Thread 6 Samples AEE -> SER fix_donor   1.000M of at most   4.785M progress:  20.8994%
+Thread 19 Samples AEE -> ASN fix_donor 800.000K of at most   1.152M progress:  69.4501%
+Thread 23 Samples AEE -> TYR fix_donor 600.000K of at most   1.949M progress:  30.779%
+Thread 9 Samples AEE -> THR fix_donor 700.000K of at most   4.785M progress:  14.6295%
+Thread 3 Samples AEE -> ASP fix_donor 900.000K of at most   1.241M progress:  72.5506%
+Thread 22 Samples ARG -> AEE fix_acceptor 600.000K of at most   4.652M progress:  12.8979%
+total THR AEE 978.195K
+SAVING 978.195K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__ACC_THR-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+978195
+total AEE ASN 833.668K
+SAVING 833.668K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots13__DON_AEE-ASN__AEE_rot_min_0001.rel_rot_pos.gz
+833668
+Thread 12 Samples AEE -> GLN fix_donor 600.000K of at most   2.215M progress:  27.0855%
+total AEE ASP 914.794K
+SAVING 914.794K HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots7__DON_AEE-ASP__AEE_rot_min_0001.rel_rot_pos.gz
+914794
+Thread 1 Samples LYS -> AEE fix_acceptor   1.100M of at most   2.060M progress:  53.3945%
+Thread 30 Samples AEE -> GLU fix_donor 800.000K of at most   4.785M progress:  16.7195%
+Thread 6 Samples AEE -> SER fix_donor   1.100M of at most   4.785M progress:  22.9893%
+Thread 12 Samples AEE -> GLN fix_donor 700.000K of at most   2.215M progress:  31.5998%
+Thread 23 Samples AEE -> TYR fix_donor 700.000K of at most   1.949M progress:  35.9089%
+Thread 22 Samples ARG -> AEE fix_acceptor 700.000K of at most   4.652M progress:  15.0475%
+Thread 9 Samples AEE -> THR fix_donor 800.000K of at most   4.785M progress:  16.7195%
+Thread 1 Samples LYS -> AEE fix_acceptor   1.200M of at most   2.060M progress:  58.2485%
+Thread 12 Samples AEE -> GLN fix_donor 800.000K of at most   2.215M progress:  36.1141%
+Thread 30 Samples AEE -> GLU fix_donor 900.000K of at most   4.785M progress:  18.8094%
+Thread 6 Samples AEE -> SER fix_donor   1.200M of at most   4.785M progress:  25.0792%
+Thread 23 Samples AEE -> TYR fix_donor 800.000K of at most   1.949M progress:  41.0387%
+Thread 1 Samples LYS -> AEE fix_acceptor   1.300M of at most   2.060M progress:  63.1026%
+Thread 22 Samples ARG -> AEE fix_acceptor 800.000K of at most   4.652M progress:  17.1972%
+Thread 9 Samples AEE -> THR fix_donor 900.000K of at most   4.785M progress:  18.8094%
+Thread 12 Samples AEE -> GLN fix_donor 900.000K of at most   2.215M progress:  40.6283%
+Thread 30 Samples AEE -> GLU fix_donor   1.000M of at most   4.785M progress:  20.8994%
+Thread 1 Samples LYS -> AEE fix_acceptor   1.400M of at most   2.060M progress:  67.9566%
+Thread 23 Samples AEE -> TYR fix_donor 900.000K of at most   1.949M progress:  46.1686%
+Thread 6 Samples AEE -> SER fix_donor   1.300M of at most   4.785M progress:  27.1692%
+Thread 12 Samples AEE -> GLN fix_donor   1.000M of at most   2.215M progress:  45.1426%
+Thread 22 Samples ARG -> AEE fix_acceptor 900.000K of at most   4.652M progress:  19.3468%
+Thread 9 Samples AEE -> THR fix_donor   1.000M of at most   4.785M progress:  20.8994%
+Thread 1 Samples LYS -> AEE fix_acceptor   1.500M of at most   2.060M progress:  72.8107%
+Thread 6 Samples AEE -> SER fix_donor   1.400M of at most   4.785M progress:  29.2591%
+Thread 12 Samples AEE -> GLN fix_donor   1.100M of at most   2.215M progress:  49.6569%
+Thread 30 Samples AEE -> GLU fix_donor   1.100M of at most   4.785M progress:  22.9893%
+Thread 23 Samples AEE -> TYR fix_donor   1.000M of at most   1.949M progress:  51.2984%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.000M of at most   4.652M progress:  21.4965%
+Thread 6 Samples AEE -> SER fix_donor   1.500M of at most   4.785M progress:  31.349%
+Thread 1 Samples LYS -> AEE fix_acceptor   1.600M of at most   2.060M progress:  77.6647%
+Thread 9 Samples AEE -> THR fix_donor   1.100M of at most   4.785M progress:  22.9893%
+Thread 12 Samples AEE -> GLN fix_donor   1.200M of at most   2.215M progress:  54.1711%
+Thread 23 Samples AEE -> TYR fix_donor   1.100M of at most   1.949M progress:  56.4283%
+Thread 30 Samples AEE -> GLU fix_donor   1.200M of at most   4.785M progress:  25.0792%
+Thread 6 Samples AEE -> SER fix_donor   1.600M of at most   4.785M progress:  33.439%
+Thread 9 Samples AEE -> THR fix_donor   1.200M of at most   4.785M progress:  25.0792%
+Thread 1 Samples LYS -> AEE fix_acceptor   1.700M of at most   2.060M progress:  82.5188%
+total LYS AEE   1.713M
+SAVING   1.713M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots31__ACC_LYS-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+1713424
+Thread 22 Samples ARG -> AEE fix_acceptor   1.100M of at most   4.652M progress:  23.6461%
+Thread 12 Samples AEE -> GLN fix_donor   1.300M of at most   2.215M progress:  58.6854%
+Thread 6 Samples AEE -> SER fix_donor   1.700M of at most   4.785M progress:  35.5289%
+Thread 23 Samples AEE -> TYR fix_donor   1.200M of at most   1.949M progress:  61.5581%
+Thread 9 Samples AEE -> THR fix_donor   1.300M of at most   4.785M progress:  27.1692%
+Thread 30 Samples AEE -> GLU fix_donor   1.300M of at most   4.785M progress:  27.1692%
+Thread 6 Samples AEE -> SER fix_donor   1.800M of at most   4.785M progress:  37.6189%
+Thread 12 Samples AEE -> GLN fix_donor   1.400M of at most   2.215M progress:  63.1997%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.200M of at most   4.652M progress:  25.7958%
+Thread 9 Samples AEE -> THR fix_donor   1.400M of at most   4.785M progress:  29.2591%
+Thread 23 Samples AEE -> TYR fix_donor   1.300M of at most   1.949M progress:  66.688%
+Thread 30 Samples AEE -> GLU fix_donor   1.400M of at most   4.785M progress:  29.2591%
+Thread 6 Samples AEE -> SER fix_donor   1.900M of at most   4.785M progress:  39.7088%
+Thread 9 Samples AEE -> THR fix_donor   1.500M of at most   4.785M progress:  31.349%
+Thread 12 Samples AEE -> GLN fix_donor   1.500M of at most   2.215M progress:  67.7139%
+total AEE GLN   1.509M
+SAVING   1.509M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots25__DON_AEE-GLN__AEE_rot_min_0001.rel_rot_pos.gz
+1509137
+Thread 22 Samples ARG -> AEE fix_acceptor   1.300M of at most   4.652M progress:  27.9454%
+Thread 30 Samples AEE -> GLU fix_donor   1.500M of at most   4.785M progress:  31.349%
+Thread 6 Samples AEE -> SER fix_donor   2.000M of at most   4.785M progress:  41.7987%
+Thread 23 Samples AEE -> TYR fix_donor   1.400M of at most   1.949M progress:  71.8178%
+Thread 9 Samples AEE -> THR fix_donor   1.600M of at most   4.785M progress:  33.439%
+Thread 30 Samples AEE -> GLU fix_donor   1.600M of at most   4.785M progress:  33.439%
+Thread 6 Samples AEE -> SER fix_donor   2.100M of at most   4.785M progress:  43.8887%
+Thread 9 Samples AEE -> THR fix_donor   1.700M of at most   4.785M progress:  35.5289%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.400M of at most   4.652M progress:  30.0951%
+Thread 23 Samples AEE -> TYR fix_donor   1.500M of at most   1.949M progress:  76.9476%
+Thread 6 Samples AEE -> SER fix_donor   2.200M of at most   4.785M progress:  45.9786%
+total AEE TYR   1.527M
+SAVING   1.527M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots22__DON_AEE-TYR__AEE_rot_min_0001.rel_rot_pos.gz
+1526977
+Thread 30 Samples AEE -> GLU fix_donor   1.700M of at most   4.785M progress:  35.5289%
+Thread 9 Samples AEE -> THR fix_donor   1.800M of at most   4.785M progress:  37.6189%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.500M of at most   4.652M progress:  32.2447%
+Thread 6 Samples AEE -> SER fix_donor   2.300M of at most   4.785M progress:  48.0685%
+Thread 30 Samples AEE -> GLU fix_donor   1.800M of at most   4.785M progress:  37.6189%
+Thread 9 Samples AEE -> THR fix_donor   1.900M of at most   4.785M progress:  39.7088%
+Thread 6 Samples AEE -> SER fix_donor   2.400M of at most   4.785M progress:  50.1585%
+Thread 9 Samples AEE -> THR fix_donor   2.000M of at most   4.785M progress:  41.7987%
+Thread 30 Samples AEE -> GLU fix_donor   1.900M of at most   4.785M progress:  39.7088%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.600M of at most   4.652M progress:  34.3944%
+Thread 6 Samples AEE -> SER fix_donor   2.500M of at most   4.785M progress:  52.2484%
+Thread 9 Samples AEE -> THR fix_donor   2.100M of at most   4.785M progress:  43.8887%
+Thread 30 Samples AEE -> GLU fix_donor   2.000M of at most   4.785M progress:  41.7987%
+Thread 6 Samples AEE -> SER fix_donor   2.600M of at most   4.785M progress:  54.3384%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.700M of at most   4.652M progress:  36.544%
+Thread 9 Samples AEE -> THR fix_donor   2.200M of at most   4.785M progress:  45.9786%
+Thread 30 Samples AEE -> GLU fix_donor   2.100M of at most   4.785M progress:  43.8887%
+Thread 6 Samples AEE -> SER fix_donor   2.700M of at most   4.785M progress:  56.4283%
+Thread 9 Samples AEE -> THR fix_donor   2.300M of at most   4.785M progress:  48.0685%
+Thread 30 Samples AEE -> GLU fix_donor   2.200M of at most   4.785M progress:  45.9786%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.800M of at most   4.652M progress:  38.6937%
+Thread 6 Samples AEE -> SER fix_donor   2.800M of at most   4.785M progress:  58.5182%
+Thread 9 Samples AEE -> THR fix_donor   2.400M of at most   4.785M progress:  50.1585%
+Thread 30 Samples AEE -> GLU fix_donor   2.300M of at most   4.785M progress:  48.0685%
+Thread 6 Samples AEE -> SER fix_donor   2.900M of at most   4.785M progress:  60.6082%
+Thread 22 Samples ARG -> AEE fix_acceptor   1.900M of at most   4.652M progress:  40.8433%
+Thread 9 Samples AEE -> THR fix_donor   2.500M of at most   4.785M progress:  52.2484%
+Thread 30 Samples AEE -> GLU fix_donor   2.400M of at most   4.785M progress:  50.1585%
+Thread 6 Samples AEE -> SER fix_donor   3.000M of at most   4.785M progress:  62.6981%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.000M of at most   4.652M progress:  42.993%
+Thread 9 Samples AEE -> THR fix_donor   2.600M of at most   4.785M progress:  54.3384%
+Thread 30 Samples AEE -> GLU fix_donor   2.500M of at most   4.785M progress:  52.2484%
+Thread 6 Samples AEE -> SER fix_donor   3.100M of at most   4.785M progress:  64.788%
+Thread 9 Samples AEE -> THR fix_donor   2.700M of at most   4.785M progress:  56.4283%
+Thread 30 Samples AEE -> GLU fix_donor   2.600M of at most   4.785M progress:  54.3384%
+Thread 6 Samples AEE -> SER fix_donor   3.200M of at most   4.785M progress:  66.878%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.100M of at most   4.652M progress:  45.1426%
+Thread 9 Samples AEE -> THR fix_donor   2.800M of at most   4.785M progress:  58.5182%
+Thread 6 Samples AEE -> SER fix_donor   3.300M of at most   4.785M progress:  68.9679%
+Thread 30 Samples AEE -> GLU fix_donor   2.700M of at most   4.785M progress:  56.4283%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.200M of at most   4.652M progress:  47.2923%
+Thread 9 Samples AEE -> THR fix_donor   2.900M of at most   4.785M progress:  60.6082%
+Thread 6 Samples AEE -> SER fix_donor   3.400M of at most   4.785M progress:  71.0579%
+Thread 30 Samples AEE -> GLU fix_donor   2.800M of at most   4.785M progress:  58.5182%
+Thread 9 Samples AEE -> THR fix_donor   3.000M of at most   4.785M progress:  62.6981%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.300M of at most   4.652M progress:  49.4419%
+Thread 6 Samples AEE -> SER fix_donor   3.500M of at most   4.785M progress:  73.1478%
+Thread 30 Samples AEE -> GLU fix_donor   2.900M of at most   4.785M progress:  60.6082%
+total AEE SER   3.548M
+SAVING   3.548M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__DON_AEE-SER__AEE_rot_min_0001.rel_rot_pos.gz
+3547657
+Thread 9 Samples AEE -> THR fix_donor   3.100M of at most   4.785M progress:  64.788%
+Thread 30 Samples AEE -> GLU fix_donor   3.000M of at most   4.785M progress:  62.6981%
+total AEE THR   3.147M
+SAVING   3.147M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__DON_AEE-THR__AEE_rot_min_0001.rel_rot_pos.gz
+3147003
+Thread 22 Samples ARG -> AEE fix_acceptor   2.400M of at most   4.652M progress:  51.5916%
+Thread 30 Samples AEE -> GLU fix_donor   3.100M of at most   4.785M progress:  64.788%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.500M of at most   4.652M progress:  53.7412%
+Thread 30 Samples AEE -> GLU fix_donor   3.200M of at most   4.785M progress:  66.878%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.600M of at most   4.652M progress:  55.8909%
+Thread 30 Samples AEE -> GLU fix_donor   3.300M of at most   4.785M progress:  68.9679%
+Thread 30 Samples AEE -> GLU fix_donor   3.400M of at most   4.785M progress:  71.0579%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.700M of at most   4.652M progress:  58.0405%
+total AEE GLU   3.451M
+SAVING   3.451M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots27__DON_AEE-GLU__AEE_rot_min_0001.rel_rot_pos.gz
+3450558
+Thread 22 Samples ARG -> AEE fix_acceptor   2.800M of at most   4.652M progress:  60.1902%
+Thread 22 Samples ARG -> AEE fix_acceptor   2.900M of at most   4.652M progress:  62.3398%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.000M of at most   4.652M progress:  64.4895%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.100M of at most   4.652M progress:  66.6391%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.200M of at most   4.652M progress:  68.7888%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.300M of at most   4.652M progress:  70.9384%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.400M of at most   4.652M progress:  73.0881%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.500M of at most   4.652M progress:  75.2377%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.600M of at most   4.652M progress:  77.3874%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.700M of at most   4.652M progress:  79.537%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.800M of at most   4.652M progress:  81.6867%
+Thread 22 Samples ARG -> AEE fix_acceptor   3.900M of at most   4.652M progress:  83.8363%
+Thread 22 Samples ARG -> AEE fix_acceptor   4.000M of at most   4.652M progress:  85.986%
+total ARG AEE   4.084M
+SAVING   4.084M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots42__ACC_ARG-AEE__AEE_rot_min_0001.rel_rot_pos.gz
+4084215
+
+RifGenSimpHB:    1 DON_AEE-THR__AEE_rot_min_0001 done, ngeom:   3.147M job    0 of 15  <>RIFAccum nrots:  76.646M mem:  65.536K rif_mem: 268.435M
+RifGenSimpHB:    1 DON_AEE-SER__AEE_rot_min_0001 done, ngeom:   3.548M job    1 of 15  <>RIFAccum nrots: 200.159M mem:  65.536K rif_mem: 268.435M
+RifGenSimpHB:    1 ACC_THR-AEE__AEE_rot_min_0001 done, ngeom: 978.195K job    2 of 15  <>RIFAccum nrots: 236.474M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 ACC_SER-AEE__AEE_rot_min_0001 done, ngeom:   1.013M job    3 of 15  <>RIFAccum nrots: 281.064M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 ACC_ARG-AEE__AEE_rot_min_0001 done, ngeom:   4.084M job    4 of 15  <>RIFAccum nrots: 350.216M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 ACC_LYS-AEE__AEE_rot_min_0001 done, ngeom:   1.713M job    5 of 15  <>RIFAccum nrots: 354.915M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 DON_AEE-GLU__AEE_rot_min_0001 done, ngeom:   3.451M job    6 of 15  <>RIFAccum nrots: 415.508M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 DON_AEE-GLN__AEE_rot_min_0001 done, ngeom:   1.509M job    7 of 15  <>RIFAccum nrots: 443.898M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 ACC_GLN-AEE__AEE_rot_min_0001 done, ngeom: 962.186K job    8 of 15  <>RIFAccum nrots: 486.846M mem:  65.536K rif_mem:   4.295G
+RifGenSimpHB:    1 DON_AEE-TYR__AEE_rot_min_0001 done, ngeom:   1.527M job    9 of 15  <>RIFAccum nrots: 567.944M mem:  65.536K rif_mem:   4.295G
+RifGenSimpHB:    1 ACC_TYR-AEE__AEE_rot_min_0001 done, ngeom: 431.036K job   10 of 15  <>RIFAccum nrots: 591.114M mem:  65.536K rif_mem:   4.295G
+RifGenSimpHB:    1 ACC_TRP-AEE__AEE_rot_min_0001 done, ngeom: 383.882K job   11 of 15  <>RIFAccum nrots: 615.327M mem:  65.536K rif_mem:   4.295G
+RifGenSimpHB:    1 DON_AEE-ASN__AEE_rot_min_0001 done, ngeom: 833.668K job   12 of 15  <>RIFAccum nrots: 636.844M mem:  65.536K rif_mem:   4.295G
+RifGenSimpHB:    1 ACC_ASN-AEE__AEE_rot_min_0001 done, ngeom: 502.139K job   13 of 15  <>RIFAccum nrots: 663.619M mem:  65.536K rif_mem:   4.295G
+RifGenSimpHB:    1 DON_AEE-ASP__AEE_rot_min_0001 done, ngeom: 914.794K job   14 of 15  <>RIFAccum nrots: 689.206M mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 45 PHE chis:  62 79 ================== Progress: 1 of 13 0% ==================
+RifGeneratorApoHSearch: add child rotamers: PHE45 PHE46 PHE47 PHE48 PHE49 PHE50 PHE51 PHE52 PHE53 PHE54 PHE55 PHE56 PHE57 PHE58 PHE59
+NEST info base resl: 1.73205 1.73205 1.73205  19.6933
+Hstage: 0 resl: 3.00 nsamp:  12.600M ************************************************** branching: -5.913262 to -1.400000
+Hstage: 1 resl: 1.50 nsamp: 168.390M *************************************************** branching: -5.813547 to -1.400000
+Hstage: 2 resl: 0.75 nsamp:   4.182G ******<>**<>**<>**<>*<>**<>**<>**<>**<>**<>*<>**<>*<>*<>*<>**<>*<>*<>*<>*<>**<>*<>*<>**<><>*********
+SCOREINFO PHE min:  -5.302 cut: -1. avg:  -1.450 nsamp   3.443G
+<>RIFAccum nrots:  18.458G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 88 ILE chis:  62 100 ================== Progress: 2 of 13 7.69231% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE88 ILE92
+NEST info base resl: 1.73205 1.73205 1.73205  29.7177
+Hstage: 0 resl: 3.00 nsamp:   2.722M ************************************************** branching: -3.626114 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  35.079M *************************************************** branching: -3.572236 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 845.306M **********************************<>****************
+SCOREINFO ILE min:  -3.292 cut: -.9 avg:  -0.885 nsamp 714.659M
+<>RIFAccum nrots:  18.929G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 89 ILE chis:  62 170 ================== Progress: 3 of 13 15.3846% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE89 ILE93
+NEST info base resl: 1.73205 1.73205 1.73205  27.1425
+Hstage: 0 resl: 3.00 nsamp:   2.722M ************************************************** branching: -3.626114 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  35.156M *************************************************** branching: -3.626114 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 859.812M *********************************<>*****************
+SCOREINFO ILE min:  -3.338 cut: -.9 avg:  -0.888 nsamp 730.275M
+<>RIFAccum nrots:  19.416G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 90 ILE chis:  -177 66 ================== Progress: 4 of 13 23.0769% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE90
+NEST info base resl: 1.73205 1.73205 1.73205  27.4555
+Hstage: 0 resl: 3.00 nsamp:   2.722M ************************************************** branching: -3.626114 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  35.133M *************************************************** branching: -3.561357 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 840.503M **************************************************
+SCOREINFO ILE min:  -3.247 cut: -.9 avg:  -0.887 nsamp 710.768M
+<>RIFAccum nrots:  19.649G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 91 ILE chis:  -177 165 ================== Progress: 5 of 13 30.7692% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE91
+NEST info base resl: 1.73205 1.73205 1.73205  25.3094
+Hstage: 0 resl: 3.00 nsamp:   6.451M ************************************************** branching: -3.626114 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  83.602M *************************************************** branching: -3.626114 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   2.037G ************************************<>**************
+SCOREINFO ILE min:  -3.345 cut: -.9 avg:  -0.887 nsamp   1.729G
+<>RIFAccum nrots:  20.229G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 94 ILE chis:  -57 -60 ================== Progress: 6 of 13 38.4615% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE94
+NEST info base resl: 1.73205 1.73205 1.73205  26.7486
+Hstage: 0 resl: 3.00 nsamp:   2.722M ************************************************** branching: -3.626114 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  35.182M *************************************************** branching: -3.626114 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 861.155M **************************************************
+SCOREINFO ILE min:  -3.334 cut: -.9 avg:  -0.889 nsamp 731.851M
+<>RIFAccum nrots:  20.472G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 126 LEU chis:  62 80 ================== Progress: 7 of 13 46.1538% ==================
+RifGeneratorApoHSearch: add child rotamers: LEU126 LEU127 LEU128 LEU129 LEU130 LEU131 LEU132 LEU133 LEU134
+NEST info base resl: 1.73205 1.73205 1.73205  24.7122
+Hstage: 0 resl: 3.00 nsamp:   6.451M ************************************************** branching: -3.626114 to -0.750000
+Hstage: 1 resl: 1.50 nsamp:  91.053M *************************************************** branching: -3.626114 to -0.750000
+Hstage: 2 resl: 0.75 nsamp:   2.411G *********<>*<>*****<>****<>****<>***<>****<>***<>**<>***<>***<>**<>***<>****
+SCOREINFO LEU min:  -3.350 cut: -.8 avg:  -0.820 nsamp   2.062G
+<>RIFAccum nrots:  27.172G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 344 VAL chis:  63 ================== Progress: 8 of 13 53.8462% ==================
+RifGeneratorApoHSearch: add child rotamers: VAL344 VAL345 VAL346
+NEST info base resl: 1.73205 1.73205 1.73205  35.0055
+Hstage: 0 resl: 3.00 nsamp:   2.722M ************************************************** branching: -3.729083 to -0.500000
+Hstage: 1 resl: 1.50 nsamp:  48.348M *************************************************** branching: -3.729083 to -0.500000
+Hstage: 2 resl: 0.75 nsamp:   1.525G ************<>******<>*******<>*******<>******<>******<>******
+SCOREINFO VAL min:  -3.494 cut: -.5 avg:  -0.687 nsamp   1.324G
+<>RIFAccum nrots:  29.195G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 135 MET chis:  62 180 75 ================== Progress: 9 of 13 61.5385% ==================
+RifGeneratorApoHSearch: add child rotamers: MET135 MET137 MET139 MET148 MET149 MET150
+NEST info base resl: 1.73205 1.73205 1.73205  22.1823
+Hstage: 0 resl: 3.00 nsamp:   6.451M ************************************************** branching: -3.753187 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  90.555M ************************************************** branching: -3.753187 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   2.383G **********<>***<>******<>***<>******<>*****<>***<>***<>****<>****<>***
+SCOREINFO MET min:  -3.451 cut: -.9 avg:  -0.918 nsamp   2.008G
+<>RIFAccum nrots:  33.691G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 136 MET chis:  62 180 -75 ================== Progress: 10 of 13 69.2308% ==================
+RifGeneratorApoHSearch: add child rotamers: MET136 MET141 MET145 MET146 MET147
+NEST info base resl: 1.73205 1.73205 1.73205  22.3394
+Hstage: 0 resl: 3.00 nsamp:   6.451M ************************************************** branching: -3.753187 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  90.593M *************************************************** branching: -3.749516 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   2.384G **********<>*****<>******<>*******<>****<>*****<>****<>***<>******
+SCOREINFO MET min:  -3.466 cut: -.9 avg:  -0.918 nsamp   2.009G
+<>RIFAccum nrots:  37.444G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 138 MET chis:  -177 65 180 ================== Progress: 11 of 13 76.9231% ==================
+RifGeneratorApoHSearch: add child rotamers: MET138 MET140 MET142 MET144
+NEST info base resl: 1.73205 1.73205 1.73205  20.7186
+Hstage: 0 resl: 3.00 nsamp:   6.451M ************************************************** branching: -3.753187 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  89.800M *************************************************** branching: -3.676583 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   2.352G ***********<>******<>******<>******<>******<>*****<>****<>******
+SCOREINFO MET min:  -3.436 cut: -.9 avg:  -0.920 nsamp   1.978G
+<>RIFAccum nrots:  40.434G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 143 MET chis:  -65 -65 103 ================== Progress: 12 of 13 84.6154% ==================
+RifGeneratorApoHSearch: add child rotamers: MET143
+NEST info base resl: 1.73205 1.73205 1.73205  22.7034
+Hstage: 0 resl: 3.00 nsamp:   6.451M ************************************************** branching: -3.753187 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  90.746M *************************************************** branching: -3.741023 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   2.373G ******************************<>********************
+SCOREINFO MET min:  -3.443 cut: -.9 avg:  -0.916 nsamp   1.996G
+<>RIFAccum nrots:  41.155G mem:  65.536K rif_mem:  34.360G
+================== ApoHSearch rotamer 151 MET chis:  -65 -80 -70 ================== Progress: 13 of 13 92.3077% ==================
+RifGeneratorApoHSearch: add child rotamers: MET151 MET152 MET153
+NEST info base resl: 1.73205 1.73205 1.73205  22.0299
+Hstage: 0 resl: 3.00 nsamp:   6.451M ************************************************** branching: -3.753187 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  90.572M *************************************************** branching: -3.753187 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:   2.384G *************<>*************<>********<>********<>********
+SCOREINFO MET min:  -3.461 cut: -.9 avg:  -0.919 nsamp   2.010G
+<>RIFAccum nrots:  43.348G mem:  65.536K rif_mem:  34.360G
+RifGenerators done
+RIFAccumulator building rif....
+RIF:  non0 in RIF: 213.678M N_motifs_found:  43.348G coverage: 202.867, mem_use:  34.360G
+RIF size:  34.360G load: 0.398007, sizeof(value_type) 64
+sorting rotamers in each hash entry
+RIF  non0 in RIF: 213.678M N_motifs_found:  43.348G coverage: 202.867
+======================= frac collisions in map =======================
+======================= cart: 0.6, ori: 12 =======================
+======================================================================
+   Nrots   1 1.00000  -1.665 213678431
+   Nrots   2 0.88431  -1.699 188957905
+   Nrots   3 0.81022  -1.699 173125669
+   Nrots   4 0.71937  -1.509 153713984
+   Nrots   5 0.66357  -1.472 141789575
+   Nrots   6 0.61787  -1.446 132025454
+   Nrots   7 0.57692  -1.403 123274955
+   Nrots   8 0.54233  -1.380 115883274
+   Nrots   9 0.51257  -1.358 109525939
+   Nrots  10 0.48566  -1.294 103774540
+   Nrots  11 0.45918  -1.266 98117357
+   Nrots  12 0.43396  -1.245 92727926
+   Nrots  13 0.41125  -1.225 87874921
+   Nrots  14 0.39012  -1.209 83360914
+E(collisions) = 8.50732
+======================================================================
+XformHash_bt24_BCC6
+before resize, RIF size:  34.360G load: 0.398007, sizeof(value_type) 64
+NOT RESIZING RIF
+dumping rif to: ./rifgen_init/rifgen_init.rif.gz
+===================================== rif description ======================================
+from Will's rifgen app
+rotamer set size : 1654
+rotamer nprimary : 388
+          target : AEE_rot_min_0001.pdb
+      target_res : 1 
+          apores : PHE ILE LEU VAL MET 
+          donres : THR TYR TRP GLN ASN SER LYS ARG AEE 
+          accres : THR TYR SER GLN ASN ASP GLU AEE 
+       beam_size :  10.000G
+    value stored : RotamerScores< N=14, RotamerScoreSat< dsize=2, rbit=9, div=-4, nsat=2 > >
+apo_search_resls : 3 1.5 0.75 
+ score_cut_adjust...............0.5
+ score_threshold................-0.5
+ hbond_weight...................2
+ upweight_multi_hbond...........1
+ tip_tol_deg....................40
+ rot_samp_range.................360
+ rot_samp_resl..................4
+ hbond_cart_sample_hack_range...0.59999999999999998
+ hbond_cart_sample_hack_resl....0.29999999999999999
+ rosetta_field_resl.............0.125
+ max_rf_bounding_ratio..........4
+ rf_oversample..................2
+ hash_cart_resl.................0.59999999999999998
+ hash_angle_resl................12
+       RIF cells : 213.678M
+  Nrots inserted :  43.348G
+        coverage : 202.866745
+
+============================================================================================
+writing rif file ./rifgen_init/rifgen_init.rif.gz
+make_bounding_gird: cart 16 / 16, ang: 38.8446 / 38.8
+    new map size   7.750K ratio: 3.62695e-05
+    mem:   1.049M load: 0.473022, sizeof(value_type) 64
+make_bounding_gird: cart 8 / 8, ang: 24.4 / 24.4
+    new map size 116.372K ratio: 0.000544613
+    mem:  16.777M load: 0.443924, sizeof(value_type) 64
+make_bounding_gird: cart 1 / 1, ang: 11.8 / 11.8
+    new map size  51.362M ratio: 0.240369
+    mem:   8.590G load: 0.382674, sizeof(value_type) 64
+make_bounding_gird: cart 2 / 2, ang: 13.6 / 13.6
+    new map size   7.033M ratio: 0.0329144
+    mem:   1.074G load: 0.419205, sizeof(value_type) 64
+make_bounding_gird: cart 4 / 4, ang: 17.2 / 17.2
+    new map size 841.173K ratio: 0.00393663
+    mem: 134.218M load: 0.401103, sizeof(value_type) 64
+done writing
+NOT DELETING VoxelArrayPtr's, should use smart ptrs!
+rif_hier_DONE
+########################################### what you need for docking ###########################################
+-rif_dock:target_pdb            ./rifgen_init/rifgen_init.rif.gz_target.pdb.gz
+-in:file:extra_res_fa           AEE.params
+-rif_dock:target_rf_resl        0.125
+-rif_dock:target_rf_cache       ./rifgen_init/__RF_AEE_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_16.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_08.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_04.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_02.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_01.xmap.gz
+-rif_dock:target_rif            ./rifgen_init/rifgen_init.rif.gz
+-rif_dock:target_donors         ./rifgen_init/rifgen_init.rif.gz_donors.pdb.gz
+-rif_dock:target_acceptors      ./rifgen_init/rifgen_init.rif.gz_acceptors.pdb.gz
+-rif_dock:extra_rotamers        1
+-rif_dock:extra_rif_rotamers    1
+-rif_dock:rot_spec_fname        ./rifgen_init/rotamer_index_spec.txt
+#################################################################################################################

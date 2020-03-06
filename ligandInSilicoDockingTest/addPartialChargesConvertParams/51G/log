@@ -1,0 +1,346 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: 2019.44.post.dev+12.master.00b2ddab2d4 00b2ddab2d4f71f2161245c98cbaa3e8e5fd19dc git@github.com:RosettaCommons/main.git 2019-11-02T16:45:46
+core.init: command: /home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease -s 51G_0001.pdb -extra_res_fa 51G.params @../rosetta_flags.txt
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=2049886373 seed_offset=0 real_seed=2049886373
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=2049886373 RG_type=mt19937
+core.init: Resolved executable path: /mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/rosetta_scripts.default.linuxgccrelease
+core.init: Looking for database based on location of executable: /mnt/home/basantab/Rosetta/main/database/
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed 51G_0001.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB 51G_0001.pdb
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 981 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 1.08234 seconds.
+core.import_pose.import_pose: File '51G_0001.pdb' automatically determined to be of type PDB
+protocols.rosetta_scripts.RosettaScriptsParser: dock_design_filename=../minimize_ligand.xml
+protocols.rosetta_scripts.RosettaScriptsParser: Generating XML Schema for rosetta_scripts...
+protocols.rosetta_scripts.RosettaScriptsParser: ...done
+protocols.rosetta_scripts.RosettaScriptsParser: Initializing schema validator...
+protocols.rosetta_scripts.RosettaScriptsParser: ...done
+protocols.rosetta_scripts.RosettaScriptsParser: Validating input script...
+protocols.rosetta_scripts.RosettaScriptsParser: ...done
+protocols.rosetta_scripts.RosettaScriptsParser: Parsed script:
+<ROSETTASCRIPTS>
+	<SCOREFXNS>
+		<ScoreFunction name="genpot" weights="ref2015_cart_cst.wts"/>
+	</SCOREFXNS>
+	<RESIDUE_SELECTORS/>
+	<TASKOPERATIONS>
+		<RestrictToRepacking name="repackonly"/>
+	</TASKOPERATIONS>
+	<SIMPLE_METRICS/>
+	<FILTERS/>
+	<MOVERS>
+		<MinMover bb="1" bondangle="1" bondlength="1" cartesian="False" chi="1" jump="ALL" max_iter="1000" name="min" scorefxn="genpot" tolerance="0.001" type="lbfgs_armijo_nonmonotone"/>
+	</MOVERS>
+	<PROTOCOLS>
+		<Add mover_name="min"/>
+	</PROTOCOLS>
+	<OUTPUT scorefxn="genpot"/>
+</ROSETTASCRIPTS>
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/PairEPotential/pdb_pair_stats_fine
+basic.io.database: Database file opened: scoring/score_functions/InterchainPotential/interchain_env_log.txt
+basic.io.database: Database file opened: scoring/score_functions/InterchainPotential/interchain_pair_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/env_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cbeta_den.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/pair_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cenpack_log.txt
+core.scoring.ramachandran: shapovalov_lib::shap_rama_smooth_level of 4( aka highest_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/rama/shapovalov/kappa25/all.ramaProb
+core.scoring.CartesianBondedEnergy: Initializing IdealParametersDatabase with default Ks=300 , 80 , 80 , 10 , 80
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-lengths.txt
+core.scoring.CartesianBondedEnergy: Read 759 bb-independent lengths.
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-angles.txt
+core.scoring.CartesianBondedEnergy: Read 1456 bb-independent angles.
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-torsions.txt
+core.scoring.CartesianBondedEnergy: Read 1 bb-independent torsions.
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-improper.txt
+core.scoring.CartesianBondedEnergy: Read 2202 bb-independent improper tors.
+protocols.jd2.parser.ScoreFunctionLoader: defined score function "genpot" with weights "ref2015_cart_cst.wts"
+protocols.jd2.parser.TaskOperationLoader: Defined TaskOperation named "repackonly" of type RestrictToRepacking
+protocols.minimization_packing.MinMover: Options chi, bb: 1, 1 omega: 1
+protocols.rosetta_scripts.RosettaScriptsParser: Defined mover named "min" of type MinMover
+protocols.rosetta_scripts.ParsedProtocol: ParsedProtocol mover with the following movers and filters
+protocols.rosetta_scripts.ParsedProtocol: added mover "min" with filter "true_filter"
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from saved copy 51G_0001.pdb
+protocols.rosetta_scripts.ParsedProtocol: =======================BEGIN MOVER MinMover - min=======================
+core.scoring.CartesianBondedEnergy: Creating new peptide-bonded energy container (1)
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C12,C13,C11 to DB with theta0 = 1.91123 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C12,C13,O6 to DB with theta0 = 1.91028 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C12,C13,H29 to DB with theta0 = 1.91055 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C11,C13,O6 to DB with theta0 = 1.91032 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C11,C13,H29 to DB with theta0 = 1.91017 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O6,C13,H29 to DB with theta0 = 1.91125 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C13,C12,C8 to DB with theta0 = 1.91042 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C13,C12,O5 to DB with theta0 = 1.91157 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C13,C12,H27 to DB with theta0 = 1.91055 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C8,C12,O5 to DB with theta0 = 1.91101 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C8,C12,H27 to DB with theta0 = 1.9106 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O5,C12,H27 to DB with theta0 = 1.90964 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C12,C8,O4 to DB with theta0 = 1.91056 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C12,C8,C9 to DB with theta0 = 1.91082 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C12,C8,H16 to DB with theta0 = 1.9106 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O4,C8,C9 to DB with theta0 = 1.91093 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O4,C8,H16 to DB with theta0 = 1.91072 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C9,C8,H16 to DB with theta0 = 1.91017 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C8,O4,C7 to DB with theta0 = 1.98959 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O4,C7,O3 to DB with theta0 = 1.91145 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O4,C7,C1 to DB with theta0 = 1.91086 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O4,C7,H15 to DB with theta0 = 1.90901 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O3,C7,C1 to DB with theta0 = 1.90907 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O3,C7,H15 to DB with theta0 = 1.91144 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C1,C7,H15 to DB with theta0 = 1.91197 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C7,O3,C6 to DB with theta0 = 1.99137 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O3,C6,C4 to DB with theta0 = 1.90974 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O3,C6,H13 to DB with theta0 = 1.9106 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O3,C6,H14 to DB with theta0 = 1.91135 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C6,H13 to DB with theta0 = 1.9113 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C6,H14 to DB with theta0 = 1.91089 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H13,C6,H14 to DB with theta0 = 1.90992 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C6,C4,C5 to DB with theta0 = 1.91165 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C6,C4,C2 to DB with theta0 = 1.9055 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C6,C4,O2 to DB with theta0 = 1.91207 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C5,C4,C2 to DB with theta0 = 1.91186 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C5,C4,O2 to DB with theta0 = 1.91155 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C2,C4,O2 to DB with theta0 = 1.91117 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C5,H9 to DB with theta0 = 1.91087 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C5,H10 to DB with theta0 = 1.9108 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C5,H11 to DB with theta0 = 1.91088 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H9,C5,H10 to DB with theta0 = 1.91065 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H9,C5,H11 to DB with theta0 = 1.91032 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H10,C5,H11 to DB with theta0 = 1.91029 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C2,C1 to DB with theta0 = 1.90345 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C2,N1 to DB with theta0 = 1.91206 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,C2,H3 to DB with theta0 = 1.91412 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C1,C2,N1 to DB with theta0 = 1.91144 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C1,C2,H3 to DB with theta0 = 1.91547 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N1,C2,H3 to DB with theta0 = 1.90727 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C7,C1,C2 to DB with theta0 = 1.90468 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C7,C1,O1 to DB with theta0 = 1.91149 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C7,C1,H2 to DB with theta0 = 1.91453 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C2,C1,O1 to DB with theta0 = 1.91146 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C2,C1,H2 to DB with theta0 = 1.91419 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O1,C1,H2 to DB with theta0 = 1.90745 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C1,O1,H1 to DB with theta0 = 1.91045 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C2,N1,C3 to DB with theta0 = 1.93731 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C2,N1,H4 to DB with theta0 = 1.90415 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C2,N1,H5 to DB with theta0 = 1.8951 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C3,N1,H4 to DB with theta0 = 1.90367 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C3,N1,H5 to DB with theta0 = 1.8948 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H4,N1,H5 to DB with theta0 = 1.92899 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N1,C3,H6 to DB with theta0 = 1.91076 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N1,C3,H7 to DB with theta0 = 1.91033 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N1,C3,H8 to DB with theta0 = 1.91065 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H6,C3,H7 to DB with theta0 = 1.91112 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H6,C3,H8 to DB with theta0 = 1.91087 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H7,C3,H8 to DB with theta0 = 1.91008 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C4,O2,H12 to DB with theta0 = 1.91054 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C8,C9,C10 to DB with theta0 = 1.91086 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C8,C9,N2 to DB with theta0 = 1.91031 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C8,C9,H17 to DB with theta0 = 1.91017 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C10,C9,N2 to DB with theta0 = 1.90986 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C10,C9,H17 to DB with theta0 = 1.91119 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N2,C9,H17 to DB with theta0 = 1.91141 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C9,C10,C11 to DB with theta0 = 1.90999 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C9,C10,H21 to DB with theta0 = 1.91109 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C9,C10,H22 to DB with theta0 = 1.91093 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C11,C10,H21 to DB with theta0 = 1.91071 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C11,C10,H22 to DB with theta0 = 1.91055 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H21,C10,H22 to DB with theta0 = 1.91052 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C13,C11,C10 to DB with theta0 = 1.91039 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C13,C11,N3 to DB with theta0 = 1.91092 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C13,C11,H23 to DB with theta0 = 1.91036 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C10,C11,N3 to DB with theta0 = 1.90972 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C10,C11,H23 to DB with theta0 = 1.91187 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N3,C11,H23 to DB with theta0 = 1.91054 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C11,N3,H24 to DB with theta0 = 1.91042 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C11,N3,H25 to DB with theta0 = 1.91065 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C11,N3,H26 to DB with theta0 = 1.91029 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H24,N3,H25 to DB with theta0 = 1.9104 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H24,N3,H26 to DB with theta0 = 1.91098 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H25,N3,H26 to DB with theta0 = 1.91105 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C9,N2,H18 to DB with theta0 = 1.91103 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C9,N2,H19 to DB with theta0 = 1.91119 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C9,N2,H20 to DB with theta0 = 1.91079 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H18,N2,H19 to DB with theta0 = 1.91033 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H18,N2,H20 to DB with theta0 = 1.9104 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H19,N2,H20 to DB with theta0 = 1.91005 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C12,O5,H28 to DB with theta0 = 1.91098 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C13,O6,C14 to DB with theta0 = 1.98948 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O6,C14,O7 to DB with theta0 = 1.91072 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O6,C14,C15 to DB with theta0 = 1.91078 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O6,C14,H30 to DB with theta0 = 1.90986 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O7,C14,C15 to DB with theta0 = 1.90939 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O7,C14,H30 to DB with theta0 = 1.91161 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C15,C14,H30 to DB with theta0 = 1.91144 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C14,O7,C18 to DB with theta0 = 1.99083 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O7,C18,C17 to DB with theta0 = 1.91008 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O7,C18,C19 to DB with theta0 = 1.90994 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: O7,C18,H39 to DB with theta0 = 1.91098 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C17,C18,C19 to DB with theta0 = 1.91069 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C17,C18,H39 to DB with theta0 = 1.91091 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C19,C18,H39 to DB with theta0 = 1.9112 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C18,C17,C16 to DB with theta0 = 1.90508 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C18,C17,H37 to DB with theta0 = 1.91204 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C18,C17,H38 to DB with theta0 = 1.91405 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C16,C17,H37 to DB with theta0 = 1.91216 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C16,C17,H38 to DB with theta0 = 1.91377 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H37,C17,H38 to DB with theta0 = 1.90671 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C17,C16,C15 to DB with theta0 = 1.90306 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C17,C16,H35 to DB with theta0 = 1.91223 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C17,C16,H36 to DB with theta0 = 1.91559 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C15,C16,H35 to DB with theta0 = 1.91261 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C15,C16,H36 to DB with theta0 = 1.91495 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H35,C16,H36 to DB with theta0 = 1.90536 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C14,C15,C16 to DB with theta0 = 1.9057 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C14,C15,N4 to DB with theta0 = 1.91112 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C14,C15,H31 to DB with theta0 = 1.91344 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C16,C15,N4 to DB with theta0 = 1.91154 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C16,C15,H31 to DB with theta0 = 1.91344 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N4,C15,H31 to DB with theta0 = 1.90857 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C15,N4,H32 to DB with theta0 = 1.91077 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C15,N4,H33 to DB with theta0 = 1.91048 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C15,N4,H34 to DB with theta0 = 1.91031 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H32,N4,H33 to DB with theta0 = 1.91162 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H32,N4,H34 to DB with theta0 = 1.91026 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H33,N4,H34 to DB with theta0 = 1.91037 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C18,C19,N5 to DB with theta0 = 1.91108 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C18,C19,C20 to DB with theta0 = 1.91073 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C18,C19,H40 to DB with theta0 = 1.91037 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N5,C19,C20 to DB with theta0 = 1.91116 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N5,C19,H40 to DB with theta0 = 1.90992 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C20,C19,H40 to DB with theta0 = 1.91054 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C19,N5,C21 to DB with theta0 = 1.93774 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C19,N5,H44 to DB with theta0 = 1.90364 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C19,N5,H45 to DB with theta0 = 1.89458 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C21,N5,H44 to DB with theta0 = 1.90382 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C21,N5,H45 to DB with theta0 = 1.89485 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H44,N5,H45 to DB with theta0 = 1.92939 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N5,C21,H46 to DB with theta0 = 1.9105 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N5,C21,H47 to DB with theta0 = 1.91068 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: N5,C21,H48 to DB with theta0 = 1.91032 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H46,C21,H47 to DB with theta0 = 1.91101 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H46,C21,H48 to DB with theta0 = 1.91098 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H47,C21,H48 to DB with theta0 = 1.91032 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C19,C20,H41 to DB with theta0 = 1.91054 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C19,C20,H42 to DB with theta0 = 1.91094 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: C19,C20,H43 to DB with theta0 = 1.91029 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H41,C20,H42 to DB with theta0 = 1.91069 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H41,C20,H43 to DB with theta0 = 1.91112 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle 51G: H42,C20,H43 to DB with theta0 = 1.91022 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C13,C12, to DB with d0 = 1.52998 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C13,C11, to DB with d0 = 1.52935 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C13,O6, to DB with d0 = 1.42927 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C13,H29, to DB with d0 = 1.07052 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C12,C8, to DB with d0 = 1.53009 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C12,O5, to DB with d0 = 1.42865 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C12,H27, to DB with d0 = 1.07052 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C8,O4, to DB with d0 = 1.42924 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C8,C9, to DB with d0 = 1.52935 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C8,H16, to DB with d0 = 1.07052 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: O4,C7, to DB with d0 = 1.42851 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C7,O3, to DB with d0 = 1.42929 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C7,C1, to DB with d0 = 1.53166 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C7,H15, to DB with d0 = 1.07013 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: O3,C6, to DB with d0 = 1.42898 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C6,C4, to DB with d0 = 1.53035 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C6,H13, to DB with d0 = 1.06963 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C6,H14, to DB with d0 = 1.06999 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C4,C5, to DB with d0 = 1.52928 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C4,C2, to DB with d0 = 1.53149 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C4,O2, to DB with d0 = 1.429 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C5,H9, to DB with d0 = 1.0695 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C5,H10, to DB with d0 = 1.06983 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C5,H11, to DB with d0 = 1.0702 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C2,C1, to DB with d0 = 1.53192 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C2,N1, to DB with d0 = 1.46904 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C2,H3, to DB with d0 = 1.07015 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C1,O1, to DB with d0 = 1.42877 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C1,H2, to DB with d0 = 1.06988 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: O1,H1, to DB with d0 = 0.969675 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N1,C3, to DB with d0 = 1.46903 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N1,H4, to DB with d0 = 1.02032 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N1,H5, to DB with d0 = 1.01954 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C3,H6, to DB with d0 = 1.07048 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C3,H7, to DB with d0 = 1.06972 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C3,H8, to DB with d0 = 1.06996 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: O2,H12, to DB with d0 = 0.970503 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C9,C10, to DB with d0 = 1.53008 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C9,N2, to DB with d0 = 1.4697 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C9,H17, to DB with d0 = 1.07052 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C10,C11, to DB with d0 = 1.53045 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C10,H21, to DB with d0 = 1.07056 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C10,H22, to DB with d0 = 1.07037 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C11,N3, to DB with d0 = 1.46875 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C11,H23, to DB with d0 = 1.07032 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N3,H24, to DB with d0 = 1.01968 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N3,H25, to DB with d0 = 1.02012 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N3,H26, to DB with d0 = 1.01949 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N2,H18, to DB with d0 = 1.01988 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N2,H19, to DB with d0 = 1.02034 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N2,H20, to DB with d0 = 1.02009 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: O5,H28, to DB with d0 = 0.970007 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: O6,C14, to DB with d0 = 1.42936 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C14,O7, to DB with d0 = 1.42949 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C14,C15, to DB with d0 = 1.53089 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C14,H30, to DB with d0 = 1.07021 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: O7,C18, to DB with d0 = 1.42902 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C18,C17, to DB with d0 = 1.53129 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C18,C19, to DB with d0 = 1.53031 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C18,H39, to DB with d0 = 1.06968 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C17,C16, to DB with d0 = 1.53141 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C17,H37, to DB with d0 = 1.0705 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C17,H38, to DB with d0 = 1.07021 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C16,C15, to DB with d0 = 1.53219 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C16,H35, to DB with d0 = 1.06985 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C16,H36, to DB with d0 = 1.06992 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C15,N4, to DB with d0 = 1.46886 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C15,H31, to DB with d0 = 1.07003 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N4,H32, to DB with d0 = 1.02016 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N4,H33, to DB with d0 = 1.02012 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N4,H34, to DB with d0 = 1.0203 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C19,N5, to DB with d0 = 1.46877 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C19,C20, to DB with d0 = 1.53004 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C19,H40, to DB with d0 = 1.0705 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N5,C21, to DB with d0 = 1.46881 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N5,H44, to DB with d0 = 1.02007 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: N5,H45, to DB with d0 = 1.0203 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C21,H46, to DB with d0 = 1.06958 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C21,H47, to DB with d0 = 1.07 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C21,H48, to DB with d0 = 1.07044 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C20,H41, to DB with d0 = 1.0705 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C20,H42, to DB with d0 = 1.07031 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length 51G: C20,H43, to DB with d0 = 1.0699 , Kd = 300
+protocols.rosetta_scripts.ParsedProtocol: setting status to success
+protocols.jd2.JobDistributor: 51G_0001_min_0001 reported success in 11 seconds
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 11 seconds

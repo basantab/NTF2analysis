@@ -1,0 +1,1674 @@
+core.init: Rosetta version: 2018.04.post.dev+441.bcov.fordas.structurestore2gridsilent.7b5a6c4943d 7b5a6c4943df59375999d8119244b5c68d8ccc53 git@github.com:RosettaCommons/main.git 2019-04-03T11:06:48
+core.init: command: /home/bcov/rifdock/latest/rifgen -rifgen:target PPQ_rot_min_0001.pdb -extra_res_fa PPQ.params -rifgen:outdir ./rifgen_init -rifgen:data_cache_dir ./rifgen_init -rifgen:outfile rifgen_init.rif.gz -rifgen:apores PHE ILE LEU VAL MET -rifgen:donres THR TYR TRP GLN ASN SER LYS ARG PPQ -rifgen:accres THR TYR SER GLN ASN ASP GLU PPQ @/net/scratch/basantab/NTF2_project/20191216_deNovoNTF2DockingBenchmark_RIFDOCK/RIFGEN/template_flags
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-1647121319 seed_offset=0 real_seed=-1647121319
+core.init.random: RandomGenerator:init: Normal mode, seed=-1647121319 RG_type=mt19937
+Rifdock thinks there are 32 threads.
+rif_type: RotScoreSat
+does not exist, attempting to create:
+    ./rifgen_init
+
+=================================================== preparing target ===================================================
+
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 601 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.731999 seconds.
+core.import_pose.import_pose: File 'PPQ_rot_min_0001.pdb' automatically determined to be of type PDB
+target nres: 1
+target_res_file: ''
+target_res: [1]
+centering target from      0.3299090909090907    -0.07872727272727270     -0.3397272727272728 to ( 0, 0, 0 )
+Preparing rotamer index spec...
+get_rotamer_index
+core.pack.task: Packer task: initialize from command line() 
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /home/bcov/rifdock/latest/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/bcov/rifdock/latest/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.226925 seconds to load from binary
+core.pack.task: Packer task: initialize from command line() 
+core.pack.task: Packer task: initialize from command line() 
+core.pack.task: Packer task: initialize from command line() 
+finish builidng rotamer_index now try fill rotamer index ... 
+start building rotamer index from fill rotamers
+n_p_rots: 388
+n_rots: 1654
+n_par_rots: 1654
+total num protonchi_parent_of_ 1501
+total num structural_parents_ 62
+finish build_index...
+======================================================================================
+RotamerIndex:
+    ALA 1 0-0 0 0
+    CYS 9 2-10 2 1
+    ASP 7 11-17 2 0
+    GLU 27 18-44 3 0
+    PHE 15 45-59 2 0
+    GLY 1 1-1 0 0
+    HIS 14 60-73 2 0
+    ILE 7 88-94 2 0
+    LYS 31 95-125 4 0
+    LEU 9 126-134 2 0
+    MET 19 135-153 3 0
+    ASN 13 154-166 2 0
+    PRO 2 167-168 3 0
+    GLN 25 169-193 3 0
+    ARG 42 194-235 4 0
+    SER 54 236-289 2 1
+    THR 54 290-343 2 1
+    VAL 3 344-346 1 0
+    TRP 19 347-365 2 0
+    TYR 22 366-387 3 1
+    DAL 0 0--1 0 0
+    DCS 0 0--1 0 0
+    DAS 0 0--1 0 0
+    DGU 0 0--1 0 0
+    DPH 0 0--1 0 0
+    DHI 0 0--1 0 0
+    DIL 0 0--1 0 0
+    DLY 0 0--1 0 0
+    DLE 0 0--1 0 0
+    DME 0 0--1 0 0
+    DAN 0 0--1 0 0
+    DPR 0 0--1 0 0
+    DGN 0 0--1 0 0
+    DAR 0 0--1 0 0
+    DSE 0 0--1 0 0
+    DTH 0 0--1 0 0
+    DVA 0 0--1 0 0
+    DTR 0 0--1 0 0
+    DTY 0 0--1 0 0
+
+======================================================================================
+WARNING: heavy atom type 28 > N_ATYPE: 12345 PPQ  P1  will treat as carbon for sterics!
+WARNING: heavy atom type28 > N_ATYPE: 12345 PPQ  P1  will treat as carbon for sterics!
+rosetta_field lb: -3.79691 -1.31727 -1.50427  ub: 3.14309 1.65473 1.07073  size(A): 6.94 2.972 2.575 
+thread  26 init  rosetta_field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype1.rosetta_field.gz
+thread  23 init  rosetta_field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype2.rosetta_field.gz
+thread  12 init  rosetta_field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype3.rosetta_field.gz
+thread  22 init  rosetta_field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype7.rosetta_field.gz
+thread  15 init  rosetta_field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype17.rosetta_field.gz
+thread  10 init  rosetta_field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype8.rosetta_field.gz
+thread  11 init  rosetta_field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype5.rosetta_field.gz
+thread  13 init  rosetta_field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype4.rosetta_field.gz
+thread  20 init  rosetta_field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype21.rosetta_field.gz
+thread   9 init  rosetta_field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype18.rosetta_field.gz
+thread  31 init  rosetta_field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype9.rosetta_field.gz
+thread  29 init  rosetta_field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype13.rosetta_field.gz
+thread   6 init  rosetta_field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype10.rosetta_field.gz
+thread  30 init  rosetta_field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype11.rosetta_field.gz
+thread  32 init  rosetta_field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype14.rosetta_field.gz
+thread   8 init  rosetta_field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype6.rosetta_field.gz
+thread  28 init  rosetta_field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype12.rosetta_field.gz
+thread  19 init  rosetta_field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype20.rosetta_field.gz
+thread  24 init  rosetta_field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype16.rosetta_field.gz
+thread  25 init  rosetta_field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype19.rosetta_field.gz
+thread  21 init  rosetta_field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry__atype15.rosetta_field.gz
+thread  21 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype10.rf.gz
+thread  30 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype15.rf.gz
+thread   8 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype4.rf.gz
+thread  32 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype18.rf.gz
+thread  19 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype1.rf.gz
+thread  29 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype11.rf.gz
+thread   6 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype13.rf.gz
+thread  13 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype6.rf.gz
+thread  23 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype16.rf.gz
+thread  12 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype5.rf.gz
+thread  26 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype9.rf.gz
+thread  25 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype9.rf.gz
+thread  20 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype5.rf.gz
+thread  15 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype2.rf.gz
+thread  22 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype14.rf.gz
+thread  10 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype8.rf.gz
+thread  24 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype21.rf.gz
+thread  11 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype20.rf.gz
+thread  31 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype7.rf.gz
+thread  16 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype12.rf.gz
+thread  28 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype6.rf.gz
+thread   4 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype8.rf.gz
+thread   1 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype10.rf.gz
+thread   7 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype4.rf.gz
+thread  17 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype3.rf.gz
+thread  14 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype19.rf.gz
+thread  18 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype7.rf.gz
+thread   2 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype17.rf.gz
+thread  27 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.75_0.1875_atype2.rf.gz
+thread   3 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype1.rf.gz
+thread   5 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype3.rf.gz
+thread   9 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype11.rf.gz
+thread  31 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype12.rf.gz
+thread  28 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype13.rf.gz
+thread   5 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype14.rf.gz
+thread  12 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype15.rf.gz
+thread  26 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype16.rf.gz
+thread   8 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype17.rf.gz
+thread  15 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype18.rf.gz
+thread   1 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype19.rf.gz
+thread   3 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype20.rf.gz
+thread  23 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1.5_0.375_atype21.rf.gz
+thread   2 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype1.rf.gz
+thread  18 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype2.rf.gz
+thread   4 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype3.rf.gz
+thread  14 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype4.rf.gz
+thread  16 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype5.rf.gz
+thread  11 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype6.rf.gz
+thread  29 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype7.rf.gz
+thread  19 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype8.rf.gz
+thread   6 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype9.rf.gz
+thread  24 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype10.rf.gz
+thread  13 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype11.rf.gz
+thread  17 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype12.rf.gz
+thread  21 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype13.rf.gz
+thread  20 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype14.rf.gz
+thread  27 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype15.rf.gz
+thread  30 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype16.rf.gz
+thread  22 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype17.rf.gz
+thread  32 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype18.rf.gz
+thread  25 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype19.rf.gz
+thread   7 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype20.rf.gz
+thread   9 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding3_0.75_atype21.rf.gz
+done with rifgen grids, not make target ones for docking
+thread  14 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype1.rf.gz
+thread  30 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype6.rf.gz
+thread   7 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype2.rf.gz
+thread   6 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype5.rf.gz
+thread  12 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype7.rf.gz
+thread  13 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype16.rf.gz
+thread   9 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype10.rf.gz
+thread   8 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype13.rf.gz
+thread   3 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype3.rf.gz
+thread  19 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype17.rf.gz
+thread  11 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype8.rf.gz
+thread   1 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype11.rf.gz
+thread  24 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype21.rf.gz
+thread  26 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype9.rf.gz
+thread  22 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype18.rf.gz
+thread  23 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype12.rf.gz
+thread   4 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype9.rf.gz
+thread   2 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype1.rf.gz
+thread  25 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype6.rf.gz
+thread  21 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype3.rf.gz
+thread  20 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype10.rf.gz
+thread  15 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype2.rf.gz
+thread  31 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype15.rf.gz
+thread  17 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype20.rf.gz
+thread  18 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype19.rf.gz
+thread  29 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype5.rf.gz
+thread   5 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype4.rf.gz
+thread  10 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype8.rf.gz
+thread  32 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype11.rf.gz
+thread  16 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype7.rf.gz
+thread  28 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding0.5_0.125_atype14.rf.gz
+thread  27 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype4.rf.gz
+thread  32 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype12.rf.gz
+thread  29 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype13.rf.gz
+thread  27 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype14.rf.gz
+thread  11 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype15.rf.gz
+thread  16 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype16.rf.gz
+thread  25 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype17.rf.gz
+thread  20 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype18.rf.gz
+thread   2 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype19.rf.gz
+thread   4 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype20.rf.gz
+thread  15 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding1_0.25_atype21.rf.gz
+thread  21 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype1.rf.gz
+thread  28 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype2.rf.gz
+thread   9 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype3.rf.gz
+thread   8 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype4.rf.gz
+thread  23 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype5.rf.gz
+thread  10 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype6.rf.gz
+thread  22 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype7.rf.gz
+thread   3 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype8.rf.gz
+thread  30 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype9.rf.gz
+thread  13 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype10.rf.gz
+thread  14 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype11.rf.gz
+thread  17 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype12.rf.gz
+thread  12 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype13.rf.gz
+thread  18 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype14.rf.gz
+thread   6 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype15.rf.gz
+thread  26 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype16.rf.gz
+thread  24 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype17.rf.gz
+thread   1 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype18.rf.gz
+thread   7 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype19.rf.gz
+thread  31 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype20.rf.gz
+thread  19 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding2_0.5_atype21.rf.gz
+thread   5 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype1.rf.gz
+thread  28 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype2.rf.gz
+thread  32 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype3.rf.gz
+thread  16 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype4.rf.gz
+thread  20 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype5.rf.gz
+thread  27 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype6.rf.gz
+thread  21 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype7.rf.gz
+thread  11 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype8.rf.gz
+thread  25 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype9.rf.gz
+thread  15 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype10.rf.gz
+thread   2 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype11.rf.gz
+thread   4 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype12.rf.gz
+thread  31 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype13.rf.gz
+thread   9 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype14.rf.gz
+thread   5 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype15.rf.gz
+thread   8 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype16.rf.gz
+thread  23 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype17.rf.gz
+thread  10 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype18.rf.gz
+thread  22 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype19.rf.gz
+thread  30 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype20.rf.gz
+thread  17 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding4_1_atype21.rf.gz
+thread  18 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype1.rf.gz
+thread  12 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype2.rf.gz
+thread   3 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype3.rf.gz
+thread   6 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype4.rf.gz
+thread   1 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype5.rf.gz
+thread  13 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype6.rf.gz
+thread  14 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype7.rf.gz
+thread  26 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype8.rf.gz
+thread  19 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype9.rf.gz
+thread   7 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype10.rf.gz
+thread  24 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype11.rf.gz
+thread  29 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype12.rf.gz
+thread  31 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype13.rf.gz
+thread  28 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype14.rf.gz
+thread  16 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype15.rf.gz
+thread  20 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype16.rf.gz
+thread  15 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype17.rf.gz
+thread  27 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype18.rf.gz
+thread  11 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype19.rf.gz
+thread  21 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype20.rf.gz
+thread   4 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding8_2_atype21.rf.gz
+thread  25 init bounding field  1 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype1.rf.gz
+thread   2 init bounding field  2 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype2.rf.gz
+thread  24 init bounding field  3 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype3.rf.gz
+thread  19 init bounding field  4 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype4.rf.gz
+thread   9 init bounding field  5 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype5.rf.gz
+thread  23 init bounding field  6 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype6.rf.gz
+thread   5 init bounding field  7 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype7.rf.gz
+thread   3 init bounding field  8 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype8.rf.gz
+thread  18 init bounding field  9 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype9.rf.gz
+thread  12 init bounding field 10 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype10.rf.gz
+thread   6 init bounding field 11 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype11.rf.gz
+thread  13 init bounding field 12 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype12.rf.gz
+thread   8 init bounding field 13 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype13.rf.gz
+thread  14 init bounding field 14 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype14.rf.gz
+thread  26 init bounding field 15 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype15.rf.gz
+thread   1 init bounding field 16 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype16.rf.gz
+thread  30 init bounding field 17 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype17.rf.gz
+thread   7 init bounding field 18 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype18.rf.gz
+thread  10 init bounding field 19 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype19.rf.gz
+thread  22 init bounding field 20 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype20.rf.gz
+thread  17 init bounding field 21 CACHE TO ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry_bounding16_4_atype21.rf.gz
+target_donors.size() 4 target_acceptors.size() 8
+Building DonorAcceptorCache with 0.1 safe distance
+Donors: Preparing DonorAcceptorCache with interaction range 3.3...
+Max sats at one voxel: 3
+Acceptors: Preparing DonorAcceptorCache with interaction range 3.3...
+Max sats at one voxel: 4
+Tested 1001 hbonds without errors
+RifGeneratorSimpleHbonds, cache data path: ./rifgen_init
+========================== DO HBOND ==================================
+adding don res PPQ to std set
+adding acc res PPQ to std set
+n_sat_groups = 12
+RifGenSimpleHbonds checking res PPQ
+not putting PPQ into rif, no N,CA,C
+not putting PPQ into rif, no N,CA,C
+preloading / generating hbond_geometry files
+add PPQ to hbgeom_exemplars_rtype_override
+add PPQ to hbgeom_exemplars_rtype_override
+add add add add add add add add add PPQadd PPQ to hbgeom_exemplars_rtype_overridePPQPPQ to hbgeom_exemplars_rtype_override to hbgeom_exemplars_rtype_overridePPQ
+
+ to hbgeom_exemplars_rtype_override to hbgeom_exemplars_rtype_override
+
+PPQ to hbgeom_exemplars_rtype_override
+PPQ to hbgeom_exemplars_rtype_override
+PPQ to hbgeom_exemplars_rtype_override
+PPQadd  to hbgeom_exemplars_rtype_override
+PPQ to hbgeom_exemplars_rtype_override
+PPQadd  to hbgeom_exemplars_rtype_override
+PPQ to hbgeom_exemplars_rtype_override
+
+GENERATING HBOND GEOMETRIES pair 1 of 15 : PPQ/THR -- FIX_DON_
+==================================================================================================================
+===================== Thread 1 HBondedPairGenerator PPQ THR ================================================
+==================================================================================================================
+GENERATING HBOND GEOMETRIES pair 3 of 15 : THR/PPQ -- FIX_ACC_
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+==================================================================================================================
+===================== Thread 15 HBondedPairGenerator THR PPQ ================================================
+==================================================================================================================
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol alignment atomnos PPQ GENERATING HBOND GEOMETRIES pair 0.6981329
+   long_tol  6.28319
+   reslang    0.0698132
+10 11
+14 of ROTATION_SAMPLING tip_tol: 15 : ASN/PPQ -- FIX_ACC_
+40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+==================================================================================================================
+===================== Thread 29 HBondedPairGenerator ASN PPQ ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol:    reslang   40 rot_range: 0.0698132
+GENERATING HBOND GEOMETRIES pair 8 of 15 : PPQ/GLN -- FIX_DON_
+360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+==================================================================================================================
+===================== Thread 26 HBondedPairGenerator PPQ GLN ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 7 of 15 : PPQ/GLU -- FIX_DON_
+==================================================================================================================
+===================== Thread 18 HBondedPairGenerator PPQ GLU ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 12 of 15 : TRP/PPQ -- FIX_ACC_
+==================================================================================================================
+===================== Thread 12 HBondedPairGenerator TRP PPQ ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 10 of 15 : PPQ/TYR -- FIX_DON_
+==================================================================================================================
+===================== Thread 9 HBondedPairGenerator PPQ TYR ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 9 of 15 : GLN/PPQ -- FIX_ACC_
+==================================================================================================================
+===================== Thread 28 HBondedPairGenerator GLN PPQ ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 4 of 15 : SER/PPQ -- FIX_ACC_
+==================================================================================================================
+===================== Thread 27 HBondedPairGenerator SER PPQ ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 13 of 15 : PPQ/ASN -- FIX_DON_
+==================================================================================================================
+===================== Thread 14 HBondedPairGenerator PPQ ASN ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 11 of 15 : TYR/PPQ -- FIX_ACC_
+==================================================================================================================
+===================== Thread 30 HBondedPairGenerator TYR PPQ ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 6 of 15 : LYS/PPQ -- FIX_ACC_
+==================================================================================================================
+===================== Thread 24 HBondedPairGenerator LYS PPQ ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 2 of 15 : PPQ/SER -- FIX_DON_
+==================================================================================================================
+===================== Thread 21 HBondedPairGenerator PPQ SER ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+GENERATING HBOND GEOMETRIES pair 5 of 15 : ARG/PPQ -- FIX_ACC_
+==================================================================================================================
+===================== Thread 23 HBondedPairGenerator ARG PPQ ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+add PPQ to hbgeom_exemplars_rtype_override
+GENERATING HBOND GEOMETRIES pair 15 of 15 : PPQ/ASP -- FIX_DON_
+==================================================================================================================
+===================== Thread 10 HBondedPairGenerator PPQ ASP ================================================
+==================================================================================================================
+alignment atomnos PPQ 9 10 11
+ROTATION_SAMPLING tip_tol: 40 rot_range: 360 resl: 4
+gen_hbond_rotations: spacing 0.12083 n1 52 n2 6
+   short_tol 0.698132
+   long_tol  6.28319
+   reslang   0.0698132
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+-----PPQ-----THR
+-----PPQ-----GLN
+-----PPQ-----ASP
+----done-----
+-----THR-----PPQ
+found PPQ in exemplars
+----done-----
+found PPQ in exemplars
+-----SER-----PPQ
+----done-----
+----done-----
+-----PPQ-----GLU
+no rotamers for res1 PPQ
+no rotamers for res1 PPQ
+----done-----
+adding rotamers res2 GLN 169-193 169found PPQ in exemplars
+adding rotamers res2 THR 290-343 290 170 171-----PPQ-----ASN
+ 291 292 293 294 295 296  297 172298 173 299 300 301 174 302 175 176 303 177  178304 179 305 180 306 181 182 183 307 184  185308 309 310 311 186 187 188 189 312 313 190-----PPQ ----------314 SER315 316
+ 191 192GLN -----317  PPQ318 193319
+found PPQ in exemplars
+ 320 321 found PPQ in exemplars
+
+322----done-----
+ 323 324HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  
+ 325 326 327 328 329 330 331 332consider orbitals for atom 1   OE1333
+ 334 335 336acceptor orbitals, index: 1 atom:  OE1 orbitals: [3, 4]
+adding rotamers res1 SER 236-289 236 337 338 339 340 341 342 343
+donor atoms:  H1 ,  H2 ,  H3 ,  H12, 
+donor nchi: 5
+donor num rots: 1
+acceptor num rots: 25HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  
+
+adding rotamers res1 THR 290-343 290consider orbitals for atom 1  OG1
+acceptor orbitals, index: 1 atom:  OG1 orbitals: [3 , 4]
+donor atoms:  H1 , 237 H2 ,  H3 ,  H12, 
+ 291----done----- no rotamers for res1 
+donor nchi: 2925PPQ
+donor num rots: 1 N hbond geom samples: 11076
+293total raw samples: 2215200 294
+----done-----
+ 
+295  296 297 298
+ 299 300 301 302 303 304 305 306-----ASN-----PPQacceptor num rots: 
+found PPQ in exemplars
+238 adding rotamers res2 ASP 30754---------------LYS-----PPQ
+found PPQ in exemplars
+----done-----
+ARG-----PPQ-----TYR
+TRP-----PPQ
+found PPQ in exemplars
+
+N hbond geom samples: 11076
+total raw samples: 4784832
+-----PPQ
+11-17 no rotamers for res1 PPQ 
+ -----found TYR-----PPQPPQ
+308 in exemplars
+239 240 24111 242 243  309244 310adding rotamers res2  ASN  245154311-  166312  154246313 314 315 316  247317 318  319248 no rotamers for res1 320PPQ
+ 249 155 156   32112 322157no rotamers for res1  PPQ 
+adding rotamers res2 13 14  15323 324SER158 236  -250289 236  251 adding rotamers res2 159 325GLU252   326 16327160 253 254  255328   161adding rotamers res1  256329GLN  1718
+169-44 18162----done-----
+-HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  
+consider orbitals for atom  1  OD1
+ 163 19237 238  193 20239 21   22240----done-----330
+ 331  241 169257332 333 334 335  164336  337  242165 338258   consider orbitals for atom 232432   OD2 
+244 acceptor orbitals, index: 1 atom:  OD1259found   PPQ----done-----
+ 24166
+ 260 orbitals: 24525[339 in exemplars 246 247  
+  248261 170found PPQ in exemplars
+ HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  3----done-----
+ ----done-----
+, 4]249----done-----
+ 262 263340171 264 341 342  ================================================================================================================== 
+
+ ==================================================================================================================
+found ============ Thread 1 generating hotspot geometries PPQ THR17225026consider orbitals for atom   251 252acceptor orbitals, index: 26512173 atom:  ======================================= 27343  OD228
+ 
+ orbitals: [5, 6] ============ Thread   PPQ174253 26626
+================================================================================================================== OD1 generating hotspot geometries  donor atoms: 
+ H1 , 254 in exemplarsadding rotamers res1  
+ H2  175acceptor orbitals, index: PPQ, 255  176
+   H3 GLN267,  =======================================ASN177
+ 29no rotamers for res1 PPQfound 
+ H12  1 30 31 32 atom: 154-256166 154  no rotamers for res2 33found found 268 PPQ178PPQ in exemplars 
+25734 OD1  in exemplars269 orbitals: 
+PPQ 35 
+
+==================================================================================================================PPQ36 in exemplars 
+ , 
+[3155 156  157 158 179 180HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  
+
+159 160  161,  162consider orbitals for atom 1  O3 
+consider orbitals for atom 2  O4 
+donor nchi: consider orbitals for atom 53
+adding rotamers res1 181  O1 
+  4LYS270]
+ adding rotamers res2   95182consider orbitals for atom  donor num rots: 1
+donor atoms: 163adding rotamers res1 37258acceptor num rots: 7
+- 38271  N hbond geom samples: 110764
+ H1 183ARG  125259 260 261  39 total raw samples:   O2 TYRadding rotamers res1  1240512  TYR164 , 184adding rotamers res1 272262194 165 166
+
+366-387 366 H2 no rotamers for res2 PPQ
+ 40185 
+  263 366186 187 , TRP95acceptor orbitals, index:  - H3 273,  H12235 ,  1 274 atom:  O3  orbitals: 194
+347--[41 2643871365, 2]donor nchi: 
+ 275  42 43HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  
+347366  276 3675  368
+ 369265 370 371acceptor orbitals, index:  consider orbitals for atom donor num rots:   37212  atom:   1
+44188 O4   orbitals: 195 acceptor num rots: 13
+96 N hbond geom samples: 11076
+  [3,  O3 266196
+
+4373277]
+total raw samples:  278consider orbitals for atom 189 267     acceptor orbitals, index: 268190 3279367  atom: 374 348269197 368     3492 375  280369270  O1 198  97199  orbitals: 281350 [HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12   3511912711151904 
+  376  370 5 377 352200, 986 
+282]
+  378272  99 O4  353 371
+consider orbitals for atom    1921201372acceptor orbitals, index:    4 atom:  O2  orbitals: [100373  3793541937 , 374 
+ 380consider orbitals for atom  273283 3381 284101355  8 356  102 no rotamers for res2 PPQ357  
+274358 O1 ]  202 
+382375275 285 
+203  OE1376
+103consider orbitals for atom 4   383  104359286 donor atoms:  HG1, 
+  377consider orbitals for atom 3842105    donor nchi: 276  OE2  106277 O2   
+278
+  385acceptor orbitals, index: 279378 2801107360 108287 2109   288 110361   362
+289386204 379donor num rots: 54
+
+  380acceptor orbitals, index: acceptor num rots: 11
+HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  
+consider orbitals for atom N hbond geom samples: 11076
+205 atom: total raw samples: 4784832
+ O3  orbitals: [   atom: 363381 382206  OE1 no rotamers for res2   281383111 orbitals: 207 2821PPQ  208  283 209384[3,  284    O3 364 3654387 
+
+385  ]285 
+
+
+ 210==================================================================================================================
+ 211 212 ============ Thread 2131no rotamers for res2 PPQ
+HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  286acceptor orbitals, index: 
+2 287  atom: 10 ==================================================================================================================consider orbitals for atom 1 OE2
+ 112386HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  consider orbitals for atom ,  generating hotspot geometries 288============ Thread 14PPQ  generating hotspot geometries PPQ ASN =======================================
+
+ 2142113  ASP2 215 O3 ==================================================================================================================114   consider orbitals for atom 1  OH 
+acceptor orbitals, index: 1 =======================================
+==================================================================================================================
+387
+no rotamers for res2 PPQ
+
+consider orbitals for atom 2  O4 
+consider orbitals for atom 3  O1 
+HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  consider orbitals for atom 4  O2 
+
+]289 atom: 
+216 O4   OH  orbitals:  orbitals: [acceptor orbitals, index: 13, [14HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  ] 217
+ 5acceptor orbitals, index: 115==================================================================================================================
+
+ 21 atom:  O3  orbitals: [1, 
+ atom: 2,  O4  orbitals: consider orbitals for atom donor atoms:  H1 ,  H2 , 218[consider orbitals for atom consider orbitals for atom  H3 1
+ 21936 3
+1161220] 
+============ Thread  ,  O3  , 4HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  acceptor orbitals, index: 2 
+15]
+ generating hotspot geometries  atom: consider orbitals for atom  O3 acceptor orbitals, index: THR  O4 1  OG 
+ 3221]
+ atom:  O1 acceptor orbitals, index:  orbitals: 1117 atom: PPQ orbitals: 
+ =======================================[
+ OG 
+3 ==================================================================================================================
+ 222donor atoms: ,  2234[118  orbitals: 119consider orbitals for atom ] H1  2
+consider orbitals for atom  H12 acceptor orbitals, index: 3 atom:  O1  orbitals: [5, 6]
+5acceptor orbitals, index: , 4 atom: 2224 O1  ,  120
+225 O2 [ orbitals: [7, 8]
+,  O4  donor atoms:  HG 
+ ,  H2 ,  
+1216 O4 
+3donor nchi: ] , 4]
+
+226
+consider orbitals for atom  227 5228consider orbitals for atom 3donor atoms: acceptor orbitals, index: 4 atom:  O2  orbitals: [7  H1  H3 122 229,  O1  123donor nchi:  84
+, 124consider orbitals for atom   H2 ,  H3 ,  H12consider orbitals for atom 2, 
+ 
+
+230125donor nchi: 5
+ 2313]donor num rots:  1donor num rots: 54
+, 
+4 H12,  donor num rots: 1
+acceptor num rots:  54
+
+232
+N hbond geom samples: 11076
+donor nchi:  O2  acceptor num rots: no rotamers for res2 PPQacceptor num rots: 
+
+ 5
+
+donor num rots: 1
+acceptor num rots: 27
+N hbond geom samples: 11076
+22
+total raw samples: 4784832
+N hbond geom samples: 11076
+1total raw samples: 1949376
+ O2 
+
+total raw samples: N hbond geom samples: 11076
+ O1 
+233HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  acceptor orbitals, index: 1 atom:  O3  orbitals: [1, 2]
+ total raw samples: 
+4784832
+donor atoms: 234acceptor orbitals, index: consider orbitals for atom 1  O3 
+ 235consider orbitals for atom 24784832 atom:  O4 4  orbitals:  O2 
+1HD2, 2HD2acceptor orbitals, index: [1
+3 atom: , 4]
+acceptor orbitals, index: 3 atom:  O1  orbitals: [5, 6]
+acceptor orbitals, index: 4 atom:  O2 ,  orbitals: [7, 8]
+
+donor nchi: 
+2
+no rotamers for res2 PPQ
+ O3  orbitals: [1, 2]
+acceptor orbitals, index: 2 atom:  O4  orbitals: [3, 4]
+acceptor orbitals, index: 3 atom:  O1  orbitals: [5, 6]
+acceptor orbitals, index: 4 atom:  O2  orbitals: [7, 8]
+donor atoms:  HE1, 
+donor nchi: 2
+donor atoms: donor num rots: 19
+consider orbitals for atom acceptor orbitals, index: acceptor num rots: 1
+12donor num rots:  HH  13
+,  atom: acceptor num rots: 1
+N hbond geom samples: 11076
+HBondedPairGenerator: align atoms:  C4   O1   O2 
+1  C3   2  C2   3  C1   4  N1   5  C5   6  O3   7  O4   8  P1   9  C4   10  O1   11  O2   12  H7   13  H8   14  H5   15  H6   16  H4   17  H1   18  H2   19  H3   20  H9   21  H10  22  H11  23  H12  
+ O3  O4  orbitals: [1, 2]
+acceptor orbitals, index: 2 atom:  O4  orbitals: [3, 4]
+acceptor orbitals, index: 3 atom:  O1  orbitals: [5, 6]
+acceptor orbitals, index: 4 atom:  O2  orbitals: [7, 8]
+donor atoms: 1HE2, 2HE2, 
+donor nchi: 3
+total raw samples: ==================================================================================================================
+consider orbitals for atom ============ Thread 27 generating hotspot geometries 1N hbond geom samples: 
+SER PPQ11076  ======================================= O3 
+
+2303808
+donor nchi: 3
+
+donor num rots: 
+consider orbitals for atom consider orbitals for atom ==================================================================================================================
+225==================================================================================================================
+total raw samples: 3============ Thread 211683552 generating hotspot geometries PPQ  
+ O4  SER =======================================
+ O1 
+==================================================================================================================
+consider orbitals for atom 4  O2 
+acceptor orbitals, index: 1 atom:  O3  orbitals: [1, 2]
+
+donor num rots: 
+22
+consider orbitals for atom 3 acceptor orbitals, index: acceptor num rots:  O1 1
+acceptor num rots: 1
+N hbond geom samples: 11076
+total raw samples: 4430400
+consider orbitals for atom 4  O2 
+2N hbond geom samples: 11076
+total raw samples: 1949376
+==================================================================================================================
+
+acceptor orbitals, index: 1 atom:  O3  orbitals: [1, 2]
+acceptor orbitals, index: 2 atom:  O4  orbitals: [3, 4]
+acceptor orbitals, index: 3 atom:  O1  orbitals: [5, 6]
+acceptor orbitals, index: ==================================================================================================================4 atom:  atom:  O4  orbitals: [ O2 3 orbitals: 
+, ============ Thread 9 generating hotspot geometries PPQ TYR =======================================
+==================================================================================================================
+4]
+acceptor orbitals, index: 3 atom:  O1  orbitals: [5, 6]
+acceptor orbitals, index: 4 atom:  O2  orbitals: [7, 8]
+donor atoms: 1HZ , [7, 8]
+donor atoms:  HE , 1HH1, 2HH1, 1HH2, 2HH2, 
+2HZ , 3HZ , 
+donor nchi: 4
+donor num rots: 31
+acceptor num rots: 1
+N hbond geom samples: 11076
+total raw samples: 8240544donor nchi: 
+============ Thread 18 generating hotspot geometries PPQ GLU =======================================
+==================================================================================================================
+4
+donor num rots: 42
+acceptor num rots: 1
+N hbond geom samples: 11076
+total raw samples: 18607680
+==================================================================================================================
+============ Thread 29 generating hotspot geometries ASN PPQ =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 12 generating hotspot geometries TRP PPQ =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 28 generating hotspot geometries GLN PPQ =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 30 generating hotspot geometries TYR PPQ =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 24 generating hotspot geometries LYS PPQ =======================================
+==================================================================================================================
+==================================================================================================================
+============ Thread 23 generating hotspot geometries ARG PPQ =======================================
+==================================================================================================================
+Thread 21 Samples PPQ -> SER fix_donor 100.000K of at most   4.785M progress:  2.08992%
+Thread 1 Samples PPQ -> THR fix_donor 100.000K of at most   4.785M progress:  2.08992%
+Thread 27 Samples SER -> PPQ fix_acceptor 100.000K of at most   4.785M progress:  2.08992%
+Thread 15 Samples THR -> PPQ fix_acceptor 100.000K of at most   4.785M progress:  2.08992%
+Thread 14 Samples PPQ -> ASN fix_donor 100.000K of at most   1.152M progress:  8.68119%
+Thread 29 Samples ASN -> PPQ fix_acceptor 100.000K of at most   2.304M progress:  4.3406%
+Thread 18 Samples PPQ -> GLU fix_donor 100.000K of at most   4.785M progress:  2.08992%
+Thread 26 Samples PPQ -> GLN fix_donor 100.000K of at most   2.215M progress:  4.51422%
+Thread 28 Samples GLN -> PPQ fix_acceptor 100.000K of at most   4.430M progress:  2.25711%
+Thread 24 Samples LYS -> PPQ fix_acceptor 100.000K of at most   8.241M progress:  1.2135%
+Thread 10 Samples PPQ -> ASP fix_donor 100.000K of at most   1.241M progress:  8.06111%
+Thread 21 Samples PPQ -> SER fix_donor 200.000K of at most   4.785M progress:  4.17985%
+Thread 27 Samples SER -> PPQ fix_acceptor 200.000K of at most   4.785M progress:  4.17985%
+Thread 1 Samples PPQ -> THR fix_donor 200.000K of at most   4.785M progress:  4.17985%
+Thread 9 Samples PPQ -> TYR fix_donor 100.000K of at most   1.949M progress:  5.1298%
+Thread 12 Samples TRP -> PPQ fix_acceptor 100.000K of at most   1.684M progress:  5.93976%
+Thread 15 Samples THR -> PPQ fix_acceptor 200.000K of at most   4.785M progress:  4.17985%
+Thread 30 Samples TYR -> PPQ fix_acceptor 100.000K of at most   1.949M progress:  5.1298%
+Thread 14 Samples PPQ -> ASN fix_donor 200.000K of at most   1.152M progress:  17.3625%
+Thread 29 Samples ASN -> PPQ fix_acceptor 200.000K of at most   2.304M progress:  8.68124%
+Thread 18 Samples PPQ -> GLU fix_donor 200.000K of at most   4.785M progress:  4.17985%
+Thread 23 Samples ARG -> PPQ fix_acceptor 100.000K of at most  18.608M progress:  0.537407%
+Thread 26 Samples PPQ -> GLN fix_donor 200.000K of at most   2.215M progress:  9.02849%
+Thread 28 Samples GLN -> PPQ fix_acceptor 200.000K of at most   4.430M progress:  4.51424%
+Thread 24 Samples LYS -> PPQ fix_acceptor 200.000K of at most   8.241M progress:  2.42701%
+Thread 10 Samples PPQ -> ASP fix_donor 200.000K of at most   1.241M progress:  16.1223%
+Thread 21 Samples PPQ -> SER fix_donor 300.000K of at most   4.785M progress:  6.26979%
+Thread 27 Samples SER -> PPQ fix_acceptor 300.000K of at most   4.785M progress:  6.26979%
+Thread 1 Samples PPQ -> THR fix_donor 300.000K of at most   4.785M progress:  6.26979%
+Thread 15 Samples THR -> PPQ fix_acceptor 300.000K of at most   4.785M progress:  6.26979%
+Thread 14 Samples PPQ -> ASN fix_donor 300.000K of at most   1.152M progress:  26.0438%
+Thread 29 Samples ASN -> PPQ fix_acceptor 300.000K of at most   2.304M progress:  13.0219%
+Thread 18 Samples PPQ -> GLU fix_donor 300.000K of at most   4.785M progress:  6.26979%
+Thread 21 Samples PPQ -> SER fix_donor 400.000K of at most   4.785M progress:  8.35973%
+Thread 26 Samples PPQ -> GLN fix_donor 300.000K of at most   2.215M progress:  13.5428%
+Thread 27 Samples SER -> PPQ fix_acceptor 400.000K of at most   4.785M progress:  8.35973%
+Thread 1 Samples PPQ -> THR fix_donor 400.000K of at most   4.785M progress:  8.35973%
+Thread 28 Samples GLN -> PPQ fix_acceptor 300.000K of at most   4.430M progress:  6.77138%
+Thread 24 Samples LYS -> PPQ fix_acceptor 300.000K of at most   8.241M progress:  3.64052%
+Thread 10 Samples PPQ -> ASP fix_donor 300.000K of at most   1.241M progress:  24.1835%
+Thread 12 Samples TRP -> PPQ fix_acceptor 200.000K of at most   1.684M progress:  11.8796%
+Thread 9 Samples PPQ -> TYR fix_donor 200.000K of at most   1.949M progress:  10.2596%
+Thread 15 Samples THR -> PPQ fix_acceptor 400.000K of at most   4.785M progress:  8.35973%
+Thread 30 Samples TYR -> PPQ fix_acceptor 200.000K of at most   1.949M progress:  10.2596%
+Thread 14 Samples PPQ -> ASN fix_donor 400.000K of at most   1.152M progress:  34.725%
+Thread 29 Samples ASN -> PPQ fix_acceptor 400.000K of at most   2.304M progress:  17.3625%
+Thread 21 Samples PPQ -> SER fix_donor 500.000K of at most   4.785M progress:  10.4497%
+Thread 18 Samples PPQ -> GLU fix_donor 400.000K of at most   4.785M progress:  8.35973%
+Thread 27 Samples SER -> PPQ fix_acceptor 500.000K of at most   4.785M progress:  10.4497%
+Thread 1 Samples PPQ -> THR fix_donor 500.000K of at most   4.785M progress:  10.4497%
+Thread 26 Samples PPQ -> GLN fix_donor 400.000K of at most   2.215M progress:  18.057%
+Thread 10 Samples PPQ -> ASP fix_donor 400.000K of at most   1.241M progress:  32.2447%
+Thread 23 Samples ARG -> PPQ fix_acceptor 200.000K of at most  18.608M progress:  1.07482%
+Thread 15 Samples THR -> PPQ fix_acceptor 500.000K of at most   4.785M progress:  10.4497%
+Thread 28 Samples GLN -> PPQ fix_acceptor 400.000K of at most   4.430M progress:  9.02851%
+Thread 24 Samples LYS -> PPQ fix_acceptor 400.000K of at most   8.241M progress:  4.85404%
+Thread 14 Samples PPQ -> ASN fix_donor 500.000K of at most   1.152M progress:  43.4063%
+Thread 21 Samples PPQ -> SER fix_donor 600.000K of at most   4.785M progress:  12.5396%
+Thread 29 Samples ASN -> PPQ fix_acceptor 500.000K of at most   2.304M progress:  21.7032%
+Thread 27 Samples SER -> PPQ fix_acceptor 600.000K of at most   4.785M progress:  12.5396%
+Thread 1 Samples PPQ -> THR fix_donor 600.000K of at most   4.785M progress:  12.5396%
+Thread 18 Samples PPQ -> GLU fix_donor 500.000K of at most   4.785M progress:  10.4497%
+Thread 12 Samples TRP -> PPQ fix_acceptor 300.000K of at most   1.684M progress:  17.8194%
+Thread 10 Samples PPQ -> ASP fix_donor 500.000K of at most   1.241M progress:  40.3059%
+Thread 15 Samples THR -> PPQ fix_acceptor 600.000K of at most   4.785M progress:  12.5396%
+Thread 26 Samples PPQ -> GLN fix_donor 500.000K of at most   2.215M progress:  22.5713%
+Thread 9 Samples PPQ -> TYR fix_donor 300.000K of at most   1.949M progress:  15.3895%
+Thread 21 Samples PPQ -> SER fix_donor 700.000K of at most   4.785M progress:  14.6295%
+Thread 30 Samples TYR -> PPQ fix_acceptor 300.000K of at most   1.949M progress:  15.3895%
+Thread 14 Samples PPQ -> ASN fix_donor 600.000K of at most   1.152M progress:  52.0876%
+Thread 28 Samples GLN -> PPQ fix_acceptor 500.000K of at most   4.430M progress:  11.2856%
+Thread 27 Samples SER -> PPQ fix_acceptor 700.000K of at most   4.785M progress:  14.6295%
+Thread 24 Samples LYS -> PPQ fix_acceptor 500.000K of at most   8.241M progress:  6.06755%
+Thread 1 Samples PPQ -> THR fix_donor 700.000K of at most   4.785M progress:  14.6295%
+Thread 29 Samples ASN -> PPQ fix_acceptor 600.000K of at most   2.304M progress:  26.0438%
+Thread 18 Samples PPQ -> GLU fix_donor 600.000K of at most   4.785M progress:  12.5396%
+Thread 15 Samples THR -> PPQ fix_acceptor 700.000K of at most   4.785M progress:  14.6295%
+Thread 10 Samples PPQ -> ASP fix_donor 600.000K of at most   1.241M progress:  48.367%
+Thread 21 Samples PPQ -> SER fix_donor 800.000K of at most   4.785M progress:  16.7195%
+Thread 26 Samples PPQ -> GLN fix_donor 600.000K of at most   2.215M progress:  27.0855%
+Thread 23 Samples ARG -> PPQ fix_acceptor 300.000K of at most  18.608M progress:  1.61223%
+Thread 14 Samples PPQ -> ASN fix_donor 700.000K of at most   1.152M progress:  60.7689%
+Thread 27 Samples SER -> PPQ fix_acceptor 800.000K of at most   4.785M progress:  16.7195%
+Thread 1 Samples PPQ -> THR fix_donor 800.000K of at most   4.785M progress:  16.7195%
+Thread 28 Samples GLN -> PPQ fix_acceptor 600.000K of at most   4.430M progress:  13.5428%
+Thread 29 Samples ASN -> PPQ fix_acceptor 700.000K of at most   2.304M progress:  30.3844%
+Thread 12 Samples TRP -> PPQ fix_acceptor 400.000K of at most   1.684M progress:  23.7592%
+Thread 24 Samples LYS -> PPQ fix_acceptor 600.000K of at most   8.241M progress:  7.28106%
+Thread 15 Samples THR -> PPQ fix_acceptor 800.000K of at most   4.785M progress:  16.7195%
+Thread 10 Samples PPQ -> ASP fix_donor 700.000K of at most   1.241M progress:  56.4282%
+Thread 21 Samples PPQ -> SER fix_donor 900.000K of at most   4.785M progress:  18.8094%
+Thread 18 Samples PPQ -> GLU fix_donor 700.000K of at most   4.785M progress:  14.6295%
+Thread 26 Samples PPQ -> GLN fix_donor 700.000K of at most   2.215M progress:  31.5998%
+Thread 30 Samples TYR -> PPQ fix_acceptor 400.000K of at most   1.949M progress:  20.5193%
+Thread 27 Samples SER -> PPQ fix_acceptor 900.000K of at most   4.785M progress:  18.8094%
+Thread 1 Samples PPQ -> THR fix_donor 900.000K of at most   4.785M progress:  18.8094%
+Thread 9 Samples PPQ -> TYR fix_donor 400.000K of at most   1.949M progress:  20.5193%
+Thread 14 Samples PPQ -> ASN fix_donor 800.000K of at most   1.152M progress:  69.4501%
+Thread 28 Samples GLN -> PPQ fix_acceptor 700.000K of at most   4.430M progress:  15.7999%
+Thread 29 Samples ASN -> PPQ fix_acceptor 800.000K of at most   2.304M progress:  34.7251%
+Thread 21 Samples PPQ -> SER fix_donor   1.000M of at most   4.785M progress:  20.8994%
+Thread 15 Samples THR -> PPQ fix_acceptor 900.000K of at most   4.785M progress:  18.8094%
+Thread 10 Samples PPQ -> ASP fix_donor 800.000K of at most   1.241M progress:  64.4894%
+Thread 18 Samples PPQ -> GLU fix_donor 800.000K of at most   4.785M progress:  16.7195%
+Thread 24 Samples LYS -> PPQ fix_acceptor 700.000K of at most   8.241M progress:  8.49457%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.000M of at most   4.785M progress:  20.8994%
+Thread 1 Samples PPQ -> THR fix_donor   1.000M of at most   4.785M progress:  20.8994%
+Thread 23 Samples ARG -> PPQ fix_acceptor 400.000K of at most  18.608M progress:  2.14964%
+Thread 26 Samples PPQ -> GLN fix_donor 800.000K of at most   2.215M progress:  36.1141%
+Thread 14 Samples PPQ -> ASN fix_donor 900.000K of at most   1.152M progress:  78.1314%
+Thread 21 Samples PPQ -> SER fix_donor   1.100M of at most   4.785M progress:  22.9893%
+Thread 12 Samples TRP -> PPQ fix_acceptor 500.000K of at most   1.684M progress:  29.6991%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.000M of at most   4.785M progress:  20.8994%
+Thread 29 Samples ASN -> PPQ fix_acceptor 900.000K of at most   2.304M progress:  39.0657%
+Thread 10 Samples PPQ -> ASP fix_donor 900.000K of at most   1.241M progress:  72.5506%
+Thread 28 Samples GLN -> PPQ fix_acceptor 800.000K of at most   4.430M progress:  18.057%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.100M of at most   4.785M progress:  22.9893%
+Thread 18 Samples PPQ -> GLU fix_donor 900.000K of at most   4.785M progress:  18.8094%
+Thread 1 Samples PPQ -> THR fix_donor   1.100M of at most   4.785M progress:  22.9893%
+Thread 30 Samples TYR -> PPQ fix_acceptor 500.000K of at most   1.949M progress:  25.6492%
+Thread 24 Samples LYS -> PPQ fix_acceptor 800.000K of at most   8.241M progress:  9.70808%
+Thread 21 Samples PPQ -> SER fix_donor   1.200M of at most   4.785M progress:  25.0792%
+Thread 26 Samples PPQ -> GLN fix_donor 900.000K of at most   2.215M progress:  40.6283%
+Thread 14 Samples PPQ -> ASN fix_donor   1.000M of at most   1.152M progress:  86.8127%
+Thread 9 Samples PPQ -> TYR fix_donor 500.000K of at most   1.949M progress:  25.6492%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.100M of at most   4.785M progress:  22.9893%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.000M of at most   2.304M progress:  43.4064%
+Thread 10 Samples PPQ -> ASP fix_donor   1.000M of at most   1.241M progress:  80.6118%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.200M of at most   4.785M progress:  25.0792%
+Thread 1 Samples PPQ -> THR fix_donor   1.200M of at most   4.785M progress:  25.0792%
+Thread 28 Samples GLN -> PPQ fix_acceptor 900.000K of at most   4.430M progress:  20.3142%
+Thread 18 Samples PPQ -> GLU fix_donor   1.000M of at most   4.785M progress:  20.8994%
+Thread 21 Samples PPQ -> SER fix_donor   1.300M of at most   4.785M progress:  27.1692%
+Thread 12 Samples TRP -> PPQ fix_acceptor 600.000K of at most   1.684M progress:  35.6389%
+Thread 14 Samples PPQ -> ASN fix_donor   1.100M of at most   1.152M progress:  95.494%
+Thread 24 Samples LYS -> PPQ fix_acceptor 900.000K of at most   8.241M progress:  10.9216%
+total PPQ ASN   1.106M
+SAVING   1.106M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots13__DON_PPQ-ASN__PPQ_rot_min_0001.rel_rot_pos.gz
+1105746
+Thread 26 Samples PPQ -> GLN fix_donor   1.000M of at most   2.215M progress:  45.1426%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.200M of at most   4.785M progress:  25.0792%
+Thread 23 Samples ARG -> PPQ fix_acceptor 500.000K of at most  18.608M progress:  2.68706%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.300M of at most   4.785M progress:  27.1692%
+Thread 10 Samples PPQ -> ASP fix_donor   1.100M of at most   1.241M progress:  88.673%
+Thread 1 Samples PPQ -> THR fix_donor   1.300M of at most   4.785M progress:  27.1692%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.100M of at most   2.304M progress:  47.747%
+Thread 21 Samples PPQ -> SER fix_donor   1.400M of at most   4.785M progress:  29.2591%
+Thread 30 Samples TYR -> PPQ fix_acceptor 600.000K of at most   1.949M progress:  30.779%
+Thread 18 Samples PPQ -> GLU fix_donor   1.100M of at most   4.785M progress:  22.9893%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.000M of at most   4.430M progress:  22.5713%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.300M of at most   4.785M progress:  27.1692%
+Thread 9 Samples PPQ -> TYR fix_donor 600.000K of at most   1.949M progress:  30.779%
+Thread 26 Samples PPQ -> GLN fix_donor   1.100M of at most   2.215M progress:  49.6569%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.400M of at most   4.785M progress:  29.2591%
+Thread 1 Samples PPQ -> THR fix_donor   1.400M of at most   4.785M progress:  29.2591%
+total PPQ ASP   1.194M
+SAVING   1.194M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots7__DON_PPQ-ASP__PPQ_rot_min_0001.rel_rot_pos.gz
+1194163
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.000M of at most   8.241M progress:  12.1351%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.200M of at most   2.304M progress:  52.0876%
+Thread 21 Samples PPQ -> SER fix_donor   1.500M of at most   4.785M progress:  31.349%
+Thread 12 Samples TRP -> PPQ fix_acceptor 700.000K of at most   1.684M progress:  41.5787%
+Thread 18 Samples PPQ -> GLU fix_donor   1.200M of at most   4.785M progress:  25.0792%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.100M of at most   4.430M progress:  24.8284%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.500M of at most   4.785M progress:  31.349%
+Thread 1 Samples PPQ -> THR fix_donor   1.500M of at most   4.785M progress:  31.349%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.400M of at most   4.785M progress:  29.2591%
+Thread 21 Samples PPQ -> SER fix_donor   1.600M of at most   4.785M progress:  33.439%
+Thread 26 Samples PPQ -> GLN fix_donor   1.200M of at most   2.215M progress:  54.1711%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.300M of at most   2.304M progress:  56.4283%
+Thread 23 Samples ARG -> PPQ fix_acceptor 600.000K of at most  18.608M progress:  3.22447%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.100M of at most   8.241M progress:  13.3486%
+Thread 30 Samples TYR -> PPQ fix_acceptor 700.000K of at most   1.949M progress:  35.9089%
+Thread 18 Samples PPQ -> GLU fix_donor   1.300M of at most   4.785M progress:  27.1692%
+Thread 1 Samples PPQ -> THR fix_donor   1.600M of at most   4.785M progress:  33.439%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.600M of at most   4.785M progress:  33.439%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.500M of at most   4.785M progress:  31.349%
+Thread 21 Samples PPQ -> SER fix_donor   1.700M of at most   4.785M progress:  35.5289%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.200M of at most   4.430M progress:  27.0856%
+Thread 9 Samples PPQ -> TYR fix_donor 700.000K of at most   1.949M progress:  35.9089%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.400M of at most   2.304M progress:  60.7689%
+Thread 26 Samples PPQ -> GLN fix_donor   1.300M of at most   2.215M progress:  58.6854%
+Thread 12 Samples TRP -> PPQ fix_acceptor 800.000K of at most   1.684M progress:  47.5185%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.200M of at most   8.241M progress:  14.5621%
+Thread 1 Samples PPQ -> THR fix_donor   1.700M of at most   4.785M progress:  35.5289%
+Thread 21 Samples PPQ -> SER fix_donor   1.800M of at most   4.785M progress:  37.6189%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.700M of at most   4.785M progress:  35.5289%
+Thread 18 Samples PPQ -> GLU fix_donor   1.400M of at most   4.785M progress:  29.2591%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.600M of at most   4.785M progress:  33.439%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.300M of at most   4.430M progress:  29.3427%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.500M of at most   2.304M progress:  65.1095%
+Thread 30 Samples TYR -> PPQ fix_acceptor 800.000K of at most   1.949M progress:  41.0387%
+Thread 1 Samples PPQ -> THR fix_donor   1.800M of at most   4.785M progress:  37.6189%
+Thread 21 Samples PPQ -> SER fix_donor   1.900M of at most   4.785M progress:  39.7088%
+Thread 23 Samples ARG -> PPQ fix_acceptor 700.000K of at most  18.608M progress:  3.76188%
+Thread 26 Samples PPQ -> GLN fix_donor   1.400M of at most   2.215M progress:  63.1997%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.800M of at most   4.785M progress:  37.6189%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.700M of at most   4.785M progress:  35.5289%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.300M of at most   8.241M progress:  15.7756%
+Thread 18 Samples PPQ -> GLU fix_donor   1.500M of at most   4.785M progress:  31.349%
+Thread 12 Samples TRP -> PPQ fix_acceptor 900.000K of at most   1.684M progress:  53.4583%
+Thread 9 Samples PPQ -> TYR fix_donor 800.000K of at most   1.949M progress:  41.0387%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.400M of at most   4.430M progress:  31.5998%
+Thread 21 Samples PPQ -> SER fix_donor   2.000M of at most   4.785M progress:  41.7987%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.600M of at most   2.304M progress:  69.4502%
+Thread 1 Samples PPQ -> THR fix_donor   1.900M of at most   4.785M progress:  39.7088%
+Thread 27 Samples SER -> PPQ fix_acceptor   1.900M of at most   4.785M progress:  39.7088%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.800M of at most   4.785M progress:  37.6189%
+Thread 26 Samples PPQ -> GLN fix_donor   1.500M of at most   2.215M progress:  67.7139%
+Thread 18 Samples PPQ -> GLU fix_donor   1.600M of at most   4.785M progress:  33.439%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.400M of at most   8.241M progress:  16.9892%
+Thread 21 Samples PPQ -> SER fix_donor   2.100M of at most   4.785M progress:  43.8887%
+Thread 1 Samples PPQ -> THR fix_donor   2.000M of at most   4.785M progress:  41.7987%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.000M of at most   4.785M progress:  41.7987%
+Thread 30 Samples TYR -> PPQ fix_acceptor 900.000K of at most   1.949M progress:  46.1686%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.700M of at most   2.304M progress:  73.7908%
+Thread 15 Samples THR -> PPQ fix_acceptor   1.900M of at most   4.785M progress:  39.7088%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.500M of at most   4.430M progress:  33.857%
+Thread 23 Samples ARG -> PPQ fix_acceptor 800.000K of at most  18.608M progress:  4.29929%
+Thread 26 Samples PPQ -> GLN fix_donor   1.600M of at most   2.215M progress:  72.2282%
+Thread 18 Samples PPQ -> GLU fix_donor   1.700M of at most   4.785M progress:  35.5289%
+Thread 21 Samples PPQ -> SER fix_donor   2.200M of at most   4.785M progress:  45.9786%
+Thread 12 Samples TRP -> PPQ fix_acceptor   1.000M of at most   1.684M progress:  59.3982%
+Thread 1 Samples PPQ -> THR fix_donor   2.100M of at most   4.785M progress:  43.8887%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.500M of at most   8.241M progress:  18.2027%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.100M of at most   4.785M progress:  43.8887%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.000M of at most   4.785M progress:  41.7987%
+Thread 9 Samples PPQ -> TYR fix_donor 900.000K of at most   1.949M progress:  46.1686%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.800M of at most   2.304M progress:  78.1315%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.600M of at most   4.430M progress:  36.1141%
+Thread 21 Samples PPQ -> SER fix_donor   2.300M of at most   4.785M progress:  48.0685%
+Thread 18 Samples PPQ -> GLU fix_donor   1.800M of at most   4.785M progress:  37.6189%
+Thread 1 Samples PPQ -> THR fix_donor   2.200M of at most   4.785M progress:  45.9786%
+Thread 26 Samples PPQ -> GLN fix_donor   1.700M of at most   2.215M progress:  76.7425%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.200M of at most   4.785M progress:  45.9786%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.100M of at most   4.785M progress:  43.8887%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.000M of at most   1.949M progress:  51.2984%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.600M of at most   8.241M progress:  19.4162%
+Thread 29 Samples ASN -> PPQ fix_acceptor   1.900M of at most   2.304M progress:  82.4721%
+Thread 21 Samples PPQ -> SER fix_donor   2.400M of at most   4.785M progress:  50.1585%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.700M of at most   4.430M progress:  38.3712%
+Thread 23 Samples ARG -> PPQ fix_acceptor 900.000K of at most  18.608M progress:  4.83671%
+Thread 1 Samples PPQ -> THR fix_donor   2.300M of at most   4.785M progress:  48.0685%
+Thread 12 Samples TRP -> PPQ fix_acceptor   1.100M of at most   1.684M progress:  65.338%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.300M of at most   4.785M progress:  48.0685%
+Thread 18 Samples PPQ -> GLU fix_donor   1.900M of at most   4.785M progress:  39.7088%
+Thread 26 Samples PPQ -> GLN fix_donor   1.800M of at most   2.215M progress:  81.2567%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.200M of at most   4.785M progress:  45.9786%
+Thread 21 Samples PPQ -> SER fix_donor   2.500M of at most   4.785M progress:  52.2484%
+Thread 29 Samples ASN -> PPQ fix_acceptor   2.000M of at most   2.304M progress:  86.8127%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.700M of at most   8.241M progress:  20.6297%
+Thread 9 Samples PPQ -> TYR fix_donor   1.000M of at most   1.949M progress:  51.2984%
+Thread 1 Samples PPQ -> THR fix_donor   2.400M of at most   4.785M progress:  50.1585%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.400M of at most   4.785M progress:  50.1585%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.800M of at most   4.430M progress:  40.6284%
+Thread 18 Samples PPQ -> GLU fix_donor   2.000M of at most   4.785M progress:  41.7987%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.300M of at most   4.785M progress:  48.0685%
+Thread 21 Samples PPQ -> SER fix_donor   2.600M of at most   4.785M progress:  54.3384%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.100M of at most   1.949M progress:  56.4283%
+Thread 26 Samples PPQ -> GLN fix_donor   1.900M of at most   2.215M progress:  85.771%
+Thread 29 Samples ASN -> PPQ fix_acceptor   2.100M of at most   2.304M progress:  91.1534%
+total ASN PPQ   2.101M
+SAVING   2.101M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots13__ACC_ASN-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+2101246
+Thread 1 Samples PPQ -> THR fix_donor   2.500M of at most   4.785M progress:  52.2484%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.500M of at most   4.785M progress:  52.2484%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.800M of at most   8.241M progress:  21.8432%
+Thread 12 Samples TRP -> PPQ fix_acceptor   1.200M of at most   1.684M progress:  71.2778%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.400M of at most   4.785M progress:  50.1585%
+Thread 28 Samples GLN -> PPQ fix_acceptor   1.900M of at most   4.430M progress:  42.8855%
+Thread 18 Samples PPQ -> GLU fix_donor   2.100M of at most   4.785M progress:  43.8887%
+Thread 21 Samples PPQ -> SER fix_donor   2.700M of at most   4.785M progress:  56.4283%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.000M of at most  18.608M progress:  5.37412%
+Thread 26 Samples PPQ -> GLN fix_donor   2.000M of at most   2.215M progress:  90.2853%
+Thread 1 Samples PPQ -> THR fix_donor   2.600M of at most   4.785M progress:  54.3384%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.600M of at most   4.785M progress:  54.3384%
+Thread 9 Samples PPQ -> TYR fix_donor   1.100M of at most   1.949M progress:  56.4283%
+Thread 24 Samples LYS -> PPQ fix_acceptor   1.900M of at most   8.241M progress:  23.0567%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.500M of at most   4.785M progress:  52.2484%
+Thread 21 Samples PPQ -> SER fix_donor   2.800M of at most   4.785M progress:  58.5182%
+Thread 18 Samples PPQ -> GLU fix_donor   2.200M of at most   4.785M progress:  45.9786%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.000M of at most   4.430M progress:  45.1426%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.200M of at most   1.949M progress:  61.5581%
+Thread 1 Samples PPQ -> THR fix_donor   2.700M of at most   4.785M progress:  56.4283%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.700M of at most   4.785M progress:  56.4283%
+Thread 12 Samples TRP -> PPQ fix_acceptor   1.300M of at most   1.684M progress:  77.2176%
+total PPQ GLN   2.095M
+SAVING   2.095M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots25__DON_PPQ-GLN__PPQ_rot_min_0001.rel_rot_pos.gz
+2095394
+Thread 21 Samples PPQ -> SER fix_donor   2.900M of at most   4.785M progress:  60.6082%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.600M of at most   4.785M progress:  54.3384%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.000M of at most   8.241M progress:  24.2702%
+Thread 18 Samples PPQ -> GLU fix_donor   2.300M of at most   4.785M progress:  48.0685%
+Thread 1 Samples PPQ -> THR fix_donor   2.800M of at most   4.785M progress:  58.5182%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.100M of at most  18.608M progress:  5.91153%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.800M of at most   4.785M progress:  58.5182%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.100M of at most   4.430M progress:  47.3998%
+Thread 21 Samples PPQ -> SER fix_donor   3.000M of at most   4.785M progress:  62.6981%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.700M of at most   4.785M progress:  56.4283%
+Thread 9 Samples PPQ -> TYR fix_donor   1.200M of at most   1.949M progress:  61.5581%
+Thread 1 Samples PPQ -> THR fix_donor   2.900M of at most   4.785M progress:  60.6082%
+Thread 18 Samples PPQ -> GLU fix_donor   2.400M of at most   4.785M progress:  50.1585%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.300M of at most   1.949M progress:  66.688%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.100M of at most   8.241M progress:  25.4837%
+Thread 27 Samples SER -> PPQ fix_acceptor   2.900M of at most   4.785M progress:  60.6082%
+Thread 12 Samples TRP -> PPQ fix_acceptor   1.400M of at most   1.684M progress:  83.1575%
+Thread 21 Samples PPQ -> SER fix_donor   3.100M of at most   4.785M progress:  64.788%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.200M of at most   4.430M progress:  49.6569%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.800M of at most   4.785M progress:  58.5182%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.000M of at most   4.785M progress:  62.6981%
+Thread 1 Samples PPQ -> THR fix_donor   3.000M of at most   4.785M progress:  62.6981%
+Thread 21 Samples PPQ -> SER fix_donor   3.200M of at most   4.785M progress:  66.878%
+Thread 18 Samples PPQ -> GLU fix_donor   2.500M of at most   4.785M progress:  52.2484%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.200M of at most   8.241M progress:  26.6973%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.200M of at most  18.608M progress:  6.44894%
+Thread 15 Samples THR -> PPQ fix_acceptor   2.900M of at most   4.785M progress:  60.6082%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.300M of at most   4.430M progress:  51.914%
+Thread 9 Samples PPQ -> TYR fix_donor   1.300M of at most   1.949M progress:  66.688%
+Thread 1 Samples PPQ -> THR fix_donor   3.100M of at most   4.785M progress:  64.788%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.100M of at most   4.785M progress:  64.788%
+Thread 12 Samples TRP -> PPQ fix_acceptor   1.500M of at most   1.684M progress:  89.0973%
+Thread 21 Samples PPQ -> SER fix_donor   3.300M of at most   4.785M progress:  68.9679%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.400M of at most   1.949M progress:  71.8178%
+Thread 18 Samples PPQ -> GLU fix_donor   2.600M of at most   4.785M progress:  54.3384%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.000M of at most   4.785M progress:  62.6981%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.300M of at most   8.241M progress:  27.9108%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.400M of at most   4.430M progress:  54.1712%
+Thread 21 Samples PPQ -> SER fix_donor   3.400M of at most   4.785M progress:  71.0579%
+Thread 1 Samples PPQ -> THR fix_donor   3.200M of at most   4.785M progress:  66.878%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.200M of at most   4.785M progress:  66.878%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.100M of at most   4.785M progress:  64.788%
+Thread 18 Samples PPQ -> GLU fix_donor   2.700M of at most   4.785M progress:  56.4283%
+Thread 21 Samples PPQ -> SER fix_donor   3.500M of at most   4.785M progress:  73.1478%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.300M of at most  18.608M progress:  6.98636%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.400M of at most   8.241M progress:  29.1243%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.300M of at most   4.785M progress:  68.9679%
+Thread 1 Samples PPQ -> THR fix_donor   3.300M of at most   4.785M progress:  68.9679%
+Thread 12 Samples TRP -> PPQ fix_acceptor   1.600M of at most   1.684M progress:  95.0371%
+total TRP PPQ   1.601M
+SAVING   1.601M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots19__ACC_TRP-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+1600663
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.500M of at most   4.430M progress:  56.4283%
+Thread 9 Samples PPQ -> TYR fix_donor   1.400M of at most   1.949M progress:  71.8178%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.500M of at most   1.949M progress:  76.9476%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.200M of at most   4.785M progress:  66.878%
+Thread 21 Samples PPQ -> SER fix_donor   3.600M of at most   4.785M progress:  75.2377%
+Thread 18 Samples PPQ -> GLU fix_donor   2.800M of at most   4.785M progress:  58.5182%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.400M of at most   4.785M progress:  71.0579%
+Thread 1 Samples PPQ -> THR fix_donor   3.400M of at most   4.785M progress:  71.0579%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.500M of at most   8.241M progress:  30.3378%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.600M of at most   4.430M progress:  58.6854%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.300M of at most   4.785M progress:  68.9679%
+Thread 21 Samples PPQ -> SER fix_donor   3.700M of at most   4.785M progress:  77.3277%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.500M of at most   4.785M progress:  73.1478%
+Thread 1 Samples PPQ -> THR fix_donor   3.500M of at most   4.785M progress:  73.1478%
+Thread 18 Samples PPQ -> GLU fix_donor   2.900M of at most   4.785M progress:  60.6082%
+Thread 9 Samples PPQ -> TYR fix_donor   1.500M of at most   1.949M progress:  76.9476%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.400M of at most  18.608M progress:  7.52377%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.600M of at most   1.949M progress:  82.0775%
+Thread 21 Samples PPQ -> SER fix_donor   3.800M of at most   4.785M progress:  79.4176%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.600M of at most   8.241M progress:  31.5513%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.400M of at most   4.785M progress:  71.0579%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.700M of at most   4.430M progress:  60.9426%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.600M of at most   4.785M progress:  75.2377%
+Thread 1 Samples PPQ -> THR fix_donor   3.600M of at most   4.785M progress:  75.2377%
+Thread 18 Samples PPQ -> GLU fix_donor   3.000M of at most   4.785M progress:  62.6981%
+Thread 21 Samples PPQ -> SER fix_donor   3.900M of at most   4.785M progress:  81.5075%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.500M of at most   4.785M progress:  73.1478%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.700M of at most   4.785M progress:  77.3277%
+Thread 1 Samples PPQ -> THR fix_donor   3.700M of at most   4.785M progress:  77.3277%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.700M of at most   8.241M progress:  32.7648%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.800M of at most   4.430M progress:  63.1997%
+Thread 9 Samples PPQ -> TYR fix_donor   1.600M of at most   1.949M progress:  82.0775%
+Thread 21 Samples PPQ -> SER fix_donor   4.000M of at most   4.785M progress:  83.5975%
+Thread 18 Samples PPQ -> GLU fix_donor   3.100M of at most   4.785M progress:  64.788%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.600M of at most   4.785M progress:  75.2377%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.800M of at most   4.785M progress:  79.4176%
+Thread 30 Samples TYR -> PPQ fix_acceptor   1.700M of at most   1.949M progress:  87.2073%
+Thread 1 Samples PPQ -> THR fix_donor   3.800M of at most   4.785M progress:  79.4176%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.500M of at most  18.608M progress:  8.06118%
+Thread 28 Samples GLN -> PPQ fix_acceptor   2.900M of at most   4.430M progress:  65.4568%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.800M of at most   8.241M progress:  33.9783%
+Thread 21 Samples PPQ -> SER fix_donor   4.100M of at most   4.785M progress:  85.6874%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.700M of at most   4.785M progress:  77.3277%
+Thread 27 Samples SER -> PPQ fix_acceptor   3.900M of at most   4.785M progress:  81.5075%
+Thread 1 Samples PPQ -> THR fix_donor   3.900M of at most   4.785M progress:  81.5075%
+Thread 18 Samples PPQ -> GLU fix_donor   3.200M of at most   4.785M progress:  66.878%
+Thread 9 Samples PPQ -> TYR fix_donor   1.700M of at most   1.949M progress:  87.2073%
+Thread 21 Samples PPQ -> SER fix_donor   4.200M of at most   4.785M progress:  87.7774%
+total TYR PPQ   1.771M
+SAVING   1.771M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots22__ACC_TYR-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+1771164
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.000M of at most   4.430M progress:  67.714%
+Thread 27 Samples SER -> PPQ fix_acceptor   4.000M of at most   4.785M progress:  83.5975%
+Thread 24 Samples LYS -> PPQ fix_acceptor   2.900M of at most   8.241M progress:  35.1918%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.800M of at most   4.785M progress:  79.4176%
+Thread 1 Samples PPQ -> THR fix_donor   4.000M of at most   4.785M progress:  83.5975%
+Thread 18 Samples PPQ -> GLU fix_donor   3.300M of at most   4.785M progress:  68.9679%
+Thread 21 Samples PPQ -> SER fix_donor   4.300M of at most   4.785M progress:  89.8673%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.600M of at most  18.608M progress:  8.59859%
+Thread 27 Samples SER -> PPQ fix_acceptor   4.100M of at most   4.785M progress:  85.6874%
+Thread 1 Samples PPQ -> THR fix_donor   4.100M of at most   4.785M progress:  85.6874%
+Thread 15 Samples THR -> PPQ fix_acceptor   3.900M of at most   4.785M progress:  81.5075%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.100M of at most   4.430M progress:  69.9711%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.000M of at most   8.241M progress:  36.4054%
+Thread 21 Samples PPQ -> SER fix_donor   4.400M of at most   4.785M progress:  91.9572%
+Thread 18 Samples PPQ -> GLU fix_donor   3.400M of at most   4.785M progress:  71.0579%
+Thread 9 Samples PPQ -> TYR fix_donor   1.800M of at most   1.949M progress:  92.3372%
+Thread 27 Samples SER -> PPQ fix_acceptor   4.200M of at most   4.785M progress:  87.7774%
+Thread 1 Samples PPQ -> THR fix_donor   4.200M of at most   4.785M progress:  87.7774%
+Thread 15 Samples THR -> PPQ fix_acceptor   4.000M of at most   4.785M progress:  83.5975%
+Thread 21 Samples PPQ -> SER fix_donor   4.500M of at most   4.785M progress:  94.0472%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.200M of at most   4.430M progress:  72.2282%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.100M of at most   8.241M progress:  37.6189%
+total SER PPQ   4.285M
+SAVING   4.285M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__ACC_SER-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+4284505
+Thread 18 Samples PPQ -> GLU fix_donor   3.500M of at most   4.785M progress:  73.1478%
+total PPQ TYR   1.861M
+SAVING   1.861M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots22__DON_PPQ-TYR__PPQ_rot_min_0001.rel_rot_pos.gz
+1861162
+Thread 1 Samples PPQ -> THR fix_donor   4.300M of at most   4.785M progress:  89.8673%
+Thread 15 Samples THR -> PPQ fix_acceptor   4.100M of at most   4.785M progress:  85.6874%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.700M of at most  18.608M progress:  9.13601%
+Thread 21 Samples PPQ -> SER fix_donor   4.600M of at most   4.785M progress:  96.1371%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.300M of at most   4.430M progress:  74.4854%
+total PPQ SER   4.660M
+SAVING   4.660M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__DON_PPQ-SER__PPQ_rot_min_0001.rel_rot_pos.gz
+4659599
+total THR PPQ   4.171M
+SAVING   4.171M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__ACC_THR-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+4171196
+Thread 1 Samples PPQ -> THR fix_donor   4.400M of at most   4.785M progress:  91.9572%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.200M of at most   8.241M progress:  38.8324%
+Thread 18 Samples PPQ -> GLU fix_donor   3.600M of at most   4.785M progress:  75.2377%
+Thread 1 Samples PPQ -> THR fix_donor   4.500M of at most   4.785M progress:  94.0472%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.400M of at most   4.430M progress:  76.7425%
+Thread 18 Samples PPQ -> GLU fix_donor   3.700M of at most   4.785M progress:  77.3277%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.300M of at most   8.241M progress:  40.0459%
+total PPQ THR   4.577M
+SAVING   4.577M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots54__DON_PPQ-THR__PPQ_rot_min_0001.rel_rot_pos.gz
+4577145
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.800M of at most  18.608M progress:  9.67342%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.500M of at most   4.430M progress:  78.9996%
+Thread 18 Samples PPQ -> GLU fix_donor   3.800M of at most   4.785M progress:  79.4176%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.400M of at most   8.241M progress:  41.2594%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.600M of at most   4.430M progress:  81.2567%
+Thread 18 Samples PPQ -> GLU fix_donor   3.900M of at most   4.785M progress:  81.5075%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.500M of at most   8.241M progress:  42.4729%
+Thread 23 Samples ARG -> PPQ fix_acceptor   1.900M of at most  18.608M progress:  10.2108%
+Thread 18 Samples PPQ -> GLU fix_donor   4.000M of at most   4.785M progress:  83.5975%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.700M of at most   4.430M progress:  83.5139%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.600M of at most   8.241M progress:  43.6864%
+Thread 18 Samples PPQ -> GLU fix_donor   4.100M of at most   4.785M progress:  85.6874%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.800M of at most   4.430M progress:  85.771%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.700M of at most   8.241M progress:  44.8999%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.000M of at most  18.608M progress:  10.7482%
+Thread 18 Samples PPQ -> GLU fix_donor   4.200M of at most   4.785M progress:  87.7774%
+Thread 28 Samples GLN -> PPQ fix_acceptor   3.900M of at most   4.430M progress:  88.0281%
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.800M of at most   8.241M progress:  46.1134%
+Thread 18 Samples PPQ -> GLU fix_donor   4.300M of at most   4.785M progress:  89.8673%
+total GLN PPQ   3.998M
+SAVING   3.998M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots25__ACC_GLN-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+3998318
+Thread 24 Samples LYS -> PPQ fix_acceptor   3.900M of at most   8.241M progress:  47.327%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.100M of at most  18.608M progress:  11.2857%
+Thread 18 Samples PPQ -> GLU fix_donor   4.400M of at most   4.785M progress:  91.9572%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.000M of at most   8.241M progress:  48.5405%
+Thread 18 Samples PPQ -> GLU fix_donor   4.500M of at most   4.785M progress:  94.0472%
+total PPQ GLU   4.551M
+SAVING   4.551M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots27__DON_PPQ-GLU__PPQ_rot_min_0001.rel_rot_pos.gz
+4550652
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.200M of at most  18.608M progress:  11.8231%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.100M of at most   8.241M progress:  49.754%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.200M of at most   8.241M progress:  50.9675%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.300M of at most  18.608M progress:  12.3605%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.300M of at most   8.241M progress:  52.181%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.400M of at most   8.241M progress:  53.3945%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.400M of at most  18.608M progress:  12.8979%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.500M of at most   8.241M progress:  54.608%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.600M of at most   8.241M progress:  55.8215%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.500M of at most  18.608M progress:  13.4353%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.700M of at most   8.241M progress:  57.0351%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.800M of at most   8.241M progress:  58.2486%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.600M of at most  18.608M progress:  13.9727%
+Thread 24 Samples LYS -> PPQ fix_acceptor   4.900M of at most   8.241M progress:  59.4621%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.000M of at most   8.241M progress:  60.6756%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.700M of at most  18.608M progress:  14.5101%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.100M of at most   8.241M progress:  61.8891%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.200M of at most   8.241M progress:  63.1026%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.800M of at most  18.608M progress:  15.0475%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.300M of at most   8.241M progress:  64.3161%
+Thread 23 Samples ARG -> PPQ fix_acceptor   2.900M of at most  18.608M progress:  15.585%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.400M of at most   8.241M progress:  65.5296%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.500M of at most   8.241M progress:  66.7432%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.000M of at most  18.608M progress:  16.1224%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.600M of at most   8.241M progress:  67.9567%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.700M of at most   8.241M progress:  69.1702%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.100M of at most  18.608M progress:  16.6598%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.800M of at most   8.241M progress:  70.3837%
+Thread 24 Samples LYS -> PPQ fix_acceptor   5.900M of at most   8.241M progress:  71.5972%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.200M of at most  18.608M progress:  17.1972%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.000M of at most   8.241M progress:  72.8107%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.100M of at most   8.241M progress:  74.0242%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.300M of at most  18.608M progress:  17.7346%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.200M of at most   8.241M progress:  75.2377%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.300M of at most   8.241M progress:  76.4513%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.400M of at most  18.608M progress:  18.272%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.400M of at most   8.241M progress:  77.6648%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.500M of at most   8.241M progress:  78.8783%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.500M of at most  18.608M progress:  18.8094%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.600M of at most   8.241M progress:  80.0918%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.700M of at most   8.241M progress:  81.3053%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.600M of at most  18.608M progress:  19.3468%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.800M of at most   8.241M progress:  82.5188%
+Thread 24 Samples LYS -> PPQ fix_acceptor   6.900M of at most   8.241M progress:  83.7323%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.700M of at most  18.608M progress:  19.8843%
+Thread 24 Samples LYS -> PPQ fix_acceptor   7.000M of at most   8.241M progress:  84.9458%
+Thread 24 Samples LYS -> PPQ fix_acceptor   7.100M of at most   8.241M progress:  86.1593%
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.800M of at most  18.608M progress:  20.4217%
+Thread 24 Samples LYS -> PPQ fix_acceptor   7.200M of at most   8.241M progress:  87.3729%
+total LYS PPQ   7.205M
+SAVING   7.205M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots31__ACC_LYS-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+7205475
+Thread 23 Samples ARG -> PPQ fix_acceptor   3.900M of at most  18.608M progress:  20.9591%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.000M of at most  18.608M progress:  21.4965%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.100M of at most  18.608M progress:  22.0339%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.200M of at most  18.608M progress:  22.5713%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.300M of at most  18.608M progress:  23.1087%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.400M of at most  18.608M progress:  23.6461%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.500M of at most  18.608M progress:  24.1836%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.600M of at most  18.608M progress:  24.721%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.700M of at most  18.608M progress:  25.2584%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.800M of at most  18.608M progress:  25.7958%
+Thread 23 Samples ARG -> PPQ fix_acceptor   4.900M of at most  18.608M progress:  26.3332%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.000M of at most  18.608M progress:  26.8706%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.100M of at most  18.608M progress:  27.408%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.200M of at most  18.608M progress:  27.9454%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.300M of at most  18.608M progress:  28.4829%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.400M of at most  18.608M progress:  29.0203%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.500M of at most  18.608M progress:  29.5577%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.600M of at most  18.608M progress:  30.0951%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.700M of at most  18.608M progress:  30.6325%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.800M of at most  18.608M progress:  31.1699%
+Thread 23 Samples ARG -> PPQ fix_acceptor   5.900M of at most  18.608M progress:  31.7073%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.000M of at most  18.608M progress:  32.2447%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.100M of at most  18.608M progress:  32.7822%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.200M of at most  18.608M progress:  33.3196%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.300M of at most  18.608M progress:  33.857%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.400M of at most  18.608M progress:  34.3944%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.500M of at most  18.608M progress:  34.9318%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.600M of at most  18.608M progress:  35.4692%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.700M of at most  18.608M progress:  36.0066%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.800M of at most  18.608M progress:  36.544%
+Thread 23 Samples ARG -> PPQ fix_acceptor   6.900M of at most  18.608M progress:  37.0815%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.000M of at most  18.608M progress:  37.6189%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.100M of at most  18.608M progress:  38.1563%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.200M of at most  18.608M progress:  38.6937%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.300M of at most  18.608M progress:  39.2311%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.400M of at most  18.608M progress:  39.7685%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.500M of at most  18.608M progress:  40.3059%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.600M of at most  18.608M progress:  40.8433%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.700M of at most  18.608M progress:  41.3808%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.800M of at most  18.608M progress:  41.9182%
+Thread 23 Samples ARG -> PPQ fix_acceptor   7.900M of at most  18.608M progress:  42.4556%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.000M of at most  18.608M progress:  42.993%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.100M of at most  18.608M progress:  43.5304%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.200M of at most  18.608M progress:  44.0678%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.300M of at most  18.608M progress:  44.6052%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.400M of at most  18.608M progress:  45.1426%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.500M of at most  18.608M progress:  45.6801%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.600M of at most  18.608M progress:  46.2175%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.700M of at most  18.608M progress:  46.7549%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.800M of at most  18.608M progress:  47.2923%
+Thread 23 Samples ARG -> PPQ fix_acceptor   8.900M of at most  18.608M progress:  47.8297%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.000M of at most  18.608M progress:  48.3671%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.100M of at most  18.608M progress:  48.9045%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.200M of at most  18.608M progress:  49.4419%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.300M of at most  18.608M progress:  49.9794%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.400M of at most  18.608M progress:  50.5168%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.500M of at most  18.608M progress:  51.0542%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.600M of at most  18.608M progress:  51.5916%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.700M of at most  18.608M progress:  52.129%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.800M of at most  18.608M progress:  52.6664%
+Thread 23 Samples ARG -> PPQ fix_acceptor   9.900M of at most  18.608M progress:  53.2038%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.000M of at most  18.608M progress:  53.7412%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.100M of at most  18.608M progress:  54.2787%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.200M of at most  18.608M progress:  54.8161%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.300M of at most  18.608M progress:  55.3535%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.400M of at most  18.608M progress:  55.8909%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.500M of at most  18.608M progress:  56.4283%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.600M of at most  18.608M progress:  56.9657%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.700M of at most  18.608M progress:  57.5031%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.800M of at most  18.608M progress:  58.0405%
+Thread 23 Samples ARG -> PPQ fix_acceptor  10.900M of at most  18.608M progress:  58.578%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.000M of at most  18.608M progress:  59.1154%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.100M of at most  18.608M progress:  59.6528%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.200M of at most  18.608M progress:  60.1902%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.300M of at most  18.608M progress:  60.7276%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.400M of at most  18.608M progress:  61.265%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.500M of at most  18.608M progress:  61.8024%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.600M of at most  18.608M progress:  62.3398%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.700M of at most  18.608M progress:  62.8773%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.800M of at most  18.608M progress:  63.4147%
+Thread 23 Samples ARG -> PPQ fix_acceptor  11.900M of at most  18.608M progress:  63.9521%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.000M of at most  18.608M progress:  64.4895%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.100M of at most  18.608M progress:  65.0269%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.200M of at most  18.608M progress:  65.5643%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.300M of at most  18.608M progress:  66.1017%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.400M of at most  18.608M progress:  66.6391%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.500M of at most  18.608M progress:  67.1766%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.600M of at most  18.608M progress:  67.714%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.700M of at most  18.608M progress:  68.2514%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.800M of at most  18.608M progress:  68.7888%
+Thread 23 Samples ARG -> PPQ fix_acceptor  12.900M of at most  18.608M progress:  69.3262%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.000M of at most  18.608M progress:  69.8636%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.100M of at most  18.608M progress:  70.401%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.200M of at most  18.608M progress:  70.9384%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.300M of at most  18.608M progress:  71.4759%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.400M of at most  18.608M progress:  72.0133%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.500M of at most  18.608M progress:  72.5507%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.600M of at most  18.608M progress:  73.0881%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.700M of at most  18.608M progress:  73.6255%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.800M of at most  18.608M progress:  74.1629%
+Thread 23 Samples ARG -> PPQ fix_acceptor  13.900M of at most  18.608M progress:  74.7003%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.000M of at most  18.608M progress:  75.2377%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.100M of at most  18.608M progress:  75.7752%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.200M of at most  18.608M progress:  76.3126%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.300M of at most  18.608M progress:  76.85%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.400M of at most  18.608M progress:  77.3874%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.500M of at most  18.608M progress:  77.9248%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.600M of at most  18.608M progress:  78.4622%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.700M of at most  18.608M progress:  78.9996%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.800M of at most  18.608M progress:  79.537%
+Thread 23 Samples ARG -> PPQ fix_acceptor  14.900M of at most  18.608M progress:  80.0745%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.000M of at most  18.608M progress:  80.6119%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.100M of at most  18.608M progress:  81.1493%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.200M of at most  18.608M progress:  81.6867%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.300M of at most  18.608M progress:  82.2241%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.400M of at most  18.608M progress:  82.7615%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.500M of at most  18.608M progress:  83.2989%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.600M of at most  18.608M progress:  83.8363%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.700M of at most  18.608M progress:  84.3738%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.800M of at most  18.608M progress:  84.9112%
+Thread 23 Samples ARG -> PPQ fix_acceptor  15.900M of at most  18.608M progress:  85.4486%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.000M of at most  18.608M progress:  85.986%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.100M of at most  18.608M progress:  86.5234%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.200M of at most  18.608M progress:  87.0608%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.300M of at most  18.608M progress:  87.5982%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.400M of at most  18.608M progress:  88.1356%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.500M of at most  18.608M progress:  88.6731%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.600M of at most  18.608M progress:  89.2105%
+Thread 23 Samples ARG -> PPQ fix_acceptor  16.700M of at most  18.608M progress:  89.7479%
+total ARG PPQ  16.765M
+SAVING  16.765M HBOND GEOMETRIES TO ./rifgen_init/__HBOND_GEOMS__maxtip40__resl4__range360__ex1_0__ex2_0__ex3_0__ex4_0__nrots42__ACC_ARG-PPQ__PPQ_rot_min_0001.rel_rot_pos.gz
+16765490
+
+RifGenSimpHB:    1 DON_PPQ-THR__PPQ_rot_min_0001 done, ngeom:   4.577M job    0 of 15  <>RIFAccum nrots:   1.298M mem:  65.536K rif_mem:  16.777M
+RifGenSimpHB:    1 DON_PPQ-SER__PPQ_rot_min_0001 done, ngeom:   4.660M job    1 of 15  <>RIFAccum nrots:   8.858M mem:  65.536K rif_mem:  67.109M
+RifGenSimpHB:    1 ACC_THR-PPQ__PPQ_rot_min_0001 done, ngeom:   4.171M job    2 of 15  <>RIFAccum nrots:  47.427M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 ACC_SER-PPQ__PPQ_rot_min_0001 done, ngeom:   4.285M job    3 of 15  <>RIFAccum nrots: 112.353M mem:  65.536K rif_mem: 536.871M
+RifGenSimpHB:    1 ACC_ARG-PPQ__PPQ_rot_min_0001 done, ngeom:  16.765M job    4 of 15  <>RIFAccum nrots: 126.116M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 ACC_LYS-PPQ__PPQ_rot_min_0001 done, ngeom:   7.205M job    5 of 15  <>RIFAccum nrots: 126.163M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 DON_PPQ-GLU__PPQ_rot_min_0001 done, ngeom:   4.551M job    6 of 15  <>RIFAccum nrots: 126.471M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 DON_PPQ-GLN__PPQ_rot_min_0001 done, ngeom:   2.095M job    7 of 15  <>RIFAccum nrots: 126.725M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 ACC_GLN-PPQ__PPQ_rot_min_0001 done, ngeom:   3.998M job    8 of 15  <>RIFAccum nrots: 134.175M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 DON_PPQ-TYR__PPQ_rot_min_0001 done, ngeom:   1.861M job    9 of 15  <>RIFAccum nrots: 139.523M mem:  65.536K rif_mem:   1.074G
+RifGenSimpHB:    1 ACC_TYR-PPQ__PPQ_rot_min_0001 done, ngeom:   1.771M job   10 of 15  <>RIFAccum nrots: 177.905M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 ACC_TRP-PPQ__PPQ_rot_min_0001 done, ngeom:   1.601M job   11 of 15  <>RIFAccum nrots: 217.243M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 DON_PPQ-ASN__PPQ_rot_min_0001 done, ngeom:   1.106M job   12 of 15  <>RIFAccum nrots: 218.124M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 ACC_ASN-PPQ__PPQ_rot_min_0001 done, ngeom:   2.101M job   13 of 15  <>RIFAccum nrots: 242.815M mem:  65.536K rif_mem:   2.147G
+RifGenSimpHB:    1 DON_PPQ-ASP__PPQ_rot_min_0001 done, ngeom:   1.194M job   14 of 15  <>RIFAccum nrots: 244.459M mem:  65.536K rif_mem:   2.147G
+================== ApoHSearch rotamer 45 PHE chis:  62 79 ================== Progress: 1 of 13 0% ==================
+RifGeneratorApoHSearch: add child rotamers: PHE45 PHE46 PHE47 PHE48 PHE49 PHE50 PHE51 PHE52 PHE53 PHE54 PHE55 PHE56 PHE57 PHE58 PHE59
+NEST info base resl: 1.73205 1.73205 1.73205  19.6933
+Hstage: 0 resl: 3.00 nsamp:   7.020M ************************************************** branching: -2.405777 to -1.400000
+Hstage: 1 resl: 1.50 nsamp:  31.843M *************************************************** branching: -2.405777 to -1.400000
+Hstage: 2 resl: 0.75 nsamp: 405.250M *******************************************<>*******
+SCOREINFO PHE min:  -2.232 cut: -1. avg:  -1.088 nsamp 331.096M
+<>RIFAccum nrots: 972.914M mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 88 ILE chis:  62 100 ================== Progress: 2 of 13 7.69231% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE88 ILE92
+NEST info base resl: 1.73205 1.73205 1.73205  29.7177
+Hstage: 0 resl: 3.00 nsamp:   1.516M *************************************************** branching: -1.547144 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:   6.239M *************************************************** branching: -1.542074 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:  93.215M **************************************************
+SCOREINFO ILE min:  -1.540 cut: -.9 avg:  -0.701 nsamp  79.688M
+<>RIFAccum nrots:   1.003G mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 89 ILE chis:  62 170 ================== Progress: 3 of 13 15.3846% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE89 ILE93
+NEST info base resl: 1.73205 1.73205 1.73205  27.1425
+Hstage: 0 resl: 3.00 nsamp:   1.516M *************************************************** branching: -1.547144 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:   6.430M *************************************************** branching: -1.542074 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:  99.028M **************************************************
+SCOREINFO ILE min:  -1.538 cut: -.9 avg:  -0.700 nsamp  84.913M
+<>RIFAccum nrots:   1.037G mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 90 ILE chis:  -177 66 ================== Progress: 4 of 13 23.0769% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE90
+NEST info base resl: 1.73205 1.73205 1.73205  27.4555
+Hstage: 0 resl: 3.00 nsamp:   1.516M *************************************************** branching: -1.547144 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:   6.215M *************************************************** branching: -1.542074 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:  93.113M **************************************************
+SCOREINFO ILE min:  -1.540 cut: -.9 avg:  -0.700 nsamp  79.640M
+<>RIFAccum nrots:   1.052G mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 91 ILE chis:  -177 165 ================== Progress: 5 of 13 30.7692% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE91
+NEST info base resl: 1.73205 1.73205 1.73205  25.3094
+Hstage: 0 resl: 3.00 nsamp:   3.594M *************************************************** branching: -1.547144 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  15.039M *************************************************** branching: -1.542074 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 231.934M **************************************************
+SCOREINFO ILE min:  -1.540 cut: -.9 avg:  -0.700 nsamp 198.624M
+<>RIFAccum nrots:   1.093G mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 94 ILE chis:  -57 -60 ================== Progress: 6 of 13 38.4615% ==================
+RifGeneratorApoHSearch: add child rotamers: ILE94
+NEST info base resl: 1.73205 1.73205 1.73205  26.7486
+Hstage: 0 resl: 3.00 nsamp:   1.516M *************************************************** branching: -1.547144 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:   6.443M *************************************************** branching: -1.543170 to -0.850000
+Hstage: 2 resl: 0.75 nsamp:  99.422M **************************************************
+SCOREINFO ILE min:  -1.537 cut: -.9 avg:  -0.700 nsamp  85.312M
+<>RIFAccum nrots:   1.109G mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 126 LEU chis:  62 80 ================== Progress: 7 of 13 46.1538% ==================
+RifGeneratorApoHSearch: add child rotamers: LEU126 LEU127 LEU128 LEU129 LEU130 LEU131 LEU132 LEU133 LEU134
+NEST info base resl: 1.73205 1.73205 1.73205  24.7122
+Hstage: 0 resl: 3.00 nsamp:   3.594M *************************************************** branching: -1.547144 to -0.750000
+Hstage: 1 resl: 1.50 nsamp:  19.075M *************************************************** branching: -1.547144 to -0.750000
+Hstage: 2 resl: 0.75 nsamp: 317.503M ***************************************<>***********
+SCOREINFO LEU min:  -1.530 cut: -.8 avg:  -0.642 nsamp 273.732M
+<>RIFAccum nrots:   1.704G mem:  65.536K rif_mem:   4.295G
+================== ApoHSearch rotamer 344 VAL chis:  63 ================== Progress: 8 of 13 53.8462% ==================
+RifGeneratorApoHSearch: add child rotamers: VAL344 VAL345 VAL346
+NEST info base resl: 1.73205 1.73205 1.73205  35.0055
+Hstage: 0 resl: 3.00 nsamp:   1.516M *************************************************** branching: -1.600259 to -0.500000
+Hstage: 1 resl: 1.50 nsamp:  13.657M *************************************************** branching: -1.596492 to -0.500000
+Hstage: 2 resl: 0.75 nsamp: 311.154M ********************************************<>******
+SCOREINFO VAL min:  -1.581 cut: -.5 avg:  -0.504 nsamp 269.744M
+<>RIFAccum nrots:   2.013G mem:  65.536K rif_mem:   8.590G
+================== ApoHSearch rotamer 135 MET chis:  62 180 75 ================== Progress: 9 of 13 61.5385% ==================
+RifGeneratorApoHSearch: add child rotamers: MET135 MET137 MET139 MET148 MET149 MET150
+NEST info base resl: 1.73205 1.73205 1.73205  22.1823
+Hstage: 0 resl: 3.00 nsamp:   3.594M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  16.982M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 267.318M **************************************************
+SCOREINFO MET min:  -1.548 cut: -.9 avg:  -0.699 nsamp 223.851M
+<>RIFAccum nrots:   2.313G mem:  65.536K rif_mem:   8.590G
+================== ApoHSearch rotamer 136 MET chis:  62 180 -75 ================== Progress: 10 of 13 69.2308% ==================
+RifGeneratorApoHSearch: add child rotamers: MET136 MET141 MET145 MET146 MET147
+NEST info base resl: 1.73205 1.73205 1.73205  22.3394
+Hstage: 0 resl: 3.00 nsamp:   3.594M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  16.982M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 267.306M **************************************************
+SCOREINFO MET min:  -1.547 cut: -.9 avg:  -0.699 nsamp 223.816M
+<>RIFAccum nrots:   2.562G mem:  65.536K rif_mem:   8.590G
+================== ApoHSearch rotamer 138 MET chis:  -177 65 180 ================== Progress: 11 of 13 76.9231% ==================
+RifGeneratorApoHSearch: add child rotamers: MET138 MET140 MET142 MET144
+NEST info base resl: 1.73205 1.73205 1.73205  20.7186
+Hstage: 0 resl: 3.00 nsamp:   3.594M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  16.849M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 258.869M **************************************************
+SCOREINFO MET min:  -1.538 cut: -.9 avg:  -0.702 nsamp 217.860M
+<>RIFAccum nrots:   2.757G mem:  65.536K rif_mem:   8.590G
+================== ApoHSearch rotamer 143 MET chis:  -65 -65 103 ================== Progress: 12 of 13 84.6154% ==================
+RifGeneratorApoHSearch: add child rotamers: MET143
+NEST info base resl: 1.73205 1.73205 1.73205  22.7034
+Hstage: 0 resl: 3.00 nsamp:   3.594M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  17.027M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 263.276M **************************************************
+SCOREINFO MET min:  -1.536 cut: -.9 avg:  -0.699 nsamp 220.453M
+<>RIFAccum nrots:   2.801G mem:  65.536K rif_mem:   8.590G
+================== ApoHSearch rotamer 151 MET chis:  -65 -80 -70 ================== Progress: 13 of 13 92.3077% ==================
+RifGeneratorApoHSearch: add child rotamers: MET151 MET152 MET153
+NEST info base resl: 1.73205 1.73205 1.73205  22.0299
+Hstage: 0 resl: 3.00 nsamp:   3.594M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 1 resl: 1.50 nsamp:  16.961M *************************************************** branching: -1.566913 to -0.850000
+Hstage: 2 resl: 0.75 nsamp: 268.160M **************************************************
+SCOREINFO MET min:  -1.547 cut: -.9 avg:  -0.699 nsamp 224.707M
+<>RIFAccum nrots:   2.940G mem:  65.536K rif_mem:   8.590G
+RifGenerators done
+RIFAccumulator building rif....
+RIF:  non0 in RIF:  45.142M N_motifs_found:   2.940G coverage: 65.1385, mem_use:   8.590G
+RIF size:   8.590G load: 0.336332, sizeof(value_type) 64
+sorting rotamers in each hash entry
+RIF  non0 in RIF:  45.142M N_motifs_found:   2.940G coverage: 65.1385
+======================= frac collisions in map =======================
+======================= cart: 0.6, ori: 12 =======================
+======================================================================
+   Nrots   1 1.00000  -0.996 45141665
+   Nrots   2 0.69824  -0.970 31519502
+   Nrots   3 0.54014  -0.987 24382636
+   Nrots   4 0.40938  -0.967 18480111
+   Nrots   5 0.35042  -0.959 15818457
+   Nrots   6 0.30862  -0.947 13931755
+   Nrots   7 0.27347  -0.934 12344843
+   Nrots   8 0.24609  -0.921 11109135
+   Nrots   9 0.22287  -0.909 10060716
+   Nrots  10 0.20292  -0.890 9160331
+   Nrots  11 0.18504  -0.880 8353200
+   Nrots  12 0.16901  -0.872 7629404
+   Nrots  13 0.15445  -0.864 6971932
+   Nrots  14 0.14102  -0.857 6366004
+E(collisions) = 4.90167
+======================================================================
+XformHash_bt24_BCC6
+before resize, RIF size:   8.590G load: 0.336332, sizeof(value_type) 64
+NOT RESIZING RIF
+dumping rif to: ./rifgen_init/rifgen_init.rif.gz
+===================================== rif description ======================================
+from Will's rifgen app
+rotamer set size : 1654
+rotamer nprimary : 388
+          target : PPQ_rot_min_0001.pdb
+      target_res : 1 
+          apores : PHE ILE LEU VAL MET 
+          donres : THR TYR TRP GLN ASN SER LYS ARG PPQ 
+          accres : THR TYR SER GLN ASN ASP GLU PPQ 
+       beam_size :  10.000G
+    value stored : RotamerScores< N=14, RotamerScoreSat< dsize=2, rbit=9, div=-4, nsat=2 > >
+apo_search_resls : 3 1.5 0.75 
+ score_cut_adjust...............0.5
+ score_threshold................-0.5
+ hbond_weight...................2
+ upweight_multi_hbond...........1
+ tip_tol_deg....................40
+ rot_samp_range.................360
+ rot_samp_resl..................4
+ hbond_cart_sample_hack_range...0.59999999999999998
+ hbond_cart_sample_hack_resl....0.29999999999999999
+ rosetta_field_resl.............0.125
+ max_rf_bounding_ratio..........4
+ rf_oversample..................2
+ hash_cart_resl.................0.59999999999999998
+ hash_angle_resl................12
+       RIF cells :  45.142M
+  Nrots inserted :   2.940G
+        coverage : 65.1384964
+
+============================================================================================
+writing rif file ./rifgen_init/rifgen_init.rif.gz
+make_bounding_gird: cart 16 / 16, ang: 38.8446 / 38.8
+    new map size   6.443K ratio: 0.000142728
+    mem:   1.049M load: 0.39325, sizeof(value_type) 64
+make_bounding_gird: cart 4 / 4, ang: 17.2 / 17.2
+    new map size 407.876K ratio: 0.00903547
+    mem:  67.109M load: 0.388981, sizeof(value_type) 64
+make_bounding_gird: cart 8 / 8, ang: 24.4 / 24.4
+    new map size  70.015K ratio: 0.00155101
+    mem:  16.777M load: 0.267086, sizeof(value_type) 64
+make_bounding_gird: cart 2 / 2, ang: 13.6 / 13.6
+    new map size   2.564M ratio: 0.0568051
+    mem: 536.871M load: 0.305685, sizeof(value_type) 64
+make_bounding_gird: cart 1 / 1, ang: 11.8 / 11.8
+    new map size  13.546M ratio: 0.300084
+    mem:   2.147G load: 0.403711, sizeof(value_type) 64
+done writing
+NOT DELETING VoxelArrayPtr's, should use smart ptrs!
+rif_hier_DONE
+########################################### what you need for docking ###########################################
+-rif_dock:target_pdb            ./rifgen_init/rifgen_init.rif.gz_target.pdb.gz
+-in:file:extra_res_fa           PPQ.params
+-rif_dock:target_rf_resl        0.125
+-rif_dock:target_rf_cache       ./rifgen_init/__RF_PPQ_rot_min_0001.pdb_CEN_trhash54435770_resl0.125_osamp2_replonlybdry
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_16.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_08.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_04.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_02.xmap.gz
+-rif_dock:target_bounding_xmaps ./rifgen_init/rifgen_init.rif.gz_BOUNDING_RIF_01.xmap.gz
+-rif_dock:target_rif            ./rifgen_init/rifgen_init.rif.gz
+-rif_dock:target_donors         ./rifgen_init/rifgen_init.rif.gz_donors.pdb.gz
+-rif_dock:target_acceptors      ./rifgen_init/rifgen_init.rif.gz_acceptors.pdb.gz
+-rif_dock:extra_rotamers        1
+-rif_dock:extra_rif_rotamers    1
+-rif_dock:rot_spec_fname        ./rifgen_init/rotamer_index_spec.txt
+#################################################################################################################

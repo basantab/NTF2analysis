@@ -1,0 +1,246 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: 2019.44.post.dev+12.master.00b2ddab2d4 00b2ddab2d4f71f2161245c98cbaa3e8e5fd19dc git@github.com:RosettaCommons/main.git 2019-11-02T16:45:46
+core.init: command: /home/basantab/Rosetta/main/source/bin/rosetta_scripts.linuxgccrelease -s AT2_0001.pdb -extra_res_fa AT2.params @../rosetta_flags.txt
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-134829846 seed_offset=0 real_seed=-134829846
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-134829846 RG_type=mt19937
+core.init: Resolved executable path: /mnt/home/basantab/Rosetta/main/source/build/src/release/linux/5.0/64/x86/gcc/7/default/rosetta_scripts.default.linuxgccrelease
+core.init: Looking for database based on location of executable: /mnt/home/basantab/Rosetta/main/database/
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed AT2_0001.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB AT2_0001.pdb
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 981 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 1.02298 seconds.
+core.import_pose.import_pose: File 'AT2_0001.pdb' automatically determined to be of type PDB
+protocols.rosetta_scripts.RosettaScriptsParser: dock_design_filename=../minimize_ligand.xml
+protocols.rosetta_scripts.RosettaScriptsParser: Generating XML Schema for rosetta_scripts...
+protocols.rosetta_scripts.RosettaScriptsParser: ...done
+protocols.rosetta_scripts.RosettaScriptsParser: Initializing schema validator...
+protocols.rosetta_scripts.RosettaScriptsParser: ...done
+protocols.rosetta_scripts.RosettaScriptsParser: Validating input script...
+protocols.rosetta_scripts.RosettaScriptsParser: ...done
+protocols.rosetta_scripts.RosettaScriptsParser: Parsed script:
+<ROSETTASCRIPTS>
+	<SCOREFXNS>
+		<ScoreFunction name="genpot" weights="ref2015_cart_cst.wts"/>
+	</SCOREFXNS>
+	<RESIDUE_SELECTORS/>
+	<TASKOPERATIONS>
+		<RestrictToRepacking name="repackonly"/>
+	</TASKOPERATIONS>
+	<SIMPLE_METRICS/>
+	<FILTERS/>
+	<MOVERS>
+		<MinMover bb="1" bondangle="1" bondlength="1" cartesian="False" chi="1" jump="ALL" max_iter="1000" name="min" scorefxn="genpot" tolerance="0.001" type="lbfgs_armijo_nonmonotone"/>
+	</MOVERS>
+	<PROTOCOLS>
+		<Add mover_name="min"/>
+	</PROTOCOLS>
+	<OUTPUT scorefxn="genpot"/>
+</ROSETTASCRIPTS>
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/PairEPotential/pdb_pair_stats_fine
+basic.io.database: Database file opened: scoring/score_functions/InterchainPotential/interchain_env_log.txt
+basic.io.database: Database file opened: scoring/score_functions/InterchainPotential/interchain_pair_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/env_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cbeta_den.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/pair_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cenpack_log.txt
+core.scoring.ramachandran: shapovalov_lib::shap_rama_smooth_level of 4( aka highest_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/rama/shapovalov/kappa25/all.ramaProb
+core.scoring.CartesianBondedEnergy: Initializing IdealParametersDatabase with default Ks=300 , 80 , 80 , 10 , 80
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-lengths.txt
+core.scoring.CartesianBondedEnergy: Read 759 bb-independent lengths.
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-angles.txt
+core.scoring.CartesianBondedEnergy: Read 1456 bb-independent angles.
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-torsions.txt
+core.scoring.CartesianBondedEnergy: Read 1 bb-independent torsions.
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/default-improper.txt
+core.scoring.CartesianBondedEnergy: Read 2202 bb-independent improper tors.
+protocols.jd2.parser.ScoreFunctionLoader: defined score function "genpot" with weights "ref2015_cart_cst.wts"
+protocols.jd2.parser.TaskOperationLoader: Defined TaskOperation named "repackonly" of type RestrictToRepacking
+protocols.minimization_packing.MinMover: Options chi, bb: 1, 1 omega: 1
+protocols.rosetta_scripts.RosettaScriptsParser: Defined mover named "min" of type MinMover
+protocols.rosetta_scripts.ParsedProtocol: ParsedProtocol mover with the following movers and filters
+protocols.rosetta_scripts.ParsedProtocol: added mover "min" with filter "true_filter"
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from saved copy AT2_0001.pdb
+protocols.rosetta_scripts.ParsedProtocol: =======================BEGIN MOVER MinMover - min=======================
+core.scoring.CartesianBondedEnergy: Creating new peptide-bonded energy container (1)
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N3 , C12, O1 , O2  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N2 , C5 , C6 , N1  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N2 , C5 , C6 , C2  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N2 , C5 , C6 , H6  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N1 , C5 , C6 , C2  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N1 , C5 , C6 , H6  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C2 , C5 , C6 , H6  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N2 , C5 , N1 , C6  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N2 , C5 , N1 , C4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C6 , C5 , N1 , C4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C5 , C6 , C2 , H6  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C5 , C6 , C2 , C1  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C5 , C6 , C2 , C3  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  H6 , C6 , C2 , C1  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  H6 , C6 , C2 , C3  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C1 , C6 , C2 , C3  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C6 , C2 , C3 , C1  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C6 , C2 , C3 , C4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C6 , C2 , C3 , H4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C1 , C2 , C3 , C4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C1 , C2 , C3 , H4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C4 , C2 , C3 , H4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C2 , C3 , C4 , H4  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C2 , C3 , C4 , N1  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C2 , C3 , C4 , H5  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  H4 , C3 , C4 , N1  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  H4 , C3 , C4 , H5  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  N1 , C3 , C4 , H5  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C3 , C4 , N1 , H5  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  C3 , C4 , N1 , C5  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined torsion AT2:  H5 , C4 , N1 , C5  to DB with mu0 = 0, K = 80, period = 2
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,C11,C10 to DB with theta0 = 1.90861 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,C11,H15 to DB with theta0 = 1.91103 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,C11,H16 to DB with theta0 = 1.91188 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C10,C11,H15 to DB with theta0 = 1.91089 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C10,C11,H16 to DB with theta0 = 1.91199 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H15,C11,H16 to DB with theta0 = 1.9094 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C11,C7,C8 to DB with theta0 = 1.91131 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C11,C7,N2 to DB with theta0 = 1.91148 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C11,C7,H7 to DB with theta0 = 1.90926 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C8,C7,N2 to DB with theta0 = 1.91084 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C8,C7,H7 to DB with theta0 = 1.91072 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N2,C7,H7 to DB with theta0 = 1.91019 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,C8,C9 to DB with theta0 = 1.90694 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,C8,H8 to DB with theta0 = 1.91165 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,C8,H9 to DB with theta0 = 1.91321 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C9,C8,H8 to DB with theta0 = 1.91134 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C9,C8,H9 to DB with theta0 = 1.9126 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H8,C8,H9 to DB with theta0 = 1.90805 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C8,C9,N3 to DB with theta0 = 1.89414 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C8,C9,H10 to DB with theta0 = 1.91496 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C8,C9,H11 to DB with theta0 = 1.92073 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N3,C9,H10 to DB with theta0 = 1.91495 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N3,C9,H11 to DB with theta0 = 1.91963 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H10,C9,H11 to DB with theta0 = 1.89948 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C9,N3,C10 to DB with theta0 = 2.07227 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C9,N3,C12 to DB with theta0 = 2.10586 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C10,N3,C12 to DB with theta0 = 2.10505 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C11,C10,N3 to DB with theta0 = 1.89842 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C11,C10,H13 to DB with theta0 = 1.91353 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C11,C10,H14 to DB with theta0 = 1.91799 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N3,C10,H13 to DB with theta0 = 1.91397 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N3,C10,H14 to DB with theta0 = 1.91799 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H13,C10,H14 to DB with theta0 = 1.90194 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N3,C12,O1 to DB with theta0 = 2.09476 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N3,C12,O2 to DB with theta0 = 2.09451 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: O1,C12,O2 to DB with theta0 = 2.09392 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C12,O2,C13 to DB with theta0 = 2.09497 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: O2,C13,C14 to DB with theta0 = 1.91028 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: O2,C13,H17 to DB with theta0 = 1.91117 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: O2,C13,H18 to DB with theta0 = 1.9108 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C14,C13,H17 to DB with theta0 = 1.9101 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C14,C13,H18 to DB with theta0 = 1.91101 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H17,C13,H18 to DB with theta0 = 1.91044 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C13,C14,H19 to DB with theta0 = 1.91101 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C13,C14,H20 to DB with theta0 = 1.91068 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C13,C14,H21 to DB with theta0 = 1.9101 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H19,C14,H20 to DB with theta0 = 1.91067 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H19,C14,H21 to DB with theta0 = 1.91044 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H20,C14,H21 to DB with theta0 = 1.9109 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,N2,C5 to DB with theta0 = 2.09477 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C7,N2,H12 to DB with theta0 = 2.09469 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C5,N2,H12 to DB with theta0 = 2.09372 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N2,C5,C6 to DB with theta0 = 2.08953 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N2,C5,N1 to DB with theta0 = 2.08866 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C6,C5,N1 to DB with theta0 = 2.10498 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C5,C6,C2 to DB with theta0 = 2.07934 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C5,C6,H6 to DB with theta0 = 2.10151 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C2,C6,H6 to DB with theta0 = 2.10233 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C6,C2,C1 to DB with theta0 = 2.10774 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C6,C2,C3 to DB with theta0 = 2.06752 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C1,C2,C3 to DB with theta0 = 2.10792 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C2,C1,H1 to DB with theta0 = 1.91019 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C2,C1,H2 to DB with theta0 = 1.91089 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C2,C1,H3 to DB with theta0 = 1.91087 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H1,C1,H2 to DB with theta0 = 1.91079 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H1,C1,H3 to DB with theta0 = 1.91105 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: H2,C1,H3 to DB with theta0 = 1.91001 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C2,C3,C4 to DB with theta0 = 2.08271 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C2,C3,H4 to DB with theta0 = 2.09962 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C4,C3,H4 to DB with theta0 = 2.10086 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C3,C4,N1 to DB with theta0 = 2.10973 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C3,C4,H5 to DB with theta0 = 2.08699 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: N1,C4,H5 to DB with theta0 = 2.08647 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined angle AT2: C5,N1,C4 to DB with theta0 = 2.12205 , Ktheta = 80
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C11,C7, to DB with d0 = 1.5306 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C11,C10, to DB with d0 = 1.5316 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C11,H15, to DB with d0 = 1.07054 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C11,H16, to DB with d0 = 1.06987 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C7,C8, to DB with d0 = 1.53101 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C7,N2, to DB with d0 = 1.46469 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C7,H7, to DB with d0 = 1.0701 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C8,C9, to DB with d0 = 1.53613 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C8,H8, to DB with d0 = 1.0696 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C8,H9, to DB with d0 = 1.07001 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C9,N3, to DB with d0 = 1.46948 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C9,H10, to DB with d0 = 1.0702 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C9,H11, to DB with d0 = 1.06964 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: N3,C10, to DB with d0 = 1.46976 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: N3,C12, to DB with d0 = 1.34717 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C10,H13, to DB with d0 = 1.07002 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C10,H14, to DB with d0 = 1.06926 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C12,O1, to DB with d0 = 1.21522 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C12,O2, to DB with d0 = 1.34642 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: O2,C13, to DB with d0 = 1.45253 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C13,C14, to DB with d0 = 1.52987 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C13,H17, to DB with d0 = 1.07001 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C13,H18, to DB with d0 = 1.07039 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C14,H19, to DB with d0 = 1.07038 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C14,H20, to DB with d0 = 1.06998 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C14,H21, to DB with d0 = 1.07001 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: N2,C5, to DB with d0 = 1.38989 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: N2,H12, to DB with d0 = 0.984116 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C5,C6, to DB with d0 = 1.39082 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C5,N1, to DB with d0 = 1.32376 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C6,C2, to DB with d0 = 1.38324 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C6,H6, to DB with d0 = 1.03195 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C2,C1, to DB with d0 = 1.5067 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C2,C3, to DB with d0 = 1.38902 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C1,H1, to DB with d0 = 1.06989 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C1,H2, to DB with d0 = 1.06956 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C1,H3, to DB with d0 = 1.06955 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C3,C4, to DB with d0 = 1.38015 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C3,H4, to DB with d0 = 1.0319 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C4,N1, to DB with d0 = 1.32012 , Kd = 300
+core.scoring.CartesianBondedEnergy: Adding undefined length AT2: C4,H5, to DB with d0 = 1.03186 , Kd = 300
+protocols.rosetta_scripts.ParsedProtocol: setting status to success
+protocols.jd2.JobDistributor: AT2_0001_min_0001 reported success in 8 seconds
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 8 seconds

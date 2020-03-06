@@ -1,0 +1,86 @@
+HETATM    1  C11 TTG X   1      -0.111  -0.145  -0.325  1.00 20.00           C  
+HETATM    2  C10 TTG X   1      -1.485  -0.464   0.031  1.00 20.00           C  
+HETATM    3  C7  TTG X   1      -2.612   0.218  -0.156  1.00 20.00           C  
+HETATM    4  C4  TTG X   1      -3.899  -0.334   0.294  1.00 20.00           C  
+HETATM    5  C3  TTG X   1      -5.090   0.640   0.116  1.00 20.00           C  
+HETATM    6  C1  TTG X   1      -4.835   1.991   0.849  1.00 20.00           C  
+HETATM    7  C2  TTG X   1      -6.014   2.962   0.845  1.00 20.00           C  
+HETATM    8  O1  TTG X   1      -6.270   0.101   0.780  1.00 20.00           O  
+HETATM    9  C5  TTG X   1      -5.423   0.799  -1.412  1.00 20.00           C  
+HETATM   10  O2  TTG X   1      -4.742   1.871  -2.022  1.00 20.00           O1-
+HETATM   11  O3  TTG X   1      -6.833   0.941  -1.522  1.00 20.00           O1-
+HETATM   12  C6  TTG X   1      -3.936  -1.600   0.801  1.00 20.00           C  
+HETATM   13  C8  TTG X   1      -2.632  -2.316   1.080  1.00 20.00           C  
+HETATM   14  O4  TTG X   1      -2.596  -3.396   1.671  1.00 20.00           O  
+HETATM   15  N1  TTG X   1      -1.495  -1.692   0.645  1.00 20.00           N  
+HETATM   16  C12 TTG X   1      -0.150  -2.254   0.742  1.00 20.00           C  
+HETATM   17  C13 TTG X   1       0.690  -1.195   0.091  1.00 20.00           C  
+HETATM   18  C14 TTG X   1       2.049  -1.125  -0.139  1.00 20.00           C  
+HETATM   19  C16 TTG X   1       2.576   0.020  -0.792  1.00 20.00           C  
+HETATM   20  C15 TTG X   1       1.637   1.030  -1.173  1.00 20.00           C  
+HETATM   21  N2  TTG X   1       0.323   0.958  -0.937  1.00 20.00           N  
+HETATM   22  C17 TTG X   1       2.081   2.165  -1.827  1.00 20.00           C  
+HETATM   23  C19 TTG X   1       3.424   2.365  -2.127  1.00 20.00           C  
+HETATM   24  C20 TTG X   1       4.346   1.401  -1.753  1.00 20.00           C  
+HETATM   25  C18 TTG X   1       3.958   0.225  -1.084  1.00 20.00           C  
+HETATM   26  C21 TTG X   1       5.028  -0.779  -0.732  1.00 20.00           C  
+HETATM   27  N3  TTG X   1       6.172  -0.186   0.065  1.00 20.00           N1+
+HETATM   28  C22 TTG X   1       5.765   0.252   1.439  1.00 20.00           C  
+HETATM   29  C23 TTG X   1       7.375  -1.072   0.077  1.00 20.00           C  
+HETATM   30  O5  TTG X   1       5.679   1.599  -2.011  1.00 20.00           O  
+HETATM   31  C9  TTG X   1      -5.180  -2.386   1.146  1.00 20.00           C  
+HETATM   32  O6  TTG X   1      -5.032  -3.792   0.910  1.00 20.00           O  
+HETATM   33  H7  TTG X   1      -2.591   1.172  -0.682  1.00 20.00           H  
+HETATM   34  H1  TTG X   1      -4.594   1.782   1.900  1.00 20.00           H  
+HETATM   35  H2  TTG X   1      -3.969   2.516   0.430  1.00 20.00           H  
+HETATM   36  H3  TTG X   1      -5.752   3.863   1.408  1.00 20.00           H  
+HETATM   37  H4  TTG X   1      -6.278   3.273  -0.170  1.00 20.00           H  
+HETATM   38  H5  TTG X   1      -6.899   2.525   1.318  1.00 20.00           H  
+HETATM   39  H6  TTG X   1      -6.972   0.364   0.121  1.00 20.00           H  
+HETATM   40  H10 TTG X   1       0.106  -2.397   1.797  1.00 20.00           H  
+HETATM   41  H11 TTG X   1      -0.114  -3.204   0.201  1.00 20.00           H  
+HETATM   42  H12 TTG X   1       2.659  -1.960   0.183  1.00 20.00           H  
+HETATM   43  H13 TTG X   1       1.348   2.920  -2.115  1.00 20.00           H  
+HETATM   44  H14 TTG X   1       3.714   3.278  -2.639  1.00 20.00           H  
+HETATM   45  H15 TTG X   1       4.669  -1.631  -0.153  1.00 20.00           H  
+HETATM   46  H16 TTG X   1       5.453  -1.171  -1.665  1.00 20.00           H  
+HETATM   47  H17 TTG X   1       6.422   0.664  -0.469  1.00 20.00           H  
+HETATM   48  H18 TTG X   1       6.635   0.701   1.926  1.00 20.00           H  
+HETATM   49  H19 TTG X   1       5.419  -0.624   1.995  1.00 20.00           H  
+HETATM   50  H20 TTG X   1       4.972   0.998   1.352  1.00 20.00           H  
+HETATM   51  H21 TTG X   1       7.120  -2.000   0.596  1.00 20.00           H  
+HETATM   52  H22 TTG X   1       7.667  -1.269  -0.958  1.00 20.00           H  
+HETATM   53  H23 TTG X   1       8.182  -0.544   0.592  1.00 20.00           H  
+HETATM   54  H24 TTG X   1       5.750   2.359  -2.625  1.00 20.00           H  
+HETATM   55  H8  TTG X   1      -6.027  -2.105   0.519  1.00 20.00           H  
+HETATM   56  H9  TTG X   1      -5.446  -2.244   2.199  1.00 20.00           H  
+HETATM   57  H25 TTG X   1      -4.238  -4.070   1.410  1.00 20.00           H  
+CONECT    1    2   17   17   21
+CONECT    2    3    3   15
+CONECT    3    4   33
+CONECT    4    5   12   12
+CONECT    5    6    8    9
+CONECT    6    7   34   35
+CONECT    7   36   37   38
+CONECT    8   39
+CONECT    9   10   11
+CONECT   12   13   31
+CONECT   13   14   14   15
+CONECT   15   16
+CONECT   16   17   40   41
+CONECT   17   18
+CONECT   18   19   19   42
+CONECT   19   20   25
+CONECT   20   21   21   22
+CONECT   22   23   23   43
+CONECT   23   24   44
+CONECT   24   25   25   30
+CONECT   25   26
+CONECT   26   27   45   46
+CONECT   27   28   29   47
+CONECT   28   48   49   50
+CONECT   29   51   52   53
+CONECT   30   54
+CONECT   31   32   55   56
+CONECT   32   57
+END
